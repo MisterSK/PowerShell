@@ -10,7 +10,7 @@ Write-Host "Getting quote list..."
 .".\GetZappQuotes.ps1"
 
 # $shutdown = $false
-$seednumber = 550
+$seednumber = Get-Random -Maximum 550 -Minimum 150
 Write-Host "Random sleep seed number: $seednumber"
 $npadrunning = (Get-Process -Name notepad -ErrorAction SilentlyContinue).CPU
 if($npadrunning -gt 0){
@@ -29,7 +29,6 @@ else{
     $wshell.SendKeys("{BKSP}")
 
     C:\Users\SanyaK~1\WorkingDir\PowerShell\CountDownTimers\Start-Countdown.ps1 -Seconds $sleepfor -Message "Sleeping for $sleepfor seconds..."
-    Start-Sleep -Seconds $sleepfor
     $quote = Get-ZappQuote
     # Write-Host "Next quote is '$quote'"
 
@@ -37,7 +36,6 @@ else{
     $wshell.SendKeys($quote)
     $sleepfor = Get-Random -Minimum 0 -Maximum $seednumber
     C:\Users\SanyaK~1\WorkingDir\PowerShell\CountDownTimers\Start-Countdown.ps1 -Seconds $sleepfor -Message "Sleeping for $sleepfor seconds..."
-    Start-Sleep -Seconds $sleepfor
     $wshell.AppActivate('Untitled - Notepad')
     $wshell.SendKeys("^a")
     $wshell.AppActivate('Untitled - Notepad')
