@@ -26,7 +26,7 @@ while($infinite_loop -eq $true){
         Break
     }
     elseif($use_terminate -eq $true){
-        $ElapsedTime = New-TimeSpan -Start $StartTimeStamp -End $CurrentTimeStamp
+        $ElapsedTime = ($CurrentTimeStamp - $StartTimeStamp)
         $ElapsedTimeSecs = $ElapsedTime.Seconds
 
         if($ElapsedTimeSecs -lt $terminate_window){
