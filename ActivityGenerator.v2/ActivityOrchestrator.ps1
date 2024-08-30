@@ -27,7 +27,7 @@ while($infinite_loop -eq $true){
     }
     elseif($use_terminate -eq $true){
         $ElapsedTime = ($CurrentTimeStamp - $StartTimeStamp)
-        $ElapsedTimeSecs = $ElapsedTime.Seconds
+        $ElapsedTimeSecs = $ElapsedTime.TotalSeconds
 
         if($ElapsedTimeSecs -lt $terminate_window){
             $RemainingTime = ($terminate_window - $ElapsedTimeSecs)
