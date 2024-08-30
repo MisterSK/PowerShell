@@ -28,14 +28,14 @@ else{
     $wshell.AppActivate('Untitled - Notepad')
     $wshell.SendKeys("{BKSP}")
 
-    C:\Users\SanyaK~1\WorkingDir\PowerShell\CountDownTimers\Start-Countdown.ps1 -Seconds $sleepfor -Message "Sleeping for $sleepfor seconds..."
+    C:\Users\SanyaK~1\WorkingDir\PowerShell\CountDownTimers\Start-Countdown.ps1 -Seconds $sleepfor -Message "Write new activity quote text in $sleepfor seconds..."
     $quote = Get-ZappQuote
     # Write-Host "Next quote is '$quote'"
 
     $wshell.AppActivate('Untitled - Notepad')
     $wshell.SendKeys($quote)
     $sleepfor = Get-Random -Minimum 0 -Maximum $seednumber
-    C:\Users\SanyaK~1\WorkingDir\PowerShell\CountDownTimers\Start-Countdown.ps1 -Seconds $sleepfor -Message "Sleeping for $sleepfor seconds..."
+    C:\Users\SanyaK~1\WorkingDir\PowerShell\CountDownTimers\Start-Countdown.ps1 -Seconds $sleepfor -Message "Delete acivity quote text in $sleepfor seconds..."
     $wshell.AppActivate('Untitled - Notepad')
     $wshell.SendKeys("^a")
     $wshell.AppActivate('Untitled - Notepad')

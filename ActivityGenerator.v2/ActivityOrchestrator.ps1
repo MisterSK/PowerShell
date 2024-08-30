@@ -28,12 +28,21 @@ while($infinite_loop -eq $true){
     elseif($use_terminate -eq $true){
         $ElapsedTime = ($CurrentTimeStamp - $StartTimeStamp)
         $ElapsedTimeSecs = $ElapsedTime.TotalSeconds
+        # $ElapsedTimeSecs = [Math]::Round($ElapsedTimeSecs,0)
+        # $ElapsedTimeSecs = [System.Math]::Round($ElapsedTimeSecs,0)
+        $StringElapsedTimeSecs =  "$ElapsedTimeSecs"
+        $ArrayStringElapsedTimeSecs = $StringElapsedTimeSecs.Split(".")
+        $StringElapsedTimeSecs = $ArrayStringElapsedTimeSecs[0]
+
 
         if($ElapsedTimeSecs -lt $terminate_window){
             $RemainingTime = ($terminate_window - $ElapsedTimeSecs)
+            $StringRemainingTime =  "$RemainingTime"
+            $ArrayStringRemainingTime = $StringRemainingTime.Split(".")
+            $StringRemainingTime = $ArrayStringRemainingTime[0]
             Write-Host ""
-            Write-Host "Process time is $ElapsedTimeSecs seconds; termination window is $terminate_window seconds."
-            Write-Host "$RemainingTime seconds left to termination..."
+            Write-Host "Process time is $StringElapsedTimeSecs seconds; termination window is $terminate_window seconds."
+            Write-Host "$StringRemainingTime seconds left to termination..."
             Write-Host ""
         }
         else{
@@ -48,13 +57,15 @@ while($infinite_loop -eq $true){
         Write-Host ""
     }
 
+    # Launch activity generator
+    .\ActivityGenerator.ps1
+
+    # Pause activity orchestrator loop
     $sleepseed = (Get-Random -Minimum 0 -Maximum 60)
     Write-Host ""
     Write-Host "Orchestrator Random sleep seed number: $sleepseed"
     Write-Host ""
 
-    # Launch activity generator period
-    .\ActivityGenerator.ps1
-    C:\Users\SanyaK~1\WorkingDir\PowerShell\CountDownTimers\Start-Countdown.ps1 -Seconds $sleepseed -Message "Resuming in $sleepseed seconds..."
+    C:\Users\SanyaK~1\WorkingDir\PowerShell\CountDownTimers\Start-Countdown.ps1 -Seconds $sleepseed -Message "Next activity quote in $sleepseed seconds..."
 
 }
