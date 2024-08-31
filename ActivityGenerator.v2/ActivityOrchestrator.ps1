@@ -47,7 +47,7 @@ while($infinite_loop -eq $true){
 
             # Display color-coded progress bar based on percentage of time left to end of activity loops
             $RemainingTimePercent = ($RemainingTime / $terminate_window) * 100
-            $strPaddingercent = ($terminate_window - $RemainingTime)
+            $strPaddingPercent = (($terminate_window - $RemainingTime) / $terminate_window) * 100
             
             # Set progress bar color
             $foreColor = switch ( $RemainingTimePercent )
@@ -60,7 +60,7 @@ while($infinite_loop -eq $true){
                 default { 'Green' }
             }
 
-            $strToWrite = "0% " + ("|" * $RemainingTimePercent) + ("" * $strPaddingercent) + " 100%"
+            $strToWrite = "0% [ " + ("|" * $RemainingTimePercent) + (" " * $strPaddingPercent) + " ] 100%"
             Write-Host $strToWrite -ForegroundColor $foreColor
             Write-Host ""
 

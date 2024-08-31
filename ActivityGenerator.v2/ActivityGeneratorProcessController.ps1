@@ -37,10 +37,24 @@ function GetProcesControlConfig($config_param) {
                     # Write-Host "TERMINATE_WINDOW :: $terminate_window"
                 }
             }
+            switch( $line_array[0] | Select-String -Pattern 'RANDOMIZER_SEED_MAX' )
+            {
+                'RANDOMIZER_SEED_MAX' { 
+                    $randomizer_seed_max = $line_array[1]
+                    # Write-Host "RANDOMIZER_SEED_MAX :: $randomizer_seed_max"
+                }
+            }
+            switch( $line_array[0] | Select-String -Pattern 'RANDOMIZER_SEED_MIN' )
+            {
+                'RANDOMIZER_SEED_MIN' { 
+                    $randomizer_seed_min = $line_array[1]
+                    # Write-Host "RANDOMIZER_SEED_MIN :: $randomizer_seed_min"
+                }
+            }
         }
     }
 
-    $control_configs = @($shutdown, $shutdown_window, $use_terminate, $terminate_window)
+    $control_configs = @($shutdown, $shutdown_window, $use_terminate, $terminate_window,$randomizer_seed_max,$randomizer_seed_min)
     return $control_configs[$config_param]
 
 }

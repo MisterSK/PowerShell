@@ -1,3 +1,9 @@
+# Get Activity Generator Config
+Write-Host "Getting activity generator controller config..."
+.".\ActivityGeneratorProcessController.ps1"
+$RANDOMIZER_SEED_MAX = GetProcesControlConfig(4)
+$RANDOMIZER_SEED_MIN = GetProcesControlConfig(5)
+
 if($wshell){
     Write-Host "Windows Shell COM Object already exists. Continuing..."
 }
@@ -10,7 +16,7 @@ Write-Host "Getting quote list..."
 .".\GetZappQuotes.ps1"
 
 # $shutdown = $false
-$seednumber = Get-Random -Maximum 550 -Minimum 150
+$seednumber = Get-Random -Maximum $RANDOMIZER_SEED_MAX -Minimum $RANDOMIZER_SEED_MIN
 Write-Host "Random sleep seed number: $seednumber"
 $npadrunning = (Get-Process -Name notepad -ErrorAction SilentlyContinue).CPU
 if($npadrunning -gt 0){
