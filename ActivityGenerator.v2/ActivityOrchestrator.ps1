@@ -44,6 +44,26 @@ while($infinite_loop -eq $true){
             Write-Host "Process time is $StringElapsedTimeSecs seconds; termination window is $terminate_window seconds."
             Write-Host "$StringRemainingTime seconds left to termination..."
             Write-Host ""
+
+            # Display color-coded progress bar based on percentage of time left to end of activity loops
+            $RemainingTimePercent = ($RemainingTime / $terminate_window) * 100
+            $strPaddingercent = ($terminate_window - $RemainingTime)
+            
+            # Set progress bar color
+            $foreColor = switch ( $RemainingTimePercent )
+            {
+                { $_ -le 10} { 'Red'; break; }
+                { $_ -le 20} { 'Yellow'; break; }
+                { $_ -le 40} { 'Magenta'; break; }
+                { $_ -le 60} { 'Cyan'; break; }
+                { $_ -le 80} { 'Blue'; break; }
+                default { 'Green' }
+            }
+
+            $strToWrite = "0% " + ("|" * $RemainingTimePercent) + ("" * $strPaddingercent) + " 100%"
+            Write-Host $strToWrite -ForegroundColor $foreColor
+            Write-Host ""
+
         }
         else{
             $sleepseed = (Get-Random -Minimum 0 -Maximum 120)
