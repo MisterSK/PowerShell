@@ -12,12 +12,14 @@ while($infinite_loop -eq $true){
     $shutdown_window = GetProcesControlConfig(1)
     $use_terminate = GetProcesControlConfig(2)
     $terminate_window = GetProcesControlConfig(3)
+    $sleepseed = GetProcesControlConfig(6)
 
     Write-Host ""
     Write-Host "SHUTDOWN :: $shutdown"
     Write-Host "SHUTDOWN_WINDOW :: $shutdown_window"
     Write-Host "USE_TERMINATE :: $use_terminate"
     Write-Host "TERMINATE_WINDOW :: $terminate_window"
+    Write-Host "SLEEP_SEED" :: $sleepseed
     Write-Host ""
 
     # Continue or prepare to exit process?
@@ -66,8 +68,8 @@ while($infinite_loop -eq $true){
 
         }
         else{
-            $sleepseed = (Get-Random -Minimum 0 -Maximum 120)
-            C:\Users\SanyaK~1\WorkingDir\PowerShell\CountDownTimers\Start-Countdown.ps1 -Seconds $sleepseed -Message "Exiting activity generator in $sleepseed seconds..."
+            $sleepfor = (Get-Random -Minimum 0 -Maximum $sleepseed)
+            C:\Users\SanyaK~1\WorkingDir\PowerShell\CountDownTimers\Start-Countdown.ps1 -Seconds $sleepfor -Message "Exiting activity generator in $sleepfor seconds..."
             Break
         }
     }
@@ -81,11 +83,11 @@ while($infinite_loop -eq $true){
     .\ActivityGenerator.ps1
 
     # Pause activity orchestrator loop
-    $sleepseed = (Get-Random -Minimum 0 -Maximum 60)
+    $sleepfor = (Get-Random -Minimum 0 -Maximum $sleepseed)
     Write-Host ""
-    Write-Host "Orchestrator Random sleep seed number: $sleepseed"
+    Write-Host "Orchestrator Random sleep seed number: $sleepfor"
     Write-Host ""
 
-    C:\Users\SanyaK~1\WorkingDir\PowerShell\CountDownTimers\Start-Countdown.ps1 -Seconds $sleepseed -Message "Next activity quote in $sleepseed seconds..."
+    C:\Users\SanyaK~1\WorkingDir\PowerShell\CountDownTimers\Start-Countdown.ps1 -Seconds $sleepfor -Message "Next activity quote in $sleepfor seconds..."
 
 }
