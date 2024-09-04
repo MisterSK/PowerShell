@@ -51,10 +51,17 @@ function GetProcesControlConfig($config_param) {
                     # Write-Host "RANDOMIZER_SEED_MIN :: $randomizer_seed_min"
                 }
             }
+            switch( $line_array[0] | Select-String -Pattern 'SLEEP_SEED' )
+            {
+                'SLEEP_SEED' { 
+                    $sleep_seed = $line_array[1]
+                    # Write-Host "SLEEP_SEED :: $sleep_seed"
+                }
+            }
         }
     }
 
-    $control_configs = @($shutdown, $shutdown_window, $use_terminate, $terminate_window,$randomizer_seed_max,$randomizer_seed_min)
+    $control_configs = @($shutdown, $shutdown_window, $use_terminate, $terminate_window,$randomizer_seed_max,$randomizer_seed_min,$sleep_seed)
     return $control_configs[$config_param]
 
 }
