@@ -1,3 +1,10 @@
+# Read passed parameters
+param(
+    [Parameter(Mandatory)]
+    [String]$loggedinuser
+)
+
+$LOGGED_IN_USER = $loggedinuser
 # Get Activity Generator Config
 Write-Host "Getting activity generator controller config..."
 .".\ActivityGeneratorProcessController.ps1"

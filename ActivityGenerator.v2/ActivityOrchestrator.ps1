@@ -1,5 +1,9 @@
 $infinite_loop = $true
 $StartTimeStamp = (Get-Date)
+$LOGGED_IN_USER = $ENV:USERNAME
+if($LOGGED_IN_USER.Length -gt 6 -or $LOGGED_IN_USER.IndexOf(" ") -ge 0){
+    $LOGGED_IN_USER = $LOGGED_IN_USER.Substring(0,6) + "~1"
+}
 
 while($infinite_loop -eq $true){
 
@@ -80,7 +84,7 @@ while($infinite_loop -eq $true){
     }
 
     # Launch activity generator
-    .\ActivityGenerator.ps1
+    .\ActivityGenerator.ps1 -loggedinuser $LOGGED_IN_USER
 
     # Pause activity orchestrator loop
     $sleepfor = (Get-Random -Minimum 0 -Maximum $sleepseed)
