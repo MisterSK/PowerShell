@@ -2,7 +2,7 @@ $infinite_loop = $true
 $StartTimeStamp = (Get-Date)
 
 $LOGGED_IN_USER = $ENV:USERNAME
-if($LOGGED_IN_USER.Length -gt 6 -or $LOGGED_IN_USER.IndexOf(" ") -ge 0){
+if(($LOGGED_IN_USER.Length -gt 6 -and $LOGGED_IN_USER.IndexOf(" ") -ge 0) -or ($LOGGED_IN_USER.IndexOf("("))){
     $LOGGED_IN_USER_FULL = $LOGGED_IN_USER
     $LOGGED_IN_USER = $LOGGED_IN_USER.Substring(0,6) + "~1"
 }
