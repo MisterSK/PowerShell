@@ -1,9 +1,16 @@
 $infinite_loop = $true
 $StartTimeStamp = (Get-Date)
+
 $LOGGED_IN_USER = $ENV:USERNAME
 if($LOGGED_IN_USER.Length -gt 6 -or $LOGGED_IN_USER.IndexOf(" ") -ge 0){
+    $LOGGED_IN_USER_FULL = $LOGGED_IN_USER
     $LOGGED_IN_USER = $LOGGED_IN_USER.Substring(0,6) + "~1"
 }
+
+Write-Host ""
+Write-Host "LOGGED_IN_USE_FULL :: $LOGGED_IN_USER_FULL"
+Write-Host "LOGGED_IN_USER :: $LOGGED_IN_USER"
+Write-Host ""
 
 while($infinite_loop -eq $true){
 
@@ -28,7 +35,7 @@ while($infinite_loop -eq $true){
 
     # Continue or prepare to exit process?
     if($shutdown -eq $true){
-        C:\Users\SanyaK~1\WorkingDir\PowerShell\CountDownTimers\Start-Countdown.ps1 -Seconds $shutdown_window -Message "Exiting activity generator in $shutdown_window seconds..."
+        powershell.exe -executionpolicy bypass -file "C:\Users\$LOGGED_IN_USER\WorkingDir\PowerShell\CountDownTimers\Start-Countdown.ps1" -Seconds $shutdown_window -Message "Exiting activity generator in $shutdown_window seconds..."
         Break
     }
     elseif($use_terminate -eq $true){
@@ -73,7 +80,7 @@ while($infinite_loop -eq $true){
         }
         else{
             $sleepfor = (Get-Random -Minimum 0 -Maximum $sleepseed)
-            C:\Users\SanyaK~1\WorkingDir\PowerShell\CountDownTimers\Start-Countdown.ps1 -Seconds $sleepfor -Message "Exiting activity generator in $sleepfor seconds..."
+            powershell.exe -executionpolicy bypass -file "C:\Users\$LOGGED_IN_USER\WorkingDir\PowerShell\CountDownTimers\Start-Countdown.ps1" -Seconds $sleepfor -Message "Exiting activity generator in $sleepfor seconds..."
             Break
         }
     }
@@ -84,7 +91,7 @@ while($infinite_loop -eq $true){
     }
 
     # Launch activity generator
-    .\ActivityGenerator.ps1 -loggedinuser $LOGGED_IN_USER
+    .\ActivityGenerator.ps1 -loggedinuser $LOGGED_IN_USER -loggedinuserfull $LOGGED_IN_USER_FULL
 
     # Pause activity orchestrator loop
     $sleepfor = (Get-Random -Minimum 0 -Maximum $sleepseed)
@@ -92,6 +99,6 @@ while($infinite_loop -eq $true){
     Write-Host "Orchestrator Random sleep seed number: $sleepfor"
     Write-Host ""
 
-    C:\Users\SanyaK~1\WorkingDir\PowerShell\CountDownTimers\Start-Countdown.ps1 -Seconds $sleepfor -Message "Next activity quote in $sleepfor seconds..."
+    powershell.exe -executionpolicy bypass -file "C:\Users\$LOGGED_IN_USER\WorkingDir\PowerShell\CountDownTimers\Start-Countdown.ps1" -Seconds $sleepfor -Message "Next activity quote in $sleepfor seconds..."
 
 }

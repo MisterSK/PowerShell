@@ -1,10 +1,18 @@
 # Read passed parameters
 param(
     [Parameter(Mandatory)]
+    [String]$loggedinuserfull,
     [String]$loggedinuser
 )
 
+$LOGGED_IN_USER_FULL = $loggedinuserfull
 $LOGGED_IN_USER = $loggedinuser
+
+Write-Host ""
+Write-Host "LOGGED_IN_USER_FULL :: $LOGGED_IN_USER_FULL"
+Write-Host "LOGGED_IN_USER :: $LOGGED_IN_USER"
+Write-Host ""
+
 # Get Activity Generator Config
 Write-Host "Getting activity generator controller config..."
 .".\ActivityGeneratorProcessController.ps1"
@@ -41,14 +49,14 @@ else{
     $wshell.AppActivate('Untitled - Notepad')
     $wshell.SendKeys("{BKSP}")
 
-    C:\Users\SanyaK~1\WorkingDir\PowerShell\CountDownTimers\Start-Countdown.ps1 -Seconds $sleepfor -Message "Write new activity quote text in $sleepfor seconds..."
+    powershell.exe -executionpolicy bypass -file "C:\Users\$LOGGED_IN_USER\WorkingDir\PowerShell\CountDownTimers\Start-Countdown.ps1" -Seconds $sleepfor -Message "Write new activity quote text in $sleepfor seconds..."
     $quote = Get-ZappQuote
     # Write-Host "Next quote is '$quote'"
 
     $wshell.AppActivate('Untitled - Notepad')
     $wshell.SendKeys($quote)
     $sleepfor = Get-Random -Minimum 0 -Maximum $seednumber
-    C:\Users\SanyaK~1\WorkingDir\PowerShell\CountDownTimers\Start-Countdown.ps1 -Seconds $sleepfor -Message "Delete acivity quote text in $sleepfor seconds..."
+    powershell.exe -executionpolicy bypass -file "C:\Users\$LOGGED_IN_USER\WorkingDir\PowerShell\CountDownTimers\Start-Countdown.ps1" -Seconds $sleepfor -Message "Delete acivity quote text in $sleepfor seconds..."
     $wshell.AppActivate('Untitled - Notepad')
     $wshell.SendKeys("^a")
     $wshell.AppActivate('Untitled - Notepad')
