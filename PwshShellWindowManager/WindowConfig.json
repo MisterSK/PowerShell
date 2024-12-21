@@ -1,0 +1,9 @@
+{
+    "DefaultWidth": 400,
+    "DefaultHeight": 80,
+    "DefaultX": 100,
+    "DefaultY": 100,
+    "Spacing": 10,
+    "DefaultNumberOfWindows": 4,
+    "CredentialPath": ".\\AdminCreds.xml"
+}
