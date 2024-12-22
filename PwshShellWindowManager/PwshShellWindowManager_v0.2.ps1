@@ -6,29 +6,8 @@ param(
     [int]$StartX,
     [int]$StartY,
     [int]$Spacing,
-    [string]$ConfigPath = ".\WindowConfig.json",
-    [string]$CredsPath = ".\AdminCreds.xml"
+    [string]$ConfigPath = "WindowConfig.json"
 )
-
-# Function to load credentians configuration
-# function Get-CredsConfig {
-#     param([string]$CredsPath)
-    
-#     if (Test-Path $CredsPath) {
-#         try {
-#             $creds_config = Get-Content $CredsPath | ConvertFrom-Json
-#             return $creds_config
-#         } 
-#         catch {
-#             Write-Error "Error reading configuration file: $_"
-#             exit 1
-#         }
-#     }
-#     else {
-#         Write-Error "Configuration file not found at: $creds_config"
-#         exit 1
-#     }
-# }
 
 # Function to load configuration
 function Get-WindowConfig {
@@ -50,14 +29,10 @@ function Get-WindowConfig {
     }
 }
 
-# Load credentials
-# $creds_config = Get-CredsConfig -ConfigPath $CredsPath
-
 # Load configuration
 $config = Get-WindowConfig -ConfigPath $ConfigPath
 
 # Set values from parameters or defaults from config
-$CredsPath = if ($CredsPath) { $CredsPath } else { $config.CredsPath }
 $WindowCount = if ($WindowCount) { $WindowCount } else { $config.DefaultWindowCount }
 $Width = if ($Width) { $Width } else { $config.WindowDefaults.DefaultWidth }
 $Height = if ($Height) { $Height } else { $config.WindowDefaults.DefaultHeight }
@@ -66,15 +41,15 @@ $StartY = if ($StartY) { $StartY } else { $config.WindowDefaults.DefaultY }
 $Spacing = if ($Spacing) { $Spacing } else { $config.WindowDefaults.Spacing }
 
 # Verify credentials file exists
-$CredsPath = $config.CredsPath
-if (-not (Test-Path $CredsPath)) {
-    Write-Error "Credentials file not found at: $CredsPath"
+$credsPath = $config.AdminCredsPath
+if (-not (Test-Path $credsPath)) {
+    Write-Error "Credentials file not found at: $credsPath"
     exit 1
 }
 
 # Import credentials
 try {
-    $creds = Import-Clixml -Path $CredsPath
+    $creds = Import-Clixml -Path $credsPath
 }
 catch {
     Write-Error "Error importing credentials: $_"
@@ -103,22 +78,29 @@ function Get-WindowPosition {
 for ($i = 0; $i -lt $WindowCount; $i++) {
     $position = Get-WindowPosition -Index $i -StartX $StartX -StartY $StartY -Spacing $Spacing
     
+    # Select a random command from the config
+    $randomCommand = $config.Commands | Get-Random
+    
     $arguments = @(
         "-NoExit",
         "-Command",
         "& {",
         "$host.UI.RawUI.WindowSize = New-Object System.Management.Automation.Host.Size($Width, $Height);",
         "$host.UI.RawUI.WindowPosition = New-Object System.Management.Automation.Host.Coordinates($($position.X), $($position.Y));",
-        "Write-Host 'Administrator PowerShell Window $($i + 1)' -ForegroundColor Green",
+        "Write-Host 'Administrator PowerShell Window $($i + 1)' -ForegroundColor Green;",
+        "Write-Host 'Waiting 2 seconds before executing command...' -ForegroundColor Yellow;",
+        "Start-Sleep -Seconds 2;",
+        "Write-Host 'Executing: $randomCommand' -ForegroundColor Cyan;",
+        "$randomCommand",
         "}"
     )
     
+    # Since we're using stored credentials, we'll use -Credential instead of -Verb RunAs
     Start-Process `
         -FilePath "powershell.exe" `
         -ArgumentList $arguments `
         -Credential $creds `
-        -WorkingDirectory $PWD `
-        -Verb RunAs
+        -WorkingDirectory $PWD
     
     # Add a small delay to prevent windows from overlapping during creation
     Start-Sleep -Milliseconds 500
