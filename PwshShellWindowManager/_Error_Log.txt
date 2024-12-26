@@ -1,0 +1,6 @@
+Cannot set property. Property setting is supported only on core types in this language mode.
+At C:\Users\local_S-Khasenye.DFID\Temp\WindowSetup_855832801.ps1:2 char:1
++ $Host.UI.RawUI.WindowTitle = "Administrator: PowerShell Window 1"
++ ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : InvalidOperation: (:) [], RuntimeException
+    + FullyQualifiedErrorId : PropertySetterNotSupportedInConstrainedLanguage

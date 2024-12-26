@@ -89,6 +89,18 @@ for ($i = 0; $i -lt $WindowCount; $i++) {
 # Set window title to show Administrator status
 `$Host.UI.RawUI.WindowTitle = "Administrator: PowerShell Window $($i + 1)"
 
+# Function to set console color theme
+function Set-ConsoleTheme {
+    # Set background color to black
+    `$Host.UI.RawUI.BackgroundColor = 'Black'
+    
+    # Set text color to light green
+    `$Host.UI.RawUI.ForegroundColor = 'Green'
+    
+    # Clear the screen to apply colors
+    Clear-Host
+}
+
 # Try to set window size using alternative method
 function Set-WindowSize {
     param(`$width, `$height)
@@ -98,6 +110,9 @@ function Set-WindowSize {
         Write-Warning "Could not set window size: `$_"
     }
 }
+
+# Set console theme
+Set-ConsoleTheme
 
 # Set initial window size
 Set-WindowSize -width $Width -height $Height
@@ -120,7 +135,7 @@ $randomCommand
         Write-Host "Started window $($i + 1)" -ForegroundColor Green
         
         # Add a small delay to prevent windows from overlapping during creation
-        Start-Sleep -Milliseconds 500
+        Start-Sleep -Milliseconds 1500
     }
     catch {
         Write-Error "Failed to start window $($i + 1): $_"
