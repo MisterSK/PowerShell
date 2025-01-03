@@ -7,7 +7,7 @@ param(
     [string]$WordApiConfigPath = ".\WordGeneratorAPIs.json",
     
     [Parameter(Mandatory=$false)]
-    [string]$NameStoragePath = ".\RandomNames.json",
+    [string]$NameStoragePath = ".\RandomNames.yaml",
     
     [Parameter(Mandatory=$false)]
     [int]$NumberOfIterations = 0  # Will use config file default if 0
@@ -133,7 +133,7 @@ function Get-RandomName {
         }
         
         # Fallback to stored names
-        $nameData = Get-Content -Path $NameStoragePath -Raw | ConvertFrom-Json
+        $nameData = Get-Content -Path $NameStoragePath -Raw | ConvertFrom-Yaml
         return Get-Random -InputObject $nameData.names
     }
     catch {
@@ -150,17 +150,16 @@ function Update-NameStorage {
     )
     
     try {
-        $nameData = Get-Content -Path $NameStoragePath -Raw | ConvertFrom-Json
+        $nameData = Get-Content -Path $NameStoragePath -Raw | ConvertFrom-Yaml
         
         if ($nameData.names -notcontains $NewName) {
             $nameData.names = @($NewName) + $nameData.names
             
-            if ($nameData.names.Count -gt $nameData.settings.maxNames) {
-                $nameData.names = $nameData.names[0..($nameData.settings.maxNames - 1)]
+            if ($nameData.names.Count -gt $nameData.settings.max_names) {
+                $nameData.names = $nameData.names[0..($nameData.settings.max_names - 1)]
             }
             
-            $nameData.settings.lastUpdated = (Get-Date).ToString("yyyy-MM-ddTHH:mm:ssZ")
-            $nameData | ConvertTo-Json -Depth 10 | Set-Content -Path $NameStoragePath
+            $nameData | ConvertTo-Yaml | Set-Content -Path $NameStoragePath
         }
     }
     catch {
