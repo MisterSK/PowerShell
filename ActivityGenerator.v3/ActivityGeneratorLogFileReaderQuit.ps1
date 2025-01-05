@@ -1,0 +1,1 @@
+$jobs | Remove-Job -Force
