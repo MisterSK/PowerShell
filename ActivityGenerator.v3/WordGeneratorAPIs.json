@@ -9,7 +9,7 @@
                                          },
                              "responseFormat":  "json",
                              "wordPath":  "word",
-                             "failureCount":  2
+                             "failureCount":  10
                          },
                          {
                              "name":  "Random Word API",
@@ -31,7 +31,7 @@
                                         },
                              "responseFormat":  "json",
                              "wordPath":  "[0]",
-                             "failureCount":  4
+                             "failureCount":  10
                          }
                      ],
     "maxFailures":  10,
