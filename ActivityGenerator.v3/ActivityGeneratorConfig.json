@@ -1,46 +1,60 @@
 {
-    "workingDirectory": "C:\\Users\\SanyaKhasenye(Sensit\\WorkingDir\\PowerShell\\ActivityGenerator.v2",
+    "workingDirectory": "C:\\Users\\SanyaKhasenye(Sensit\\WorkingDir\\PowerShell\\ActivityGenerator.v3",
     "scripts": {
-        "startup": ".\\ActivityGeneratorStartUp.ps1",
-        "orchestrator": ".\\ActivityOrchestrator.ps1"
+      "startup": ".\\StartupScript.ps1",
+      "orchestrator": ".\\OrchestratorScript.ps1"
     },
     "logging": {
-        "logPath": ".\\ActivityGenerator_Runtime.log",
-        "logLevel": "INFO",
-        "logRetentionDays": 30
+      "logPath": ".\\Logs\\ActivityGenerator.log",
+      "logRetentionDays": 30
     },
     "iterations": {
-        "default": 6,
-        "waitTimes": [
-            {
-                "maxWait": 2000,
-                "minWait": 14
-            },
-            {
-                "maxWait": 13000,
-                "minWait": 370
-            },
-            {
-                "maxWait": 1500,
-                "minWait": 170
-            },
-            {
-                "maxWait": 30000,
-                "minWait": 1470
-            },
-            {
-                "maxWait": 13000,
-                "minWait": 370
-            },
-            {
-                "maxWait": 1500,
-                "minWait": 170
-            }
-        ]
+      "default": 5,
+      "waitTimes": [
+        {
+          "minWait": 1000,
+          "maxWait": 5000
+        },
+        {
+          "minWait": 2000,
+          "maxWait": 8000
+        },
+        {
+          "minWait": 1500,
+          "maxWait": 6000
+        },
+        {
+          "minWait": 3000,
+          "maxWait": 10000
+        },
+        {
+          "minWait": 2500,
+          "maxWait": 7500
+        },
+        {
+          "minWait": 1000,
+          "maxWait": 4000
+        },
+        {
+          "minWait": 2000,
+          "maxWait": 6000
+        },
+        {
+          "minWait": 1800,
+          "maxWait": 5500
+        },
+        {
+          "minWait": 2200,
+          "maxWait": 8500
+        },
+        {
+          "minWait": 1300,
+          "maxWait": 4500
+        }
+      ]
     },
     "execution": {
-        "maxRetries": 3,
-        "retryDelaySeconds": 30,
-        "timeoutMinutes": 120
+      "maxRetries": 3,
+      "retryDelaySeconds": 5
     }
-}
+  }
