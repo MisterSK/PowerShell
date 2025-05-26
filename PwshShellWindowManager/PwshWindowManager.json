@@ -1,0 +1,18 @@
+{
+    "WindowSettings": {
+        "Count": 2,
+        "NoExit": true,
+        "MinSeconds": 12,
+        "MaxSeconds": 499000,
+        "Cols": 80,
+        "Lines": 10,
+        "BgColor": "0A"
+    },
+    "MonitorSettings": {
+        "Enable": true,
+        "CheckInterval": 360,
+        "MinWindows": 3,
+        "AddIfBelow": 2,
+        "MaxTotal": 10
+    }
+}
