@@ -1,0 +1,1 @@
+Get-ChildItem ./ -r | sort -descending -property length | Select-Object -First 20 name, Length, Directory > largefiles.txt

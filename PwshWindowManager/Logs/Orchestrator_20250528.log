@@ -1,0 +1,395 @@
+[2025-05-28 08:07:23] [INFO] Configuration loaded from C:\Users\SanyaKhasenye(Sensit\WorkingDir\PowerShell\PwshShellWindowManager\PwshWindowManager.json
+[2025-05-28 08:07:23] [DEBUG] Base path: C:\Users\SanyaKhasenye(Sensit\WorkingDir\PowerShell
+[2025-05-28 08:07:23] [DEBUG] Countdown script: C:\Users\SanyaKhasenye(Sensit\WorkingDir\PowerShell\CountDownTimers\Start-Countdown.ps1
+[2025-05-28 08:07:23] [DEBUG] Orchestrator directory: C:\Users\SanyaKhasenye(Sensit\WorkingDir\PowerShell\ActivityGenerator.v3
+[2025-05-28 08:07:23] [DEBUG] Orchestrator script: C:\Users\SanyaKhasenye(Sensit\WorkingDir\PowerShell\ActivityGenerator.v3\Start-ActivityOrchestrator_v0.1.ps1
+[2025-05-28 08:07:23] [DEBUG] All path validations completed
+[2025-05-28 08:07:23] [INFO] Script started with PID 7912
+[2025-05-28 08:07:23] [DEBUG] Current working directory: C:\Users\SanyaKhasenye(Sensit\WorkingDir\PowerShell\PwshShellWindowManager
+[2025-05-28 08:07:23] [DEBUG] PowerShell version: 5.1.19041.5737
+[2025-05-28 08:07:23] [INFO] Launching 2 initial windows
+[2025-05-28 08:07:23] [DEBUG] Generated 33527 seconds for window 1
+[2025-05-28 08:07:23] [DEBUG] Preparing to launch window 1 with 33527 second countdown
+[2025-05-28 08:07:23] [DEBUG] Creating temporary script: C:\Users\SANYAK~1\AppData\Local\Temp\OrchestratorWindow_1.ps1
+[2025-05-28 08:07:24] [INFO] Launched window 1 with PID 19928 - 33527 second countdown
+[2025-05-28 08:07:26] [DEBUG] Generated 20074 seconds for window 2
+[2025-05-28 08:07:26] [DEBUG] Preparing to launch window 2 with 20074 second countdown
+[2025-05-28 08:07:26] [DEBUG] Creating temporary script: C:\Users\SANYAK~1\AppData\Local\Temp\OrchestratorWindow_2.ps1
+[2025-05-28 08:07:26] [INFO] Launched window 2 with PID 11352 - 20074 second countdown
+[2025-05-28 08:07:27] [INFO] Starting monitoring process...
+[2025-05-28 08:07:27] [DEBUG] Monitor settings - Min: 3, Max: 10, Check interval: 360s
+[2025-05-28 08:07:27] [DEBUG] Found 6 running PowerShell windows
+[2025-05-28 08:07:27] [DEBUG] Monitor check - Running: 6, Required: 3
+[2025-05-28 08:13:27] [DEBUG] Found 5 running PowerShell windows
+[2025-05-28 08:13:27] [DEBUG] Monitor check - Running: 5, Required: 3
+[2025-05-28 08:19:27] [DEBUG] Found 5 running PowerShell windows
+[2025-05-28 08:19:27] [DEBUG] Monitor check - Running: 5, Required: 3
+[2025-05-28 08:25:27] [DEBUG] Found 5 running PowerShell windows
+[2025-05-28 08:25:27] [DEBUG] Monitor check - Running: 5, Required: 3
+[2025-05-28 08:31:28] [DEBUG] Found 5 running PowerShell windows
+[2025-05-28 08:31:28] [DEBUG] Monitor check - Running: 5, Required: 3
+[2025-05-28 08:37:28] [DEBUG] Found 5 running PowerShell windows
+[2025-05-28 08:37:28] [DEBUG] Monitor check - Running: 5, Required: 3
+[2025-05-28 08:43:28] [DEBUG] Found 5 running PowerShell windows
+[2025-05-28 08:43:28] [DEBUG] Monitor check - Running: 5, Required: 3
+[2025-05-28 08:49:28] [DEBUG] Found 5 running PowerShell windows
+[2025-05-28 08:49:28] [DEBUG] Monitor check - Running: 5, Required: 3
+[2025-05-28 08:55:28] [DEBUG] Found 5 running PowerShell windows
+[2025-05-28 08:55:28] [DEBUG] Monitor check - Running: 5, Required: 3
+[2025-05-28 09:01:28] [DEBUG] Found 5 running PowerShell windows
+[2025-05-28 09:01:28] [DEBUG] Monitor check - Running: 5, Required: 3
+[2025-05-28 09:07:28] [DEBUG] Found 5 running PowerShell windows
+[2025-05-28 09:07:28] [DEBUG] Monitor check - Running: 5, Required: 3
+[2025-05-28 09:13:28] [DEBUG] Found 5 running PowerShell windows
+[2025-05-28 09:13:28] [DEBUG] Monitor check - Running: 5, Required: 3
+[2025-05-28 09:19:28] [DEBUG] Found 5 running PowerShell windows
+[2025-05-28 09:19:28] [DEBUG] Monitor check - Running: 5, Required: 3
+[2025-05-28 09:25:28] [DEBUG] Found 5 running PowerShell windows
+[2025-05-28 09:25:28] [DEBUG] Monitor check - Running: 5, Required: 3
+[2025-05-28 09:31:28] [DEBUG] Found 5 running PowerShell windows
+[2025-05-28 09:31:28] [DEBUG] Monitor check - Running: 5, Required: 3
+[2025-05-28 09:37:28] [DEBUG] Found 5 running PowerShell windows
+[2025-05-28 09:37:28] [DEBUG] Monitor check - Running: 5, Required: 3
+[2025-05-28 09:43:28] [DEBUG] Found 5 running PowerShell windows
+[2025-05-28 09:43:28] [DEBUG] Monitor check - Running: 5, Required: 3
+[2025-05-28 09:49:28] [DEBUG] Found 5 running PowerShell windows
+[2025-05-28 09:49:28] [DEBUG] Monitor check - Running: 5, Required: 3
+[2025-05-28 09:55:28] [DEBUG] Found 5 running PowerShell windows
+[2025-05-28 09:55:28] [DEBUG] Monitor check - Running: 5, Required: 3
+[2025-05-28 10:01:29] [DEBUG] Found 5 running PowerShell windows
+[2025-05-28 10:01:29] [DEBUG] Monitor check - Running: 5, Required: 3
+[2025-05-28 10:07:29] [DEBUG] Found 5 running PowerShell windows
+[2025-05-28 10:07:29] [DEBUG] Monitor check - Running: 5, Required: 3
+[2025-05-28 10:13:29] [DEBUG] Found 5 running PowerShell windows
+[2025-05-28 10:13:29] [DEBUG] Monitor check - Running: 5, Required: 3
+[2025-05-28 10:19:29] [DEBUG] Found 5 running PowerShell windows
+[2025-05-28 10:19:29] [DEBUG] Monitor check - Running: 5, Required: 3
+[2025-05-28 10:25:29] [DEBUG] Found 5 running PowerShell windows
+[2025-05-28 10:25:29] [DEBUG] Monitor check - Running: 5, Required: 3
+[2025-05-28 10:31:29] [DEBUG] Found 5 running PowerShell windows
+[2025-05-28 10:31:29] [DEBUG] Monitor check - Running: 5, Required: 3
+[2025-05-28 10:37:29] [DEBUG] Found 5 running PowerShell windows
+[2025-05-28 10:37:29] [DEBUG] Monitor check - Running: 5, Required: 3
+[2025-05-28 10:43:29] [DEBUG] Found 5 running PowerShell windows
+[2025-05-28 10:43:29] [DEBUG] Monitor check - Running: 5, Required: 3
+[2025-05-28 10:49:29] [DEBUG] Found 5 running PowerShell windows
+[2025-05-28 10:49:29] [DEBUG] Monitor check - Running: 5, Required: 3
+[2025-05-28 10:55:29] [DEBUG] Found 5 running PowerShell windows
+[2025-05-28 10:55:29] [DEBUG] Monitor check - Running: 5, Required: 3
+[2025-05-28 11:01:29] [DEBUG] Found 5 running PowerShell windows
+[2025-05-28 11:01:29] [DEBUG] Monitor check - Running: 5, Required: 3
+[2025-05-28 11:07:29] [DEBUG] Found 5 running PowerShell windows
+[2025-05-28 11:07:29] [DEBUG] Monitor check - Running: 5, Required: 3
+[2025-05-28 11:13:29] [DEBUG] Found 5 running PowerShell windows
+[2025-05-28 11:13:29] [DEBUG] Monitor check - Running: 5, Required: 3
+[2025-05-28 11:19:30] [DEBUG] Found 5 running PowerShell windows
+[2025-05-28 11:19:30] [DEBUG] Monitor check - Running: 5, Required: 3
+[2025-05-28 11:25:30] [DEBUG] Found 5 running PowerShell windows
+[2025-05-28 11:25:30] [DEBUG] Monitor check - Running: 5, Required: 3
+[2025-05-28 11:31:30] [DEBUG] Found 5 running PowerShell windows
+[2025-05-28 11:31:30] [DEBUG] Monitor check - Running: 5, Required: 3
+[2025-05-28 11:37:30] [DEBUG] Found 5 running PowerShell windows
+[2025-05-28 11:37:30] [DEBUG] Monitor check - Running: 5, Required: 3
+[2025-05-28 11:43:30] [DEBUG] Found 5 running PowerShell windows
+[2025-05-28 11:43:30] [DEBUG] Monitor check - Running: 5, Required: 3
+[2025-05-28 11:49:30] [DEBUG] Found 5 running PowerShell windows
+[2025-05-28 11:49:30] [DEBUG] Monitor check - Running: 5, Required: 3
+[2025-05-28 11:55:30] [DEBUG] Found 5 running PowerShell windows
+[2025-05-28 11:55:30] [DEBUG] Monitor check - Running: 5, Required: 3
+[2025-05-28 12:01:30] [DEBUG] Found 5 running PowerShell windows
+[2025-05-28 12:01:30] [DEBUG] Monitor check - Running: 5, Required: 3
+[2025-05-28 12:07:30] [DEBUG] Found 5 running PowerShell windows
+[2025-05-28 12:07:30] [DEBUG] Monitor check - Running: 5, Required: 3
+[2025-05-28 12:13:31] [DEBUG] Found 5 running PowerShell windows
+[2025-05-28 12:13:31] [DEBUG] Monitor check - Running: 5, Required: 3
+[2025-05-28 12:19:31] [DEBUG] Found 5 running PowerShell windows
+[2025-05-28 12:19:31] [DEBUG] Monitor check - Running: 5, Required: 3
+[2025-05-28 12:25:31] [DEBUG] Found 5 running PowerShell windows
+[2025-05-28 12:25:31] [DEBUG] Monitor check - Running: 5, Required: 3
+[2025-05-28 12:31:31] [DEBUG] Found 5 running PowerShell windows
+[2025-05-28 12:31:31] [DEBUG] Monitor check - Running: 5, Required: 3
+[2025-05-28 12:37:31] [DEBUG] Found 5 running PowerShell windows
+[2025-05-28 12:37:31] [DEBUG] Monitor check - Running: 5, Required: 3
+[2025-05-28 12:43:31] [DEBUG] Found 5 running PowerShell windows
+[2025-05-28 12:43:31] [DEBUG] Monitor check - Running: 5, Required: 3
+[2025-05-28 12:49:31] [DEBUG] Found 5 running PowerShell windows
+[2025-05-28 12:49:31] [DEBUG] Monitor check - Running: 5, Required: 3
+[2025-05-28 12:55:31] [DEBUG] Found 5 running PowerShell windows
+[2025-05-28 12:55:31] [DEBUG] Monitor check - Running: 5, Required: 3
+[2025-05-28 13:01:31] [DEBUG] Found 5 running PowerShell windows
+[2025-05-28 13:01:31] [DEBUG] Monitor check - Running: 5, Required: 3
+[2025-05-28 13:07:31] [DEBUG] Found 5 running PowerShell windows
+[2025-05-28 13:07:31] [DEBUG] Monitor check - Running: 5, Required: 3
+[2025-05-28 13:13:31] [DEBUG] Found 5 running PowerShell windows
+[2025-05-28 13:13:32] [DEBUG] Monitor check - Running: 5, Required: 3
+[2025-05-28 13:19:32] [DEBUG] Found 5 running PowerShell windows
+[2025-05-28 13:19:32] [DEBUG] Monitor check - Running: 5, Required: 3
+[2025-05-28 13:25:32] [DEBUG] Found 5 running PowerShell windows
+[2025-05-28 13:25:32] [DEBUG] Monitor check - Running: 5, Required: 3
+[2025-05-28 13:31:32] [DEBUG] Found 5 running PowerShell windows
+[2025-05-28 13:31:32] [DEBUG] Monitor check - Running: 5, Required: 3
+[2025-05-28 13:37:32] [DEBUG] Found 5 running PowerShell windows
+[2025-05-28 13:37:32] [DEBUG] Monitor check - Running: 5, Required: 3
+[2025-05-28 13:43:32] [DEBUG] Found 5 running PowerShell windows
+[2025-05-28 13:43:32] [DEBUG] Monitor check - Running: 5, Required: 3
+[2025-05-28 13:49:32] [DEBUG] Found 4 running PowerShell windows
+[2025-05-28 13:49:32] [DEBUG] Monitor check - Running: 4, Required: 3
+[2025-05-28 13:55:32] [DEBUG] Found 4 running PowerShell windows
+[2025-05-28 13:55:32] [DEBUG] Monitor check - Running: 4, Required: 3
+[2025-05-28 14:01:32] [DEBUG] Found 4 running PowerShell windows
+[2025-05-28 14:01:32] [DEBUG] Monitor check - Running: 4, Required: 3
+[2025-05-28 14:07:32] [DEBUG] Found 4 running PowerShell windows
+[2025-05-28 14:07:32] [DEBUG] Monitor check - Running: 4, Required: 3
+[2025-05-28 14:13:32] [DEBUG] Found 4 running PowerShell windows
+[2025-05-28 14:13:32] [DEBUG] Monitor check - Running: 4, Required: 3
+[2025-05-28 14:19:32] [DEBUG] Found 4 running PowerShell windows
+[2025-05-28 14:19:32] [DEBUG] Monitor check - Running: 4, Required: 3
+[2025-05-28 14:25:32] [DEBUG] Found 4 running PowerShell windows
+[2025-05-28 14:25:32] [DEBUG] Monitor check - Running: 4, Required: 3
+[2025-05-28 14:31:32] [DEBUG] Found 4 running PowerShell windows
+[2025-05-28 14:31:32] [DEBUG] Monitor check - Running: 4, Required: 3
+[2025-05-28 14:37:32] [DEBUG] Found 4 running PowerShell windows
+[2025-05-28 14:37:32] [DEBUG] Monitor check - Running: 4, Required: 3
+[2025-05-28 14:43:33] [DEBUG] Found 4 running PowerShell windows
+[2025-05-28 14:43:33] [DEBUG] Monitor check - Running: 4, Required: 3
+[2025-05-28 14:49:33] [DEBUG] Found 4 running PowerShell windows
+[2025-05-28 14:49:33] [DEBUG] Monitor check - Running: 4, Required: 3
+[2025-05-28 14:55:33] [DEBUG] Found 4 running PowerShell windows
+[2025-05-28 14:55:33] [DEBUG] Monitor check - Running: 4, Required: 3
+[2025-05-28 15:01:33] [DEBUG] Found 4 running PowerShell windows
+[2025-05-28 15:01:33] [DEBUG] Monitor check - Running: 4, Required: 3
+[2025-05-28 15:07:33] [DEBUG] Found 4 running PowerShell windows
+[2025-05-28 15:07:33] [DEBUG] Monitor check - Running: 4, Required: 3
+[2025-05-28 15:13:33] [DEBUG] Found 4 running PowerShell windows
+[2025-05-28 15:13:33] [DEBUG] Monitor check - Running: 4, Required: 3
+[2025-05-28 15:19:33] [DEBUG] Found 4 running PowerShell windows
+[2025-05-28 15:19:33] [DEBUG] Monitor check - Running: 4, Required: 3
+[2025-05-28 15:25:33] [DEBUG] Found 4 running PowerShell windows
+[2025-05-28 15:25:33] [DEBUG] Monitor check - Running: 4, Required: 3
+[2025-05-28 15:31:33] [DEBUG] Found 4 running PowerShell windows
+[2025-05-28 15:31:33] [DEBUG] Monitor check - Running: 4, Required: 3
+[2025-05-28 16:00:14] [DEBUG] Found 4 running PowerShell windows
+[2025-05-28 16:00:15] [DEBUG] Monitor check - Running: 4, Required: 3
+[2025-05-28 16:04:14] [INFO] Configuration loaded from C:\Users\SanyaKhasenye(Sensit\WorkingDir\PowerShell\PwshShellWindowManager\PwshWindowManager.json
+[2025-05-28 16:04:14] [DEBUG] Base path: C:\Users\SanyaKhasenye(Sensit\WorkingDir\PowerShell
+[2025-05-28 16:04:14] [DEBUG] Countdown script: C:\Users\SanyaKhasenye(Sensit\WorkingDir\PowerShell\CountDownTimers\Start-Countdown.ps1
+[2025-05-28 16:04:14] [DEBUG] Orchestrator directory: C:\Users\SanyaKhasenye(Sensit\WorkingDir\PowerShell\ActivityGenerator.v3
+[2025-05-28 16:04:14] [DEBUG] Orchestrator script: C:\Users\SanyaKhasenye(Sensit\WorkingDir\PowerShell\ActivityGenerator.v3\Start-ActivityOrchestrator_v0.1.ps1
+[2025-05-28 16:04:14] [DEBUG] All path validations completed
+[2025-05-28 16:04:14] [INFO] Script started with PID 13684
+[2025-05-28 16:04:14] [DEBUG] Current working directory: C:\Users\SanyaKhasenye(Sensit\WorkingDir\PowerShell\PwshShellWindowManager
+[2025-05-28 16:04:14] [DEBUG] PowerShell version: 5.1.19041.5737
+[2025-05-28 16:04:14] [INFO] Launching 3 initial windows
+[2025-05-28 16:04:14] [DEBUG] Generated 4986 seconds for window 1
+[2025-05-28 16:04:14] [DEBUG] Preparing to launch window 1 with 4986 second countdown
+[2025-05-28 16:04:14] [DEBUG] Creating temporary script: C:\Users\SANYAK~1\AppData\Local\Temp\OrchestratorWindow_1.ps1
+[2025-05-28 16:04:14] [INFO] Launched window 1 with PID 24728 - 4986 second countdown
+[2025-05-28 16:04:17] [DEBUG] Generated 16683 seconds for window 2
+[2025-05-28 16:04:17] [DEBUG] Preparing to launch window 2 with 16683 second countdown
+[2025-05-28 16:04:17] [DEBUG] Creating temporary script: C:\Users\SANYAK~1\AppData\Local\Temp\OrchestratorWindow_2.ps1
+[2025-05-28 16:04:17] [INFO] Launched window 2 with PID 24924 - 16683 second countdown
+[2025-05-28 16:04:18] [DEBUG] Generated 1659 seconds for window 3
+[2025-05-28 16:04:18] [DEBUG] Preparing to launch window 3 with 1659 second countdown
+[2025-05-28 16:04:18] [DEBUG] Creating temporary script: C:\Users\SANYAK~1\AppData\Local\Temp\OrchestratorWindow_3.ps1
+[2025-05-28 16:04:18] [INFO] Launched window 3 with PID 26028 - 1659 second countdown
+[2025-05-28 16:04:20] [INFO] Starting monitoring process...
+[2025-05-28 16:04:20] [DEBUG] Monitor settings - Min: 3, Max: 10, Check interval: 360s
+[2025-05-28 16:04:20] [DEBUG] Found 7 running PowerShell windows
+[2025-05-28 16:04:20] [DEBUG] Monitor check - Running: 7, Required: 3
+[2025-05-28 16:06:15] [DEBUG] Found 7 running PowerShell windows
+[2025-05-28 16:06:15] [DEBUG] Monitor check - Running: 7, Required: 3
+[2025-05-28 16:10:20] [DEBUG] Found 7 running PowerShell windows
+[2025-05-28 16:10:20] [DEBUG] Monitor check - Running: 7, Required: 3
+[2025-05-28 16:12:15] [DEBUG] Found 7 running PowerShell windows
+[2025-05-28 16:12:15] [DEBUG] Monitor check - Running: 7, Required: 3
+[2025-05-28 16:16:20] [DEBUG] Found 7 running PowerShell windows
+[2025-05-28 16:16:20] [DEBUG] Monitor check - Running: 7, Required: 3
+[2025-05-28 16:18:15] [DEBUG] Found 7 running PowerShell windows
+[2025-05-28 16:18:15] [DEBUG] Monitor check - Running: 7, Required: 3
+[2025-05-28 16:22:20] [DEBUG] Found 7 running PowerShell windows
+[2025-05-28 16:22:20] [DEBUG] Monitor check - Running: 7, Required: 3
+[2025-05-28 16:24:15] [DEBUG] Found 7 running PowerShell windows
+[2025-05-28 16:24:15] [DEBUG] Monitor check - Running: 7, Required: 3
+[2025-05-28 16:28:20] [DEBUG] Found 7 running PowerShell windows
+[2025-05-28 16:28:20] [DEBUG] Monitor check - Running: 7, Required: 3
+[2025-05-28 16:30:15] [DEBUG] Found 7 running PowerShell windows
+[2025-05-28 16:30:15] [DEBUG] Monitor check - Running: 7, Required: 3
+[2025-05-28 16:34:20] [DEBUG] Found 7 running PowerShell windows
+[2025-05-28 16:34:20] [DEBUG] Monitor check - Running: 7, Required: 3
+[2025-05-28 16:36:15] [DEBUG] Found 6 running PowerShell windows
+[2025-05-28 16:36:15] [DEBUG] Monitor check - Running: 6, Required: 3
+[2025-05-28 16:40:20] [DEBUG] Found 6 running PowerShell windows
+[2025-05-28 16:40:21] [DEBUG] Monitor check - Running: 6, Required: 3
+[2025-05-28 16:40:51] [INFO] Script execution ended
+[2025-05-28 16:41:01] [INFO] Configuration loaded from C:\Users\SanyaKhasenye(Sensit\WorkingDir\PowerShell\PwshShellWindowManager\PwshWindowManager.json
+[2025-05-28 16:41:01] [DEBUG] Base path: C:\Users\SanyaKhasenye(Sensit\WorkingDir\PowerShell
+[2025-05-28 16:41:01] [DEBUG] Countdown script: C:\Users\SanyaKhasenye(Sensit\WorkingDir\PowerShell\CountDownTimers\Start-Countdown.ps1
+[2025-05-28 16:41:01] [DEBUG] Orchestrator directory: C:\Users\SanyaKhasenye(Sensit\WorkingDir\PowerShell\ActivityGenerator.v3
+[2025-05-28 16:41:01] [DEBUG] Orchestrator script: C:\Users\SanyaKhasenye(Sensit\WorkingDir\PowerShell\ActivityGenerator.v3\Start-ActivityOrchestrator_v0.1.ps1
+[2025-05-28 16:41:01] [DEBUG] All path validations completed
+[2025-05-28 16:41:01] [INFO] Script started with PID 26052
+[2025-05-28 16:41:01] [DEBUG] Current working directory: C:\Users\SanyaKhasenye(Sensit\WorkingDir\PowerShell\PwshShellWindowManager
+[2025-05-28 16:41:01] [DEBUG] PowerShell version: 5.1.19041.5737
+[2025-05-28 16:41:01] [INFO] Launching 3 initial windows
+[2025-05-28 16:41:01] [DEBUG] Generated 15184 seconds for window 1
+[2025-05-28 16:41:01] [DEBUG] Preparing to launch window 1 with 15184 second countdown
+[2025-05-28 16:41:01] [DEBUG] Creating temporary script: C:\Users\SANYAK~1\AppData\Local\Temp\OrchestratorWindow_1.ps1
+[2025-05-28 16:41:01] [INFO] Launched window 1 with PID 16284 - 15184 second countdown
+[2025-05-28 16:41:04] [DEBUG] Generated 15451 seconds for window 2
+[2025-05-28 16:41:04] [DEBUG] Preparing to launch window 2 with 15451 second countdown
+[2025-05-28 16:41:04] [DEBUG] Creating temporary script: C:\Users\SANYAK~1\AppData\Local\Temp\OrchestratorWindow_2.ps1
+[2025-05-28 16:41:05] [INFO] Launched window 2 with PID 14424 - 15451 second countdown
+[2025-05-28 16:41:06] [DEBUG] Generated 5415 seconds for window 3
+[2025-05-28 16:41:06] [DEBUG] Preparing to launch window 3 with 5415 second countdown
+[2025-05-28 16:41:06] [DEBUG] Creating temporary script: C:\Users\SANYAK~1\AppData\Local\Temp\OrchestratorWindow_3.ps1
+[2025-05-28 16:41:07] [INFO] Launched window 3 with PID 24724 - 5415 second countdown
+[2025-05-28 16:41:08] [INFO] Starting monitoring process...
+[2025-05-28 16:41:08] [DEBUG] Monitor settings - Min: 8, Max: 10, Check interval: 360s
+[2025-05-28 16:41:09] [DEBUG] Found 9 running PowerShell windows
+[2025-05-28 16:41:09] [DEBUG] Monitor check - Running: 9, Required: 8
+[2025-05-28 16:42:15] [DEBUG] Found 9 running PowerShell windows
+[2025-05-28 16:42:15] [DEBUG] Monitor check - Running: 9, Required: 3
+[2025-05-28 16:47:09] [DEBUG] Found 9 running PowerShell windows
+[2025-05-28 16:47:09] [DEBUG] Monitor check - Running: 9, Required: 8
+[2025-05-28 16:48:15] [DEBUG] Found 9 running PowerShell windows
+[2025-05-28 16:48:15] [DEBUG] Monitor check - Running: 9, Required: 3
+[2025-05-28 16:53:09] [DEBUG] Found 9 running PowerShell windows
+[2025-05-28 16:53:09] [DEBUG] Monitor check - Running: 9, Required: 8
+[2025-05-28 16:54:16] [DEBUG] Found 9 running PowerShell windows
+[2025-05-28 16:54:16] [DEBUG] Monitor check - Running: 9, Required: 3
+[2025-05-28 16:59:09] [DEBUG] Found 9 running PowerShell windows
+[2025-05-28 16:59:09] [DEBUG] Monitor check - Running: 9, Required: 8
+[2025-05-28 17:00:16] [DEBUG] Found 9 running PowerShell windows
+[2025-05-28 17:00:16] [DEBUG] Monitor check - Running: 9, Required: 3
+[2025-05-28 17:05:09] [DEBUG] Found 9 running PowerShell windows
+[2025-05-28 17:05:09] [DEBUG] Monitor check - Running: 9, Required: 8
+[2025-05-28 17:06:16] [DEBUG] Found 9 running PowerShell windows
+[2025-05-28 17:06:16] [DEBUG] Monitor check - Running: 9, Required: 3
+[2025-05-28 17:07:42] [INFO] Script execution ended
+[2025-05-28 17:12:16] [DEBUG] Found 5 running PowerShell windows
+[2025-05-28 17:12:16] [DEBUG] Monitor check - Running: 5, Required: 3
+[2025-05-28 17:13:04] [INFO] Configuration loaded from C:\Users\SanyaKhasenye(Sensit\WorkingDir\PowerShell\PwshShellWindowManager\PwshWindowManager.json
+[2025-05-28 17:13:04] [DEBUG] Base path: C:\Users\SanyaKhasenye(Sensit\WorkingDir\PowerShell
+[2025-05-28 17:13:04] [DEBUG] Countdown script: C:\Users\SanyaKhasenye(Sensit\WorkingDir\PowerShell\CountDownTimers\Start-Countdown.ps1
+[2025-05-28 17:13:04] [DEBUG] Orchestrator directory: C:\Users\SanyaKhasenye(Sensit\WorkingDir\PowerShell\ActivityGenerator.v3
+[2025-05-28 17:13:04] [DEBUG] Orchestrator script: C:\Users\SanyaKhasenye(Sensit\WorkingDir\PowerShell\ActivityGenerator.v3\Start-ActivityOrchestrator_v0.1.ps1
+[2025-05-28 17:13:04] [DEBUG] All path validations completed
+[2025-05-28 17:13:04] [INFO] Script started with PID 6248
+[2025-05-28 17:13:04] [DEBUG] Current working directory: C:\Users\SanyaKhasenye(Sensit\WorkingDir\PowerShell\PwshShellWindowManager
+[2025-05-28 17:13:04] [DEBUG] PowerShell version: 5.1.19041.5737
+[2025-05-28 17:13:04] [INFO] Launching 3 initial windows
+[2025-05-28 17:13:04] [DEBUG] Generated 18512 seconds for window 1
+[2025-05-28 17:13:04] [DEBUG] Preparing to launch window 1 with 18512 second countdown
+[2025-05-28 17:13:05] [DEBUG] Creating temporary script: C:\Users\SANYAK~1\AppData\Local\Temp\OrchestratorWindow_1.ps1
+[2025-05-28 17:13:05] [DEBUG] Auto-close timeout: 120 seconds
+[2025-05-28 17:13:05] [INFO] Launched window 1 with PID 14056 - 18512 second countdown
+[2025-05-28 17:13:08] [DEBUG] Generated 13993 seconds for window 2
+[2025-05-28 17:13:08] [DEBUG] Preparing to launch window 2 with 13993 second countdown
+[2025-05-28 17:13:08] [DEBUG] Creating temporary script: C:\Users\SANYAK~1\AppData\Local\Temp\OrchestratorWindow_2.ps1
+[2025-05-28 17:13:08] [DEBUG] Auto-close timeout: 120 seconds
+[2025-05-28 17:13:08] [INFO] Launched window 2 with PID 2980 - 13993 second countdown
+[2025-05-28 17:13:09] [DEBUG] Generated 15407 seconds for window 3
+[2025-05-28 17:13:09] [DEBUG] Preparing to launch window 3 with 15407 second countdown
+[2025-05-28 17:13:09] [DEBUG] Creating temporary script: C:\Users\SANYAK~1\AppData\Local\Temp\OrchestratorWindow_3.ps1
+[2025-05-28 17:13:09] [DEBUG] Auto-close timeout: 120 seconds
+[2025-05-28 17:13:09] [INFO] Launched window 3 with PID 19244 - 15407 second countdown
+[2025-05-28 17:13:11] [INFO] Starting monitoring process...
+[2025-05-28 17:13:11] [DEBUG] Monitor settings - Min: 8, Max: 10, Check interval: 360s
+[2025-05-28 17:13:11] [DEBUG] Found 5 running PowerShell windows
+[2025-05-28 17:13:11] [DEBUG] Monitor check - Running: 5, Required: 8
+[2025-05-28 17:13:11] [ERROR] Fatal error: Cannot invoke method. Method invocation is supported only on core types in this language mode.
+[2025-05-28 17:13:11] [ERROR] Stack trace: at <ScriptBlock>, C:\Users\SanyaKhasenye(Sensit\WorkingDir\PowerShell\PwshShellWindowManager\PwshWindowManager.ps1: line 292
+[2025-05-28 17:13:11] [INFO] Script execution ended
+[2025-05-28 17:18:16] [DEBUG] Found 5 running PowerShell windows
+[2025-05-28 17:18:16] [DEBUG] Monitor check - Running: 5, Required: 3
+[2025-05-28 17:18:18] [INFO] Configuration loaded from C:\Users\SanyaKhasenye(Sensit\WorkingDir\PowerShell\PwshShellWindowManager\PwshWindowManager.json
+[2025-05-28 17:18:18] [DEBUG] Base path: C:\Users\SanyaKhasenye(Sensit\WorkingDir\PowerShell
+[2025-05-28 17:18:18] [DEBUG] Countdown script: C:\Users\SanyaKhasenye(Sensit\WorkingDir\PowerShell\CountDownTimers\Start-Countdown.ps1
+[2025-05-28 17:18:18] [DEBUG] Orchestrator directory: C:\Users\SanyaKhasenye(Sensit\WorkingDir\PowerShell\ActivityGenerator.v3
+[2025-05-28 17:18:18] [DEBUG] Orchestrator script: C:\Users\SanyaKhasenye(Sensit\WorkingDir\PowerShell\ActivityGenerator.v3\Start-ActivityOrchestrator_v0.1.ps1
+[2025-05-28 17:18:18] [DEBUG] All path validations completed
+[2025-05-28 17:18:18] [INFO] Script started with PID 6696
+[2025-05-28 17:18:18] [DEBUG] Current working directory: C:\Users\SanyaKhasenye(Sensit\WorkingDir\PowerShell\PwshShellWindowManager
+[2025-05-28 17:18:18] [DEBUG] PowerShell version: 5.1.19041.5737
+[2025-05-28 17:18:18] [INFO] Launching 3 initial windows
+[2025-05-28 17:18:18] [DEBUG] Generated 5911 seconds for window 1
+[2025-05-28 17:18:18] [DEBUG] Preparing to launch window 1 with 5911 second countdown
+[2025-05-28 17:18:18] [ERROR] Fatal error: Cannot invoke method. Method invocation is supported only on core types in this language mode.
+[2025-05-28 17:18:18] [ERROR] Stack trace: at Start-OrchestratorWindow, C:\Users\SanyaKhasenye(Sensit\WorkingDir\PowerShell\PwshShellWindowManager\PwshWindowManager.ps1: line 228
+at <ScriptBlock>, C:\Users\SanyaKhasenye(Sensit\WorkingDir\PowerShell\PwshShellWindowManager\PwshWindowManager.ps1: line 275
+at <ScriptBlock>, C:\Users\SanyaKhasenye(Sensit\WorkingDir\PowerShell\PwshShellWindowManager\PwshWindowManager.ps1: line 272
+[2025-05-28 17:18:18] [INFO] Script execution ended
+[2025-05-28 17:22:29] [INFO] Configuration loaded from C:\Users\SanyaKhasenye(Sensit\WorkingDir\PowerShell\PwshShellWindowManager\PwshWindowManager.json
+[2025-05-28 17:22:29] [DEBUG] Base path: C:\Users\SanyaKhasenye(Sensit\WorkingDir\PowerShell
+[2025-05-28 17:22:29] [DEBUG] Countdown script: C:\Users\SanyaKhasenye(Sensit\WorkingDir\PowerShell\CountDownTimers\Start-Countdown.ps1
+[2025-05-28 17:22:29] [DEBUG] Orchestrator directory: C:\Users\SanyaKhasenye(Sensit\WorkingDir\PowerShell\ActivityGenerator.v3
+[2025-05-28 17:22:29] [DEBUG] Orchestrator script: C:\Users\SanyaKhasenye(Sensit\WorkingDir\PowerShell\ActivityGenerator.v3\Start-ActivityOrchestrator_v0.1.ps1
+[2025-05-28 17:22:29] [DEBUG] All path validations completed
+[2025-05-28 17:22:29] [INFO] Script started with PID 19092
+[2025-05-28 17:22:29] [DEBUG] Current working directory: C:\Users\SanyaKhasenye(Sensit\WorkingDir\PowerShell\PwshShellWindowManager
+[2025-05-28 17:22:29] [DEBUG] PowerShell version: 5.1.19041.5737
+[2025-05-28 17:22:29] [INFO] Launching 3 initial windows
+[2025-05-28 17:22:29] [DEBUG] Generated 8279 seconds for window 1
+[2025-05-28 17:22:29] [DEBUG] Preparing to launch window 1 with 8279 second countdown
+[2025-05-28 17:22:29] [DEBUG] Creating temporary script: C:\Users\SANYAK~1\AppData\Local\Temp\OrchestratorWindow_1.ps1
+[2025-05-28 17:22:29] [DEBUG] Auto-close timeout: 120 seconds
+[2025-05-28 17:22:30] [INFO] Launched window 1 with PID 15632 - 8279 second countdown
+[2025-05-28 17:22:31] [DEBUG] Generated 15830 seconds for window 2
+[2025-05-28 17:22:31] [DEBUG] Preparing to launch window 2 with 15830 second countdown
+[2025-05-28 17:22:31] [DEBUG] Creating temporary script: C:\Users\SANYAK~1\AppData\Local\Temp\OrchestratorWindow_2.ps1
+[2025-05-28 17:22:31] [DEBUG] Auto-close timeout: 120 seconds
+[2025-05-28 17:22:31] [INFO] Launched window 2 with PID 25896 - 15830 second countdown
+[2025-05-28 17:22:32] [DEBUG] Generated 5779 seconds for window 3
+[2025-05-28 17:22:32] [DEBUG] Preparing to launch window 3 with 5779 second countdown
+[2025-05-28 17:22:32] [DEBUG] Creating temporary script: C:\Users\SANYAK~1\AppData\Local\Temp\OrchestratorWindow_3.ps1
+[2025-05-28 17:22:32] [DEBUG] Auto-close timeout: 120 seconds
+[2025-05-28 17:22:32] [INFO] Launched window 3 with PID 13236 - 5779 second countdown
+[2025-05-28 17:22:33] [INFO] Starting monitoring process...
+[2025-05-28 17:22:33] [DEBUG] Monitor settings - Min: 8, Max: 10, Check interval: 360s
+[2025-05-28 17:22:33] [DEBUG] Found 8 running PowerShell windows
+[2025-05-28 17:22:33] [DEBUG] Monitor check - Running: 8, Required: 8
+[2025-05-28 17:24:16] [DEBUG] Found 8 running PowerShell windows
+[2025-05-28 17:24:16] [DEBUG] Monitor check - Running: 8, Required: 3
+[2025-05-28 17:26:01] [INFO] Script execution ended
+[2025-05-28 17:30:16] [DEBUG] Found 8 running PowerShell windows
+[2025-05-28 17:30:16] [DEBUG] Monitor check - Running: 8, Required: 3
+[2025-05-28 17:36:17] [DEBUG] Found 8 running PowerShell windows
+[2025-05-28 17:36:17] [DEBUG] Monitor check - Running: 8, Required: 3
+[2025-05-28 17:42:17] [DEBUG] Found 8 running PowerShell windows
+[2025-05-28 17:42:17] [DEBUG] Monitor check - Running: 8, Required: 3
+[2025-05-28 17:48:17] [DEBUG] Found 8 running PowerShell windows
+[2025-05-28 17:48:17] [DEBUG] Monitor check - Running: 8, Required: 3
+[2025-05-28 17:54:17] [DEBUG] Found 8 running PowerShell windows
+[2025-05-28 17:54:17] [DEBUG] Monitor check - Running: 8, Required: 3
+[2025-05-28 18:00:17] [DEBUG] Found 8 running PowerShell windows
+[2025-05-28 18:00:17] [DEBUG] Monitor check - Running: 8, Required: 3
+[2025-05-28 18:06:17] [DEBUG] Found 8 running PowerShell windows
+[2025-05-28 18:06:17] [DEBUG] Monitor check - Running: 8, Required: 3
+[2025-05-28 18:12:17] [DEBUG] Found 8 running PowerShell windows
+[2025-05-28 18:12:17] [DEBUG] Monitor check - Running: 8, Required: 3
+[2025-05-28 18:18:17] [DEBUG] Found 8 running PowerShell windows
+[2025-05-28 18:18:17] [DEBUG] Monitor check - Running: 8, Required: 3
+[2025-05-28 18:24:17] [DEBUG] Found 8 running PowerShell windows
+[2025-05-28 18:24:17] [DEBUG] Monitor check - Running: 8, Required: 3
+[2025-05-28 18:30:17] [DEBUG] Found 8 running PowerShell windows
+[2025-05-28 18:30:17] [DEBUG] Monitor check - Running: 8, Required: 3
+[2025-05-28 18:36:17] [DEBUG] Found 8 running PowerShell windows
+[2025-05-28 18:36:17] [DEBUG] Monitor check - Running: 8, Required: 3
+[2025-05-28 18:42:17] [DEBUG] Found 8 running PowerShell windows
+[2025-05-28 18:42:17] [DEBUG] Monitor check - Running: 8, Required: 3
+[2025-05-28 18:50:18] [DEBUG] Found 8 running PowerShell windows
+[2025-05-28 18:50:18] [DEBUG] Monitor check - Running: 8, Required: 3
+[2025-05-28 18:56:18] [DEBUG] Found 8 running PowerShell windows
+[2025-05-28 18:56:18] [DEBUG] Monitor check - Running: 8, Required: 3
+[2025-05-28 19:02:18] [DEBUG] Found 8 running PowerShell windows
+[2025-05-28 19:02:18] [DEBUG] Monitor check - Running: 8, Required: 3
+[2025-05-28 19:08:18] [DEBUG] Found 8 running PowerShell windows
+[2025-05-28 19:08:18] [DEBUG] Monitor check - Running: 8, Required: 3
+[2025-05-28 19:14:18] [DEBUG] Found 8 running PowerShell windows
+[2025-05-28 19:14:18] [DEBUG] Monitor check - Running: 8, Required: 3
+[2025-05-28 19:20:18] [DEBUG] Found 8 running PowerShell windows
+[2025-05-28 19:20:18] [DEBUG] Monitor check - Running: 8, Required: 3
+[2025-05-28 19:26:18] [DEBUG] Found 8 running PowerShell windows
+[2025-05-28 19:26:18] [DEBUG] Monitor check - Running: 8, Required: 3
+[2025-05-28 19:32:18] [DEBUG] Found 8 running PowerShell windows
+[2025-05-28 19:32:18] [DEBUG] Monitor check - Running: 8, Required: 3

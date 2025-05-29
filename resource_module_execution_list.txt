@@ -1,0 +1,36 @@
+Ready to provision/deploy:
+
+prod_sub
+    - virtual_machine_data_disk_attachment (from VMs and Managed Disks IDs) ✔
+    - windows_virtual_machine ✔ (created as multiple individual resources in /module/virtual_machine/main.tf)
+    - disk_access ✔
+    - network_interface ✔
+    - private_dns_zone
+    - private_dns_zone_virtual_network_links
+    - role_assignment (look and confirm 'principle_id' attribute)
+    - availability_set
+    - backup_policy_vm
+    
+
+hub_network_sub
+    - palo_alto_virtual_network ✔
+    - palo_alto_subnet ✔
+    - availability_set
+
+idam_sub
+    - network_interface ✔
+    - managed_disk ✔
+    - management_group * (to import into TF)
+    - private_dns_zone_virtual_network_link
+    - role_assignment
+    - route_table (needs reverification)
+    - availability_set
+    - backup_policy_vm
+    - bastion_host
+
+management_sub
+    - backup_policy_vm
+    - management_group
+    - role_assignment ?? (look and confirm 'principle_id' attribute) 
+    - route_table
+    - route

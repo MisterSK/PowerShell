@@ -1,0 +1,15 @@
+windowSettings:
+  noExit: false               # Whether to keep windows open after completion
+  count: 2                   # Initial number of windows to open
+  minSeconds: 12             # Minimum random seconds for countdown
+  maxSeconds: 499000         # Maximum random seconds for countdown
+  cols: 80                   # Window width in columns
+  lines: 10                  # Window height in lines
+  bgColor: 0A                # Background/text color (0A = black/green)
+
+monitorSettings:
+  enable: true               # Whether to monitor and maintain windows
+  checkInterval: 1200          # Seconds between checks
+  minWindows: 5              # Minimum windows to maintain
+  addIfBelow: 2              # How many to add if below minimum
+  maxTotalWindows: 10        # Absolute maximum windows allowed

@@ -1,0 +1,204 @@
+[2025-05-29 05:51:44] [INFO] Configuration loaded from C:\Users\SanyaKhasenye(Sensit\WorkingDir\PowerShell\PwshWindowManager\PwshWindowManager.json
+[2025-05-29 05:51:44] [DEBUG] Base path: C:\Users\SanyaKhasenye(Sensit\WorkingDir\PowerShell
+[2025-05-29 05:51:44] [DEBUG] Countdown script: C:\Users\SanyaKhasenye(Sensit\WorkingDir\PowerShell\CountDownTimers\Start-Countdown.ps1
+[2025-05-29 05:51:44] [DEBUG] Orchestrator directory: C:\Users\SanyaKhasenye(Sensit\WorkingDir\PowerShell\ActivityGenerator.v3
+[2025-05-29 05:51:44] [DEBUG] Orchestrator script: C:\Users\SanyaKhasenye(Sensit\WorkingDir\PowerShell\ActivityGenerator.v3\Start-ActivityOrchestrator_v0.1.ps1
+[2025-05-29 05:51:44] [DEBUG] All path validations completed
+[2025-05-29 05:51:44] [INFO] Script started with PID 14064
+[2025-05-29 05:51:44] [DEBUG] Current working directory: C:\Users\SanyaKhasenye(Sensit\WorkingDir\PowerShell\PwshWindowManager
+[2025-05-29 05:51:44] [DEBUG] PowerShell version: 5.1.19041.5848
+[2025-05-29 05:51:44] [INFO] Launching 3 initial windows
+[2025-05-29 05:51:44] [DEBUG] Generated 14122 seconds for window 1
+[2025-05-29 05:51:44] [DEBUG] Preparing to launch window 1 with 14122 second countdown
+[2025-05-29 05:51:44] [DEBUG] Creating temporary script: C:\Users\SANYAK~1\AppData\Local\Temp\OrchestratorWindow_1.ps1
+[2025-05-29 05:51:44] [DEBUG] Auto-close timeout: 120 seconds
+[2025-05-29 05:51:45] [INFO] Launched window 1 with PID 19136 - 14122 second countdown
+[2025-05-29 05:51:46] [DEBUG] Generated 1768 seconds for window 2
+[2025-05-29 05:51:46] [DEBUG] Preparing to launch window 2 with 1768 second countdown
+[2025-05-29 05:51:46] [DEBUG] Creating temporary script: C:\Users\SANYAK~1\AppData\Local\Temp\OrchestratorWindow_2.ps1
+[2025-05-29 05:51:46] [DEBUG] Auto-close timeout: 120 seconds
+[2025-05-29 05:51:46] [INFO] Launched window 2 with PID 16864 - 1768 second countdown
+[2025-05-29 05:51:47] [DEBUG] Generated 12485 seconds for window 3
+[2025-05-29 05:51:47] [DEBUG] Preparing to launch window 3 with 12485 second countdown
+[2025-05-29 05:51:47] [DEBUG] Creating temporary script: C:\Users\SANYAK~1\AppData\Local\Temp\OrchestratorWindow_3.ps1
+[2025-05-29 05:51:47] [DEBUG] Auto-close timeout: 120 seconds
+[2025-05-29 05:51:47] [INFO] Launched window 3 with PID 15248 - 12485 second countdown
+[2025-05-29 05:51:48] [INFO] Starting monitoring process...
+[2025-05-29 05:51:48] [DEBUG] Monitor settings - Min: 8, Max: 10, Check interval: 360s
+[2025-05-29 05:51:48] [DEBUG] Found 3 running PowerShell windows
+[2025-05-29 05:51:48] [DEBUG] Monitor check - Running: 3, Required: 8
+[2025-05-29 05:51:48] [ERROR] Fatal error: Cannot invoke method. Method invocation is supported only on core types in this language mode.
+[2025-05-29 05:51:48] [ERROR] Stack trace: at <ScriptBlock>, C:\Users\SanyaKhasenye(Sensit\WorkingDir\PowerShell\PwshWindowManager\PwshWindowManager.ps1: line 287
+[2025-05-29 05:51:48] [INFO] Script execution ended
+[2025-05-29 05:55:57] [INFO] Configuration loaded from C:\Users\SanyaKhasenye(Sensit\WorkingDir\PowerShell\PwshWindowManager\PwshWindowManager.json
+[2025-05-29 05:55:57] [DEBUG] Base path: C:\Users\SanyaKhasenye(Sensit\WorkingDir\PowerShell
+[2025-05-29 05:55:57] [DEBUG] Countdown script: C:\Users\SanyaKhasenye(Sensit\WorkingDir\PowerShell\CountDownTimers\Start-Countdown.ps1
+[2025-05-29 05:55:57] [DEBUG] Orchestrator directory: C:\Users\SanyaKhasenye(Sensit\WorkingDir\PowerShell\ActivityGenerator.v3
+[2025-05-29 05:55:57] [DEBUG] Orchestrator script: C:\Users\SanyaKhasenye(Sensit\WorkingDir\PowerShell\ActivityGenerator.v3\Start-ActivityOrchestrator_v0.1.ps1
+[2025-05-29 05:55:57] [DEBUG] All path validations completed
+[2025-05-29 05:55:57] [INFO] Script started with PID 19116
+[2025-05-29 05:55:57] [DEBUG] Current working directory: C:\Users\SanyaKhasenye(Sensit\WorkingDir\PowerShell\PwshWindowManager
+[2025-05-29 05:55:57] [DEBUG] PowerShell version: 5.1.19041.5848
+[2025-05-29 05:55:57] [INFO] Launching 3 initial windows
+[2025-05-29 05:55:57] [DEBUG] Generated 1945 seconds for window 1
+[2025-05-29 05:55:57] [DEBUG] Preparing to launch window 1 with 1945 second countdown
+[2025-05-29 05:55:57] [DEBUG] Creating temporary script: C:\Users\SANYAK~1\AppData\Local\Temp\OrchestratorWindow_1.ps1
+[2025-05-29 05:55:57] [DEBUG] Auto-close timeout: 120 seconds
+[2025-05-29 05:55:58] [INFO] Launched window 1 with PID 4840 - 1945 second countdown
+[2025-05-29 05:55:59] [DEBUG] Generated 14332 seconds for window 2
+[2025-05-29 05:55:59] [DEBUG] Preparing to launch window 2 with 14332 second countdown
+[2025-05-29 05:55:59] [DEBUG] Creating temporary script: C:\Users\SANYAK~1\AppData\Local\Temp\OrchestratorWindow_2.ps1
+[2025-05-29 05:55:59] [DEBUG] Auto-close timeout: 120 seconds
+[2025-05-29 05:55:59] [INFO] Launched window 2 with PID 3952 - 14332 second countdown
+[2025-05-29 05:56:00] [DEBUG] Generated 4081 seconds for window 3
+[2025-05-29 05:56:00] [DEBUG] Preparing to launch window 3 with 4081 second countdown
+[2025-05-29 05:56:00] [DEBUG] Creating temporary script: C:\Users\SANYAK~1\AppData\Local\Temp\OrchestratorWindow_3.ps1
+[2025-05-29 05:56:00] [DEBUG] Auto-close timeout: 120 seconds
+[2025-05-29 05:56:00] [INFO] Launched window 3 with PID 5432 - 4081 second countdown
+[2025-05-29 05:56:01] [INFO] Starting monitoring process...
+[2025-05-29 05:56:01] [DEBUG] Monitor settings - Min: 8, Max: 10, Check interval: 360s
+[2025-05-29 05:56:01] [DEBUG] Found 7 running PowerShell processes
+[2025-05-29 05:56:01] [DEBUG] Monitor check - Running: 7, Required: 8
+[2025-05-29 05:56:01] [ERROR] Fatal error: Cannot invoke method. Method invocation is supported only on core types in this language mode.
+[2025-05-29 05:56:01] [ERROR] Stack trace: at <ScriptBlock>, C:\Users\SanyaKhasenye(Sensit\WorkingDir\PowerShell\PwshWindowManager\PwshWindowManager.ps1: line 287
+[2025-05-29 05:56:01] [INFO] Script execution ended
+[2025-05-29 05:58:38] [INFO] Configuration loaded from C:\Users\SanyaKhasenye(Sensit\WorkingDir\PowerShell\PwshWindowManager\PwshWindowManager.json
+[2025-05-29 05:58:38] [DEBUG] Base path: C:\Users\SanyaKhasenye(Sensit\WorkingDir\PowerShell
+[2025-05-29 05:58:38] [DEBUG] Countdown script: C:\Users\SanyaKhasenye(Sensit\WorkingDir\PowerShell\CountDownTimers\Start-Countdown.ps1
+[2025-05-29 05:58:38] [DEBUG] Orchestrator directory: C:\Users\SanyaKhasenye(Sensit\WorkingDir\PowerShell\ActivityGenerator.v3
+[2025-05-29 05:58:38] [DEBUG] Orchestrator script: C:\Users\SanyaKhasenye(Sensit\WorkingDir\PowerShell\ActivityGenerator.v3\Start-ActivityOrchestrator_v0.1.ps1
+[2025-05-29 05:58:38] [DEBUG] All path validations completed
+[2025-05-29 05:58:38] [INFO] Script started with PID 10632
+[2025-05-29 05:58:38] [DEBUG] Current working directory: C:\Users\SanyaKhasenye(Sensit\WorkingDir\PowerShell\PwshWindowManager
+[2025-05-29 05:58:38] [DEBUG] PowerShell version: 5.1.19041.5848
+[2025-05-29 05:58:38] [INFO] Launching 3 initial windows
+[2025-05-29 05:58:38] [DEBUG] Generated 15309 seconds for window 1
+[2025-05-29 05:58:38] [DEBUG] Preparing to launch window 1 with 15309 second countdown
+[2025-05-29 05:58:38] [DEBUG] Creating temporary script: C:\Users\SANYAK~1\AppData\Local\Temp\OrchestratorWindow_1.ps1
+[2025-05-29 05:58:38] [DEBUG] Auto-close timeout: 120 seconds
+[2025-05-29 05:58:38] [INFO] Launched window 1 with PID 19720 - 15309 second countdown
+[2025-05-29 05:58:39] [DEBUG] Generated 13675 seconds for window 2
+[2025-05-29 05:58:39] [DEBUG] Preparing to launch window 2 with 13675 second countdown
+[2025-05-29 05:58:39] [DEBUG] Creating temporary script: C:\Users\SANYAK~1\AppData\Local\Temp\OrchestratorWindow_2.ps1
+[2025-05-29 05:58:39] [DEBUG] Auto-close timeout: 120 seconds
+[2025-05-29 05:58:39] [INFO] Launched window 2 with PID 13796 - 13675 second countdown
+[2025-05-29 05:58:40] [DEBUG] Generated 7107 seconds for window 3
+[2025-05-29 05:58:40] [DEBUG] Preparing to launch window 3 with 7107 second countdown
+[2025-05-29 05:58:40] [DEBUG] Creating temporary script: C:\Users\SANYAK~1\AppData\Local\Temp\OrchestratorWindow_3.ps1
+[2025-05-29 05:58:40] [DEBUG] Auto-close timeout: 120 seconds
+[2025-05-29 05:58:40] [INFO] Launched window 3 with PID 11668 - 7107 second countdown
+[2025-05-29 05:58:41] [INFO] Starting monitoring process...
+[2025-05-29 05:58:41] [DEBUG] Monitor settings - Min: 8, Max: 10, Check interval: 360s
+[2025-05-29 05:58:41] [DEBUG] Found 7 running PowerShell processes
+[2025-05-29 05:58:41] [DEBUG] Monitor check - Running: 7, Required: 8
+[2025-05-29 05:58:41] [WARN] Low window count (7/8). Launching 2 new windows...
+[2025-05-29 05:58:41] [DEBUG] Preparing to launch window AUTO_055841_1 with 4748 second countdown
+[2025-05-29 05:58:41] [DEBUG] Creating temporary script: C:\Users\SANYAK~1\AppData\Local\Temp\OrchestratorWindow_AUTO_055841_1.ps1
+[2025-05-29 05:58:41] [DEBUG] Auto-close timeout: 120 seconds
+[2025-05-29 05:58:41] [INFO] Launched window AUTO_055841_1 with PID 11572 - 4748 second countdown
+[2025-05-29 05:58:42] [DEBUG] Preparing to launch window AUTO_055842_2 with 16502 second countdown
+[2025-05-29 05:58:42] [DEBUG] Creating temporary script: C:\Users\SANYAK~1\AppData\Local\Temp\OrchestratorWindow_AUTO_055842_2.ps1
+[2025-05-29 05:58:42] [DEBUG] Auto-close timeout: 120 seconds
+[2025-05-29 05:58:42] [INFO] Launched window AUTO_055842_2 with PID 6848 - 16502 second countdown
+[2025-05-29 05:59:23] [INFO] Script execution ended
+[2025-05-29 05:59:25] [INFO] Configuration loaded from C:\Users\SanyaKhasenye(Sensit\WorkingDir\PowerShell\PwshWindowManager\PwshWindowManager.json
+[2025-05-29 05:59:25] [DEBUG] Base path: C:\Users\SanyaKhasenye(Sensit\WorkingDir\PowerShell
+[2025-05-29 05:59:25] [DEBUG] Countdown script: C:\Users\SanyaKhasenye(Sensit\WorkingDir\PowerShell\CountDownTimers\Start-Countdown.ps1
+[2025-05-29 05:59:25] [DEBUG] Orchestrator directory: C:\Users\SanyaKhasenye(Sensit\WorkingDir\PowerShell\ActivityGenerator.v3
+[2025-05-29 05:59:25] [DEBUG] Orchestrator script: C:\Users\SanyaKhasenye(Sensit\WorkingDir\PowerShell\ActivityGenerator.v3\Start-ActivityOrchestrator_v0.1.ps1
+[2025-05-29 05:59:25] [DEBUG] All path validations completed
+[2025-05-29 05:59:25] [INFO] Script started with PID 14188
+[2025-05-29 05:59:25] [DEBUG] Current working directory: C:\Users\SanyaKhasenye(Sensit\WorkingDir\PowerShell\PwshWindowManager
+[2025-05-29 05:59:26] [DEBUG] PowerShell version: 5.1.19041.5848
+[2025-05-29 05:59:26] [INFO] Launching 3 initial windows
+[2025-05-29 05:59:26] [DEBUG] Generated 9454 seconds for window 1
+[2025-05-29 05:59:26] [DEBUG] Preparing to launch window 1 with 9454 second countdown
+[2025-05-29 05:59:26] [DEBUG] Creating temporary script: C:\Users\SANYAK~1\AppData\Local\Temp\OrchestratorWindow_1.ps1
+[2025-05-29 05:59:26] [DEBUG] Auto-close timeout: 120 seconds
+[2025-05-29 05:59:26] [INFO] Launched window 1 with PID 18140 - 9454 second countdown
+[2025-05-29 05:59:27] [DEBUG] Generated 2521 seconds for window 2
+[2025-05-29 05:59:27] [DEBUG] Preparing to launch window 2 with 2521 second countdown
+[2025-05-29 05:59:27] [DEBUG] Creating temporary script: C:\Users\SANYAK~1\AppData\Local\Temp\OrchestratorWindow_2.ps1
+[2025-05-29 05:59:27] [DEBUG] Auto-close timeout: 120 seconds
+[2025-05-29 05:59:27] [INFO] Launched window 2 with PID 15024 - 2521 second countdown
+[2025-05-29 05:59:28] [DEBUG] Generated 16042 seconds for window 3
+[2025-05-29 05:59:28] [DEBUG] Preparing to launch window 3 with 16042 second countdown
+[2025-05-29 05:59:28] [DEBUG] Creating temporary script: C:\Users\SANYAK~1\AppData\Local\Temp\OrchestratorWindow_3.ps1
+[2025-05-29 05:59:28] [DEBUG] Auto-close timeout: 120 seconds
+[2025-05-29 05:59:28] [INFO] Launched window 3 with PID 1432 - 16042 second countdown
+[2025-05-29 05:59:29] [INFO] Starting monitoring process...
+[2025-05-29 05:59:29] [DEBUG] Monitor settings - Min: 8, Max: 10, Check interval: 360s
+[2025-05-29 05:59:29] [DEBUG] Found 7 running PowerShell processes
+[2025-05-29 05:59:29] [DEBUG] Monitor check - Running: 7, Required: 8
+[2025-05-29 05:59:29] [WARN] Low window count (7/8). Launching 2 new windows...
+[2025-05-29 05:59:29] [DEBUG] Preparing to launch window AUTO_055929_1 with 14889 second countdown
+[2025-05-29 05:59:29] [DEBUG] Creating temporary script: C:\Users\SANYAK~1\AppData\Local\Temp\OrchestratorWindow_AUTO_055929_1.ps1
+[2025-05-29 05:59:29] [DEBUG] Auto-close timeout: 120 seconds
+[2025-05-29 05:59:29] [INFO] Launched window AUTO_055929_1 with PID 15688 - 14889 second countdown
+[2025-05-29 05:59:30] [DEBUG] Preparing to launch window AUTO_055930_2 with 16102 second countdown
+[2025-05-29 05:59:30] [DEBUG] Creating temporary script: C:\Users\SANYAK~1\AppData\Local\Temp\OrchestratorWindow_AUTO_055930_2.ps1
+[2025-05-29 05:59:30] [DEBUG] Auto-close timeout: 120 seconds
+[2025-05-29 05:59:30] [INFO] Launched window AUTO_055930_2 with PID 14864 - 16102 second countdown
+[2025-05-29 06:01:02] [INFO] Script execution ended
+[2025-05-29 06:01:05] [INFO] Configuration loaded from C:\Users\SanyaKhasenye(Sensit\WorkingDir\PowerShell\PwshWindowManager\PwshWindowManager.json
+[2025-05-29 06:01:05] [DEBUG] Base path: C:\Users\SanyaKhasenye(Sensit\WorkingDir\PowerShell
+[2025-05-29 06:01:05] [DEBUG] Countdown script: C:\Users\SanyaKhasenye(Sensit\WorkingDir\PowerShell\CountDownTimers\Start-Countdown.ps1
+[2025-05-29 06:01:05] [DEBUG] Orchestrator directory: C:\Users\SanyaKhasenye(Sensit\WorkingDir\PowerShell\ActivityGenerator.v3
+[2025-05-29 06:01:05] [DEBUG] Orchestrator script: C:\Users\SanyaKhasenye(Sensit\WorkingDir\PowerShell\ActivityGenerator.v3\Start-ActivityOrchestrator_v0.1.ps1
+[2025-05-29 06:01:05] [DEBUG] All path validations completed
+[2025-05-29 06:01:05] [INFO] Script started with PID 4976
+[2025-05-29 06:01:05] [DEBUG] Current working directory: C:\Users\SanyaKhasenye(Sensit\WorkingDir\PowerShell\PwshWindowManager
+[2025-05-29 06:01:05] [DEBUG] PowerShell version: 5.1.19041.5848
+[2025-05-29 06:01:05] [INFO] Launching 3 initial windows
+[2025-05-29 06:01:05] [DEBUG] Generated 10563 seconds for window 1
+[2025-05-29 06:01:05] [DEBUG] Preparing to launch window 1 with 10563 second countdown
+[2025-05-29 06:01:05] [DEBUG] Creating temporary script: C:\Users\SANYAK~1\AppData\Local\Temp\OrchestratorWindow_1.ps1
+[2025-05-29 06:01:05] [DEBUG] Auto-close timeout: 120 seconds
+[2025-05-29 06:01:05] [INFO] Launched window 1 with PID 13592 - 10563 second countdown
+[2025-05-29 06:01:06] [DEBUG] Generated 5039 seconds for window 2
+[2025-05-29 06:01:06] [DEBUG] Preparing to launch window 2 with 5039 second countdown
+[2025-05-29 06:01:06] [DEBUG] Creating temporary script: C:\Users\SANYAK~1\AppData\Local\Temp\OrchestratorWindow_2.ps1
+[2025-05-29 06:01:06] [DEBUG] Auto-close timeout: 120 seconds
+[2025-05-29 06:01:06] [INFO] Launched window 2 with PID 16132 - 5039 second countdown
+[2025-05-29 06:01:07] [DEBUG] Generated 1580 seconds for window 3
+[2025-05-29 06:01:07] [DEBUG] Preparing to launch window 3 with 1580 second countdown
+[2025-05-29 06:01:07] [DEBUG] Creating temporary script: C:\Users\SANYAK~1\AppData\Local\Temp\OrchestratorWindow_3.ps1
+[2025-05-29 06:01:07] [DEBUG] Auto-close timeout: 120 seconds
+[2025-05-29 06:01:07] [INFO] Launched window 3 with PID 17316 - 1580 second countdown
+[2025-05-29 06:01:08] [INFO] Starting monitoring process...
+[2025-05-29 06:01:08] [DEBUG] Monitor settings - Min: 6, Max: 8, Check interval: 360s
+[2025-05-29 06:01:08] [DEBUG] Found 7 running PowerShell processes
+[2025-05-29 06:01:08] [DEBUG] Monitor check - Running: 7, Required: 6
+[2025-05-29 06:01:38] [INFO] Configuration loaded from C:\Users\SanyaKhasenye(Sensit\WorkingDir\PowerShell\PwshWindowManager\PwshWindowManager.json
+[2025-05-29 06:01:38] [DEBUG] Base path: C:\Users\SanyaKhasenye(Sensit\WorkingDir\PowerShell
+[2025-05-29 06:01:38] [DEBUG] Countdown script: C:\Users\SanyaKhasenye(Sensit\WorkingDir\PowerShell\CountDownTimers\Start-Countdown.ps1
+[2025-05-29 06:01:38] [DEBUG] Orchestrator directory: C:\Users\SanyaKhasenye(Sensit\WorkingDir\PowerShell\ActivityGenerator.v3
+[2025-05-29 06:01:38] [DEBUG] Orchestrator script: C:\Users\SanyaKhasenye(Sensit\WorkingDir\PowerShell\ActivityGenerator.v3\Start-ActivityOrchestrator_v0.1.ps1
+[2025-05-29 06:01:38] [DEBUG] All path validations completed
+[2025-05-29 06:01:38] [INFO] Script started with PID 12352
+[2025-05-29 06:01:38] [DEBUG] Current working directory: C:\Users\SanyaKhasenye(Sensit\WorkingDir\PowerShell\PwshWindowManager
+[2025-05-29 06:01:38] [DEBUG] PowerShell version: 5.1.19041.5848
+[2025-05-29 06:01:38] [INFO] Launching 3 initial windows
+[2025-05-29 06:01:38] [DEBUG] Generated 4993 seconds for window 1
+[2025-05-29 06:01:38] [DEBUG] Preparing to launch window 1 with 4993 second countdown
+[2025-05-29 06:01:38] [DEBUG] Creating temporary script: C:\Users\SANYAK~1\AppData\Local\Temp\OrchestratorWindow_1.ps1
+[2025-05-29 06:01:38] [DEBUG] Auto-close timeout: 120 seconds
+[2025-05-29 06:01:38] [INFO] Launched window 1 with PID 524 - 4993 second countdown
+[2025-05-29 06:01:39] [DEBUG] Generated 8581 seconds for window 2
+[2025-05-29 06:01:39] [DEBUG] Preparing to launch window 2 with 8581 second countdown
+[2025-05-29 06:01:39] [DEBUG] Creating temporary script: C:\Users\SANYAK~1\AppData\Local\Temp\OrchestratorWindow_2.ps1
+[2025-05-29 06:01:39] [DEBUG] Auto-close timeout: 120 seconds
+[2025-05-29 06:01:39] [INFO] Launched window 2 with PID 12736 - 8581 second countdown
+[2025-05-29 06:01:40] [DEBUG] Generated 18930 seconds for window 3
+[2025-05-29 06:01:40] [DEBUG] Preparing to launch window 3 with 18930 second countdown
+[2025-05-29 06:01:40] [DEBUG] Creating temporary script: C:\Users\SANYAK~1\AppData\Local\Temp\OrchestratorWindow_3.ps1
+[2025-05-29 06:01:40] [DEBUG] Auto-close timeout: 120 seconds
+[2025-05-29 06:01:40] [INFO] Launched window 3 with PID 14368 - 18930 second countdown
+[2025-05-29 06:01:41] [INFO] Starting monitoring process...
+[2025-05-29 06:01:41] [DEBUG] Monitor settings - Min: 6, Max: 8, Check interval: 360s
+[2025-05-29 06:01:41] [DEBUG] Found 12 running PowerShell processes
+[2025-05-29 06:01:41] [DEBUG] Monitor check - Running: 12, Required: 6
+[2025-05-29 06:07:08] [DEBUG] Found 14 running PowerShell processes
+[2025-05-29 06:07:08] [DEBUG] Monitor check - Running: 14, Required: 6
+[2025-05-29 06:07:41] [DEBUG] Found 14 running PowerShell processes
+[2025-05-29 06:07:41] [DEBUG] Monitor check - Running: 14, Required: 6

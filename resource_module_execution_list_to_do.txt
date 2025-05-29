@@ -1,0 +1,34 @@
+Tfvars ready for formatting (commented in green):
+
+prod_sub
+    <!-- - network_security_group * In progress -->
+    <!-- - network_watcher * -->
+    <!-- - network_watcher_flow_log * -->
+    <!-- - private_endpoint * -->
+    <!-- - recovery_services_vault -->
+    - key_vault_access_policy ✔ (Done via dashboard; to be imported into TF)
+
+hub_network_sub
+    <!-- - network_security_group -->
+    - palo_alto_bootstrap
+    - palo_alto_vmseries
+    - palo_alto_panorama
+    - palo_alto_loadbalancer
+    - palo_alto_vmss
+
+idam_sub
+    <!-- - network_security_group * In progress -->
+    <!-- - network_watcher -->
+    <!-- - network_watcher_flow_log -->
+    <!-- - recovery_services_vault -->
+    - key_vault_access_policy ✔ (Done via dashboard; to be imported into TF)
+
+management_sub
+    - activity_logs
+    <!-- - network_watcher -->
+    <!-- - network_watcher_flow_log -->
+
+
+TBC:
+    - role_assignment (requires further discussion)
+    - storage_blob (not required)

@@ -1,0 +1,958 @@
+[2025-05-26 16:51:33] [INFO] Starting Activity Generator Orchestrator
+[2025-05-26 16:51:33] [INFO] Using configuration file: .\ActivityGeneratorConfig.json
+[2025-05-26 16:51:33] [INFO] Total planned iterations: 5
+[2025-05-26 16:51:34] [INFO] Starting iteration 1
+[2025-05-26 16:51:34] [INFO] Configuration - Min Wait: 1000, Max Wait: 5000
+[2025-05-26 16:51:34] [INFO] Generated random wait time: 3880 ms
+[2025-05-26 16:51:36] [SUCCESS] Iteration 1 completed successfully (Duration: 2.09 seconds)
+[2025-05-26 16:51:36] [INFO] Iteration Statistics:
+  StartTime: 2025-05-26 16:51:34
+  GeneratedWait: 3880
+  RetryCount: 0
+  Duration: 2.09 seconds
+  EndTime: 2025-05-26 16:51:36
+  MinWait: 1000
+  Iteration: 1
+  MaxWait: 5000
+[2025-05-26 16:51:36] [INFO] Starting iteration 2
+[2025-05-26 16:51:36] [INFO] Configuration - Min Wait: 2000, Max Wait: 8000
+[2025-05-26 16:51:36] [INFO] Generated random wait time: 2798 ms
+[2025-05-26 16:51:38] [SUCCESS] Iteration 2 completed successfully (Duration: 2.10 seconds)
+[2025-05-26 16:51:38] [INFO] Iteration Statistics:
+  StartTime: 2025-05-26 16:51:36
+  GeneratedWait: 2798
+  RetryCount: 0
+  Duration: 2.10 seconds
+  EndTime: 2025-05-26 16:51:38
+  MinWait: 2000
+  Iteration: 2
+  MaxWait: 8000
+[2025-05-26 16:51:38] [INFO] Starting iteration 3
+[2025-05-26 16:51:38] [INFO] Configuration - Min Wait: 1500, Max Wait: 6000
+[2025-05-26 16:51:38] [INFO] Generated random wait time: 2785 ms
+[2025-05-26 16:51:40] [SUCCESS] Iteration 3 completed successfully (Duration: 2.08 seconds)
+[2025-05-26 16:51:40] [INFO] Iteration Statistics:
+  StartTime: 2025-05-26 16:51:38
+  GeneratedWait: 2785
+  RetryCount: 0
+  Duration: 2.08 seconds
+  EndTime: 2025-05-26 16:51:40
+  MinWait: 1500
+  Iteration: 3
+  MaxWait: 6000
+[2025-05-26 16:51:40] [INFO] Starting iteration 4
+[2025-05-26 16:51:40] [INFO] Configuration - Min Wait: 3000, Max Wait: 10000
+[2025-05-26 16:51:40] [INFO] Generated random wait time: 3448 ms
+[2025-05-26 16:51:42] [SUCCESS] Iteration 4 completed successfully (Duration: 2.07 seconds)
+[2025-05-26 16:51:42] [INFO] Iteration Statistics:
+  StartTime: 2025-05-26 16:51:40
+  GeneratedWait: 3448
+  RetryCount: 0
+  Duration: 2.07 seconds
+  EndTime: 2025-05-26 16:51:42
+  MinWait: 3000
+  Iteration: 4
+  MaxWait: 10000
+[2025-05-26 16:51:42] [INFO] Starting iteration 5
+[2025-05-26 16:51:42] [INFO] Configuration - Min Wait: 2500, Max Wait: 7500
+[2025-05-26 16:51:42] [INFO] Generated random wait time: 4033 ms
+[2025-05-26 16:51:44] [SUCCESS] Iteration 5 completed successfully (Duration: 2.07 seconds)
+[2025-05-26 16:51:44] [INFO] Iteration Statistics:
+  StartTime: 2025-05-26 16:51:42
+  GeneratedWait: 4033
+  RetryCount: 0
+  Duration: 2.07 seconds
+  EndTime: 2025-05-26 16:51:44
+  MinWait: 2500
+  Iteration: 5
+  MaxWait: 7500
+[2025-05-26 16:51:44] [SUCCESS] All iterations completed successfully
+[2025-05-26 16:51:44] [INFO] Total execution time: 0.18 minutes
+[2025-05-26 16:51:44] [SUCCESS] Final Summary:
+  Start Time: 2025-05-26 16:51:33
+  End Time: 2025-05-26 16:51:44
+  Total Duration: 0.18 minutes
+  Total Iterations: 5
+  Configuration File: .\ActivityGeneratorConfig.json
+  Average Duration: 0.04 minutes per iteration
+[2025-05-27 00:12:59] [INFO] Starting Activity Generator Orchestrator
+[2025-05-27 00:12:59] [INFO] Using configuration file: .\ActivityGeneratorConfig.json
+[2025-05-27 00:12:59] [INFO] Total planned iterations: 5
+[2025-05-27 00:12:59] [INFO] Starting iteration 1
+[2025-05-27 00:12:59] [INFO] Configuration - Min Wait: 1000, Max Wait: 5000
+[2025-05-27 00:12:59] [INFO] Generated random wait time: 4426 ms
+[2025-05-27 00:13:01] [SUCCESS] Iteration 1 completed successfully (Duration: 2.09 seconds)
+[2025-05-27 00:13:01] [INFO] Iteration Statistics:
+  StartTime: 2025-05-27 00:12:59
+  GeneratedWait: 4426
+  RetryCount: 0
+  Duration: 2.09 seconds
+  EndTime: 2025-05-27 00:13:01
+  MinWait: 1000
+  Iteration: 1
+  MaxWait: 5000
+[2025-05-27 00:13:01] [INFO] Starting iteration 2
+[2025-05-27 00:13:01] [INFO] Configuration - Min Wait: 2000, Max Wait: 8000
+[2025-05-27 00:13:01] [INFO] Generated random wait time: 3243 ms
+[2025-05-27 00:13:03] [SUCCESS] Iteration 2 completed successfully (Duration: 2.07 seconds)
+[2025-05-27 00:13:03] [INFO] Iteration Statistics:
+  StartTime: 2025-05-27 00:13:01
+  GeneratedWait: 3243
+  RetryCount: 0
+  Duration: 2.07 seconds
+  EndTime: 2025-05-27 00:13:03
+  MinWait: 2000
+  Iteration: 2
+  MaxWait: 8000
+[2025-05-27 00:13:03] [INFO] Starting iteration 3
+[2025-05-27 00:13:03] [INFO] Configuration - Min Wait: 1500, Max Wait: 6000
+[2025-05-27 00:13:03] [INFO] Generated random wait time: 4010 ms
+[2025-05-27 00:13:05] [SUCCESS] Iteration 3 completed successfully (Duration: 2.09 seconds)
+[2025-05-27 00:13:05] [INFO] Iteration Statistics:
+  StartTime: 2025-05-27 00:13:03
+  GeneratedWait: 4010
+  RetryCount: 0
+  Duration: 2.09 seconds
+  EndTime: 2025-05-27 00:13:05
+  MinWait: 1500
+  Iteration: 3
+  MaxWait: 6000
+[2025-05-27 00:13:05] [INFO] Starting iteration 4
+[2025-05-27 00:13:05] [INFO] Configuration - Min Wait: 3000, Max Wait: 10000
+[2025-05-27 00:13:05] [INFO] Generated random wait time: 4165 ms
+[2025-05-27 00:13:07] [SUCCESS] Iteration 4 completed successfully (Duration: 2.07 seconds)
+[2025-05-27 00:13:07] [INFO] Iteration Statistics:
+  StartTime: 2025-05-27 00:13:05
+  GeneratedWait: 4165
+  RetryCount: 0
+  Duration: 2.07 seconds
+  EndTime: 2025-05-27 00:13:07
+  MinWait: 3000
+  Iteration: 4
+  MaxWait: 10000
+[2025-05-27 00:13:07] [INFO] Starting iteration 5
+[2025-05-27 00:13:07] [INFO] Configuration - Min Wait: 2500, Max Wait: 7500
+[2025-05-27 00:13:07] [INFO] Generated random wait time: 4923 ms
+[2025-05-27 00:13:09] [SUCCESS] Iteration 5 completed successfully (Duration: 2.08 seconds)
+[2025-05-27 00:13:09] [INFO] Iteration Statistics:
+  StartTime: 2025-05-27 00:13:07
+  GeneratedWait: 4923
+  RetryCount: 0
+  Duration: 2.08 seconds
+  EndTime: 2025-05-27 00:13:09
+  MinWait: 2500
+  Iteration: 5
+  MaxWait: 7500
+[2025-05-27 00:13:09] [SUCCESS] All iterations completed successfully
+[2025-05-27 00:13:09] [INFO] Total execution time: 0.18 minutes
+[2025-05-27 00:13:09] [SUCCESS] Final Summary:
+  Start Time: 2025-05-27 00:12:59
+  End Time: 2025-05-27 00:13:09
+  Total Duration: 0.18 minutes
+  Total Iterations: 5
+  Configuration File: .\ActivityGeneratorConfig.json
+  Average Duration: 0.04 minutes per iteration
+[2025-05-27 07:56:46] [INFO] Starting Activity Generator Orchestrator
+[2025-05-27 07:56:46] [INFO] Using configuration file: .\ActivityGeneratorConfig.json
+[2025-05-27 07:56:46] [INFO] Total planned iterations: 5
+[2025-05-27 07:56:47] [INFO] Starting iteration 1
+[2025-05-27 07:56:47] [INFO] Configuration - Min Wait: 1000, Max Wait: 5000
+[2025-05-27 07:56:47] [INFO] Generated random wait time: 3651 ms
+[2025-05-27 07:56:49] [SUCCESS] Iteration 1 completed successfully (Duration: 2.12 seconds)
+[2025-05-27 07:56:49] [INFO] Iteration Statistics:
+  StartTime: 2025-05-27 07:56:47
+  GeneratedWait: 3651
+  RetryCount: 0
+  Duration: 2.12 seconds
+  EndTime: 2025-05-27 07:56:49
+  MinWait: 1000
+  Iteration: 1
+  MaxWait: 5000
+[2025-05-27 07:56:49] [INFO] Starting iteration 2
+[2025-05-27 07:56:49] [INFO] Configuration - Min Wait: 2000, Max Wait: 8000
+[2025-05-27 07:56:49] [INFO] Generated random wait time: 2027 ms
+[2025-05-27 07:56:51] [SUCCESS] Iteration 2 completed successfully (Duration: 2.07 seconds)
+[2025-05-27 07:56:51] [INFO] Iteration Statistics:
+  StartTime: 2025-05-27 07:56:49
+  GeneratedWait: 2027
+  RetryCount: 0
+  Duration: 2.07 seconds
+  EndTime: 2025-05-27 07:56:51
+  MinWait: 2000
+  Iteration: 2
+  MaxWait: 8000
+[2025-05-27 07:56:51] [INFO] Starting iteration 3
+[2025-05-27 07:56:51] [INFO] Configuration - Min Wait: 1500, Max Wait: 6000
+[2025-05-27 07:56:51] [INFO] Generated random wait time: 5484 ms
+[2025-05-27 07:56:53] [SUCCESS] Iteration 3 completed successfully (Duration: 2.09 seconds)
+[2025-05-27 07:56:53] [INFO] Iteration Statistics:
+  StartTime: 2025-05-27 07:56:51
+  GeneratedWait: 5484
+  RetryCount: 0
+  Duration: 2.09 seconds
+  EndTime: 2025-05-27 07:56:53
+  MinWait: 1500
+  Iteration: 3
+  MaxWait: 6000
+[2025-05-27 07:56:53] [INFO] Starting iteration 4
+[2025-05-27 07:56:53] [INFO] Configuration - Min Wait: 3000, Max Wait: 10000
+[2025-05-27 07:56:53] [INFO] Generated random wait time: 5377 ms
+[2025-05-27 07:56:55] [SUCCESS] Iteration 4 completed successfully (Duration: 2.09 seconds)
+[2025-05-27 07:56:59] [INFO] Iteration Statistics:
+  StartTime: 2025-05-27 07:56:53
+  GeneratedWait: 5377
+  RetryCount: 0
+  Duration: 2.09 seconds
+  EndTime: 2025-05-27 07:56:55
+  MinWait: 3000
+  Iteration: 4
+  MaxWait: 10000
+[2025-05-27 07:56:59] [INFO] Starting iteration 5
+[2025-05-27 07:56:59] [INFO] Configuration - Min Wait: 2500, Max Wait: 7500
+[2025-05-27 07:56:59] [INFO] Generated random wait time: 3435 ms
+[2025-05-27 17:20:59] [INFO] Starting Activity Generator Orchestrator
+[2025-05-27 17:20:59] [INFO] Using configuration file: .\ActivityGeneratorConfig.json
+[2025-05-27 17:20:59] [INFO] Total planned iterations: 5
+[2025-05-27 17:20:59] [INFO] Starting iteration 1
+[2025-05-27 17:20:59] [INFO] Configuration - Min Wait: 1000, Max Wait: 5000
+[2025-05-27 17:20:59] [INFO] Generated random wait time: 2353 ms
+[2025-05-27 17:21:01] [SUCCESS] Iteration 1 completed successfully (Duration: 2.09 seconds)
+[2025-05-27 17:21:01] [INFO] Iteration Statistics:
+  StartTime: 2025-05-27 17:20:59
+  GeneratedWait: 2353
+  RetryCount: 0
+  Duration: 2.09 seconds
+  EndTime: 2025-05-27 17:21:01
+  MinWait: 1000
+  Iteration: 1
+  MaxWait: 5000
+[2025-05-27 17:21:01] [INFO] Starting iteration 2
+[2025-05-27 17:21:01] [INFO] Configuration - Min Wait: 2000, Max Wait: 8000
+[2025-05-27 17:21:01] [INFO] Generated random wait time: 6932 ms
+[2025-05-27 17:21:03] [SUCCESS] Iteration 2 completed successfully (Duration: 2.07 seconds)
+[2025-05-27 17:21:03] [INFO] Iteration Statistics:
+  StartTime: 2025-05-27 17:21:01
+  GeneratedWait: 6932
+  RetryCount: 0
+  Duration: 2.07 seconds
+  EndTime: 2025-05-27 17:21:03
+  MinWait: 2000
+  Iteration: 2
+  MaxWait: 8000
+[2025-05-27 17:21:03] [INFO] Starting iteration 3
+[2025-05-27 17:21:03] [INFO] Configuration - Min Wait: 1500, Max Wait: 6000
+[2025-05-27 17:21:03] [INFO] Generated random wait time: 3033 ms
+[2025-05-27 17:21:05] [SUCCESS] Iteration 3 completed successfully (Duration: 2.08 seconds)
+[2025-05-27 17:21:05] [INFO] Iteration Statistics:
+  StartTime: 2025-05-27 17:21:03
+  GeneratedWait: 3033
+  RetryCount: 0
+  Duration: 2.08 seconds
+  EndTime: 2025-05-27 17:21:05
+  MinWait: 1500
+  Iteration: 3
+  MaxWait: 6000
+[2025-05-27 17:21:05] [INFO] Starting iteration 4
+[2025-05-27 17:21:05] [INFO] Configuration - Min Wait: 3000, Max Wait: 10000
+[2025-05-27 17:21:05] [INFO] Generated random wait time: 5722 ms
+[2025-05-27 17:21:08] [SUCCESS] Iteration 4 completed successfully (Duration: 2.07 seconds)
+[2025-05-27 17:21:08] [INFO] Iteration Statistics:
+  StartTime: 2025-05-27 17:21:05
+  GeneratedWait: 5722
+  RetryCount: 0
+  Duration: 2.07 seconds
+  EndTime: 2025-05-27 17:21:08
+  MinWait: 3000
+  Iteration: 4
+  MaxWait: 10000
+[2025-05-27 17:21:08] [INFO] Starting iteration 5
+[2025-05-27 17:21:08] [INFO] Configuration - Min Wait: 2500, Max Wait: 7500
+[2025-05-27 17:21:08] [INFO] Generated random wait time: 3975 ms
+[2025-05-27 17:21:10] [SUCCESS] Iteration 5 completed successfully (Duration: 2.07 seconds)
+[2025-05-27 17:21:10] [INFO] Iteration Statistics:
+  StartTime: 2025-05-27 17:21:08
+  GeneratedWait: 3975
+  RetryCount: 0
+  Duration: 2.07 seconds
+  EndTime: 2025-05-27 17:21:10
+  MinWait: 2500
+  Iteration: 5
+  MaxWait: 7500
+[2025-05-27 17:21:10] [SUCCESS] All iterations completed successfully
+[2025-05-27 17:21:10] [INFO] Total execution time: 0.18 minutes
+[2025-05-27 17:21:10] [SUCCESS] Final Summary:
+  Start Time: 2025-05-27 17:20:59
+  End Time: 2025-05-27 17:21:10
+  Total Duration: 0.18 minutes
+  Total Iterations: 5
+  Configuration File: .\ActivityGeneratorConfig.json
+  Average Duration: 0.04 minutes per iteration
+[2025-05-28 00:03:18] [INFO] Starting Activity Generator Orchestrator
+[2025-05-28 00:03:18] [INFO] Using configuration file: .\ActivityGeneratorConfig.json
+[2025-05-28 00:03:18] [INFO] Total planned iterations: 5
+[2025-05-28 00:03:18] [INFO] Starting iteration 1
+[2025-05-28 00:03:18] [INFO] Configuration - Min Wait: 1000, Max Wait: 5000
+[2025-05-28 00:03:18] [INFO] Generated random wait time: 3256 ms
+[2025-05-28 00:03:20] [SUCCESS] Iteration 1 completed successfully (Duration: 2.10 seconds)
+[2025-05-28 00:03:20] [INFO] Iteration Statistics:
+  StartTime: 2025-05-28 00:03:18
+  GeneratedWait: 3256
+  RetryCount: 0
+  Duration: 2.10 seconds
+  EndTime: 2025-05-28 00:03:20
+  MinWait: 1000
+  Iteration: 1
+  MaxWait: 5000
+[2025-05-28 00:03:20] [INFO] Starting iteration 2
+[2025-05-28 00:03:20] [INFO] Configuration - Min Wait: 2000, Max Wait: 8000
+[2025-05-28 00:03:20] [INFO] Generated random wait time: 3988 ms
+[2025-05-28 00:03:22] [SUCCESS] Iteration 2 completed successfully (Duration: 2.10 seconds)
+[2025-05-28 00:03:22] [INFO] Iteration Statistics:
+  StartTime: 2025-05-28 00:03:20
+  GeneratedWait: 3988
+  RetryCount: 0
+  Duration: 2.10 seconds
+  EndTime: 2025-05-28 00:03:22
+  MinWait: 2000
+  Iteration: 2
+  MaxWait: 8000
+[2025-05-28 00:03:22] [INFO] Starting iteration 3
+[2025-05-28 00:03:22] [INFO] Configuration - Min Wait: 1500, Max Wait: 6000
+[2025-05-28 00:03:22] [INFO] Generated random wait time: 4677 ms
+[2025-05-28 00:03:24] [SUCCESS] Iteration 3 completed successfully (Duration: 2.06 seconds)
+[2025-05-28 00:03:24] [INFO] Iteration Statistics:
+  StartTime: 2025-05-28 00:03:22
+  GeneratedWait: 4677
+  RetryCount: 0
+  Duration: 2.06 seconds
+  EndTime: 2025-05-28 00:03:24
+  MinWait: 1500
+  Iteration: 3
+  MaxWait: 6000
+[2025-05-28 00:03:24] [INFO] Starting iteration 4
+[2025-05-28 00:03:24] [INFO] Configuration - Min Wait: 3000, Max Wait: 10000
+[2025-05-28 00:03:24] [INFO] Generated random wait time: 6387 ms
+[2025-05-28 00:03:27] [SUCCESS] Iteration 4 completed successfully (Duration: 2.06 seconds)
+[2025-05-28 00:03:27] [INFO] Iteration Statistics:
+  StartTime: 2025-05-28 00:03:24
+  GeneratedWait: 6387
+  RetryCount: 0
+  Duration: 2.06 seconds
+  EndTime: 2025-05-28 00:03:27
+  MinWait: 3000
+  Iteration: 4
+  MaxWait: 10000
+[2025-05-28 00:03:27] [INFO] Starting iteration 5
+[2025-05-28 00:03:27] [INFO] Configuration - Min Wait: 2500, Max Wait: 7500
+[2025-05-28 00:03:27] [INFO] Generated random wait time: 3476 ms
+[2025-05-28 00:03:29] [SUCCESS] Iteration 5 completed successfully (Duration: 2.06 seconds)
+[2025-05-28 00:03:29] [INFO] Iteration Statistics:
+  StartTime: 2025-05-28 00:03:27
+  GeneratedWait: 3476
+  RetryCount: 0
+  Duration: 2.06 seconds
+  EndTime: 2025-05-28 00:03:29
+  MinWait: 2500
+  Iteration: 5
+  MaxWait: 7500
+[2025-05-28 00:03:29] [SUCCESS] All iterations completed successfully
+[2025-05-28 00:03:29] [INFO] Total execution time: 0.18 minutes
+[2025-05-28 00:03:29] [SUCCESS] Final Summary:
+  Start Time: 2025-05-28 00:03:18
+  End Time: 2025-05-28 00:03:29
+  Total Duration: 0.18 minutes
+  Total Iterations: 5
+  Configuration File: .\ActivityGeneratorConfig.json
+  Average Duration: 0.04 minutes per iteration
+[2025-05-28 07:56:32] [INFO] Starting Activity Generator Orchestrator
+[2025-05-28 07:56:32] [INFO] Using configuration file: .\ActivityGeneratorConfig.json
+[2025-05-28 07:56:32] [INFO] Total planned iterations: 5
+[2025-05-28 07:56:32] [INFO] Starting iteration 1
+[2025-05-28 07:56:32] [INFO] Configuration - Min Wait: 1000, Max Wait: 5000
+[2025-05-28 07:56:32] [INFO] Generated random wait time: 1592 ms
+[2025-05-28 07:56:35] [SUCCESS] Iteration 1 completed successfully (Duration: 2.12 seconds)
+[2025-05-28 07:56:35] [INFO] Iteration Statistics:
+  StartTime: 2025-05-28 07:56:32
+  GeneratedWait: 1592
+  RetryCount: 0
+  Duration: 2.12 seconds
+  EndTime: 2025-05-28 07:56:35
+  MinWait: 1000
+  Iteration: 1
+  MaxWait: 5000
+[2025-05-28 07:56:35] [INFO] Starting iteration 2
+[2025-05-28 07:56:35] [INFO] Configuration - Min Wait: 2000, Max Wait: 8000
+[2025-05-28 07:56:35] [INFO] Generated random wait time: 5584 ms
+[2025-05-28 07:56:37] [SUCCESS] Iteration 2 completed successfully (Duration: 2.08 seconds)
+[2025-05-28 07:56:37] [INFO] Iteration Statistics:
+  StartTime: 2025-05-28 07:56:35
+  GeneratedWait: 5584
+  RetryCount: 0
+  Duration: 2.08 seconds
+  EndTime: 2025-05-28 07:56:37
+  MinWait: 2000
+  Iteration: 2
+  MaxWait: 8000
+[2025-05-28 07:56:37] [INFO] Starting iteration 3
+[2025-05-28 07:56:37] [INFO] Configuration - Min Wait: 1500, Max Wait: 6000
+[2025-05-28 07:56:37] [INFO] Generated random wait time: 4401 ms
+[2025-05-28 07:56:39] [SUCCESS] Iteration 3 completed successfully (Duration: 2.08 seconds)
+[2025-05-28 07:56:39] [INFO] Iteration Statistics:
+  StartTime: 2025-05-28 07:56:37
+  GeneratedWait: 4401
+  RetryCount: 0
+  Duration: 2.08 seconds
+  EndTime: 2025-05-28 07:56:39
+  MinWait: 1500
+  Iteration: 3
+  MaxWait: 6000
+[2025-05-28 07:56:39] [INFO] Starting iteration 4
+[2025-05-28 07:56:39] [INFO] Configuration - Min Wait: 3000, Max Wait: 10000
+[2025-05-28 07:56:39] [INFO] Generated random wait time: 5437 ms
+[2025-05-28 07:56:41] [SUCCESS] Iteration 4 completed successfully (Duration: 2.07 seconds)
+[2025-05-28 07:56:41] [INFO] Iteration Statistics:
+  StartTime: 2025-05-28 07:56:39
+  GeneratedWait: 5437
+  RetryCount: 0
+  Duration: 2.07 seconds
+  EndTime: 2025-05-28 07:56:41
+  MinWait: 3000
+  Iteration: 4
+  MaxWait: 10000
+[2025-05-28 07:56:41] [INFO] Starting iteration 5
+[2025-05-28 07:56:41] [INFO] Configuration - Min Wait: 2500, Max Wait: 7500
+[2025-05-28 07:56:41] [INFO] Generated random wait time: 2820 ms
+[2025-05-28 07:56:43] [SUCCESS] Iteration 5 completed successfully (Duration: 2.09 seconds)
+[2025-05-28 07:56:43] [INFO] Iteration Statistics:
+  StartTime: 2025-05-28 07:56:41
+  GeneratedWait: 2820
+  RetryCount: 0
+  Duration: 2.09 seconds
+  EndTime: 2025-05-28 07:56:43
+  MinWait: 2500
+  Iteration: 5
+  MaxWait: 7500
+[2025-05-28 07:56:43] [SUCCESS] All iterations completed successfully
+[2025-05-28 07:56:43] [INFO] Total execution time: 0.18 minutes
+[2025-05-28 07:56:43] [SUCCESS] Final Summary:
+  Start Time: 2025-05-28 07:56:32
+  End Time: 2025-05-28 07:56:43
+  Total Duration: 0.18 minutes
+  Total Iterations: 5
+  Configuration File: .\ActivityGeneratorConfig.json
+  Average Duration: 0.04 minutes per iteration
+[2025-05-28 13:47:17] [INFO] Starting Activity Generator Orchestrator
+[2025-05-28 13:47:17] [INFO] Using configuration file: .\ActivityGeneratorConfig.json
+[2025-05-28 13:47:17] [INFO] Total planned iterations: 5
+[2025-05-28 13:47:17] [INFO] Starting iteration 1
+[2025-05-28 13:47:17] [INFO] Configuration - Min Wait: 1000, Max Wait: 5000
+[2025-05-28 13:47:17] [INFO] Generated random wait time: 1572 ms
+[2025-05-28 13:47:19] [SUCCESS] Iteration 1 completed successfully (Duration: 2.11 seconds)
+[2025-05-28 13:47:19] [INFO] Iteration Statistics:
+  StartTime: 2025-05-28 13:47:17
+  GeneratedWait: 1572
+  RetryCount: 0
+  Duration: 2.11 seconds
+  EndTime: 2025-05-28 13:47:19
+  MinWait: 1000
+  Iteration: 1
+  MaxWait: 5000
+[2025-05-28 13:47:19] [INFO] Starting iteration 2
+[2025-05-28 13:47:19] [INFO] Configuration - Min Wait: 2000, Max Wait: 8000
+[2025-05-28 13:47:19] [INFO] Generated random wait time: 4454 ms
+[2025-05-28 13:47:21] [SUCCESS] Iteration 2 completed successfully (Duration: 2.08 seconds)
+[2025-05-28 13:47:21] [INFO] Iteration Statistics:
+  StartTime: 2025-05-28 13:47:19
+  GeneratedWait: 4454
+  RetryCount: 0
+  Duration: 2.08 seconds
+  EndTime: 2025-05-28 13:47:21
+  MinWait: 2000
+  Iteration: 2
+  MaxWait: 8000
+[2025-05-28 13:47:21] [INFO] Starting iteration 3
+[2025-05-28 13:47:21] [INFO] Configuration - Min Wait: 1500, Max Wait: 6000
+[2025-05-28 13:47:21] [INFO] Generated random wait time: 2525 ms
+[2025-05-28 13:47:23] [SUCCESS] Iteration 3 completed successfully (Duration: 2.07 seconds)
+[2025-05-28 13:47:23] [INFO] Iteration Statistics:
+  StartTime: 2025-05-28 13:47:21
+  GeneratedWait: 2525
+  RetryCount: 0
+  Duration: 2.07 seconds
+  EndTime: 2025-05-28 13:47:23
+  MinWait: 1500
+  Iteration: 3
+  MaxWait: 6000
+[2025-05-28 13:47:23] [INFO] Starting iteration 4
+[2025-05-28 13:47:23] [INFO] Configuration - Min Wait: 3000, Max Wait: 10000
+[2025-05-28 13:47:23] [INFO] Generated random wait time: 5935 ms
+[2025-05-28 13:47:25] [SUCCESS] Iteration 4 completed successfully (Duration: 2.07 seconds)
+[2025-05-28 13:47:25] [INFO] Iteration Statistics:
+  StartTime: 2025-05-28 13:47:23
+  GeneratedWait: 5935
+  RetryCount: 0
+  Duration: 2.07 seconds
+  EndTime: 2025-05-28 13:47:25
+  MinWait: 3000
+  Iteration: 4
+  MaxWait: 10000
+[2025-05-28 13:47:25] [INFO] Starting iteration 5
+[2025-05-28 13:47:25] [INFO] Configuration - Min Wait: 2500, Max Wait: 7500
+[2025-05-28 13:47:25] [INFO] Generated random wait time: 4695 ms
+[2025-05-28 13:47:27] [SUCCESS] Iteration 5 completed successfully (Duration: 2.08 seconds)
+[2025-05-28 13:47:27] [INFO] Iteration Statistics:
+  StartTime: 2025-05-28 13:47:25
+  GeneratedWait: 4695
+  RetryCount: 0
+  Duration: 2.08 seconds
+  EndTime: 2025-05-28 13:47:27
+  MinWait: 2500
+  Iteration: 5
+  MaxWait: 7500
+[2025-05-28 13:47:27] [SUCCESS] All iterations completed successfully
+[2025-05-28 13:47:27] [INFO] Total execution time: 0.18 minutes
+[2025-05-28 13:47:27] [SUCCESS] Final Summary:
+  Start Time: 2025-05-28 13:47:17
+  End Time: 2025-05-28 13:47:27
+  Total Duration: 0.18 minutes
+  Total Iterations: 5
+  Configuration File: .\ActivityGeneratorConfig.json
+  Average Duration: 0.04 minutes per iteration
+[2025-05-28 16:32:31] [INFO] Starting Activity Generator Orchestrator
+[2025-05-28 16:32:31] [INFO] Using configuration file: .\ActivityGeneratorConfig.json
+[2025-05-28 16:32:31] [INFO] Total planned iterations: 5
+[2025-05-28 16:32:31] [INFO] Starting iteration 1
+[2025-05-28 16:32:31] [INFO] Configuration - Min Wait: 1000, Max Wait: 5000
+[2025-05-28 16:32:31] [INFO] Generated random wait time: 3031 ms
+[2025-05-28 16:32:33] [SUCCESS] Iteration 1 completed successfully (Duration: 2.14 seconds)
+[2025-05-28 16:32:33] [INFO] Iteration Statistics:
+  StartTime: 2025-05-28 16:32:31
+  GeneratedWait: 3031
+  RetryCount: 0
+  Duration: 2.14 seconds
+  EndTime: 2025-05-28 16:32:33
+  MinWait: 1000
+  Iteration: 1
+  MaxWait: 5000
+[2025-05-28 16:32:33] [INFO] Starting iteration 2
+[2025-05-28 16:32:34] [INFO] Configuration - Min Wait: 2000, Max Wait: 8000
+[2025-05-28 16:32:34] [INFO] Generated random wait time: 5392 ms
+[2025-05-28 16:32:36] [SUCCESS] Iteration 2 completed successfully (Duration: 2.27 seconds)
+[2025-05-28 16:32:36] [INFO] Iteration Statistics:
+  StartTime: 2025-05-28 16:32:33
+  GeneratedWait: 5392
+  RetryCount: 0
+  Duration: 2.27 seconds
+  EndTime: 2025-05-28 16:32:36
+  MinWait: 2000
+  Iteration: 2
+  MaxWait: 8000
+[2025-05-28 16:32:36] [INFO] Starting iteration 3
+[2025-05-28 16:32:36] [INFO] Configuration - Min Wait: 1500, Max Wait: 6000
+[2025-05-28 16:32:36] [INFO] Generated random wait time: 5722 ms
+[2025-05-28 16:32:38] [SUCCESS] Iteration 3 completed successfully (Duration: 2.11 seconds)
+[2025-05-28 16:32:38] [INFO] Iteration Statistics:
+  StartTime: 2025-05-28 16:32:36
+  GeneratedWait: 5722
+  RetryCount: 0
+  Duration: 2.11 seconds
+  EndTime: 2025-05-28 16:32:38
+  MinWait: 1500
+  Iteration: 3
+  MaxWait: 6000
+[2025-05-28 16:32:38] [INFO] Starting iteration 4
+[2025-05-28 16:32:38] [INFO] Configuration - Min Wait: 3000, Max Wait: 10000
+[2025-05-28 16:32:38] [INFO] Generated random wait time: 7929 ms
+[2025-05-28 16:32:40] [SUCCESS] Iteration 4 completed successfully (Duration: 2.16 seconds)
+[2025-05-28 16:32:40] [INFO] Iteration Statistics:
+  StartTime: 2025-05-28 16:32:38
+  GeneratedWait: 7929
+  RetryCount: 0
+  Duration: 2.16 seconds
+  EndTime: 2025-05-28 16:32:40
+  MinWait: 3000
+  Iteration: 4
+  MaxWait: 10000
+[2025-05-28 16:32:40] [INFO] Starting iteration 5
+[2025-05-28 16:32:40] [INFO] Configuration - Min Wait: 2500, Max Wait: 7500
+[2025-05-28 16:32:40] [INFO] Generated random wait time: 6976 ms
+[2025-05-28 16:32:42] [SUCCESS] Iteration 5 completed successfully (Duration: 2.07 seconds)
+[2025-05-28 16:32:42] [INFO] Iteration Statistics:
+  StartTime: 2025-05-28 16:32:40
+  GeneratedWait: 6976
+  RetryCount: 0
+  Duration: 2.07 seconds
+  EndTime: 2025-05-28 16:32:42
+  MinWait: 2500
+  Iteration: 5
+  MaxWait: 7500
+[2025-05-28 16:32:42] [SUCCESS] All iterations completed successfully
+[2025-05-28 16:32:42] [INFO] Total execution time: 0.19 minutes
+[2025-05-28 16:32:42] [SUCCESS] Final Summary:
+  Start Time: 2025-05-28 16:32:31
+  End Time: 2025-05-28 16:32:42
+  Total Duration: 0.19 minutes
+  Total Iterations: 5
+  Configuration File: .\ActivityGeneratorConfig.json
+  Average Duration: 0.04 minutes per iteration
+[2025-05-28 17:31:36] [INFO] Starting Activity Generator Orchestrator
+[2025-05-28 17:31:36] [INFO] Using configuration file: .\ActivityGeneratorConfig.json
+[2025-05-28 17:31:36] [INFO] Total planned iterations: 5
+[2025-05-28 17:31:36] [INFO] Starting iteration 1
+[2025-05-28 17:31:36] [INFO] Configuration - Min Wait: 1000, Max Wait: 5000
+[2025-05-28 17:31:36] [INFO] Generated random wait time: 3297 ms
+[2025-05-28 17:31:40] [SUCCESS] Iteration 1 completed successfully (Duration: 3.14 seconds)
+[2025-05-28 17:31:40] [INFO] Iteration Statistics:
+  StartTime: 2025-05-28 17:31:36
+  GeneratedWait: 3297
+  RetryCount: 0
+  Duration: 3.14 seconds
+  EndTime: 2025-05-28 17:31:40
+  MinWait: 1000
+  Iteration: 1
+  MaxWait: 5000
+[2025-05-28 17:31:40] [INFO] Starting iteration 2
+[2025-05-28 17:31:40] [INFO] Configuration - Min Wait: 2000, Max Wait: 8000
+[2025-05-28 17:31:40] [INFO] Generated random wait time: 7799 ms
+[2025-05-28 17:31:42] [SUCCESS] Iteration 2 completed successfully (Duration: 2.12 seconds)
+[2025-05-28 17:31:42] [INFO] Iteration Statistics:
+  StartTime: 2025-05-28 17:31:40
+  GeneratedWait: 7799
+  RetryCount: 0
+  Duration: 2.12 seconds
+  EndTime: 2025-05-28 17:31:42
+  MinWait: 2000
+  Iteration: 2
+  MaxWait: 8000
+[2025-05-28 17:31:42] [INFO] Starting iteration 3
+[2025-05-28 17:31:42] [INFO] Configuration - Min Wait: 1500, Max Wait: 6000
+[2025-05-28 17:31:42] [INFO] Generated random wait time: 4661 ms
+[2025-05-28 17:31:44] [SUCCESS] Iteration 3 completed successfully (Duration: 2.17 seconds)
+[2025-05-28 17:31:44] [INFO] Iteration Statistics:
+  StartTime: 2025-05-28 17:31:42
+  GeneratedWait: 4661
+  RetryCount: 0
+  Duration: 2.17 seconds
+  EndTime: 2025-05-28 17:31:44
+  MinWait: 1500
+  Iteration: 3
+  MaxWait: 6000
+[2025-05-28 17:31:44] [INFO] Starting iteration 4
+[2025-05-28 17:31:44] [INFO] Configuration - Min Wait: 3000, Max Wait: 10000
+[2025-05-28 17:31:44] [INFO] Generated random wait time: 4181 ms
+[2025-05-28 17:31:46] [SUCCESS] Iteration 4 completed successfully (Duration: 2.11 seconds)
+[2025-05-28 17:31:46] [INFO] Iteration Statistics:
+  StartTime: 2025-05-28 17:31:44
+  GeneratedWait: 4181
+  RetryCount: 0
+  Duration: 2.11 seconds
+  EndTime: 2025-05-28 17:31:46
+  MinWait: 3000
+  Iteration: 4
+  MaxWait: 10000
+[2025-05-28 17:31:46] [INFO] Starting iteration 5
+[2025-05-28 17:31:46] [INFO] Configuration - Min Wait: 2500, Max Wait: 7500
+[2025-05-28 17:31:46] [INFO] Generated random wait time: 4405 ms
+[2025-05-28 17:31:48] [SUCCESS] Iteration 5 completed successfully (Duration: 2.19 seconds)
+[2025-05-28 17:31:48] [INFO] Iteration Statistics:
+  StartTime: 2025-05-28 17:31:46
+  GeneratedWait: 4405
+  RetryCount: 0
+  Duration: 2.19 seconds
+  EndTime: 2025-05-28 17:31:48
+  MinWait: 2500
+  Iteration: 5
+  MaxWait: 7500
+[2025-05-28 17:31:48] [SUCCESS] All iterations completed successfully
+[2025-05-28 17:31:48] [INFO] Total execution time: 0.20 minutes
+[2025-05-28 17:31:48] [SUCCESS] Final Summary:
+  Start Time: 2025-05-28 17:31:36
+  End Time: 2025-05-28 17:31:48
+  Total Duration: 0.20 minutes
+  Total Iterations: 5
+  Configuration File: .\ActivityGeneratorConfig.json
+  Average Duration: 0.04 minutes per iteration
+[2025-05-28 17:38:50] [INFO] Starting Activity Generator Orchestrator
+[2025-05-28 17:38:50] [INFO] Using configuration file: .\ActivityGeneratorConfig.json
+[2025-05-28 17:38:50] [INFO] Total planned iterations: 5
+[2025-05-28 17:38:50] [INFO] Starting iteration 1
+[2025-05-28 17:38:50] [INFO] Configuration - Min Wait: 1000, Max Wait: 5000
+[2025-05-28 17:38:50] [INFO] Generated random wait time: 1099 ms
+[2025-05-28 17:38:52] [SUCCESS] Iteration 1 completed successfully (Duration: 2.11 seconds)
+[2025-05-28 17:38:52] [INFO] Iteration Statistics:
+  StartTime: 2025-05-28 17:38:50
+  GeneratedWait: 1099
+  RetryCount: 0
+  Duration: 2.11 seconds
+  EndTime: 2025-05-28 17:38:52
+  MinWait: 1000
+  Iteration: 1
+  MaxWait: 5000
+[2025-05-28 17:38:52] [INFO] Starting iteration 2
+[2025-05-28 17:38:52] [INFO] Configuration - Min Wait: 2000, Max Wait: 8000
+[2025-05-28 17:38:52] [INFO] Generated random wait time: 7637 ms
+[2025-05-28 17:38:55] [SUCCESS] Iteration 2 completed successfully (Duration: 2.11 seconds)
+[2025-05-28 17:38:55] [INFO] Iteration Statistics:
+  StartTime: 2025-05-28 17:38:52
+  GeneratedWait: 7637
+  RetryCount: 0
+  Duration: 2.11 seconds
+  EndTime: 2025-05-28 17:38:55
+  MinWait: 2000
+  Iteration: 2
+  MaxWait: 8000
+[2025-05-28 17:38:55] [INFO] Starting iteration 3
+[2025-05-28 17:38:55] [INFO] Configuration - Min Wait: 1500, Max Wait: 6000
+[2025-05-28 17:38:55] [INFO] Generated random wait time: 3931 ms
+[2025-05-28 17:44:05] [INFO] Starting Activity Generator Orchestrator
+[2025-05-28 17:44:05] [INFO] Using configuration file: .\ActivityGeneratorConfig.json
+[2025-05-28 17:44:05] [INFO] Total planned iterations: 5
+[2025-05-28 17:44:05] [INFO] Starting iteration 1
+[2025-05-28 17:44:05] [INFO] Configuration - Min Wait: 1000, Max Wait: 5000
+[2025-05-28 17:44:05] [INFO] Generated random wait time: 1943 ms
+[2025-05-28 17:45:22] [INFO] Starting Activity Generator Orchestrator
+[2025-05-28 17:45:22] [INFO] Using configuration file: .\ActivityGeneratorConfig.json
+[2025-05-28 17:45:22] [INFO] Total planned iterations: 5
+[2025-05-28 17:45:22] [INFO] Starting iteration 1
+[2025-05-28 17:45:22] [INFO] Configuration - Min Wait: 1000, Max Wait: 5000
+[2025-05-28 17:45:22] [INFO] Generated random wait time: 4943 ms
+[2025-05-28 17:48:17] [INFO] Starting Activity Generator Orchestrator
+[2025-05-28 17:48:17] [INFO] Using configuration file: .\ActivityGeneratorConfig.json
+[2025-05-28 17:48:17] [INFO] Total planned iterations: 5
+[2025-05-28 17:48:17] [INFO] Starting iteration 1
+[2025-05-28 17:48:17] [INFO] Configuration - Min Wait: 100, Max Wait: 5000
+[2025-05-28 17:48:17] [INFO] Generated random wait time: 4475 ms
+[2025-05-28 17:50:37] [INFO] Starting Activity Generator Orchestrator
+[2025-05-28 17:50:37] [INFO] Using configuration file: .\ActivityGeneratorConfig.json
+[2025-05-28 17:50:37] [INFO] Total planned iterations: 5
+[2025-05-28 17:50:37] [INFO] Starting iteration 1
+[2025-05-28 17:50:37] [INFO] Configuration - Min Wait: 100, Max Wait: 500
+[2025-05-28 17:50:37] [INFO] Generated random wait time: 247 ms
+[2025-05-28 17:50:41] [INFO] Starting Activity Generator Orchestrator
+[2025-05-28 17:50:41] [INFO] Using configuration file: .\ActivityGeneratorConfig.json
+[2025-05-28 17:50:41] [INFO] Total planned iterations: 5
+[2025-05-28 17:50:41] [INFO] Starting iteration 1
+[2025-05-28 17:50:41] [INFO] Configuration - Min Wait: 100, Max Wait: 500
+[2025-05-28 17:50:41] [INFO] Generated random wait time: 254 ms
+[2025-05-28 17:54:40] [SUCCESS] Iteration 1 completed successfully (Duration: 242.72 seconds)
+[2025-05-28 17:54:40] [INFO] Iteration Statistics:
+  StartTime: 2025-05-28 17:50:37
+  GeneratedWait: 247
+  RetryCount: 0
+  Duration: 242.72 seconds
+  EndTime: 2025-05-28 17:54:40
+  MinWait: 100
+  Iteration: 1
+  MaxWait: 500
+[2025-05-28 17:54:40] [INFO] Starting iteration 2
+[2025-05-28 17:54:40] [INFO] Configuration - Min Wait: 200, Max Wait: 800
+[2025-05-28 17:54:40] [INFO] Generated random wait time: 340 ms
+[2025-05-28 17:57:44] [SUCCESS] Iteration 1 completed successfully (Duration: 423.60 seconds)
+[2025-05-28 17:57:44] [INFO] Iteration Statistics:
+  StartTime: 2025-05-28 17:50:41
+  GeneratedWait: 254
+  RetryCount: 0
+  Duration: 423.60 seconds
+  EndTime: 2025-05-28 17:57:44
+  MinWait: 100
+  Iteration: 1
+  MaxWait: 500
+[2025-05-28 17:57:44] [INFO] Starting iteration 2
+[2025-05-28 17:57:44] [INFO] Configuration - Min Wait: 200, Max Wait: 800
+[2025-05-28 17:57:44] [INFO] Generated random wait time: 303 ms
+[2025-05-28 18:01:37] [SUCCESS] Iteration 2 completed successfully (Duration: 417.48 seconds)
+[2025-05-28 18:01:37] [INFO] Iteration Statistics:
+  StartTime: 2025-05-28 17:54:40
+  GeneratedWait: 340
+  RetryCount: 0
+  Duration: 417.48 seconds
+  EndTime: 2025-05-28 18:01:37
+  MinWait: 200
+  Iteration: 2
+  MaxWait: 800
+[2025-05-28 18:01:37] [INFO] Starting iteration 3
+[2025-05-28 18:01:37] [INFO] Configuration - Min Wait: 150, Max Wait: 6000
+[2025-05-28 18:01:37] [INFO] Generated random wait time: 1473 ms
+[2025-05-28 18:02:51] [SUCCESS] Iteration 2 completed successfully (Duration: 306.27 seconds)
+[2025-05-28 18:02:51] [INFO] Iteration Statistics:
+  StartTime: 2025-05-28 17:57:44
+  GeneratedWait: 303
+  RetryCount: 0
+  Duration: 306.27 seconds
+  EndTime: 2025-05-28 18:02:51
+  MinWait: 200
+  Iteration: 2
+  MaxWait: 800
+[2025-05-28 18:02:51] [INFO] Starting iteration 3
+[2025-05-28 18:02:51] [INFO] Configuration - Min Wait: 150, Max Wait: 6000
+[2025-05-28 18:02:51] [INFO] Generated random wait time: 4433 ms
+[2025-05-28 18:09:35] [SUCCESS] Iteration 3 completed successfully (Duration: 478.03 seconds)
+[2025-05-28 18:09:35] [INFO] Iteration Statistics:
+  StartTime: 2025-05-28 18:01:37
+  GeneratedWait: 1473
+  RetryCount: 0
+  Duration: 478.03 seconds
+  EndTime: 2025-05-28 18:09:35
+  MinWait: 150
+  Iteration: 3
+  MaxWait: 6000
+[2025-05-28 18:09:36] [INFO] Starting iteration 4
+[2025-05-28 18:09:36] [INFO] Configuration - Min Wait: 300, Max Wait: 10000
+[2025-05-28 18:09:36] [INFO] Generated random wait time: 2980 ms
+[2025-05-28 18:46:54] [SUCCESS] Iteration 3 completed successfully (Duration: 2643.31 seconds)
+[2025-05-28 18:46:54] [INFO] Iteration Statistics:
+  StartTime: 2025-05-28 18:02:51
+  GeneratedWait: 4433
+  RetryCount: 0
+  Duration: 2643.31 seconds
+  EndTime: 2025-05-28 18:46:54
+  MinWait: 150
+  Iteration: 3
+  MaxWait: 6000
+[2025-05-28 18:46:54] [INFO] Starting iteration 4
+[2025-05-28 18:46:54] [INFO] Configuration - Min Wait: 300, Max Wait: 10000
+[2025-05-28 18:46:54] [INFO] Generated random wait time: 5345 ms
+[2025-05-28 19:02:44] [INFO] Starting Activity Generator Orchestrator
+[2025-05-28 19:02:44] [INFO] Using configuration file: .\ActivityGeneratorConfig.json
+[2025-05-28 19:02:44] [INFO] Total planned iterations: 5
+[2025-05-28 19:02:44] [INFO] Starting iteration 1
+[2025-05-28 19:02:44] [INFO] Configuration - Min Wait: 100, Max Wait: 500
+[2025-05-28 19:02:44] [INFO] Generated random wait time: 220 ms
+[2025-05-28 19:07:54] [SUCCESS] Iteration 1 completed successfully (Duration: 310.15 seconds)
+[2025-05-28 19:07:54] [INFO] Iteration Statistics:
+  StartTime: 2025-05-28 19:02:44
+  GeneratedWait: 220
+  RetryCount: 0
+  Duration: 310.15 seconds
+  EndTime: 2025-05-28 19:07:54
+  MinWait: 100
+  Iteration: 1
+  MaxWait: 500
+[2025-05-28 19:07:54] [INFO] Starting iteration 2
+[2025-05-28 19:07:54] [INFO] Configuration - Min Wait: 200, Max Wait: 800
+[2025-05-28 19:07:54] [INFO] Generated random wait time: 509 ms
+[2025-05-28 19:09:23] [SUCCESS] Iteration 1 completed successfully (Duration: 5040.96 seconds)
+[2025-05-28 19:09:23] [INFO] Iteration Statistics:
+  StartTime: 2025-05-28 17:45:22
+  GeneratedWait: 4943
+  RetryCount: 0
+  Duration: 5040.96 seconds
+  EndTime: 2025-05-28 19:09:23
+  MinWait: 1000
+  Iteration: 1
+  MaxWait: 5000
+[2025-05-28 19:09:23] [INFO] Starting iteration 2
+[2025-05-28 19:09:23] [INFO] Configuration - Min Wait: 2000, Max Wait: 8000
+[2025-05-28 19:09:23] [INFO] Generated random wait time: 6034 ms
+[2025-05-28 19:10:22] [SUCCESS] Iteration 1 completed successfully (Duration: 5176.83 seconds)
+[2025-05-28 19:10:22] [INFO] Iteration Statistics:
+  StartTime: 2025-05-28 17:44:05
+  GeneratedWait: 1943
+  RetryCount: 0
+  Duration: 5176.83 seconds
+  EndTime: 2025-05-28 19:10:22
+  MinWait: 1000
+  Iteration: 1
+  MaxWait: 5000
+[2025-05-28 19:10:22] [INFO] Starting iteration 2
+[2025-05-28 19:10:22] [INFO] Configuration - Min Wait: 2000, Max Wait: 8000
+[2025-05-28 19:10:22] [INFO] Generated random wait time: 5012 ms
+[2025-05-28 19:12:10] [SUCCESS] Iteration 2 completed successfully (Duration: 255.66 seconds)
+[2025-05-28 19:12:10] [INFO] Iteration Statistics:
+  StartTime: 2025-05-28 19:07:54
+  GeneratedWait: 509
+  RetryCount: 0
+  Duration: 255.66 seconds
+  EndTime: 2025-05-28 19:12:10
+  MinWait: 200
+  Iteration: 2
+  MaxWait: 800
+[2025-05-28 19:12:10] [INFO] Starting iteration 3
+[2025-05-28 19:12:10] [INFO] Configuration - Min Wait: 150, Max Wait: 6000
+[2025-05-28 19:12:10] [INFO] Generated random wait time: 883 ms
+[2025-05-28 19:22:41] [SUCCESS] Iteration 3 completed successfully (Duration: 631.58 seconds)
+[2025-05-28 19:22:41] [INFO] Iteration Statistics:
+  StartTime: 2025-05-28 19:12:10
+  GeneratedWait: 883
+  RetryCount: 0
+  Duration: 631.58 seconds
+  EndTime: 2025-05-28 19:22:41
+  MinWait: 150
+  Iteration: 3
+  MaxWait: 6000
+[2025-05-28 19:22:41] [INFO] Starting iteration 4
+[2025-05-28 19:22:41] [INFO] Configuration - Min Wait: 300, Max Wait: 10000
+[2025-05-28 19:22:41] [INFO] Generated random wait time: 4997 ms
+[2025-05-29 04:32:44] [SUCCESS] Iteration 4 completed successfully (Duration: 37388.71 seconds)
+[2025-05-29 04:32:44] [SUCCESS] Iteration 2 completed successfully (Duration: 33741.98 seconds)
+[2025-05-29 04:32:44] [SUCCESS] Iteration 2 completed successfully (Duration: 33800.88 seconds)
+[2025-05-29 04:32:45] [INFO] Iteration Statistics:
+  StartTime: 2025-05-28 19:09:23
+  GeneratedWait: 6034
+  RetryCount: 0
+  Duration: 33800.88 seconds
+  EndTime: 2025-05-29 04:32:44
+  MinWait: 2000
+  Iteration: 2
+  MaxWait: 8000
+[2025-05-29 04:32:45] [INFO] Iteration Statistics:
+  StartTime: 2025-05-28 19:10:22
+  GeneratedWait: 5012
+  RetryCount: 0
+  Duration: 33741.98 seconds
+  EndTime: 2025-05-29 04:32:44
+  MinWait: 2000
+  Iteration: 2
+  MaxWait: 8000
+[2025-05-29 04:32:45] [INFO] Starting iteration 3
+[2025-05-29 04:32:45] [INFO] Starting iteration 3
+[2025-05-29 04:32:45] [INFO] Iteration Statistics:
+  StartTime: 2025-05-28 18:09:36
+  GeneratedWait: 2980
+  RetryCount: 0
+  Duration: 37388.71 seconds
+  EndTime: 2025-05-29 04:32:44
+  MinWait: 300
+  Iteration: 4
+  MaxWait: 10000
+[2025-05-29 04:32:45] [INFO] Configuration - Min Wait: 1500, Max Wait: 6000
+[2025-05-29 04:32:45] [INFO] Starting iteration 5
+[2025-05-29 04:32:45] [INFO] Generated random wait time: 4845 ms
+[2025-05-29 04:32:45] [INFO] Configuration - Min Wait: 250, Max Wait: 7500
+[2025-05-29 04:32:45] [INFO] Generated random wait time: 2156 ms
+[2025-05-29 04:32:46] [INFO] Iteration Statistics:
+  StartTime: 2025-05-28 18:46:54
+  GeneratedWait: 5345
+  RetryCount: 0
+  Duration: 35150.17 seconds
+  EndTime: 2025-05-29 04:32:44
+  MinWait: 300
+  Iteration: 4
+  MaxWait: 10000
+[2025-05-29 04:32:46] [INFO] Starting iteration 5
+[2025-05-29 04:32:46] [INFO] Configuration - Min Wait: 250, Max Wait: 7500
+[2025-05-29 04:32:46] [INFO] Generated random wait time: 1563 ms
+[2025-05-29 04:32:46] [INFO] Generated random wait time: 2193 ms
+[2025-05-29 04:32:46] [INFO] Iteration Statistics:
+  StartTime: 2025-05-28 19:22:41
+  GeneratedWait: 4997
+  RetryCount: 0
+  Duration: 33003.21 seconds
+  EndTime: 2025-05-29 04:32:45
+  MinWait: 300
+  Iteration: 4
+  MaxWait: 10000
+[2025-05-29 04:32:46] [INFO] Starting iteration 5
+[2025-05-29 04:32:46] [INFO] Configuration - Min Wait: 250, Max Wait: 7500
+[2025-05-29 04:32:46] [INFO] Generated random wait time: 4787 ms
+[2025-05-29 04:32:47] [SUCCESS] Iteration 5 completed successfully (Duration: 2.38 seconds)
+[2025-05-29 04:32:47] [SUCCESS] Iteration 3 completed successfully (Duration: 2.53 seconds)
+[2025-05-29 04:32:47] [INFO] Iteration Statistics:
+  StartTime: 2025-05-29 04:32:45
+  GeneratedWait: 2156
+  RetryCount: 0
+  Duration: 2.38 seconds
+  EndTime: 2025-05-29 04:32:47
+  MinWait: 250
+  Iteration: 5
+  MaxWait: 7500
