@@ -1,9 +1,9 @@
 {
     "WindowSettings": {
-        "Count": 3,
+        "Count": 2,
         "NoExit": false,
-        "MinSeconds": 12,
-        "MaxSeconds": 19000,
+        "MinSeconds": 1,
+        "MaxSeconds": 15000,
         "Cols": 80,
         "Lines": 10,
         "BgColor": "0A",
@@ -11,9 +11,15 @@
     },
     "MonitorSettings": {
         "Enable": true,
-        "CheckInterval": 360,
-        "MinWindows": 6,
+        "_modeOptions": ["Continuos","ForDuration","UntilDayOfWeek","UntilDateTime"],
+        "Mode": "Continuous",
+        "UntilDateTime": "",
+        "ForDurationMinutes": 120,
+        "UntilDayOfWeek": "Monday",
+        "UntilTime": "09:00:00",
+        "CheckInterval": 540,
+        "MinWindows": 4,
         "AddIfBelow": 3,
-        "MaxTotal": 8
+        "MaxTotal": 7
     }
 }

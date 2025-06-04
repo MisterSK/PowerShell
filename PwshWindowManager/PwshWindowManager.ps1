@@ -1,13 +1,55 @@
 <#
 .SYNOPSIS
 Advanced orchestrator with simple window counting and proper path handling - DIAGNOSTIC VERSION
+
+.DESCRIPTION
+This script manages multiple PowerShell windows running orchestrator tasks with configurable monitoring options.
+
+.MONITORING MODES
+The script supports several monitoring modes configured in MonitorSettings:
+
+1. Continuous (default) - Monitors indefinitely until manually stopped
+   - Set Mode = 'Continuous'
+
+2. UntilDateTime - Monitors until a specific date and time
+   - Set Mode = 'UntilDateTime'
+   - Set UntilDateTime = 'yyyy-MM-dd HH:mm:ss' (e.g., '2025-06-05 18:00:00')
+
+3. ForDuration - Monitors for a specified number of minutes
+   - Set Mode = 'ForDuration'
+   - Set ForDurationMinutes = number of minutes (e.g., 120 for 2 hours)
+
+4. UntilDayOfWeek - Monitors until a specific day and time
+   - Set Mode = 'UntilDayOfWeek'
+   - Set UntilDayOfWeek = day name (e.g., 'Monday', 'Friday')
+   - Set UntilTime = time in 24-hour format (e.g., '09:00:00')
+
+.EXAMPLE CONFIGURATIONS
+Monitor for 4 hours:
+    "Mode": "ForDuration",
+    "ForDurationMinutes": 240
+
+Monitor until next Monday at 9 AM:
+    "Mode": "UntilDayOfWeek",
+    "UntilDayOfWeek": "Monday",
+    "UntilTime": "09:00:00"
+
+Monitor until specific date/time:
+    "Mode": "UntilDateTime",
+    "UntilDateTime": "2025-06-10 17:30:00"
 #>
 
 #region Initialization
-$scriptPath = Split-Path -Parent $MyInvocation.MyCommand.Path
-$configPath = Join-Path $scriptPath "PwshWindowManager.json"
-$logPath = Join-Path $scriptPath "Logs"
-$logFile = Join-Path $logPath "Orchestrator_$(Get-Date -Format 'yyyyMMdd').log"
+# Use simple path handling instead of MyInvocation (which may be restricted)
+$scriptPath = $PSScriptRoot
+if (-not $scriptPath) {
+    # Fallback if PSScriptRoot is not available
+    $scriptPath = Get-Location
+}
+
+$configPath = "$scriptPath\PwshWindowManager.json"
+$logPath = "$scriptPath\Logs"
+$logFile = "$logPath\Orchestrator_$(Get-Date -Format 'yyyyMMdd').log"
 
 # Ensure Logs directory exists
 if (-not (Test-Path $logPath)) {
@@ -52,18 +94,23 @@ $defaultConfig = @{
         'Count'      = 4
         'NoExit'     = $false
         'MinSeconds' = 12
-        'MaxSeconds' = 19000
+        'MaxSeconds' = 499000
         'Cols'       = 80
         'Lines'      = 10
         'BgColor'    = "0A"
-        'AutoCloseSeconds' = 120
+        'AutoCloseSeconds' = 30
     }
     'MonitorSettings' = @{
         'Enable'        = $true
         'CheckInterval' = 60
-        'MinWindows'    = 2
+        'MinWindows'    = 1
         'AddIfBelow'    = 2
-        'MaxTotal'      = 6
+        'MaxTotal'      = 10
+        'Mode'          = 'Continuous'  # Options: Continuous, UntilDateTime, ForDuration, UntilDayOfWeek
+        'UntilDateTime' = ''            # Format: "2025-06-05 18:00:00"
+        'ForDurationMinutes' = 120      # Monitor for X minutes then exit
+        'UntilDayOfWeek' = 'Monday'     # Options: Monday, Tuesday, Wednesday, Thursday, Friday, Saturday, Sunday
+        'UntilTime'     = '09:00:00'    # Time on the target day (24-hour format)
     }
 }
 
@@ -82,7 +129,7 @@ try {
     Write-Log "Error loading config: $_. Using defaults." -Level "ERROR"
 }
 
-# Correct path handling with escaped parenthesis
+# Explicit path handling - update these paths to match your environment
 $basePath = "C:\Users\SanyaKhasenye`(Sensit\WorkingDir\PowerShell"
 $countdownScript = "$basePath\CountDownTimers\Start-Countdown.ps1"
 $orchestratorDir = "$basePath\ActivityGenerator.v3"
@@ -93,43 +140,145 @@ Write-Log "Countdown script: $countdownScript" -Level "DEBUG"
 Write-Log "Orchestrator directory: $orchestratorDir" -Level "DEBUG"
 Write-Log "Orchestrator script: $orchestratorScript" -Level "DEBUG"
 
-# Verify paths
+# Verify paths with detailed logging
+Write-Log "=== PATH VERIFICATION ===" -Level "INFO"
 if (-not (Test-Path $countdownScript)) {
-    Write-Log "Countdown script not found at: $countdownScript" -Level "ERROR"
-    Write-Log "Please verify the path exists and is accessible" -Level "ERROR"
+    Write-Log "CRITICAL: Countdown script not found at: $countdownScript" -Level "ERROR"
+    Write-Log "Please verify this file exists and is accessible" -Level "ERROR"
     exit 1
+} else {
+    Write-Log "SUCCESS: Countdown script found at: $countdownScript" -Level "INFO"
 }
+
 if (-not (Test-Path $orchestratorScript)) {
-    Write-Log "Orchestrator script not found at: $orchestratorScript" -Level "ERROR"
-    Write-Log "Please verify the path exists and is accessible" -Level "ERROR"
+    Write-Log "CRITICAL: Orchestrator script not found at: $orchestratorScript" -Level "ERROR"
+    Write-Log "Please verify this file exists and is accessible" -Level "ERROR"
     exit 1
+} else {
+    Write-Log "SUCCESS: Orchestrator script found at: $orchestratorScript" -Level "INFO"
+}
+
+if (-not (Test-Path $orchestratorDir)) {
+    Write-Log "CRITICAL: Orchestrator directory not found at: $orchestratorDir" -Level "ERROR"
+    exit 1
+} else {
+    Write-Log "SUCCESS: Orchestrator directory found at: $orchestratorDir" -Level "INFO"
 }
 
 # Check for required configuration file for orchestrator
-$orchestratorConfig = Join-Path $orchestratorDir "ActivityGeneratorConfig.json"
+$orchestratorConfig = "$orchestratorDir\ActivityGeneratorConfig.json"
 if (-not (Test-Path $orchestratorConfig)) {
-    Write-Log "Warning: Orchestrator config file not found at: $orchestratorConfig" -Level "WARN"
+    Write-Log "WARNING: Orchestrator config file not found at: $orchestratorConfig" -Level "WARN"
     Write-Log "The orchestrator script may fail without this configuration file" -Level "WARN"
+} else {
+    Write-Log "SUCCESS: Orchestrator config found at: $orchestratorConfig" -Level "INFO"
 }
 
-Write-Log "All path validations completed" -Level "DEBUG"
+Write-Log "=== PATH VERIFICATION COMPLETE ===" -Level "INFO"
 #endregion
 
 #region Core Functions
-# SIMPLE window counting as requested
-function Get-RunningPowerShellCount {
-    try {
-        # Use simple approach without property access
-        $processes = Get-Process -Name powershell -ErrorAction SilentlyContinue
-        $count = ($processes | Measure-Object).Count
-        Write-Log "Found $count running PowerShell processes" -Level "DEBUG"
-        return $count
-    }
-    catch {
-        Write-Log "Error counting PowerShell processes: $_" -Level "ERROR"
-        return 0
+# Calculate monitoring end time based on mode
+function Get-MonitoringEndTime {
+    param($config)
+    
+    switch ($config.MonitorSettings.Mode) {
+        'Continuous' {
+            Write-Log "Monitoring mode: Continuous - No end time" -Level "INFO"
+            return $null
+        }
+        
+        'UntilDateTime' {
+            try {
+                $endTime = [DateTime]::Parse($config.MonitorSettings.UntilDateTime)
+                Write-Log "Monitoring mode: UntilDateTime - Will monitor until $($endTime.ToString('yyyy-MM-dd HH:mm:ss'))" -Level "INFO"
+                
+                if ($endTime -le (Get-Date)) {
+                    Write-Log "WARNING: Specified end time is in the past. Monitoring will exit immediately." -Level "WARN"
+                }
+                
+                return $endTime
+            } catch {
+                Write-Log "ERROR: Invalid UntilDateTime format. Expected: 'yyyy-MM-dd HH:mm:ss'. Using continuous mode." -Level "ERROR"
+                return $null
+            }
+        }
+        
+        'ForDuration' {
+            $minutes = [int]$config.MonitorSettings.ForDurationMinutes
+            $endTime = (Get-Date).AddMinutes($minutes)
+            Write-Log "Monitoring mode: ForDuration - Will monitor for $minutes minutes (until $($endTime.ToString('yyyy-MM-dd HH:mm:ss')))" -Level "INFO"
+            return $endTime
+        }
+        
+        'UntilDayOfWeek' {
+            try {
+                $targetDay = [System.DayOfWeek]::$($config.MonitorSettings.UntilDayOfWeek)
+                $targetTime = [TimeSpan]::Parse($config.MonitorSettings.UntilTime)
+                $now = Get-Date
+                
+                # Calculate next occurrence of the target day
+                $daysUntilTarget = (7 + [int]$targetDay - [int]$now.DayOfWeek) % 7
+                if ($daysUntilTarget -eq 0) {
+                    # It's the target day - check if time has passed
+                    if ($now.TimeOfDay -ge $targetTime) {
+                        # Time has passed, set to next week
+                        $daysUntilTarget = 7
+                    }
+                }
+                
+                $endDate = $now.Date.AddDays($daysUntilTarget).Add($targetTime)
+                Write-Log "Monitoring mode: UntilDayOfWeek - Will monitor until $($config.MonitorSettings.UntilDayOfWeek) at $($config.MonitorSettings.UntilTime) ($($endDate.ToString('yyyy-MM-dd HH:mm:ss')))" -Level "INFO"
+                
+                return $endDate
+            } catch {
+                Write-Log "ERROR: Invalid UntilDayOfWeek configuration. Using continuous mode. Error: $_" -Level "ERROR"
+                return $null
+            }
+        }
+        
+        default {
+            Write-Log "WARNING: Unknown monitoring mode '$($config.MonitorSettings.Mode)'. Using continuous mode." -Level "WARN"
+            return $null
+        }
     }
 }
+
+# Check if monitoring should continue
+function Test-MonitoringContinue {
+    param($endTime)
+    
+    if ($null -eq $endTime) {
+        # Continuous mode
+        return $true
+    }
+    
+    $now = Get-Date
+    $shouldContinue = $now -lt $endTime
+    
+    if (-not $shouldContinue) {
+        $duration = $now - $script:monitoringStartTime
+        Write-Log "Monitoring period has ended. Duration: $($duration.ToString('dd\.hh\:mm\:ss'))" -Level "INFO"
+    }
+    
+    return $shouldContinue
+}
+
+# ALTERNATIVE Window Count Approach
+function Get-RunningPowerShellCount {
+    try {
+        $searchString = "Windows PowerShell"
+        $matchingProcesses = Get-Process | Where-Object { $_.MainWindowTitle -like "*$searchString*" }
+        $count = $matchingProcesses.Count  # FIX: Properly assign the count to $count variable
+        $count = [int]$count - 1 # Reduce by 1 to exclude the script execution/monitoring window
+        Write-Log "Found $count running PowerShell terminal windows" -Level "DEBUG"
+        return [int]$count
+    }
+    catch {
+        Write-Log "Error counting PowerShell terminal windows: $_" -Level "ERROR"
+        return [int]0
+    }
+} 
 
 function Start-OrchestratorWindow {
     param($id, $seconds)
@@ -243,8 +392,9 @@ if ('$($config.WindowSettings.NoExit)' -eq 'True') {
         Write-Log "Creating temporary script: $tempScript" -Level "DEBUG"
         Write-Log "Auto-close timeout: $($config.WindowSettings.AutoCloseSeconds) seconds" -Level "DEBUG"
         
-        $process = Start-Process powershell.exe -ArgumentList $arguments -PassThru
-        Write-Log "Launched window $id with PID $($process.Id) - $seconds second countdown" -Level "INFO"
+        # Start process without -PassThru to avoid property access restrictions
+        Start-Process powershell.exe -ArgumentList $arguments
+        Write-Log "Launched window $id - $seconds second countdown" -Level "INFO"
         
         Start-Sleep -Milliseconds 1000
         
@@ -281,34 +431,90 @@ try {
     # Monitoring loop
     if ($config.MonitorSettings.Enable) {
         Write-Log "Starting monitoring process..." -Level "INFO"
-        Write-Log "Monitor settings - Min: $($config.MonitorSettings.MinWindows), Max: $($config.MonitorSettings.MaxTotal), Check interval: $($config.MonitorSettings.CheckInterval)s" -Level "DEBUG"
+        Write-Log "Monitor settings - Min: $($config.MonitorSettings.MinWindows), Max: $($config.MonitorSettings.MaxTotal), Check interval: $($config.MonitorSettings.CheckInterval)s" -Level "INFO"
+        Write-Log "Will add $($config.MonitorSettings.AddIfBelow) windows when count drops below minimum" -Level "INFO"
         
-        while ($true) {
-            $running = Get-RunningPowerShellCount
-            $required = $config.MonitorSettings.MinWindows
+        # Store monitoring start time for duration calculations
+        $script:monitoringStartTime = Get-Date
+        
+        # Calculate monitoring end time based on mode
+        $monitoringEndTime = Get-MonitoringEndTime -config $config
+        
+        # Display monitoring schedule
+        if ($null -ne $monitoringEndTime) {
+            $duration = $monitoringEndTime - $script:monitoringStartTime
+            Write-Log "Monitoring will run for approximately: $($duration.ToString('dd\.hh\:mm\:ss'))" -Level "INFO"
+        }
+        
+        while (Test-MonitoringContinue -endTime $monitoringEndTime) {
+            Write-Log "=== MONITOR CHECK CYCLE ===" -Level "DEBUG"
             
-            Write-Log "Monitor check - Running: $running, Required: $required" -Level "DEBUG"
+            # Check if we're approaching end time (within 5 minutes)
+            if ($null -ne $monitoringEndTime) {
+                $timeRemaining = $monitoringEndTime - (Get-Date)
+                if ($timeRemaining.TotalMinutes -le 5 -and $timeRemaining.TotalMinutes -gt 0) {
+                    Write-Log "Monitoring will end in $([Math]::Round($timeRemaining.TotalMinutes, 1)) minutes" -Level "WARN"
+                }
+            }
+            
+            $running = [int](Get-RunningPowerShellCount)
+            $required = [int]($config.MonitorSettings.MinWindows)
+            $maxTotal = [int]($config.MonitorSettings.MaxTotal)
+            $addIfBelow = [int]($config.MonitorSettings.AddIfBelow)
+            
+            Write-Log "Monitor Status: Running=$running, Required=$required, Max=$maxTotal" -Level "INFO"
             
             if ($running -lt $required) {
-                # Calculate how many to launch without using Math.Min (restricted in ConstrainedLanguage)
-                $available = $config.MonitorSettings.MaxTotal - $running
-                if ($config.MonitorSettings.AddIfBelow -lt $available) {
-                    $toLaunch = $config.MonitorSettings.AddIfBelow
+                # Calculate how many to launch using explicit integer arithmetic
+                $available = $maxTotal - $running
+                if ($addIfBelow -lt $available) {
+                    $toLaunch = $addIfBelow
                 } else {
                     $toLaunch = $available
                 }
                 
-                Write-Log "Low window count ($running/$required). Launching $toLaunch new windows..." -Level "WARN"
+                Write-Log "*** LOW WINDOW COUNT DETECTED ***" -Level "WARN"
+                Write-Log "Running: $running, Required: $required, Available slots: $available" -Level "WARN"
+                Write-Log "Launching $toLaunch new windows..." -Level "WARN"
                 
-                1..$toLaunch | ForEach-Object {
-                    $seconds = Get-Random -Minimum $config.WindowSettings.MinSeconds -Maximum $config.WindowSettings.MaxSeconds
-                    $windowId = "AUTO_$(Get-Date -Format 'HHmmss')_$_"
-                    Start-OrchestratorWindow -id $windowId -seconds $seconds
+                if ($toLaunch -gt 0) {
+                    1..$toLaunch | ForEach-Object {
+                        $seconds = Get-Random -Minimum $config.WindowSettings.MinSeconds -Maximum $config.WindowSettings.MaxSeconds
+                        $windowId = "AUTO_$(Get-Date -Format 'HHmmss')_$_"
+                        Write-Log "Launching window $windowId with $seconds second countdown" -Level "INFO"
+                        Start-OrchestratorWindow -id $windowId -seconds $seconds
+                        Start-Sleep -Milliseconds 2000  # Brief delay between launches
+                    }
+                    Write-Log "Completed launching $toLaunch replacement windows" -Level "INFO"
+                } else {
+                    Write-Log "No windows to launch (already at maximum)" -Level "WARN"
                 }
+            } else {
+                Write-Log "Window count OK: $running >= $required (minimum)" -Level "DEBUG"
             }
+            
+            $nextCheck = (Get-Date).AddSeconds($config.MonitorSettings.CheckInterval)
+            
+            # Check if next check would exceed end time
+            if ($null -ne $monitoringEndTime -and $nextCheck -gt $monitoringEndTime) {
+                Write-Log "Next check would exceed monitoring end time. Preparing to exit..." -Level "INFO"
+                Write-Log "=== MONITOR CHECK COMPLETE ===" -Level "DEBUG"
+                break
+            }
+            
+            Write-Log "Next monitor check at: $($nextCheck.ToString('HH:mm:ss'))" -Level "DEBUG"
+            Write-Log "=== MONITOR CHECK COMPLETE ===" -Level "DEBUG"
             
             Start-Sleep -Seconds $config.MonitorSettings.CheckInterval
         }
+        
+        # Log monitoring completion
+        $totalDuration = (Get-Date) - $script:monitoringStartTime
+        Write-Log "=== MONITORING COMPLETED ===" -Level "INFO"
+        Write-Log "Total monitoring duration: $($totalDuration.ToString('dd\.hh\:mm\:ss'))" -Level "INFO"
+        Write-Log "Monitoring mode was: $($config.MonitorSettings.Mode)" -Level "INFO"
+        Write-Log "Script will now exit as monitoring period has ended." -Level "INFO"
+        
     } else {
         Write-Log "Monitoring disabled. Script will exit after initial launch." -Level "INFO"
     }

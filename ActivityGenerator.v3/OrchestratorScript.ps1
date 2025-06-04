@@ -7,12 +7,45 @@ param(
     [int]$NumberOfIterations = 0  # Will use config file default if 0
 )
 
-# Function to write to both console and log file with error handling
+# Function to load and validate configuration
+function Get-ScriptConfig {
+    param (
+        [string]$ConfigPath
+    )
+    
+    try {
+        if (-not (Test-Path $ConfigPath)) {
+            throw "Configuration file not found at: $ConfigPath"
+        }
+
+        $config = Get-Content -Path $ConfigPath -Raw | ConvertFrom-Json
+
+        # Validate required configuration sections
+        $requiredSections = @('workingDirectory', 'scripts', 'logging', 'iterations')
+        foreach ($section in $requiredSections) {
+            if (-not $config.$section) {
+                throw "Missing required configuration section: $section"
+            }
+        }
+
+        # Validate wait times array
+        if (-not $config.iterations.waitTimes -or $config.iterations.waitTimes.Count -eq 0) {
+            throw "Configuration must include at least one wait time pair"
+        }
+
+        return $config
+    }
+    catch {
+        throw "Error loading configuration: $_"
+    }
+}
+
+# Function to write to both console and log file
 function Write-Log {
     param(
         [string]$Message,
         [string]$Level = "INFO",
-        [string]$LogPath = ""
+        [string]$LogPath
     )
     
     $timestamp = Get-Date -Format "yyyy-MM-dd HH:mm:ss"
@@ -26,69 +59,8 @@ function Write-Log {
         default { Write-Host $logMessage }
     }
     
-    # Append to log file only if LogPath is provided and valid
-    if ($LogPath -and $LogPath.Trim() -ne "") {
-        try {
-            # Ensure directory exists
-            $logDir = Split-Path -Parent $LogPath -ErrorAction SilentlyContinue
-            if ($logDir -and -not (Test-Path $logDir)) {
-                New-Item -ItemType Directory -Path $logDir -Force | Out-Null
-            }
-            
-            # Write to log file
-            $logMessage | Out-File -FilePath $LogPath -Append -Encoding UTF8 -ErrorAction SilentlyContinue
-        } catch {
-            Write-Host "Warning: Could not write to log file: $LogPath" -ForegroundColor Yellow
-        }
-    }
-}
-
-# Function to load and validate configuration
-function Get-ScriptConfig {
-    param (
-        [string]$ConfigPath
-    )
-    
-    try {
-        Write-Log "Attempting to load configuration from: $ConfigPath"
-        
-        if (-not (Test-Path $ConfigPath)) {
-            throw "Configuration file not found at: $ConfigPath"
-        }
-
-        $config = Get-Content -Path $ConfigPath -Raw | ConvertFrom-Json
-        Write-Log "Configuration loaded successfully"
-
-        # Validate required configuration sections
-        $requiredSections = @('workingDirectory', 'scripts', 'logging', 'iterations')
-        foreach ($section in $requiredSections) {
-            if (-not $config.$section) {
-                throw "Missing required configuration section: $section"
-            }
-        }
-
-        # Convert relative log path to absolute path
-        if ($config.logging.logPath -and $config.logging.logPath.StartsWith(".")) {
-            $workingDir = $config.workingDirectory
-            if (-not $workingDir) {
-                $workingDir = Get-Location
-            }
-            $config.logging.logPath = Join-Path $workingDir $config.logging.logPath.TrimStart(".\")
-            Write-Log "Converted log path to: $($config.logging.logPath)"
-        }
-
-        # Validate wait times array
-        if (-not $config.iterations.waitTimes -or $config.iterations.waitTimes.Count -eq 0) {
-            throw "Configuration must include at least one wait time pair"
-        }
-
-        Write-Log "Configuration validation completed successfully"
-        return $config
-    }
-    catch {
-        Write-Log "Error loading configuration: $_" -Level "ERROR"
-        throw "Error loading configuration: $_"
-    }
+    # Append to log file
+    Add-Content -Path $LogPath -Value $logMessage
 }
 
 # Function to clean up old log files
@@ -98,18 +70,8 @@ function Remove-OldLogs {
         [int]$RetentionDays
     )
     
-    if (-not $LogPath -or $LogPath.Trim() -eq "") {
-        Write-Log "Skipping log cleanup - no log path specified" -Level "WARNING"
-        return
-    }
-    
     try {
         $logDir = Split-Path -Parent $LogPath
-        if (-not (Test-Path $logDir)) {
-            Write-Log "Log directory does not exist: $logDir" -Level "WARNING"
-            return
-        }
-        
         $logPattern = "$(Split-Path -Leaf $LogPath)*"
         $oldLogs = Get-ChildItem -Path $logDir -Filter $logPattern | 
             Where-Object { $_.LastWriteTime -lt (Get-Date).AddDays(-$RetentionDays) }
@@ -150,41 +112,26 @@ function Invoke-ActivityIteration {
     do {
         try {
             # Set working directory for this iteration
-            Write-Log "Setting working directory to: $WorkingDirectory" -LogPath $LogPath
             Set-Location -Path $WorkingDirectory -ErrorAction Stop
 
-            # Check if startup script exists
-            $fullStartupPath = Join-Path $WorkingDirectory $StartupScript
-            if (-not (Test-Path $fullStartupPath)) {
-                throw "Startup script not found: $fullStartupPath"
-            }
-
             # Run startup script with parameters
-            Write-Log "Executing startup script: $StartupScript" -LogPath $LogPath
             $startupParams = @{
                 FilePath = "powershell.exe"
                 ArgumentList = @(
                     "-ExecutionPolicy", "Bypass",
-                    "-File", $fullStartupPath,
+                    "-File", $StartupScript,
                     "-rand_start_wait_max", $MaxWait,
                     "-rand_start_wait_min", $MinWait
                 )
             }
             Start-Process @startupParams -Wait -NoNewWindow
 
-            # Check if orchestrator script exists
-            $fullOrchestratorPath = Join-Path $WorkingDirectory $OrchestratorScript
-            if (-not (Test-Path $fullOrchestratorPath)) {
-                throw "Orchestrator script not found: $fullOrchestratorPath"
-            }
-
             # Run orchestrator script
-            Write-Log "Executing orchestrator script: $OrchestratorScript" -LogPath $LogPath
             $orchestratorParams = @{
                 FilePath = "powershell.exe"
                 ArgumentList = @(
                     "-ExecutionPolicy", "Bypass",
-                    "-File", $fullOrchestratorPath
+                    "-File", $OrchestratorScript
                 )
             }
             Start-Process @orchestratorParams -Wait -NoNewWindow
@@ -196,6 +143,19 @@ function Invoke-ActivityIteration {
             
             Write-Log "Iteration $($IterationNumber + 1) completed successfully (Duration: $($duration.ToString('F2')) seconds)" -Level "SUCCESS" -LogPath $LogPath
             
+            # Log detailed statistics
+            $stats = @{
+                "Iteration" = $IterationNumber + 1
+                "StartTime" = $startTime.ToString("yyyy-MM-dd HH:mm:ss")
+                "EndTime" = $endTime.ToString("yyyy-MM-dd HH:mm:ss")
+                "Duration" = "$($duration.ToString('F2')) seconds"
+                "MinWait" = $MinWait
+                "MaxWait" = $MaxWait
+                "GeneratedWait" = $generatedRandom
+                "RetryCount" = $retryCount
+            }
+            
+            Write-Log "Iteration Statistics:`n$(($stats.GetEnumerator() | ForEach-Object { "  $($_.Key): $($_.Value)" }) -join "`n")" -LogPath $LogPath
         }
         catch {
             $retryCount++
@@ -215,16 +175,8 @@ function Invoke-ActivityIteration {
 
 # Main execution block
 try {
-    Write-Log "=== ACTIVITY ORCHESTRATOR STARTING ===" -Level "INFO"
-    Write-Log "Current working directory: $(Get-Location)" -Level "INFO"
-    Write-Log "Configuration file: $ConfigPath" -Level "INFO"
-    
     # Load configuration
     $config = Get-ScriptConfig -ConfigPath $ConfigPath
-    
-    # Set up logging with the loaded configuration
-    $logPath = $config.logging.logPath
-    Write-Log "Using log file: $logPath" -Level "INFO" -LogPath $logPath
     
     # Set number of iterations
     if ($NumberOfIterations -le 0) {
@@ -233,21 +185,20 @@ try {
 
     # Ensure we have enough wait time pairs
     if ($config.iterations.waitTimes.Count -lt $NumberOfIterations) {
-        Write-Log "Not enough wait time pairs for $NumberOfIterations iterations. Using available pairs cyclically." -Level "WARNING" -LogPath $logPath
+        throw "Not enough wait time pairs in configuration for requested number of iterations"
     }
 
     $scriptStartTime = Get-Date
-    Write-Log "Starting Activity Generator Orchestrator" -LogPath $logPath
-    Write-Log "Total planned iterations: $NumberOfIterations" -LogPath $logPath
+    Write-Log "Starting Activity Generator Orchestrator" -LogPath $config.logging.logPath
+    Write-Log "Using configuration file: $ConfigPath" -LogPath $config.logging.logPath
+    Write-Log "Total planned iterations: $NumberOfIterations" -LogPath $config.logging.logPath
 
     # Clean up old logs
-    Remove-OldLogs -LogPath $logPath -RetentionDays $config.logging.logRetentionDays
+    Remove-OldLogs -LogPath $config.logging.logPath -RetentionDays $config.logging.logRetentionDays
 
     # Run iterations
     for ($i = 0; $i -lt $NumberOfIterations; $i++) {
-        # Use modulo to cycle through wait times if we have more iterations than wait time pairs
-        $waitTimeIndex = $i % $config.iterations.waitTimes.Count
-        $waitTimes = $config.iterations.waitTimes[$waitTimeIndex]
+        $waitTimes = $config.iterations.waitTimes[$i]
         
         Invoke-ActivityIteration `
             -IterationNumber $i `
@@ -256,7 +207,7 @@ try {
             -WorkingDirectory $config.workingDirectory `
             -StartupScript $config.scripts.startup `
             -OrchestratorScript $config.scripts.orchestrator `
-            -LogPath $logPath `
+            -LogPath $config.logging.logPath `
             -MaxRetries $config.execution.maxRetries `
             -RetryDelay $config.execution.retryDelaySeconds
     }
@@ -264,12 +215,22 @@ try {
     $scriptEndTime = Get-Date
     $totalDuration = ($scriptEndTime - $scriptStartTime).TotalMinutes
     
-    Write-Log "All iterations completed successfully" -Level "SUCCESS" -LogPath $logPath
-    Write-Log "Total execution time: $($totalDuration.ToString('F2')) minutes" -LogPath $logPath
-    Write-Log "=== ACTIVITY ORCHESTRATOR COMPLETE ===" -Level "SUCCESS" -LogPath $logPath
+    Write-Log "All iterations completed successfully" -Level "SUCCESS" -LogPath $config.logging.logPath
+    Write-Log "Total execution time: $($totalDuration.ToString('F2')) minutes" -LogPath $config.logging.logPath
+    
+    # Write final summary statistics
+    $summaryStats = @{
+        "Total Iterations" = $NumberOfIterations
+        "Start Time" = $scriptStartTime.ToString("yyyy-MM-dd HH:mm:ss")
+        "End Time" = $scriptEndTime.ToString("yyyy-MM-dd HH:mm:ss")
+        "Total Duration" = "$($totalDuration.ToString('F2')) minutes"
+        "Average Duration" = "$($($totalDuration / $NumberOfIterations).ToString('F2')) minutes per iteration"
+        "Configuration File" = $ConfigPath
+    }
+    
+    Write-Log "Final Summary:`n$(($summaryStats.GetEnumerator() | ForEach-Object { "  $($_.Key): $($_.Value)" }) -join "`n")" -Level "SUCCESS" -LogPath $config.logging.logPath
 }
 catch {
-    Write-Log "Script execution failed: $_" -Level "ERROR" -LogPath $logPath
-    Write-Log "=== ACTIVITY ORCHESTRATOR FAILED ===" -Level "ERROR" -LogPath $logPath
+    Write-Log "Script execution failed: $_" -Level "ERROR" -LogPath $config.logging.logPath
     exit 1
 }

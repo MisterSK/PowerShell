@@ -1,60 +1,40 @@
 {
-    "workingDirectory": "C:\\Users\\SanyaKhasenye(Sensit\\WorkingDir\\PowerShell\\ActivityGenerator.v3",
-    "scripts": {
-      "startup": ".\\ActivityGeneratorStartUp.ps1",
-      "orchestrator": ".\\OrchestratorScript.ps1"
-    },
-    "logging": {
-      "logPath": ".\\Logs\\ActivityGenerator.log",
-      "logRetentionDays": 30
-    },
-    "iterations": {
-      "default": 5,
-      "waitTimes": [
-        {
-          "minWait": 100,
-          "maxWait": 500
-        },
-        {
-          "minWait": 200,
-          "maxWait": 800
-        },
-        {
-          "minWait": 150,
-          "maxWait": 6000
-        },
-        {
-          "minWait": 300,
-          "maxWait": 10000
-        },
-        {
-          "minWait": 250,
-          "maxWait": 7500
-        },
-        {
-          "minWait": 100,
-          "maxWait": 4000
-        },
-        {
-          "minWait": 2000,
-          "maxWait": 6000
-        },
-        {
-          "minWait": 1800,
-          "maxWait": 5500
-        },
-        {
-          "minWait": 2200,
-          "maxWait": 8500
-        },
-        {
-          "minWait": 1300,
-          "maxWait": 4500
-        }
-      ]
-    },
-    "execution": {
-      "maxRetries": 3,
-      "retryDelaySeconds": 5
-    }
+  "workingDirectory": "C:\\Users\\SanyaKhasenye(Sensit\\WorkingDir\\PowerShell\\ActivityGenerator.v3",
+  "scripts": {
+    "startup": ".\\ActivityGeneratorStartUp.ps1",
+    "orchestrator": ".\\ActivityOrchestrator.ps1"
+  },
+  "logging": {
+    "logPath": ".\\Logs\\ActivityGenerator.log",
+    "logRetentionDays": 30
+  },
+  "iterations": {
+    "default": 1,
+    "waitTimes": [
+      {
+        "minWait": 50,
+        "maxWait": 3200
+      },
+      {
+        "minWait": 40,
+        "maxWait": 4000
+      },
+      {
+        "minWait": 30,
+        "maxWait": 5400
+      },
+      {
+        "minWait": 20,
+        "maxWait":6500
+      },
+      {
+        "minWait": 10,
+        "maxWait": 8500
+      }
+    ]
+  },
+  "execution": {
+    "maxRetries": 3,
+    "retryDelaySeconds": 5
   }
+}
