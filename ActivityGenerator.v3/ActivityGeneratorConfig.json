@@ -9,27 +9,27 @@
     "logRetentionDays": 30
   },
   "iterations": {
-    "default": 1,
+    "default": 2,
     "waitTimes": [
       {
-        "minWait": 50,
-        "maxWait": 3200
+        "minWait": 150,
+        "maxWait": 6200
       },
       {
-        "minWait": 40,
-        "maxWait": 4000
+        "minWait": 250,
+        "maxWait": 7000
       },
       {
         "minWait": 30,
-        "maxWait": 5400
+        "maxWait": 8400
       },
       {
         "minWait": 20,
-        "maxWait":6500
+        "maxWait":9500
       },
       {
         "minWait": 10,
-        "maxWait": 8500
+        "maxWait": 18500
       }
     ]
   },

@@ -2,8 +2,8 @@
     "WindowSettings": {
         "Count": 2,
         "NoExit": false,
-        "MinSeconds": 1,
-        "MaxSeconds": 15000,
+        "MinSeconds": 200,
+        "MaxSeconds": 18000,
         "Cols": 80,
         "Lines": 10,
         "BgColor": "0A",
