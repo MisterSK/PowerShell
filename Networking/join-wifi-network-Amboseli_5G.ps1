@@ -1,0 +1,1 @@
+Netsh WLAN connect name="Amboseli_5G"

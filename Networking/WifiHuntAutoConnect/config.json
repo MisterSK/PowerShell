@@ -1,0 +1,12 @@
+{
+    "RetryIntervalMin":  10,
+    "MaxLogSizeMB":  5,
+    "RetryIntervalMax":  30,
+    "PreferredNetworks":  [
+                              "HellsGate-5.0G",
+                              "HellsGate-2.4G",
+                              "Merlin Wharf",
+                              "Nyati_CPEPro2_5G",
+                              "Nyati_CPEPro2_2.4G"
+                          ]
+}

@@ -1,0 +1,1 @@
+Netsh WLAN connect name="Nyati_CPEPro2_5G"
