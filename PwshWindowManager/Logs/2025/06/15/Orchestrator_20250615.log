@@ -1,0 +1,190 @@
+﻿[2025-06-15 09:01:56] [INFO] === LOG ROTATED TO NEW DATE: 20250615 ===
+[2025-06-15 09:01:56] [DEBUG] === MONITOR CHECK CYCLE ===
+[2025-06-15 09:01:56] [DEBUG] Found 5 running PowerShell terminal windows (excluding monitoring window)
+[2025-06-15 09:01:56] [INFO] Monitor Status: Running=5, Required=4, Max=7
+[2025-06-15 09:01:56] [DEBUG] Window count OK: 5 >= 4 (minimum)
+[2025-06-15 09:01:56] [DEBUG] Next monitor check at: 09:10:56
+[2025-06-15 09:01:56] [DEBUG] === MONITOR CHECK COMPLETE ===
+[2025-06-15 09:10:56] [DEBUG] === MONITOR CHECK CYCLE ===
+[2025-06-15 09:10:56] [DEBUG] Found 5 running PowerShell terminal windows (excluding monitoring window)
+[2025-06-15 09:10:56] [INFO] Monitor Status: Running=5, Required=4, Max=7
+[2025-06-15 09:10:56] [DEBUG] Window count OK: 5 >= 4 (minimum)
+[2025-06-15 09:10:56] [DEBUG] Next monitor check at: 09:19:56
+[2025-06-15 09:10:56] [DEBUG] === MONITOR CHECK COMPLETE ===
+[2025-06-15 09:19:56] [DEBUG] === MONITOR CHECK CYCLE ===
+[2025-06-15 09:19:57] [DEBUG] Found 3 running PowerShell terminal windows (excluding monitoring window)
+[2025-06-15 09:19:57] [INFO] Monitor Status: Running=3, Required=4, Max=7
+[2025-06-15 09:19:57] [WARN] *** LOW WINDOW COUNT DETECTED ***
+[2025-06-15 09:19:57] [WARN] Running: 3, Required: 4, Available slots: 4
+[2025-06-15 09:19:57] [WARN] Launching 3 new windows...
+[2025-06-15 09:19:57] [INFO] Launching window AUTO_091957_1 with 23478 second countdown
+[2025-06-15 09:19:57] [DEBUG] Preparing to launch window AUTO_091957_1 with 23478 second countdown
+[2025-06-15 09:19:57] [DEBUG] Could not create shortcut, using direct launch: Cannot invoke method. Method invocation is supported only on core types in this language mode.
+[2025-06-15 09:19:57] [INFO] Launched window AUTO_091957_1 directly - 23478 second countdown
+[2025-06-15 09:19:57] [DEBUG] Window configuration - Size: 80x10, Font: Consolas 6pt
+[2025-06-15 09:19:57] [DEBUG] Auto-close timeout: 120 seconds
+[2025-06-15 09:20:00] [INFO] Launching window AUTO_092000_2 with 26387 second countdown
+[2025-06-15 09:20:00] [DEBUG] Preparing to launch window AUTO_092000_2 with 26387 second countdown
+[2025-06-15 09:20:00] [DEBUG] Could not create shortcut, using direct launch: Cannot invoke method. Method invocation is supported only on core types in this language mode.
+[2025-06-15 09:20:00] [INFO] Launched window AUTO_092000_2 directly - 26387 second countdown
+[2025-06-15 09:20:00] [DEBUG] Window configuration - Size: 80x10, Font: Consolas 6pt
+[2025-06-15 09:20:00] [DEBUG] Auto-close timeout: 120 seconds
+[2025-06-15 09:20:03] [INFO] Launching window AUTO_092003_3 with 22992 second countdown
+[2025-06-15 09:20:03] [DEBUG] Preparing to launch window AUTO_092003_3 with 22992 second countdown
+[2025-06-15 09:20:03] [DEBUG] Could not create shortcut, using direct launch: Cannot invoke method. Method invocation is supported only on core types in this language mode.
+[2025-06-15 09:20:03] [INFO] Launched window AUTO_092003_3 directly - 22992 second countdown
+[2025-06-15 09:20:03] [DEBUG] Window configuration - Size: 80x10, Font: Consolas 6pt
+[2025-06-15 09:20:03] [DEBUG] Auto-close timeout: 120 seconds
+[2025-06-15 09:20:06] [INFO] Completed launching 3 replacement windows
+[2025-06-15 09:20:06] [DEBUG] Next monitor check at: 09:29:06
+[2025-06-15 09:20:06] [DEBUG] === MONITOR CHECK COMPLETE ===
+[2025-06-15 09:29:06] [DEBUG] === MONITOR CHECK CYCLE ===
+[2025-06-15 09:29:06] [DEBUG] Found 3 running PowerShell terminal windows (excluding monitoring window)
+[2025-06-15 09:29:06] [INFO] Monitor Status: Running=3, Required=4, Max=7
+[2025-06-15 09:29:06] [WARN] *** LOW WINDOW COUNT DETECTED ***
+[2025-06-15 09:29:06] [WARN] Running: 3, Required: 4, Available slots: 4
+[2025-06-15 09:29:06] [WARN] Launching 3 new windows...
+[2025-06-15 09:29:06] [INFO] Launching window AUTO_092906_1 with 13838 second countdown
+[2025-06-15 09:29:06] [DEBUG] Preparing to launch window AUTO_092906_1 with 13838 second countdown
+[2025-06-15 09:29:06] [DEBUG] Could not create shortcut, using direct launch: Cannot invoke method. Method invocation is supported only on core types in this language mode.
+[2025-06-15 09:29:06] [INFO] Launched window AUTO_092906_1 directly - 13838 second countdown
+[2025-06-15 09:29:06] [DEBUG] Window configuration - Size: 80x10, Font: Consolas 6pt
+[2025-06-15 09:29:06] [DEBUG] Auto-close timeout: 120 seconds
+[2025-06-15 09:29:09] [INFO] Launching window AUTO_092909_2 with 20600 second countdown
+[2025-06-15 09:29:09] [DEBUG] Preparing to launch window AUTO_092909_2 with 20600 second countdown
+[2025-06-15 09:29:09] [DEBUG] Could not create shortcut, using direct launch: Cannot invoke method. Method invocation is supported only on core types in this language mode.
+[2025-06-15 09:29:09] [INFO] Launched window AUTO_092909_2 directly - 20600 second countdown
+[2025-06-15 09:29:09] [DEBUG] Window configuration - Size: 80x10, Font: Consolas 6pt
+[2025-06-15 09:29:09] [DEBUG] Auto-close timeout: 120 seconds
+[2025-06-15 09:29:12] [INFO] Launching window AUTO_092912_3 with 1778 second countdown
+[2025-06-15 09:29:12] [DEBUG] Preparing to launch window AUTO_092912_3 with 1778 second countdown
+[2025-06-15 09:29:12] [DEBUG] Could not create shortcut, using direct launch: Cannot invoke method. Method invocation is supported only on core types in this language mode.
+[2025-06-15 09:29:12] [INFO] Launched window AUTO_092912_3 directly - 1778 second countdown
+[2025-06-15 09:29:12] [DEBUG] Window configuration - Size: 80x10, Font: Consolas 6pt
+[2025-06-15 09:29:12] [DEBUG] Auto-close timeout: 120 seconds
+[2025-06-15 09:29:15] [INFO] Completed launching 3 replacement windows
+[2025-06-15 09:29:15] [DEBUG] Next monitor check at: 09:38:15
+[2025-06-15 09:29:15] [DEBUG] === MONITOR CHECK COMPLETE ===
+[2025-06-15 09:38:15] [DEBUG] === MONITOR CHECK CYCLE ===
+[2025-06-15 09:38:15] [DEBUG] Found 3 running PowerShell terminal windows (excluding monitoring window)
+[2025-06-15 09:38:15] [INFO] Monitor Status: Running=3, Required=4, Max=7
+[2025-06-15 09:38:15] [WARN] *** LOW WINDOW COUNT DETECTED ***
+[2025-06-15 09:38:15] [WARN] Running: 3, Required: 4, Available slots: 4
+[2025-06-15 09:38:15] [WARN] Launching 3 new windows...
+[2025-06-15 09:38:15] [INFO] Launching window AUTO_093815_1 with 15503 second countdown
+[2025-06-15 09:38:15] [DEBUG] Preparing to launch window AUTO_093815_1 with 15503 second countdown
+[2025-06-15 09:38:15] [DEBUG] Could not create shortcut, using direct launch: Cannot invoke method. Method invocation is supported only on core types in this language mode.
+[2025-06-15 09:38:15] [INFO] Launched window AUTO_093815_1 directly - 15503 second countdown
+[2025-06-15 09:38:15] [DEBUG] Window configuration - Size: 80x10, Font: Consolas 6pt
+[2025-06-15 09:38:15] [DEBUG] Auto-close timeout: 120 seconds
+[2025-06-15 09:38:18] [INFO] Launching window AUTO_093818_2 with 3526 second countdown
+[2025-06-15 09:38:18] [DEBUG] Preparing to launch window AUTO_093818_2 with 3526 second countdown
+[2025-06-15 09:38:18] [DEBUG] Could not create shortcut, using direct launch: Cannot invoke method. Method invocation is supported only on core types in this language mode.
+[2025-06-15 09:38:18] [INFO] Launched window AUTO_093818_2 directly - 3526 second countdown
+[2025-06-15 09:38:18] [DEBUG] Window configuration - Size: 80x10, Font: Consolas 6pt
+[2025-06-15 09:38:18] [DEBUG] Auto-close timeout: 120 seconds
+[2025-06-15 09:38:21] [INFO] Launching window AUTO_093821_3 with 24611 second countdown
+[2025-06-15 09:38:21] [DEBUG] Preparing to launch window AUTO_093821_3 with 24611 second countdown
+[2025-06-15 09:38:21] [DEBUG] Could not create shortcut, using direct launch: Cannot invoke method. Method invocation is supported only on core types in this language mode.
+[2025-06-15 09:38:21] [INFO] Launched window AUTO_093821_3 directly - 24611 second countdown
+[2025-06-15 09:38:21] [DEBUG] Window configuration - Size: 80x10, Font: Consolas 6pt
+[2025-06-15 09:38:21] [DEBUG] Auto-close timeout: 120 seconds
+[2025-06-15 09:38:24] [INFO] Completed launching 3 replacement windows
+[2025-06-15 09:38:24] [DEBUG] Next monitor check at: 09:47:24
+[2025-06-15 09:38:24] [DEBUG] === MONITOR CHECK COMPLETE ===
+[2025-06-15 09:47:25] [DEBUG] === MONITOR CHECK CYCLE ===
+[2025-06-15 09:47:25] [DEBUG] Found 5 running PowerShell terminal windows (excluding monitoring window)
+[2025-06-15 09:47:25] [INFO] Monitor Status: Running=5, Required=4, Max=7
+[2025-06-15 09:47:25] [DEBUG] Window count OK: 5 >= 4 (minimum)
+[2025-06-15 09:47:25] [DEBUG] Next monitor check at: 09:56:25
+[2025-06-15 09:47:25] [DEBUG] === MONITOR CHECK COMPLETE ===
+[2025-06-15 09:56:25] [DEBUG] === MONITOR CHECK CYCLE ===
+[2025-06-15 09:56:25] [DEBUG] Found 5 running PowerShell terminal windows (excluding monitoring window)
+[2025-06-15 09:56:25] [INFO] Monitor Status: Running=5, Required=4, Max=7
+[2025-06-15 09:56:25] [DEBUG] Window count OK: 5 >= 4 (minimum)
+[2025-06-15 09:56:25] [DEBUG] Next monitor check at: 10:05:25
+[2025-06-15 09:56:25] [DEBUG] === MONITOR CHECK COMPLETE ===
+[2025-06-15 10:05:25] [DEBUG] === MONITOR CHECK CYCLE ===
+[2025-06-15 10:05:25] [DEBUG] Found 5 running PowerShell terminal windows (excluding monitoring window)
+[2025-06-15 10:05:25] [INFO] Monitor Status: Running=5, Required=4, Max=7
+[2025-06-15 10:05:25] [DEBUG] Window count OK: 5 >= 4 (minimum)
+[2025-06-15 10:05:25] [DEBUG] Next monitor check at: 10:14:25
+[2025-06-15 10:05:25] [DEBUG] === MONITOR CHECK COMPLETE ===
+[2025-06-15 10:14:25] [DEBUG] === MONITOR CHECK CYCLE ===
+[2025-06-15 10:14:25] [DEBUG] Found 5 running PowerShell terminal windows (excluding monitoring window)
+[2025-06-15 10:14:25] [INFO] Monitor Status: Running=5, Required=4, Max=7
+[2025-06-15 10:14:25] [DEBUG] Window count OK: 5 >= 4 (minimum)
+[2025-06-15 10:14:25] [DEBUG] Next monitor check at: 10:23:25
+[2025-06-15 10:14:25] [DEBUG] === MONITOR CHECK COMPLETE ===
+[2025-06-15 10:23:25] [DEBUG] === MONITOR CHECK CYCLE ===
+[2025-06-15 10:23:25] [DEBUG] Found 5 running PowerShell terminal windows (excluding monitoring window)
+[2025-06-15 10:23:25] [INFO] Monitor Status: Running=5, Required=4, Max=7
+[2025-06-15 10:23:25] [DEBUG] Window count OK: 5 >= 4 (minimum)
+[2025-06-15 10:23:25] [DEBUG] Next monitor check at: 10:32:25
+[2025-06-15 10:23:25] [DEBUG] === MONITOR CHECK COMPLETE ===
+[2025-06-15 10:32:25] [DEBUG] === MONITOR CHECK CYCLE ===
+[2025-06-15 10:32:25] [DEBUG] Found 5 running PowerShell terminal windows (excluding monitoring window)
+[2025-06-15 10:32:25] [INFO] Monitor Status: Running=5, Required=4, Max=7
+[2025-06-15 10:32:25] [DEBUG] Window count OK: 5 >= 4 (minimum)
+[2025-06-15 10:32:25] [DEBUG] Next monitor check at: 10:41:25
+[2025-06-15 10:32:25] [DEBUG] === MONITOR CHECK COMPLETE ===
+[2025-06-15 10:41:25] [DEBUG] === MONITOR CHECK CYCLE ===
+[2025-06-15 10:41:25] [DEBUG] Found 5 running PowerShell terminal windows (excluding monitoring window)
+[2025-06-15 10:41:25] [INFO] Monitor Status: Running=5, Required=4, Max=7
+[2025-06-15 10:41:25] [DEBUG] Window count OK: 5 >= 4 (minimum)
+[2025-06-15 10:41:25] [DEBUG] Next monitor check at: 10:50:25
+[2025-06-15 10:41:25] [DEBUG] === MONITOR CHECK COMPLETE ===
+[2025-06-15 10:50:25] [DEBUG] === MONITOR CHECK CYCLE ===
+[2025-06-15 10:50:26] [DEBUG] Found 5 running PowerShell terminal windows (excluding monitoring window)
+[2025-06-15 10:50:26] [INFO] Monitor Status: Running=5, Required=4, Max=7
+[2025-06-15 10:50:26] [DEBUG] Window count OK: 5 >= 4 (minimum)
+[2025-06-15 10:50:26] [DEBUG] Next monitor check at: 10:59:26
+[2025-06-15 10:50:26] [DEBUG] === MONITOR CHECK COMPLETE ===
+[2025-06-15 10:59:26] [DEBUG] === MONITOR CHECK CYCLE ===
+[2025-06-15 10:59:26] [DEBUG] Found 5 running PowerShell terminal windows (excluding monitoring window)
+[2025-06-15 10:59:26] [INFO] Monitor Status: Running=5, Required=4, Max=7
+[2025-06-15 10:59:26] [DEBUG] Window count OK: 5 >= 4 (minimum)
+[2025-06-15 10:59:26] [DEBUG] Next monitor check at: 11:08:26
+[2025-06-15 10:59:26] [DEBUG] === MONITOR CHECK COMPLETE ===
+[2025-06-15 11:08:26] [DEBUG] === MONITOR CHECK CYCLE ===
+[2025-06-15 11:08:26] [DEBUG] Found 5 running PowerShell terminal windows (excluding monitoring window)
+[2025-06-15 11:08:26] [INFO] Monitor Status: Running=5, Required=4, Max=7
+[2025-06-15 11:08:26] [DEBUG] Window count OK: 5 >= 4 (minimum)
+[2025-06-15 11:08:26] [DEBUG] Next monitor check at: 11:17:26
+[2025-06-15 11:08:26] [DEBUG] === MONITOR CHECK COMPLETE ===
+[2025-06-15 11:17:26] [DEBUG] === MONITOR CHECK CYCLE ===
+[2025-06-15 11:17:26] [DEBUG] Found 5 running PowerShell terminal windows (excluding monitoring window)
+[2025-06-15 11:17:26] [INFO] Monitor Status: Running=5, Required=4, Max=7
+[2025-06-15 11:17:26] [DEBUG] Window count OK: 5 >= 4 (minimum)
+[2025-06-15 11:17:26] [DEBUG] Next monitor check at: 11:26:26
+[2025-06-15 11:17:26] [DEBUG] === MONITOR CHECK COMPLETE ===
+[2025-06-15 11:26:26] [DEBUG] === MONITOR CHECK CYCLE ===
+[2025-06-15 11:26:26] [DEBUG] Found 5 running PowerShell terminal windows (excluding monitoring window)
+[2025-06-15 11:26:26] [INFO] Monitor Status: Running=5, Required=4, Max=7
+[2025-06-15 11:26:26] [DEBUG] Window count OK: 5 >= 4 (minimum)
+[2025-06-15 11:26:26] [DEBUG] Next monitor check at: 11:35:26
+[2025-06-15 11:26:26] [DEBUG] === MONITOR CHECK COMPLETE ===
+[2025-06-15 11:35:26] [DEBUG] === MONITOR CHECK CYCLE ===
+[2025-06-15 11:35:26] [DEBUG] Found 5 running PowerShell terminal windows (excluding monitoring window)
+[2025-06-15 11:35:26] [INFO] Monitor Status: Running=5, Required=4, Max=7
+[2025-06-15 11:35:26] [DEBUG] Window count OK: 5 >= 4 (minimum)
+[2025-06-15 11:35:26] [DEBUG] Next monitor check at: 11:44:26
+[2025-06-15 11:35:26] [DEBUG] === MONITOR CHECK COMPLETE ===
+[2025-06-15 11:44:26] [DEBUG] === MONITOR CHECK CYCLE ===
+[2025-06-15 11:44:26] [DEBUG] Found 5 running PowerShell terminal windows (excluding monitoring window)
+[2025-06-15 11:44:26] [INFO] Monitor Status: Running=5, Required=4, Max=7
+[2025-06-15 11:44:26] [DEBUG] Window count OK: 5 >= 4 (minimum)
+[2025-06-15 11:44:26] [DEBUG] Next monitor check at: 11:53:26
+[2025-06-15 11:44:26] [DEBUG] === MONITOR CHECK COMPLETE ===
+[2025-06-15 11:53:26] [DEBUG] === MONITOR CHECK CYCLE ===
+[2025-06-15 11:53:26] [DEBUG] Found 5 running PowerShell terminal windows (excluding monitoring window)
+[2025-06-15 11:53:26] [INFO] Monitor Status: Running=5, Required=4, Max=7
+[2025-06-15 11:53:26] [DEBUG] Window count OK: 5 >= 4 (minimum)
+[2025-06-15 11:53:26] [DEBUG] Next monitor check at: 12:02:26
+[2025-06-15 11:53:26] [DEBUG] === MONITOR CHECK COMPLETE ===
+[2025-06-15 12:02:26] [DEBUG] === MONITOR CHECK CYCLE ===
+[2025-06-15 12:02:26] [DEBUG] Found 5 running PowerShell terminal windows (excluding monitoring window)
+[2025-06-15 12:02:26] [INFO] Monitor Status: Running=5, Required=4, Max=7
+[2025-06-15 12:02:26] [DEBUG] Window count OK: 5 >= 4 (minimum)
+[2025-06-15 12:02:26] [DEBUG] Next monitor check at: 12:11:26
+[2025-06-15 12:02:26] [DEBUG] === MONITOR CHECK COMPLETE ===

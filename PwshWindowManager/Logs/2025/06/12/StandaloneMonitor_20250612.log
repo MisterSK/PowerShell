@@ -1,0 +1,449 @@
+﻿[2025-06-12 15:03:10] [INFO] === ENHANCED STANDALONE WINDOW MONITOR STARTING ===
+[2025-06-12 15:03:10] [INFO] Monitor PID: 22804
+[2025-06-12 15:03:10] [INFO] Configuration file: .\PwshWindowManager.json
+[2025-06-12 15:03:10] [INFO] Logging to: C:\Users\SanyaKhasenye(Sensit\WorkingDir\PowerShell\PwshWindowManager\Logs\2025\06\12\StandaloneMonitor_20250612.log
+[2025-06-12 15:03:10] [INFO] Configuration loaded from .\PwshWindowManager.json
+[2025-06-12 15:03:10] [INFO] === PATH VERIFICATION ===
+[2025-06-12 15:03:10] [DEBUG] Base path: C:\Users\SanyaKhasenye(Sensit\WorkingDir\PowerShell
+[2025-06-12 15:03:10] [DEBUG] Countdown script: C:\Users\SanyaKhasenye(Sensit\WorkingDir\PowerShell\CountDownTimers\Start-Countdown.ps1
+[2025-06-12 15:03:10] [DEBUG] Orchestrator directory: C:\Users\SanyaKhasenye(Sensit\WorkingDir\PowerShell\ActivityGenerator.v3
+[2025-06-12 15:03:10] [DEBUG] Orchestrator script: C:\Users\SanyaKhasenye(Sensit\WorkingDir\PowerShell\ActivityGenerator.v3\Start-ActivityOrchestrator_v0.1.ps1
+[2025-06-12 15:03:10] [INFO] SUCCESS: Countdown script found
+[2025-06-12 15:03:10] [INFO] SUCCESS: Orchestrator script found
+[2025-06-12 15:03:10] [INFO] SUCCESS: Orchestrator directory found
+[2025-06-12 15:03:10] [INFO] === PATH VERIFICATION COMPLETE ===
+[2025-06-12 15:03:10] [INFO] === ENHANCED STANDALONE MONITORING STARTED ===
+[2025-06-12 15:03:10] [INFO] Monitor settings - Min: 4, Max: 7, Check interval: 540s
+[2025-06-12 15:03:10] [INFO] Will add 3 windows when count drops below minimum
+[2025-06-12 15:03:10] [INFO] Monitoring mode: Continuous
+[2025-06-12 15:03:10] [INFO] Press Ctrl+C to stop monitoring
+[2025-06-12 15:03:10] [INFO] Monitoring mode: Continuous - No end time
+[2025-06-12 15:03:10] [DEBUG] === MONITOR CHECK CYCLE ===
+[2025-06-12 15:03:10] [DEBUG] Found 6 running PowerShell terminal windows (excluding monitoring window)
+[2025-06-12 15:03:10] [INFO] Monitor Status: Running=6, Required=4, Max=7
+[2025-06-12 15:03:10] [DEBUG] Window count OK: 6 >= 4 (minimum)
+[2025-06-12 15:03:10] [DEBUG] Next monitor check at: 15:12:10
+[2025-06-12 15:03:10] [DEBUG] === MONITOR CHECK COMPLETE ===
+[2025-06-12 15:03:11] [INFO] === ENHANCED STANDALONE MONITORING ENDED ===
+[2025-06-12 15:16:55] [INFO] === ENHANCED STANDALONE WINDOW MONITOR STARTING ===
+[2025-06-12 15:16:55] [INFO] Monitor PID: 23024
+[2025-06-12 15:16:55] [INFO] Configuration file: .\PwshWindowManager.json
+[2025-06-12 15:16:55] [INFO] Logging to: C:\Users\SanyaKhasenye(Sensit\WorkingDir\PowerShell\PwshWindowManager\Logs\2025\06\12\StandaloneMonitor_20250612.log
+[2025-06-12 15:16:55] [INFO] Configuration loaded from .\PwshWindowManager.json
+[2025-06-12 15:16:55] [INFO] === PATH VERIFICATION ===
+[2025-06-12 15:16:55] [DEBUG] Base path: C:\Users\SanyaKhasenye(Sensit\WorkingDir\PowerShell
+[2025-06-12 15:16:55] [DEBUG] Countdown script: C:\Users\SanyaKhasenye(Sensit\WorkingDir\PowerShell\CountDownTimers\Start-Countdown.ps1
+[2025-06-12 15:16:55] [DEBUG] Orchestrator directory: C:\Users\SanyaKhasenye(Sensit\WorkingDir\PowerShell\ActivityGenerator.v3
+[2025-06-12 15:16:55] [DEBUG] Orchestrator script: C:\Users\SanyaKhasenye(Sensit\WorkingDir\PowerShell\ActivityGenerator.v3\Start-ActivityOrchestrator_v0.1.ps1
+[2025-06-12 15:16:55] [INFO] SUCCESS: Countdown script found
+[2025-06-12 15:16:55] [INFO] SUCCESS: Orchestrator script found
+[2025-06-12 15:16:55] [INFO] SUCCESS: Orchestrator directory found
+[2025-06-12 15:16:55] [INFO] === PATH VERIFICATION COMPLETE ===
+[2025-06-12 15:16:55] [INFO] === ENHANCED STANDALONE MONITORING STARTED ===
+[2025-06-12 15:16:55] [INFO] Monitor settings - Min: 4, Max: 7, Check interval: 540s
+[2025-06-12 15:16:55] [INFO] Will add 3 windows when count drops below minimum
+[2025-06-12 15:16:55] [INFO] Monitoring mode: Continuous
+[2025-06-12 15:16:55] [INFO] Press Ctrl+C to stop monitoring
+[2025-06-12 15:16:55] [INFO] Monitoring mode: Continuous - No end time
+[2025-06-12 15:16:55] [DEBUG] === MONITOR CHECK CYCLE ===
+[2025-06-12 15:16:56] [DEBUG] Found 6 running PowerShell terminal windows (excluding monitoring window)
+[2025-06-12 15:16:56] [INFO] Monitor Status: Running=6, Required=4, Max=7
+[2025-06-12 15:16:56] [DEBUG] Window count OK: 6 >= 4 (minimum)
+[2025-06-12 15:16:56] [DEBUG] Next monitor check at: 15:25:56
+[2025-06-12 15:16:56] [DEBUG] === MONITOR CHECK COMPLETE ===
+[2025-06-12 15:16:58] [INFO] === ENHANCED STANDALONE MONITORING ENDED ===
+[2025-06-12 15:17:35] [INFO] === ENHANCED STANDALONE WINDOW MONITOR STARTING ===
+[2025-06-12 15:17:35] [INFO] Monitor PID: 12556
+[2025-06-12 15:17:35] [INFO] Configuration file: C:\Users\SanyaKhasenye(Sensit\WorkingDir\PowerShell\PwshWindowManager\.\PwshWindowManager.json
+[2025-06-12 15:17:35] [INFO] Logging to: C:\Users\SanyaKhasenye(Sensit\WorkingDir\PowerShell\PwshWindowManager\Logs\2025\06\12\StandaloneMonitor_20250612.log
+[2025-06-12 15:17:35] [INFO] Configuration loaded from C:\Users\SanyaKhasenye(Sensit\WorkingDir\PowerShell\PwshWindowManager\.\PwshWindowManager.json
+[2025-06-12 15:17:35] [INFO] === PATH VERIFICATION ===
+[2025-06-12 15:17:35] [DEBUG] Base path: C:\Users\SanyaKhasenye(Sensit\WorkingDir\PowerShell
+[2025-06-12 15:17:35] [DEBUG] Countdown script: C:\Users\SanyaKhasenye(Sensit\WorkingDir\PowerShell\CountDownTimers\Start-Countdown.ps1
+[2025-06-12 15:17:35] [DEBUG] Orchestrator directory: C:\Users\SanyaKhasenye(Sensit\WorkingDir\PowerShell\ActivityGenerator.v3
+[2025-06-12 15:17:35] [DEBUG] Orchestrator script: C:\Users\SanyaKhasenye(Sensit\WorkingDir\PowerShell\ActivityGenerator.v3\Start-ActivityOrchestrator_v0.1.ps1
+[2025-06-12 15:17:35] [INFO] SUCCESS: Countdown script found
+[2025-06-12 15:17:35] [INFO] SUCCESS: Orchestrator script found
+[2025-06-12 15:17:35] [INFO] SUCCESS: Orchestrator directory found
+[2025-06-12 15:17:35] [INFO] === PATH VERIFICATION COMPLETE ===
+[2025-06-12 15:17:35] [INFO] === ENHANCED STANDALONE MONITORING STARTED ===
+[2025-06-12 15:17:35] [INFO] Monitor settings - Min: 4, Max: 7, Check interval: 540s
+[2025-06-12 15:17:35] [INFO] Will add 3 windows when count drops below minimum
+[2025-06-12 15:17:35] [INFO] Monitoring mode: Continuous
+[2025-06-12 15:17:35] [INFO] Press Ctrl+C to stop monitoring
+[2025-06-12 15:17:35] [INFO] Monitoring mode: Continuous - No end time
+[2025-06-12 15:17:35] [DEBUG] === MONITOR CHECK CYCLE ===
+[2025-06-12 15:17:36] [DEBUG] Found 6 running PowerShell terminal windows (excluding monitoring window)
+[2025-06-12 15:17:36] [INFO] Monitor Status: Running=6, Required=4, Max=7
+[2025-06-12 15:17:36] [DEBUG] Window count OK: 6 >= 4 (minimum)
+[2025-06-12 15:17:36] [DEBUG] Next monitor check at: 15:26:36
+[2025-06-12 15:17:36] [DEBUG] === MONITOR CHECK COMPLETE ===
+[2025-06-12 15:23:38] [INFO] === ENHANCED STANDALONE MONITORING ENDED ===
+[2025-06-12 15:23:42] [INFO] === ENHANCED STANDALONE WINDOW MONITOR STARTING ===
+[2025-06-12 15:23:42] [INFO] Monitor PID: 10408
+[2025-06-12 15:23:42] [INFO] Configuration file: C:\Users\SanyaKhasenye(Sensit\WorkingDir\PowerShell\PwshWindowManager\.\PwshWindowManager.json
+[2025-06-12 15:23:42] [INFO] Logging to: C:\Users\SanyaKhasenye(Sensit\WorkingDir\PowerShell\PwshWindowManager\Logs\2025\06\12\StandaloneMonitor_20250612.log
+[2025-06-12 15:23:42] [INFO] Configuration loaded from C:\Users\SanyaKhasenye(Sensit\WorkingDir\PowerShell\PwshWindowManager\.\PwshWindowManager.json
+[2025-06-12 15:23:42] [INFO] === PATH VERIFICATION ===
+[2025-06-12 15:23:42] [DEBUG] Base path: C:\Users\SanyaKhasenye(Sensit\WorkingDir\PowerShell
+[2025-06-12 15:23:42] [DEBUG] Countdown script: C:\Users\SanyaKhasenye(Sensit\WorkingDir\PowerShell\CountDownTimers\Start-Countdown.ps1
+[2025-06-12 15:23:42] [DEBUG] Orchestrator directory: C:\Users\SanyaKhasenye(Sensit\WorkingDir\PowerShell\ActivityGenerator.v3
+[2025-06-12 15:23:42] [DEBUG] Orchestrator script: C:\Users\SanyaKhasenye(Sensit\WorkingDir\PowerShell\ActivityGenerator.v3\Start-ActivityOrchestrator_v0.1.ps1
+[2025-06-12 15:23:42] [INFO] SUCCESS: Countdown script found
+[2025-06-12 15:23:42] [INFO] SUCCESS: Orchestrator script found
+[2025-06-12 15:23:42] [INFO] SUCCESS: Orchestrator directory found
+[2025-06-12 15:23:42] [INFO] === PATH VERIFICATION COMPLETE ===
+[2025-06-12 15:23:42] [INFO] === ENHANCED STANDALONE MONITORING STARTED ===
+[2025-06-12 15:23:42] [INFO] Monitor settings - Min: 4, Max: 7, Check interval: 540s
+[2025-06-12 15:23:42] [INFO] Will add 3 windows when count drops below minimum
+[2025-06-12 15:23:42] [INFO] Monitoring mode: Continuous
+[2025-06-12 15:23:42] [INFO] Press Ctrl+C to stop monitoring
+[2025-06-12 15:23:42] [INFO] Monitoring mode: Continuous - No end time
+[2025-06-12 15:23:42] [DEBUG] === MONITOR CHECK CYCLE ===
+[2025-06-12 15:23:42] [DEBUG] Found 6 running PowerShell terminal windows (excluding monitoring window)
+[2025-06-12 15:23:42] [INFO] Monitor Status: Running=6, Required=4, Max=7
+[2025-06-12 15:23:42] [DEBUG] Window count OK: 6 >= 4 (minimum)
+[2025-06-12 15:23:42] [DEBUG] Next monitor check at: 15:32:42
+[2025-06-12 15:23:42] [DEBUG] === MONITOR CHECK COMPLETE ===
+[2025-06-12 15:32:42] [DEBUG] === MONITOR CHECK CYCLE ===
+[2025-06-12 15:32:42] [DEBUG] Found 8 running PowerShell terminal windows (excluding monitoring window)
+[2025-06-12 15:32:42] [INFO] Monitor Status: Running=8, Required=4, Max=7
+[2025-06-12 15:32:42] [DEBUG] Window count OK: 8 >= 4 (minimum)
+[2025-06-12 15:32:42] [DEBUG] Next monitor check at: 15:41:42
+[2025-06-12 15:32:42] [DEBUG] === MONITOR CHECK COMPLETE ===
+[2025-06-12 15:41:42] [DEBUG] === MONITOR CHECK CYCLE ===
+[2025-06-12 15:41:42] [DEBUG] Found 8 running PowerShell terminal windows (excluding monitoring window)
+[2025-06-12 15:41:42] [INFO] Monitor Status: Running=8, Required=4, Max=7
+[2025-06-12 15:41:42] [DEBUG] Window count OK: 8 >= 4 (minimum)
+[2025-06-12 15:41:42] [DEBUG] Next monitor check at: 15:50:42
+[2025-06-12 15:41:42] [DEBUG] === MONITOR CHECK COMPLETE ===
+[2025-06-12 15:50:42] [DEBUG] === MONITOR CHECK CYCLE ===
+[2025-06-12 15:50:43] [DEBUG] Found 8 running PowerShell terminal windows (excluding monitoring window)
+[2025-06-12 15:50:43] [INFO] Monitor Status: Running=8, Required=4, Max=7
+[2025-06-12 15:50:43] [DEBUG] Window count OK: 8 >= 4 (minimum)
+[2025-06-12 15:50:43] [DEBUG] Next monitor check at: 15:59:43
+[2025-06-12 15:50:43] [DEBUG] === MONITOR CHECK COMPLETE ===
+[2025-06-12 15:59:43] [DEBUG] === MONITOR CHECK CYCLE ===
+[2025-06-12 15:59:43] [DEBUG] Found 8 running PowerShell terminal windows (excluding monitoring window)
+[2025-06-12 15:59:43] [INFO] Monitor Status: Running=8, Required=4, Max=7
+[2025-06-12 15:59:43] [DEBUG] Window count OK: 8 >= 4 (minimum)
+[2025-06-12 15:59:43] [DEBUG] Next monitor check at: 16:08:43
+[2025-06-12 15:59:43] [DEBUG] === MONITOR CHECK COMPLETE ===
+[2025-06-12 16:08:43] [DEBUG] === MONITOR CHECK CYCLE ===
+[2025-06-12 16:08:43] [DEBUG] Found 8 running PowerShell terminal windows (excluding monitoring window)
+[2025-06-12 16:08:43] [INFO] Monitor Status: Running=8, Required=4, Max=7
+[2025-06-12 16:08:43] [DEBUG] Window count OK: 8 >= 4 (minimum)
+[2025-06-12 16:08:43] [DEBUG] Next monitor check at: 16:17:43
+[2025-06-12 16:08:43] [DEBUG] === MONITOR CHECK COMPLETE ===
+[2025-06-12 16:17:43] [DEBUG] === MONITOR CHECK CYCLE ===
+[2025-06-12 16:17:43] [DEBUG] Found 8 running PowerShell terminal windows (excluding monitoring window)
+[2025-06-12 16:17:43] [INFO] Monitor Status: Running=8, Required=4, Max=7
+[2025-06-12 16:17:43] [DEBUG] Window count OK: 8 >= 4 (minimum)
+[2025-06-12 16:17:43] [DEBUG] Next monitor check at: 16:26:43
+[2025-06-12 16:17:43] [DEBUG] === MONITOR CHECK COMPLETE ===
+[2025-06-12 16:26:43] [DEBUG] === MONITOR CHECK CYCLE ===
+[2025-06-12 16:26:43] [DEBUG] Found 8 running PowerShell terminal windows (excluding monitoring window)
+[2025-06-12 16:26:43] [INFO] Monitor Status: Running=8, Required=4, Max=7
+[2025-06-12 16:26:43] [DEBUG] Window count OK: 8 >= 4 (minimum)
+[2025-06-12 16:26:43] [DEBUG] Next monitor check at: 16:35:43
+[2025-06-12 16:26:43] [DEBUG] === MONITOR CHECK COMPLETE ===
+[2025-06-12 16:35:43] [DEBUG] === MONITOR CHECK CYCLE ===
+[2025-06-12 16:35:44] [DEBUG] Found 8 running PowerShell terminal windows (excluding monitoring window)
+[2025-06-12 16:35:44] [INFO] Monitor Status: Running=8, Required=4, Max=7
+[2025-06-12 16:35:44] [DEBUG] Window count OK: 8 >= 4 (minimum)
+[2025-06-12 16:35:44] [DEBUG] Next monitor check at: 16:44:44
+[2025-06-12 16:35:44] [DEBUG] === MONITOR CHECK COMPLETE ===
+[2025-06-12 16:44:44] [DEBUG] === MONITOR CHECK CYCLE ===
+[2025-06-12 16:44:45] [DEBUG] Found 8 running PowerShell terminal windows (excluding monitoring window)
+[2025-06-12 16:44:45] [INFO] Monitor Status: Running=8, Required=4, Max=7
+[2025-06-12 16:44:45] [DEBUG] Window count OK: 8 >= 4 (minimum)
+[2025-06-12 16:44:45] [DEBUG] Next monitor check at: 16:53:45
+[2025-06-12 16:44:45] [DEBUG] === MONITOR CHECK COMPLETE ===
+[2025-06-12 16:53:45] [DEBUG] === MONITOR CHECK CYCLE ===
+[2025-06-12 16:53:46] [DEBUG] Found 8 running PowerShell terminal windows (excluding monitoring window)
+[2025-06-12 16:53:46] [INFO] Monitor Status: Running=8, Required=4, Max=7
+[2025-06-12 16:53:46] [DEBUG] Window count OK: 8 >= 4 (minimum)
+[2025-06-12 16:53:46] [DEBUG] Next monitor check at: 17:02:46
+[2025-06-12 16:53:46] [DEBUG] === MONITOR CHECK COMPLETE ===
+[2025-06-12 17:02:46] [DEBUG] === MONITOR CHECK CYCLE ===
+[2025-06-12 17:02:46] [DEBUG] Found 6 running PowerShell terminal windows (excluding monitoring window)
+[2025-06-12 17:02:46] [INFO] Monitor Status: Running=6, Required=4, Max=7
+[2025-06-12 17:02:46] [DEBUG] Window count OK: 6 >= 4 (minimum)
+[2025-06-12 17:02:46] [DEBUG] Next monitor check at: 17:11:46
+[2025-06-12 17:02:46] [DEBUG] === MONITOR CHECK COMPLETE ===
+[2025-06-12 17:11:46] [DEBUG] === MONITOR CHECK CYCLE ===
+[2025-06-12 17:11:46] [DEBUG] Found 6 running PowerShell terminal windows (excluding monitoring window)
+[2025-06-12 17:11:46] [INFO] Monitor Status: Running=6, Required=4, Max=7
+[2025-06-12 17:11:46] [DEBUG] Window count OK: 6 >= 4 (minimum)
+[2025-06-12 17:11:46] [DEBUG] Next monitor check at: 17:20:46
+[2025-06-12 17:11:46] [DEBUG] === MONITOR CHECK COMPLETE ===
+[2025-06-12 17:20:46] [DEBUG] === MONITOR CHECK CYCLE ===
+[2025-06-12 17:20:46] [DEBUG] Found 6 running PowerShell terminal windows (excluding monitoring window)
+[2025-06-12 17:20:46] [INFO] Monitor Status: Running=6, Required=4, Max=7
+[2025-06-12 17:20:46] [DEBUG] Window count OK: 6 >= 4 (minimum)
+[2025-06-12 17:20:46] [DEBUG] Next monitor check at: 17:29:46
+[2025-06-12 17:20:46] [DEBUG] === MONITOR CHECK COMPLETE ===
+[2025-06-12 17:29:46] [DEBUG] === MONITOR CHECK CYCLE ===
+[2025-06-12 17:29:46] [DEBUG] Found 6 running PowerShell terminal windows (excluding monitoring window)
+[2025-06-12 17:29:46] [INFO] Monitor Status: Running=6, Required=4, Max=7
+[2025-06-12 17:29:46] [DEBUG] Window count OK: 6 >= 4 (minimum)
+[2025-06-12 17:29:46] [DEBUG] Next monitor check at: 17:38:46
+[2025-06-12 17:29:46] [DEBUG] === MONITOR CHECK COMPLETE ===
+[2025-06-12 17:38:46] [DEBUG] === MONITOR CHECK CYCLE ===
+[2025-06-12 17:38:47] [DEBUG] Found 6 running PowerShell terminal windows (excluding monitoring window)
+[2025-06-12 17:38:47] [INFO] Monitor Status: Running=6, Required=4, Max=7
+[2025-06-12 17:38:47] [DEBUG] Window count OK: 6 >= 4 (minimum)
+[2025-06-12 17:38:47] [DEBUG] Next monitor check at: 17:47:47
+[2025-06-12 17:38:47] [DEBUG] === MONITOR CHECK COMPLETE ===
+[2025-06-12 17:47:47] [DEBUG] === MONITOR CHECK CYCLE ===
+[2025-06-12 17:47:47] [DEBUG] Found 6 running PowerShell terminal windows (excluding monitoring window)
+[2025-06-12 17:47:47] [INFO] Monitor Status: Running=6, Required=4, Max=7
+[2025-06-12 17:47:47] [DEBUG] Window count OK: 6 >= 4 (minimum)
+[2025-06-12 17:47:47] [DEBUG] Next monitor check at: 17:56:47
+[2025-06-12 17:47:47] [DEBUG] === MONITOR CHECK COMPLETE ===
+[2025-06-12 17:56:47] [DEBUG] === MONITOR CHECK CYCLE ===
+[2025-06-12 17:56:47] [DEBUG] Found 6 running PowerShell terminal windows (excluding monitoring window)
+[2025-06-12 17:56:47] [INFO] Monitor Status: Running=6, Required=4, Max=7
+[2025-06-12 17:56:47] [DEBUG] Window count OK: 6 >= 4 (minimum)
+[2025-06-12 17:56:47] [DEBUG] Next monitor check at: 18:05:47
+[2025-06-12 17:56:47] [DEBUG] === MONITOR CHECK COMPLETE ===
+[2025-06-12 18:05:47] [DEBUG] === MONITOR CHECK CYCLE ===
+[2025-06-12 18:05:47] [DEBUG] Found 6 running PowerShell terminal windows (excluding monitoring window)
+[2025-06-12 18:05:47] [INFO] Monitor Status: Running=6, Required=4, Max=7
+[2025-06-12 18:05:47] [DEBUG] Window count OK: 6 >= 4 (minimum)
+[2025-06-12 18:05:47] [DEBUG] Next monitor check at: 18:14:47
+[2025-06-12 18:05:47] [DEBUG] === MONITOR CHECK COMPLETE ===
+[2025-06-12 18:14:47] [DEBUG] === MONITOR CHECK CYCLE ===
+[2025-06-12 18:14:47] [DEBUG] Found 6 running PowerShell terminal windows (excluding monitoring window)
+[2025-06-12 18:14:47] [INFO] Monitor Status: Running=6, Required=4, Max=7
+[2025-06-12 18:14:47] [DEBUG] Window count OK: 6 >= 4 (minimum)
+[2025-06-12 18:14:47] [DEBUG] Next monitor check at: 18:23:47
+[2025-06-12 18:14:47] [DEBUG] === MONITOR CHECK COMPLETE ===
+[2025-06-12 18:23:47] [DEBUG] === MONITOR CHECK CYCLE ===
+[2025-06-12 18:23:47] [DEBUG] Found 6 running PowerShell terminal windows (excluding monitoring window)
+[2025-06-12 18:23:47] [INFO] Monitor Status: Running=6, Required=4, Max=7
+[2025-06-12 18:23:47] [DEBUG] Window count OK: 6 >= 4 (minimum)
+[2025-06-12 18:23:47] [DEBUG] Next monitor check at: 18:32:47
+[2025-06-12 18:23:47] [DEBUG] === MONITOR CHECK COMPLETE ===
+[2025-06-12 18:32:47] [DEBUG] === MONITOR CHECK CYCLE ===
+[2025-06-12 18:32:48] [DEBUG] Found 6 running PowerShell terminal windows (excluding monitoring window)
+[2025-06-12 18:32:48] [INFO] Monitor Status: Running=6, Required=4, Max=7
+[2025-06-12 18:32:48] [DEBUG] Window count OK: 6 >= 4 (minimum)
+[2025-06-12 18:32:48] [DEBUG] Next monitor check at: 18:41:48
+[2025-06-12 18:32:48] [DEBUG] === MONITOR CHECK COMPLETE ===
+[2025-06-12 18:41:48] [DEBUG] === MONITOR CHECK CYCLE ===
+[2025-06-12 18:41:48] [DEBUG] Found 6 running PowerShell terminal windows (excluding monitoring window)
+[2025-06-12 18:41:48] [INFO] Monitor Status: Running=6, Required=4, Max=7
+[2025-06-12 18:41:48] [DEBUG] Window count OK: 6 >= 4 (minimum)
+[2025-06-12 18:41:48] [DEBUG] Next monitor check at: 18:50:48
+[2025-06-12 18:41:48] [DEBUG] === MONITOR CHECK COMPLETE ===
+[2025-06-12 18:50:48] [DEBUG] === MONITOR CHECK CYCLE ===
+[2025-06-12 18:50:48] [DEBUG] Found 6 running PowerShell terminal windows (excluding monitoring window)
+[2025-06-12 18:50:48] [INFO] Monitor Status: Running=6, Required=4, Max=7
+[2025-06-12 18:50:48] [DEBUG] Window count OK: 6 >= 4 (minimum)
+[2025-06-12 18:50:48] [DEBUG] Next monitor check at: 18:59:48
+[2025-06-12 18:50:48] [DEBUG] === MONITOR CHECK COMPLETE ===
+[2025-06-12 18:59:48] [DEBUG] === MONITOR CHECK CYCLE ===
+[2025-06-12 18:59:48] [DEBUG] Found 6 running PowerShell terminal windows (excluding monitoring window)
+[2025-06-12 18:59:48] [INFO] Monitor Status: Running=6, Required=4, Max=7
+[2025-06-12 18:59:48] [DEBUG] Window count OK: 6 >= 4 (minimum)
+[2025-06-12 18:59:48] [DEBUG] Next monitor check at: 19:08:48
+[2025-06-12 18:59:48] [DEBUG] === MONITOR CHECK COMPLETE ===
+[2025-06-12 19:08:48] [DEBUG] === MONITOR CHECK CYCLE ===
+[2025-06-12 19:08:48] [DEBUG] Found 6 running PowerShell terminal windows (excluding monitoring window)
+[2025-06-12 19:08:48] [INFO] Monitor Status: Running=6, Required=4, Max=7
+[2025-06-12 19:08:48] [DEBUG] Window count OK: 6 >= 4 (minimum)
+[2025-06-12 19:08:48] [DEBUG] Next monitor check at: 19:17:48
+[2025-06-12 19:08:48] [DEBUG] === MONITOR CHECK COMPLETE ===
+[2025-06-12 19:17:48] [DEBUG] === MONITOR CHECK CYCLE ===
+[2025-06-12 19:17:48] [DEBUG] Found 6 running PowerShell terminal windows (excluding monitoring window)
+[2025-06-12 19:17:48] [INFO] Monitor Status: Running=6, Required=4, Max=7
+[2025-06-12 19:17:48] [DEBUG] Window count OK: 6 >= 4 (minimum)
+[2025-06-12 19:17:48] [DEBUG] Next monitor check at: 19:26:48
+[2025-06-12 19:17:48] [DEBUG] === MONITOR CHECK COMPLETE ===
+[2025-06-12 19:26:48] [DEBUG] === MONITOR CHECK CYCLE ===
+[2025-06-12 19:26:49] [DEBUG] Found 6 running PowerShell terminal windows (excluding monitoring window)
+[2025-06-12 19:26:49] [INFO] Monitor Status: Running=6, Required=4, Max=7
+[2025-06-12 19:26:49] [DEBUG] Window count OK: 6 >= 4 (minimum)
+[2025-06-12 19:26:49] [DEBUG] Next monitor check at: 19:35:49
+[2025-06-12 19:26:49] [DEBUG] === MONITOR CHECK COMPLETE ===
+[2025-06-12 19:35:49] [DEBUG] === MONITOR CHECK CYCLE ===
+[2025-06-12 19:35:49] [DEBUG] Found 6 running PowerShell terminal windows (excluding monitoring window)
+[2025-06-12 19:35:49] [INFO] Monitor Status: Running=6, Required=4, Max=7
+[2025-06-12 19:35:49] [DEBUG] Window count OK: 6 >= 4 (minimum)
+[2025-06-12 19:35:49] [DEBUG] Next monitor check at: 19:44:49
+[2025-06-12 19:35:49] [DEBUG] === MONITOR CHECK COMPLETE ===
+[2025-06-12 19:44:49] [DEBUG] === MONITOR CHECK CYCLE ===
+[2025-06-12 19:44:49] [DEBUG] Found 6 running PowerShell terminal windows (excluding monitoring window)
+[2025-06-12 19:44:49] [INFO] Monitor Status: Running=6, Required=4, Max=7
+[2025-06-12 19:44:49] [DEBUG] Window count OK: 6 >= 4 (minimum)
+[2025-06-12 19:44:49] [DEBUG] Next monitor check at: 19:53:49
+[2025-06-12 19:44:49] [DEBUG] === MONITOR CHECK COMPLETE ===
+[2025-06-12 19:53:49] [DEBUG] === MONITOR CHECK CYCLE ===
+[2025-06-12 19:53:49] [DEBUG] Found 6 running PowerShell terminal windows (excluding monitoring window)
+[2025-06-12 19:53:49] [INFO] Monitor Status: Running=6, Required=4, Max=7
+[2025-06-12 19:53:49] [DEBUG] Window count OK: 6 >= 4 (minimum)
+[2025-06-12 19:53:49] [DEBUG] Next monitor check at: 20:02:49
+[2025-06-12 19:53:49] [DEBUG] === MONITOR CHECK COMPLETE ===
+[2025-06-12 20:02:49] [DEBUG] === MONITOR CHECK CYCLE ===
+[2025-06-12 20:02:49] [DEBUG] Found 6 running PowerShell terminal windows (excluding monitoring window)
+[2025-06-12 20:02:49] [INFO] Monitor Status: Running=6, Required=4, Max=7
+[2025-06-12 20:02:49] [DEBUG] Window count OK: 6 >= 4 (minimum)
+[2025-06-12 20:02:49] [DEBUG] Next monitor check at: 20:11:49
+[2025-06-12 20:02:49] [DEBUG] === MONITOR CHECK COMPLETE ===
+[2025-06-12 20:11:49] [DEBUG] === MONITOR CHECK CYCLE ===
+[2025-06-12 20:11:50] [DEBUG] Found 6 running PowerShell terminal windows (excluding monitoring window)
+[2025-06-12 20:11:50] [INFO] Monitor Status: Running=6, Required=4, Max=7
+[2025-06-12 20:11:50] [DEBUG] Window count OK: 6 >= 4 (minimum)
+[2025-06-12 20:11:50] [DEBUG] Next monitor check at: 20:20:50
+[2025-06-12 20:11:50] [DEBUG] === MONITOR CHECK COMPLETE ===
+[2025-06-12 20:20:50] [DEBUG] === MONITOR CHECK CYCLE ===
+[2025-06-12 20:20:50] [DEBUG] Found 6 running PowerShell terminal windows (excluding monitoring window)
+[2025-06-12 20:20:50] [INFO] Monitor Status: Running=6, Required=4, Max=7
+[2025-06-12 20:20:50] [DEBUG] Window count OK: 6 >= 4 (minimum)
+[2025-06-12 20:20:50] [DEBUG] Next monitor check at: 20:29:50
+[2025-06-12 20:20:50] [DEBUG] === MONITOR CHECK COMPLETE ===
+[2025-06-12 20:29:50] [DEBUG] === MONITOR CHECK CYCLE ===
+[2025-06-12 20:29:50] [DEBUG] Found 6 running PowerShell terminal windows (excluding monitoring window)
+[2025-06-12 20:29:50] [INFO] Monitor Status: Running=6, Required=4, Max=7
+[2025-06-12 20:29:50] [DEBUG] Window count OK: 6 >= 4 (minimum)
+[2025-06-12 20:29:50] [DEBUG] Next monitor check at: 20:38:50
+[2025-06-12 20:29:50] [DEBUG] === MONITOR CHECK COMPLETE ===
+[2025-06-12 20:38:50] [DEBUG] === MONITOR CHECK CYCLE ===
+[2025-06-12 20:38:50] [DEBUG] Found 6 running PowerShell terminal windows (excluding monitoring window)
+[2025-06-12 20:38:50] [INFO] Monitor Status: Running=6, Required=4, Max=7
+[2025-06-12 20:38:50] [DEBUG] Window count OK: 6 >= 4 (minimum)
+[2025-06-12 20:38:50] [DEBUG] Next monitor check at: 20:47:50
+[2025-06-12 20:38:50] [DEBUG] === MONITOR CHECK COMPLETE ===
+[2025-06-12 20:47:50] [DEBUG] === MONITOR CHECK CYCLE ===
+[2025-06-12 20:47:50] [DEBUG] Found 6 running PowerShell terminal windows (excluding monitoring window)
+[2025-06-12 20:47:50] [INFO] Monitor Status: Running=6, Required=4, Max=7
+[2025-06-12 20:47:50] [DEBUG] Window count OK: 6 >= 4 (minimum)
+[2025-06-12 20:47:50] [DEBUG] Next monitor check at: 20:56:50
+[2025-06-12 20:47:50] [DEBUG] === MONITOR CHECK COMPLETE ===
+[2025-06-12 20:56:50] [DEBUG] === MONITOR CHECK CYCLE ===
+[2025-06-12 20:56:51] [DEBUG] Found 6 running PowerShell terminal windows (excluding monitoring window)
+[2025-06-12 20:56:51] [INFO] Monitor Status: Running=6, Required=4, Max=7
+[2025-06-12 20:56:51] [DEBUG] Window count OK: 6 >= 4 (minimum)
+[2025-06-12 20:56:51] [DEBUG] Next monitor check at: 21:05:51
+[2025-06-12 20:56:51] [DEBUG] === MONITOR CHECK COMPLETE ===
+[2025-06-12 21:05:51] [DEBUG] === MONITOR CHECK CYCLE ===
+[2025-06-12 21:05:51] [DEBUG] Found 6 running PowerShell terminal windows (excluding monitoring window)
+[2025-06-12 21:05:51] [INFO] Monitor Status: Running=6, Required=4, Max=7
+[2025-06-12 21:05:51] [DEBUG] Window count OK: 6 >= 4 (minimum)
+[2025-06-12 21:05:51] [DEBUG] Next monitor check at: 21:14:51
+[2025-06-12 21:05:51] [DEBUG] === MONITOR CHECK COMPLETE ===
+[2025-06-12 21:14:51] [DEBUG] === MONITOR CHECK CYCLE ===
+[2025-06-12 21:14:51] [DEBUG] Found 6 running PowerShell terminal windows (excluding monitoring window)
+[2025-06-12 21:14:51] [INFO] Monitor Status: Running=6, Required=4, Max=7
+[2025-06-12 21:14:51] [DEBUG] Window count OK: 6 >= 4 (minimum)
+[2025-06-12 21:14:51] [DEBUG] Next monitor check at: 21:23:51
+[2025-06-12 21:14:51] [DEBUG] === MONITOR CHECK COMPLETE ===
+[2025-06-12 21:23:51] [DEBUG] === MONITOR CHECK CYCLE ===
+[2025-06-12 21:23:51] [DEBUG] Found 6 running PowerShell terminal windows (excluding monitoring window)
+[2025-06-12 21:23:51] [INFO] Monitor Status: Running=6, Required=4, Max=7
+[2025-06-12 21:23:51] [DEBUG] Window count OK: 6 >= 4 (minimum)
+[2025-06-12 21:23:51] [DEBUG] Next monitor check at: 21:32:51
+[2025-06-12 21:23:51] [DEBUG] === MONITOR CHECK COMPLETE ===
+[2025-06-12 21:32:51] [DEBUG] === MONITOR CHECK CYCLE ===
+[2025-06-12 21:32:51] [DEBUG] Found 6 running PowerShell terminal windows (excluding monitoring window)
+[2025-06-12 21:32:51] [INFO] Monitor Status: Running=6, Required=4, Max=7
+[2025-06-12 21:32:51] [DEBUG] Window count OK: 6 >= 4 (minimum)
+[2025-06-12 21:32:51] [DEBUG] Next monitor check at: 21:41:51
+[2025-06-12 21:32:51] [DEBUG] === MONITOR CHECK COMPLETE ===
+[2025-06-12 21:41:51] [DEBUG] === MONITOR CHECK CYCLE ===
+[2025-06-12 21:41:52] [DEBUG] Found 6 running PowerShell terminal windows (excluding monitoring window)
+[2025-06-12 21:41:52] [INFO] Monitor Status: Running=6, Required=4, Max=7
+[2025-06-12 21:41:52] [DEBUG] Window count OK: 6 >= 4 (minimum)
+[2025-06-12 21:41:52] [DEBUG] Next monitor check at: 21:50:52
+[2025-06-12 21:41:52] [DEBUG] === MONITOR CHECK COMPLETE ===
+[2025-06-12 21:50:52] [DEBUG] === MONITOR CHECK CYCLE ===
+[2025-06-12 21:50:52] [DEBUG] Found 6 running PowerShell terminal windows (excluding monitoring window)
+[2025-06-12 21:50:52] [INFO] Monitor Status: Running=6, Required=4, Max=7
+[2025-06-12 21:50:52] [DEBUG] Window count OK: 6 >= 4 (minimum)
+[2025-06-12 21:50:52] [DEBUG] Next monitor check at: 21:59:52
+[2025-06-12 21:50:52] [DEBUG] === MONITOR CHECK COMPLETE ===
+[2025-06-12 21:59:52] [DEBUG] === MONITOR CHECK CYCLE ===
+[2025-06-12 21:59:52] [DEBUG] Found 6 running PowerShell terminal windows (excluding monitoring window)
+[2025-06-12 21:59:52] [INFO] Monitor Status: Running=6, Required=4, Max=7
+[2025-06-12 21:59:52] [DEBUG] Window count OK: 6 >= 4 (minimum)
+[2025-06-12 21:59:52] [DEBUG] Next monitor check at: 22:08:52
+[2025-06-12 21:59:52] [DEBUG] === MONITOR CHECK COMPLETE ===
+[2025-06-12 22:08:52] [DEBUG] === MONITOR CHECK CYCLE ===
+[2025-06-12 22:08:52] [DEBUG] Found 6 running PowerShell terminal windows (excluding monitoring window)
+[2025-06-12 22:08:52] [INFO] Monitor Status: Running=6, Required=4, Max=7
+[2025-06-12 22:08:52] [DEBUG] Window count OK: 6 >= 4 (minimum)
+[2025-06-12 22:08:52] [DEBUG] Next monitor check at: 22:17:52
+[2025-06-12 22:08:52] [DEBUG] === MONITOR CHECK COMPLETE ===
+[2025-06-12 22:17:52] [DEBUG] === MONITOR CHECK CYCLE ===
+[2025-06-12 22:17:52] [DEBUG] Found 6 running PowerShell terminal windows (excluding monitoring window)
+[2025-06-12 22:17:52] [INFO] Monitor Status: Running=6, Required=4, Max=7
+[2025-06-12 22:17:52] [DEBUG] Window count OK: 6 >= 4 (minimum)
+[2025-06-12 22:17:52] [DEBUG] Next monitor check at: 22:26:52
+[2025-06-12 22:17:52] [DEBUG] === MONITOR CHECK COMPLETE ===
+[2025-06-12 22:26:52] [DEBUG] === MONITOR CHECK CYCLE ===
+[2025-06-12 22:26:53] [DEBUG] Found 6 running PowerShell terminal windows (excluding monitoring window)
+[2025-06-12 22:26:53] [INFO] Monitor Status: Running=6, Required=4, Max=7
+[2025-06-12 22:26:53] [DEBUG] Window count OK: 6 >= 4 (minimum)
+[2025-06-12 22:26:53] [DEBUG] Next monitor check at: 22:35:53
+[2025-06-12 22:26:53] [DEBUG] === MONITOR CHECK COMPLETE ===
+[2025-06-12 22:35:53] [DEBUG] === MONITOR CHECK CYCLE ===
+[2025-06-12 22:35:53] [DEBUG] Found 6 running PowerShell terminal windows (excluding monitoring window)
+[2025-06-12 22:35:53] [INFO] Monitor Status: Running=6, Required=4, Max=7
+[2025-06-12 22:35:53] [DEBUG] Window count OK: 6 >= 4 (minimum)
+[2025-06-12 22:35:53] [DEBUG] Next monitor check at: 22:44:53
+[2025-06-12 22:35:53] [DEBUG] === MONITOR CHECK COMPLETE ===
+[2025-06-12 22:44:53] [DEBUG] === MONITOR CHECK CYCLE ===
+[2025-06-12 22:44:53] [DEBUG] Found 6 running PowerShell terminal windows (excluding monitoring window)
+[2025-06-12 22:44:53] [INFO] Monitor Status: Running=6, Required=4, Max=7
+[2025-06-12 22:44:53] [DEBUG] Window count OK: 6 >= 4 (minimum)
+[2025-06-12 22:44:53] [DEBUG] Next monitor check at: 22:53:53
+[2025-06-12 22:44:53] [DEBUG] === MONITOR CHECK COMPLETE ===
+[2025-06-12 22:53:53] [DEBUG] === MONITOR CHECK CYCLE ===
+[2025-06-12 22:53:53] [DEBUG] Found 6 running PowerShell terminal windows (excluding monitoring window)
+[2025-06-12 22:53:53] [INFO] Monitor Status: Running=6, Required=4, Max=7
+[2025-06-12 22:53:53] [DEBUG] Window count OK: 6 >= 4 (minimum)
+[2025-06-12 22:53:53] [DEBUG] Next monitor check at: 23:02:53
+[2025-06-12 22:53:53] [DEBUG] === MONITOR CHECK COMPLETE ===
+[2025-06-12 23:02:53] [DEBUG] === MONITOR CHECK CYCLE ===
+[2025-06-12 23:02:53] [DEBUG] Found 6 running PowerShell terminal windows (excluding monitoring window)
+[2025-06-12 23:02:53] [INFO] Monitor Status: Running=6, Required=4, Max=7
+[2025-06-12 23:02:53] [DEBUG] Window count OK: 6 >= 4 (minimum)
+[2025-06-12 23:02:53] [DEBUG] Next monitor check at: 23:11:53
+[2025-06-12 23:02:53] [DEBUG] === MONITOR CHECK COMPLETE ===
+[2025-06-12 23:11:53] [DEBUG] === MONITOR CHECK CYCLE ===
+[2025-06-12 23:11:54] [DEBUG] Found 6 running PowerShell terminal windows (excluding monitoring window)
+[2025-06-12 23:11:54] [INFO] Monitor Status: Running=6, Required=4, Max=7
+[2025-06-12 23:11:54] [DEBUG] Window count OK: 6 >= 4 (minimum)
+[2025-06-12 23:11:54] [DEBUG] Next monitor check at: 23:20:54
+[2025-06-12 23:11:54] [DEBUG] === MONITOR CHECK COMPLETE ===
+[2025-06-12 23:20:54] [DEBUG] === MONITOR CHECK CYCLE ===
+[2025-06-12 23:20:54] [DEBUG] Found 6 running PowerShell terminal windows (excluding monitoring window)
+[2025-06-12 23:20:54] [INFO] Monitor Status: Running=6, Required=4, Max=7
+[2025-06-12 23:20:54] [DEBUG] Window count OK: 6 >= 4 (minimum)
+[2025-06-12 23:20:54] [DEBUG] Next monitor check at: 23:29:54
+[2025-06-12 23:20:54] [DEBUG] === MONITOR CHECK COMPLETE ===
+[2025-06-12 23:29:55] [DEBUG] === MONITOR CHECK CYCLE ===
+[2025-06-12 23:29:55] [DEBUG] Found 6 running PowerShell terminal windows (excluding monitoring window)
+[2025-06-12 23:29:55] [INFO] Monitor Status: Running=6, Required=4, Max=7
+[2025-06-12 23:29:55] [DEBUG] Window count OK: 6 >= 4 (minimum)
+[2025-06-12 23:29:55] [DEBUG] Next monitor check at: 23:38:55
+[2025-06-12 23:29:55] [DEBUG] === MONITOR CHECK COMPLETE ===
+[2025-06-12 23:38:55] [DEBUG] === MONITOR CHECK CYCLE ===
+[2025-06-12 23:38:55] [DEBUG] Found 6 running PowerShell terminal windows (excluding monitoring window)
+[2025-06-12 23:38:55] [INFO] Monitor Status: Running=6, Required=4, Max=7
+[2025-06-12 23:38:55] [DEBUG] Window count OK: 6 >= 4 (minimum)
+[2025-06-12 23:38:55] [DEBUG] Next monitor check at: 23:47:55
+[2025-06-12 23:38:55] [DEBUG] === MONITOR CHECK COMPLETE ===
+[2025-06-12 23:47:55] [DEBUG] === MONITOR CHECK CYCLE ===
+[2025-06-12 23:47:55] [DEBUG] Found 6 running PowerShell terminal windows (excluding monitoring window)
+[2025-06-12 23:47:55] [INFO] Monitor Status: Running=6, Required=4, Max=7
+[2025-06-12 23:47:55] [DEBUG] Window count OK: 6 >= 4 (minimum)
+[2025-06-12 23:47:55] [DEBUG] Next monitor check at: 23:56:55
+[2025-06-12 23:47:55] [DEBUG] === MONITOR CHECK COMPLETE ===
+[2025-06-12 23:56:55] [DEBUG] === MONITOR CHECK CYCLE ===
+[2025-06-12 23:56:55] [DEBUG] Found 6 running PowerShell terminal windows (excluding monitoring window)
+[2025-06-12 23:56:55] [INFO] Monitor Status: Running=6, Required=4, Max=7
+[2025-06-12 23:56:55] [DEBUG] Window count OK: 6 >= 4 (minimum)
+[2025-06-12 23:56:55] [DEBUG] Next monitor check at: 00:05:55
+[2025-06-12 23:56:55] [DEBUG] === MONITOR CHECK COMPLETE ===

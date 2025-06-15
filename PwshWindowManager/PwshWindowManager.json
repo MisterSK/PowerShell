@@ -3,15 +3,18 @@
         "Count": 2,
         "NoExit": false,
         "MinSeconds": 200,
-        "MaxSeconds": 18000,
+        "MaxSeconds": 28000,
         "Cols": 80,
         "Lines": 10,
         "BgColor": "0A",
-        "AutoCloseSeconds": 120
+        "AutoCloseSeconds": 120,
+        "FontSize": 6,
+        "FontName": "Consolas",
+        "FontWeight": 400
     },
     "MonitorSettings": {
         "Enable": true,
-        "_modeOptions": ["Continuos","ForDuration","UntilDayOfWeek","UntilDateTime"],
+        "_modeOptions": ["Continuous","ForDuration","UntilDayOfWeek","UntilDateTime"],
         "Mode": "Continuous",
         "UntilDateTime": "",
         "ForDurationMinutes": 120,

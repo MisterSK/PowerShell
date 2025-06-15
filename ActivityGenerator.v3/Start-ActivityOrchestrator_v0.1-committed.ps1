@@ -90,15 +90,14 @@ function Remove-OldLogs {
 function Invoke-ActivityIteration {
     param(
         [int]$IterationNumber,
-        [int]$TotalIterations,
         [int]$MaxWait,
         [int]$MinWait,
         [string]$WorkingDirectory,
+        [string]$StartupScript,
+        [string]$OrchestratorScript,
         [string]$LogPath,
         [int]$MaxRetries,
-        [int]$RetryDelay,
-        [string]$LoggedInUserFull,
-        [string]$LoggedInUser
+        [int]$RetryDelay
     )
 
     $startTime = Get-Date
@@ -106,66 +105,53 @@ function Invoke-ActivityIteration {
     $retryCount = 0
     $success = $false
 
-    Write-Log "Starting iteration $($IterationNumber) of $TotalIterations" -LogPath $LogPath
-    Write-Log "Configuration - Min Wait: $MinWait ms, Max Wait: $MaxWait ms" -LogPath $LogPath
-    Write-Log "Generated random wait time: $generatedRandom ms (used for orchestrator sleep between outer iterations)" -LogPath $LogPath
+    Write-Log "Starting iteration $($IterationNumber + 1)" -LogPath $LogPath
+    Write-Log "Configuration - Min Wait: $MinWait, Max Wait: $MaxWait" -LogPath $LogPath
+    Write-Log "Generated random wait time: $generatedRandom ms" -LogPath $LogPath
 
     do {
         try {
             # Set working directory for this iteration
             Set-Location -Path $WorkingDirectory -ErrorAction Stop
 
-            # Get terminate window from ActivityGenerator.cfg
-            .".\ActivityGeneratorProcessController.ps1"
-            
-            # Based on the actual array structure in ActivityGeneratorProcessController.ps1:
-            # Index 3 is terminate_window (fixed value)
-            $terminate_window = GetProcesControlConfig(3)
-            
-            if ($terminate_window -eq "" -or $terminate_window -eq $null -or $terminate_window -eq 0) {
-                # Default to 1 hour if no terminate window is set
-                $terminate_window = 3600
-                Write-Log "No terminate window found in config, defaulting to 3600 seconds" -Level "WARNING" -LogPath $LogPath
-            }
-            
-            Write-Log "Terminate window for this iteration: $terminate_window seconds" -LogPath $LogPath
-
-            # Run ActivityGenerator.ps1 with all required parameters
-            $activityParams = @{
+            # Run startup script with parameters
+            $startupParams = @{
                 FilePath = "powershell.exe"
                 ArgumentList = @(
                     "-ExecutionPolicy", "Bypass",
-                    "-File", ".\ActivityGenerator.ps1",
-                    "-loggedinuserfull", "`"$LoggedInUserFull`"",
-                    "-loggedinuser", $LoggedInUser,
-                    "-IterationNumber", $IterationNumber,
-                    "-TotalIterations", $TotalIterations,
-                    "-MinWait", $MinWait,
-                    "-MaxWait", $MaxWait,
-                    "-StartTime", "`"$(Get-Date -Format 'yyyy-MM-dd HH:mm:ss')`"",
-                    "-TerminateWindow", $terminate_window
+                    "-File", $StartupScript,
+                    "-rand_start_wait_max", $MaxWait,
+                    "-rand_start_wait_min", $MinWait
                 )
             }
-            Start-Process @activityParams -Wait -NoNewWindow
+            Start-Process @startupParams -Wait -NoNewWindow
+
+            # Run orchestrator script
+            $orchestratorParams = @{
+                FilePath = "powershell.exe"
+                ArgumentList = @(
+                    "-ExecutionPolicy", "Bypass",
+                    "-File", $OrchestratorScript
+                )
+            }
+            Start-Process @orchestratorParams -Wait -NoNewWindow
 
             $success = $true
             
             $endTime = Get-Date
             $duration = ($endTime - $startTime).TotalSeconds
             
-            Write-Log "Outer iteration $IterationNumber completed successfully (Duration: $($duration.ToString('F2')) seconds)" -Level "SUCCESS" -LogPath $LogPath
-            Write-Log "Terminate window was set to $terminate_window seconds" -LogPath $LogPath
+            Write-Log "Iteration $($IterationNumber + 1) completed successfully (Duration: $($duration.ToString('F2')) seconds)" -Level "SUCCESS" -LogPath $LogPath
             
             # Log detailed statistics
             $stats = @{
-                "Outer Iteration" = "$IterationNumber of $TotalIterations"
+                "Iteration" = $IterationNumber + 1
                 "StartTime" = $startTime.ToString("yyyy-MM-dd HH:mm:ss")
                 "EndTime" = $endTime.ToString("yyyy-MM-dd HH:mm:ss")
-                "Total Duration" = "$($duration.ToString('F2')) seconds"
-                "Terminate Window" = "$terminate_window seconds"
-                "Config MinWait" = "$MinWait ms"
-                "Config MaxWait" = "$MaxWait ms"
-                "Orchestrator Wait" = "$generatedRandom ms"
+                "Duration" = "$($duration.ToString('F2')) seconds"
+                "MinWait" = $MinWait
+                "MaxWait" = $MaxWait
+                "GeneratedWait" = $generatedRandom
                 "RetryCount" = $retryCount
             }
             
@@ -173,7 +159,7 @@ function Invoke-ActivityIteration {
         }
         catch {
             $retryCount++
-            Write-Log "Error in iteration $IterationNumber (Attempt $retryCount of $MaxRetries): $_" -Level "ERROR" -LogPath $LogPath
+            Write-Log "Error in iteration $($IterationNumber + 1) (Attempt $retryCount of $MaxRetries): $_" -Level "ERROR" -LogPath $LogPath
             
             if ($retryCount -lt $MaxRetries) {
                 Write-Log "Retrying in $RetryDelay seconds..." -Level "WARNING" -LogPath $LogPath
@@ -202,21 +188,10 @@ try {
         throw "Not enough wait time pairs in configuration for requested number of iterations"
     }
 
-    # Get user information
-    $LoggedInUserFull = $env:USERNAME
-    $LoggedInUser = $env:USERNAME
-    
-    # Create log directory if it doesn't exist
-    $logDir = Split-Path -Parent $config.logging.logPath
-    if (-not (Test-Path $logDir)) {
-        New-Item -ItemType Directory -Path $logDir -Force | Out-Null
-    }
-
     $scriptStartTime = Get-Date
     Write-Log "Starting Activity Generator Orchestrator" -LogPath $config.logging.logPath
     Write-Log "Using configuration file: $ConfigPath" -LogPath $config.logging.logPath
     Write-Log "Total planned iterations: $NumberOfIterations" -LogPath $config.logging.logPath
-    Write-Log "Logged in user: $LoggedInUserFull" -LogPath $config.logging.logPath
 
     # Clean up old logs
     Remove-OldLogs -LogPath $config.logging.logPath -RetentionDays $config.logging.logRetentionDays
@@ -226,49 +201,36 @@ try {
         $waitTimes = $config.iterations.waitTimes[$i]
         
         Invoke-ActivityIteration `
-            -IterationNumber ($i + 1) `
-            -TotalIterations $NumberOfIterations `
+            -IterationNumber $i `
             -MaxWait $waitTimes.maxWait `
             -MinWait $waitTimes.minWait `
             -WorkingDirectory $config.workingDirectory `
+            -StartupScript $config.scripts.startup `
+            -OrchestratorScript $config.scripts.orchestrator `
             -LogPath $config.logging.logPath `
             -MaxRetries $config.execution.maxRetries `
-            -RetryDelay $config.execution.retryDelaySeconds `
-            -LoggedInUserFull $LoggedInUserFull `
-            -LoggedInUser $LoggedInUser
-            
-        # Wait between iterations (except for the last one)
-        if ($i -lt ($NumberOfIterations - 1)) {
-            $waitTime = Get-Random -Minimum $waitTimes.minWait -Maximum $waitTimes.maxWait
-            $waitSeconds = $waitTime / 1000
-            Write-Log "Waiting $($waitSeconds.ToString('F2')) seconds before next iteration..." -LogPath $config.logging.logPath
-            Start-Sleep -Seconds $waitSeconds
-        }
+            -RetryDelay $config.execution.retryDelaySeconds
     }
 
     $scriptEndTime = Get-Date
     $totalDuration = ($scriptEndTime - $scriptStartTime).TotalMinutes
     
-    Write-Log "All outer iterations completed successfully" -Level "SUCCESS" -LogPath $config.logging.logPath
+    Write-Log "All iterations completed successfully" -Level "SUCCESS" -LogPath $config.logging.logPath
     Write-Log "Total execution time: $($totalDuration.ToString('F2')) minutes" -LogPath $config.logging.logPath
     
     # Write final summary statistics
     $summaryStats = @{
-        "Total Outer Iterations" = $NumberOfIterations
+        "Total Iterations" = $NumberOfIterations
         "Start Time" = $scriptStartTime.ToString("yyyy-MM-dd HH:mm:ss")
         "End Time" = $scriptEndTime.ToString("yyyy-MM-dd HH:mm:ss")
         "Total Duration" = "$($totalDuration.ToString('F2')) minutes"
-        "Average Duration" = "$($($totalDuration / $NumberOfIterations).ToString('F2')) minutes per outer iteration"
+        "Average Duration" = "$($($totalDuration / $NumberOfIterations).ToString('F2')) minutes per iteration"
         "Configuration File" = $ConfigPath
     }
     
     Write-Log "Final Summary:`n$(($summaryStats.GetEnumerator() | ForEach-Object { "  $($_.Key): $($_.Value)" }) -join "`n")" -Level "SUCCESS" -LogPath $config.logging.logPath
 }
 catch {
-    if ($config.logging.logPath) {
-        Write-Log "Script execution failed: $_" -Level "ERROR" -LogPath $config.logging.logPath
-    } else {
-        Write-Host "Script execution failed: $_" -ForegroundColor Red
-    }
+    Write-Log "Script execution failed: $_" -Level "ERROR" -LogPath $config.logging.logPath
     exit 1
 }

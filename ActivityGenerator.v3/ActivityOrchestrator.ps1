@@ -1,5 +1,6 @@
 $infinite_loop = $true
 $StartTimeStamp = (Get-Date)
+$iterationCounter = 0  # Track iteration number
 
 $LOGGED_IN_USER = $ENV:USERNAME
 if(($LOGGED_IN_USER.Length -gt 6 -and $LOGGED_IN_USER.IndexOf(" ") -ge 0) -or ($LOGGED_IN_USER.IndexOf("(") -ge 0)){
@@ -8,29 +9,63 @@ if(($LOGGED_IN_USER.Length -gt 6 -and $LOGGED_IN_USER.IndexOf(" ") -ge 0) -or ($
 }
 
 Write-Host ""
-Write-Host "LOGGED_IN_USE_FULL :: $LOGGED_IN_USER_FULL"
+Write-Host "LOGGED_IN_USER_FULL :: $LOGGED_IN_USER_FULL"
 Write-Host "LOGGED_IN_USER :: $LOGGED_IN_USER"
 Write-Host ""
 
 while($infinite_loop -eq $true){
 
     $CurrentTimeStamp = (Get-Date)
+    $iterationCounter++  # Increment iteration counter
 
     # Get Controller Config
     Write-Host "Getting activity generator controller config..."
     .".\ActivityGeneratorProcessController.ps1"
+    
+    # Based on the updated ProcessController array structure:
+    # Index 0: SHUTDOWN
+    # Index 1: SHUTDOWN_WINDOW
+    # Index 2: USE_TERMINATE
+    # Index 3: TERMINATE_WINDOW
+    # Index 4: RANDOMIZER_SEED_MAX
+    # Index 5: RANDOMIZER_SEED_MIN
+    # Index 6: SLEEP_SEED
+    # Index 7: TERMINATE_WINDOW_MIN
+    # Index 8: TERMINATE_WINDOW_MAX
+    
     $shutdown = GetProcesControlConfig(0)
     $shutdown_window = GetProcesControlConfig(1)
     $use_terminate = GetProcesControlConfig(2)
-    $terminate_window = GetProcesControlConfig(3)
+    $terminate_window_fixed = GetProcesControlConfig(3)
+    $randomizer_seed_max = GetProcesControlConfig(4)
+    $randomizer_seed_min = GetProcesControlConfig(5)
     $sleepseed = GetProcesControlConfig(6)
+    $terminate_window_min = GetProcesControlConfig(7)
+    $terminate_window_max = GetProcesControlConfig(8)
+    
+    # Determine which terminate window to use
+    if($terminate_window_min -ne "" -and $terminate_window_max -ne "" -and 
+       $terminate_window_min -ne $null -and $terminate_window_max -ne $null -and
+       [int]$terminate_window_min -gt 0 -and [int]$terminate_window_max -gt [int]$terminate_window_min){
+        # Use random range
+        $terminate_window = Get-Random -Minimum ([int]$terminate_window_min) -Maximum ([int]$terminate_window_max)
+        $terminate_window_type = "RANDOM"
+    }
+    else{
+        # Use fixed value
+        $terminate_window = [int]$terminate_window_fixed
+        $terminate_window_type = "FIXED"
+    }
 
     Write-Host ""
     Write-Host "SHUTDOWN :: $shutdown"
     Write-Host "SHUTDOWN_WINDOW :: $shutdown_window"
     Write-Host "USE_TERMINATE :: $use_terminate"
-    Write-Host "TERMINATE_WINDOW :: $terminate_window"
-    Write-Host "SLEEP_SEED" :: $sleepseed
+    Write-Host "TERMINATE_WINDOW :: $terminate_window seconds ($terminate_window_type)"
+    if($terminate_window_type -eq "RANDOM"){
+        Write-Host "  Range: $terminate_window_min - $terminate_window_max seconds"
+    }
+    Write-Host "SLEEP_SEED :: $sleepseed"
     Write-Host ""
 
     # Continue or prepare to exit process?
@@ -90,8 +125,15 @@ while($infinite_loop -eq $true){
         Write-Host ""
     }
 
-    # Launch activity generator
-    .\ActivityGenerator.ps1 -loggedinuser $LOGGED_IN_USER -loggedinuserfull $LOGGED_IN_USER_FULL
+    # Launch activity generator with iteration tracking and terminate window info
+    # Pass StartTime as a string to avoid parsing issues
+    $startTimeString = $StartTimeStamp.ToString("yyyy-MM-dd HH:mm:ss")
+    
+    & .\ActivityGenerator.ps1 -loggedinuser $LOGGED_IN_USER `
+                             -loggedinuserfull $LOGGED_IN_USER_FULL `
+                             -IterationNumber $iterationCounter `
+                             -StartTime $startTimeString `
+                             -TerminateWindow $terminate_window
 
     # Pause activity orchestrator loop
     $sleepfor = (Get-Random -Minimum 0 -Maximum $sleepseed)
