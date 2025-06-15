@@ -1,0 +1,1 @@
+Netsh WLAN connect name="Sanya's Apple Network 5GHz"

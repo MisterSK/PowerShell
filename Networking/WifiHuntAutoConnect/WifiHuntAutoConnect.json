@@ -1,0 +1,44 @@
+{
+    "preferredNetworks": [
+        {
+            "ssid": "HellsGate-5.0G",
+            "priority": 1,
+            "description": "Hell's Gate roaming router network 5GHz"
+        },
+        {
+            "ssid": "HellsGate-2.4",
+            "priority": 2,
+            "description": "Hell's Gate roaming router network 2.4GHz"
+        },
+        {
+            "ssid": "Merlin Wharf",
+            "priority": 3,
+            "description": "Merling Wharf main apartment Wi-fi network"
+        },
+        {
+            "ssid": "Nyati_CPEPro2_5G",
+            "priority": 4,
+            "description": "Market Harborough Nyati home router network 5Ghz"
+        },
+        {
+            "ssid": "Nyati_CPEPro2_2.4G",
+            "priority": 5,
+            "description": "Market Harborough Nyati home router network 2.4Ghz"
+        }
+    ],
+    "connectionSettings": {
+        "initialScanDelaySeconds": 30,
+        "scanIntervalSettings": {
+            "minMinutes": 3,
+            "maxMinutes": 7
+        },
+        "connectedCheckSettings": {
+            "minMinutes": 15,
+            "maxMinutes": 20
+        }
+    },
+    "logging": {
+        "maxLogSizeMB": 5,
+        "logLevels": ["Information", "Warning", "Error"]
+    }
+}
