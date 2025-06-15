@@ -399,3 +399,135 @@
 [2025-06-15 12:07:34] [DEBUG] Window count OK: 5 >= 4 (minimum)
 [2025-06-15 12:07:34] [DEBUG] Next monitor check at: 12:16:34
 [2025-06-15 12:07:34] [DEBUG] === MONITOR CHECK COMPLETE ===
+[2025-06-15 12:16:34] [DEBUG] === MONITOR CHECK CYCLE ===
+[2025-06-15 12:16:34] [DEBUG] Found 5 running PowerShell terminal windows (excluding monitoring window)
+[2025-06-15 12:16:34] [INFO] Monitor Status: Running=5, Required=4, Max=7
+[2025-06-15 12:16:34] [DEBUG] Window count OK: 5 >= 4 (minimum)
+[2025-06-15 12:16:34] [DEBUG] Next monitor check at: 12:25:34
+[2025-06-15 12:16:34] [DEBUG] === MONITOR CHECK COMPLETE ===
+[2025-06-15 12:22:38] [INFO] === ENHANCED STANDALONE MONITORING ENDED ===
+[2025-06-15 12:23:18] [INFO] === ENHANCED STANDALONE WINDOW MONITOR STARTING ===
+[2025-06-15 12:23:18] [INFO] Monitor PID: 3056
+[2025-06-15 12:23:18] [INFO] Configuration file: C:\Users\SanyaKhasenye(Sensit\WorkingDir\PowerShell\PwshWindowManager\.\PwshWindowManager.json
+[2025-06-15 12:23:18] [INFO] Logging to: C:\Users\SanyaKhasenye(Sensit\WorkingDir\PowerShell\PwshWindowManager\Logs\2025\06\15\StandaloneMonitor_20250615.log
+[2025-06-15 12:23:18] [INFO] Configuration loaded from C:\Users\SanyaKhasenye(Sensit\WorkingDir\PowerShell\PwshWindowManager\.\PwshWindowManager.json
+[2025-06-15 12:23:18] [INFO] === PATH VERIFICATION ===
+[2025-06-15 12:23:18] [DEBUG] Base path: C:\Users\SanyaKhasenye(Sensit\WorkingDir\PowerShell
+[2025-06-15 12:23:18] [DEBUG] Countdown script: C:\Users\SanyaKhasenye(Sensit\WorkingDir\PowerShell\CountDownTimers\Start-Countdown.ps1
+[2025-06-15 12:23:18] [DEBUG] Orchestrator directory: C:\Users\SanyaKhasenye(Sensit\WorkingDir\PowerShell\ActivityGenerator.v3
+[2025-06-15 12:23:18] [DEBUG] Orchestrator script: C:\Users\SanyaKhasenye(Sensit\WorkingDir\PowerShell\ActivityGenerator.v3\Start-ActivityOrchestrator_v0.1.ps1
+[2025-06-15 12:23:18] [INFO] SUCCESS: Countdown script found
+[2025-06-15 12:23:18] [INFO] SUCCESS: Orchestrator script found
+[2025-06-15 12:23:18] [INFO] SUCCESS: Orchestrator directory found
+[2025-06-15 12:23:18] [INFO] === PATH VERIFICATION COMPLETE ===
+[2025-06-15 12:23:18] [INFO] === ENHANCED STANDALONE MONITORING STARTED ===
+[2025-06-15 12:23:18] [INFO] Monitor settings - Min: 4, Max: 7, Check interval: 540s
+[2025-06-15 12:23:18] [INFO] Will add 3 windows when count drops below minimum
+[2025-06-15 12:23:18] [INFO] Monitoring mode: Continuous
+[2025-06-15 12:23:18] [INFO] Press Ctrl+C to stop monitoring
+[2025-06-15 12:23:18] [INFO] Monitoring mode: Continuous - No end time
+[2025-06-15 12:23:18] [DEBUG] === MONITOR CHECK CYCLE ===
+[2025-06-15 12:23:18] [DEBUG] Found 5 running PowerShell terminal windows (excluding monitoring window)
+[2025-06-15 12:23:18] [INFO] Monitor Status: Running=5, Required=4, Max=7
+[2025-06-15 12:23:18] [DEBUG] Window count OK: 5 >= 4 (minimum)
+[2025-06-15 12:23:18] [DEBUG] Next monitor check at: 12:32:18
+[2025-06-15 12:23:18] [DEBUG] === MONITOR CHECK COMPLETE ===
+[2025-06-15 12:24:02] [INFO] === ENHANCED STANDALONE MONITORING ENDED ===
+[2025-06-15 12:24:04] [INFO] === ENHANCED STANDALONE WINDOW MONITOR STARTING ===
+[2025-06-15 12:24:04] [INFO] Monitor PID: 18200
+[2025-06-15 12:24:04] [INFO] Configuration file: C:\Users\SanyaKhasenye(Sensit\WorkingDir\PowerShell\PwshWindowManager\.\PwshWindowManager.json
+[2025-06-15 12:24:04] [INFO] Logging to: C:\Users\SanyaKhasenye(Sensit\WorkingDir\PowerShell\PwshWindowManager\Logs\2025\06\15\StandaloneMonitor_20250615.log
+[2025-06-15 12:24:04] [INFO] Configuration loaded from C:\Users\SanyaKhasenye(Sensit\WorkingDir\PowerShell\PwshWindowManager\.\PwshWindowManager.json
+[2025-06-15 12:24:04] [INFO] === PATH VERIFICATION ===
+[2025-06-15 12:24:04] [DEBUG] Base path: C:\Users\SanyaKhasenye(Sensit\WorkingDir\PowerShell
+[2025-06-15 12:24:04] [DEBUG] Countdown script: C:\Users\SanyaKhasenye(Sensit\WorkingDir\PowerShell\CountDownTimers\Start-Countdown.ps1
+[2025-06-15 12:24:04] [DEBUG] Orchestrator directory: C:\Users\SanyaKhasenye(Sensit\WorkingDir\PowerShell\ActivityGenerator.v3
+[2025-06-15 12:24:04] [DEBUG] Orchestrator script: C:\Users\SanyaKhasenye(Sensit\WorkingDir\PowerShell\ActivityGenerator.v3\Start-ActivityOrchestrator_v0.1.ps1
+[2025-06-15 12:24:04] [INFO] SUCCESS: Countdown script found
+[2025-06-15 12:24:04] [INFO] SUCCESS: Orchestrator script found
+[2025-06-15 12:24:04] [INFO] SUCCESS: Orchestrator directory found
+[2025-06-15 12:24:04] [INFO] === PATH VERIFICATION COMPLETE ===
+[2025-06-15 12:24:04] [INFO] === ENHANCED STANDALONE MONITORING STARTED ===
+[2025-06-15 12:24:04] [INFO] Monitor settings - Min: 4, Max: 7, Check interval: 540s
+[2025-06-15 12:24:04] [INFO] Will add 3 windows when count drops below minimum
+[2025-06-15 12:24:04] [INFO] Monitoring mode: Continuous
+[2025-06-15 12:24:04] [INFO] Press Ctrl+C to stop monitoring
+[2025-06-15 12:24:04] [INFO] Monitoring mode: Continuous - No end time
+[2025-06-15 12:24:04] [DEBUG] === MONITOR CHECK CYCLE ===
+[2025-06-15 12:24:04] [DEBUG] Found 3 running PowerShell terminal windows (excluding monitoring window)
+[2025-06-15 12:24:04] [INFO] Monitor Status: Running=3, Required=4, Max=7
+[2025-06-15 12:24:04] [WARN] *** LOW WINDOW COUNT DETECTED ***
+[2025-06-15 12:24:04] [WARN] Running: 3, Required: 4, Available slots: 4
+[2025-06-15 12:24:04] [WARN] Launching 3 new windows...
+[2025-06-15 12:24:04] [INFO] Launching window MONITOR_122404_1 with 23861 second countdown
+[2025-06-15 12:24:04] [DEBUG] Preparing to launch window MONITOR_122404_1 with 23861 second countdown
+[2025-06-15 12:24:04] [DEBUG] Font customization requested: Consolas 6pt
+[2025-06-15 12:24:04] [INFO] Launched window MONITOR_122404_1 via font wrapper - 23861 second countdown
+[2025-06-15 12:24:09] [DEBUG] Window configuration - Size: 80x10, Font: Consolas 6pt
+[2025-06-15 12:24:09] [DEBUG] Auto-close timeout: 120 seconds
+[2025-06-15 12:24:12] [INFO] Launching window MONITOR_122412_2 with 22478 second countdown
+[2025-06-15 12:24:12] [DEBUG] Preparing to launch window MONITOR_122412_2 with 22478 second countdown
+[2025-06-15 12:24:12] [DEBUG] Font customization requested: Consolas 6pt
+[2025-06-15 12:24:12] [INFO] Launched window MONITOR_122412_2 via font wrapper - 22478 second countdown
+[2025-06-15 12:24:17] [DEBUG] Window configuration - Size: 80x10, Font: Consolas 6pt
+[2025-06-15 12:24:17] [DEBUG] Auto-close timeout: 120 seconds
+[2025-06-15 12:24:20] [INFO] Launching window MONITOR_122420_3 with 3619 second countdown
+[2025-06-15 12:24:20] [DEBUG] Preparing to launch window MONITOR_122420_3 with 3619 second countdown
+[2025-06-15 12:24:20] [DEBUG] Font customization requested: Consolas 6pt
+[2025-06-15 12:24:20] [INFO] Launched window MONITOR_122420_3 via font wrapper - 3619 second countdown
+[2025-06-15 12:24:25] [DEBUG] Window configuration - Size: 80x10, Font: Consolas 6pt
+[2025-06-15 12:24:25] [DEBUG] Auto-close timeout: 120 seconds
+[2025-06-15 12:24:28] [INFO] Completed launching 3 replacement windows
+[2025-06-15 12:24:28] [DEBUG] Next monitor check at: 12:33:28
+[2025-06-15 12:24:28] [DEBUG] === MONITOR CHECK COMPLETE ===
+[2025-06-15 12:25:11] [INFO] === ENHANCED STANDALONE MONITORING ENDED ===
+[2025-06-15 12:27:12] [INFO] === ENHANCED STANDALONE WINDOW MONITOR STARTING ===
+[2025-06-15 12:27:12] [INFO] Monitor PID: 5348
+[2025-06-15 12:27:12] [INFO] Configuration file: C:\Users\SanyaKhasenye(Sensit\WorkingDir\PowerShell\PwshWindowManager\.\PwshWindowManager.json
+[2025-06-15 12:27:12] [INFO] Logging to: C:\Users\SanyaKhasenye(Sensit\WorkingDir\PowerShell\PwshWindowManager\Logs\2025\06\15\StandaloneMonitor_20250615.log
+[2025-06-15 12:27:12] [INFO] Configuration loaded from C:\Users\SanyaKhasenye(Sensit\WorkingDir\PowerShell\PwshWindowManager\.\PwshWindowManager.json
+[2025-06-15 12:27:12] [INFO] === PATH VERIFICATION ===
+[2025-06-15 12:27:12] [DEBUG] Base path: C:\Users\SanyaKhasenye(Sensit\WorkingDir\PowerShell
+[2025-06-15 12:27:12] [DEBUG] Countdown script: C:\Users\SanyaKhasenye(Sensit\WorkingDir\PowerShell\CountDownTimers\Start-Countdown.ps1
+[2025-06-15 12:27:12] [DEBUG] Orchestrator directory: C:\Users\SanyaKhasenye(Sensit\WorkingDir\PowerShell\ActivityGenerator.v3
+[2025-06-15 12:27:12] [DEBUG] Orchestrator script: C:\Users\SanyaKhasenye(Sensit\WorkingDir\PowerShell\ActivityGenerator.v3\Start-ActivityOrchestrator_v0.1.ps1
+[2025-06-15 12:27:12] [INFO] SUCCESS: Countdown script found
+[2025-06-15 12:27:12] [INFO] SUCCESS: Orchestrator script found
+[2025-06-15 12:27:12] [INFO] SUCCESS: Orchestrator directory found
+[2025-06-15 12:27:12] [INFO] === PATH VERIFICATION COMPLETE ===
+[2025-06-15 12:27:12] [INFO] === ENHANCED STANDALONE MONITORING STARTED ===
+[2025-06-15 12:27:12] [INFO] Monitor settings - Min: 4, Max: 7, Check interval: 540s
+[2025-06-15 12:27:12] [INFO] Will add 3 windows when count drops below minimum
+[2025-06-15 12:27:12] [INFO] Monitoring mode: Continuous
+[2025-06-15 12:27:12] [INFO] Press Ctrl+C to stop monitoring
+[2025-06-15 12:27:12] [INFO] Monitoring mode: Continuous - No end time
+[2025-06-15 12:27:12] [DEBUG] === MONITOR CHECK CYCLE ===
+[2025-06-15 12:27:12] [DEBUG] Found 3 running PowerShell terminal windows (excluding monitoring window)
+[2025-06-15 12:27:12] [INFO] Monitor Status: Running=3, Required=4, Max=7
+[2025-06-15 12:27:12] [WARN] *** LOW WINDOW COUNT DETECTED ***
+[2025-06-15 12:27:12] [WARN] Running: 3, Required: 4, Available slots: 4
+[2025-06-15 12:27:12] [WARN] Launching 3 new windows...
+[2025-06-15 12:27:12] [INFO] Launching window MONITOR_122712_1 with 1132 second countdown
+[2025-06-15 12:27:12] [DEBUG] Preparing to launch window MONITOR_122712_1 with 1132 second countdown
+[2025-06-15 12:27:12] [DEBUG] Creating temporary script: C:\Users\SANYAK~1\AppData\Local\Temp\OrchestratorWindow_MONITOR_122712_1.ps1
+[2025-06-15 12:27:12] [DEBUG] Auto-close timeout: 120 seconds
+[2025-06-15 12:27:12] [INFO] Launched window MONITOR_122712_1 - 1132 second countdown
+[2025-06-15 12:27:15] [INFO] Launching window MONITOR_122715_2 with 14103 second countdown
+[2025-06-15 12:27:15] [DEBUG] Preparing to launch window MONITOR_122715_2 with 14103 second countdown
+[2025-06-15 12:27:15] [DEBUG] Creating temporary script: C:\Users\SANYAK~1\AppData\Local\Temp\OrchestratorWindow_MONITOR_122715_2.ps1
+[2025-06-15 12:27:15] [DEBUG] Auto-close timeout: 120 seconds
+[2025-06-15 12:27:15] [INFO] Launched window MONITOR_122715_2 - 14103 second countdown
+[2025-06-15 12:27:18] [INFO] Launching window MONITOR_122718_3 with 7064 second countdown
+[2025-06-15 12:27:18] [DEBUG] Preparing to launch window MONITOR_122718_3 with 7064 second countdown
+[2025-06-15 12:27:18] [DEBUG] Creating temporary script: C:\Users\SANYAK~1\AppData\Local\Temp\OrchestratorWindow_MONITOR_122718_3.ps1
+[2025-06-15 12:27:18] [DEBUG] Auto-close timeout: 120 seconds
+[2025-06-15 12:27:18] [INFO] Launched window MONITOR_122718_3 - 7064 second countdown
+[2025-06-15 12:27:21] [INFO] Completed launching 3 replacement windows
+[2025-06-15 12:27:21] [DEBUG] Next monitor check at: 12:36:21
+[2025-06-15 12:27:21] [DEBUG] === MONITOR CHECK COMPLETE ===
+[2025-06-15 12:36:21] [DEBUG] === MONITOR CHECK CYCLE ===
+[2025-06-15 12:36:21] [DEBUG] Found 5 running PowerShell terminal windows (excluding monitoring window)
+[2025-06-15 12:36:21] [INFO] Monitor Status: Running=5, Required=4, Max=7
+[2025-06-15 12:36:21] [DEBUG] Window count OK: 5 >= 4 (minimum)
+[2025-06-15 12:36:21] [DEBUG] Next monitor check at: 12:45:21
+[2025-06-15 12:36:21] [DEBUG] === MONITOR CHECK COMPLETE ===

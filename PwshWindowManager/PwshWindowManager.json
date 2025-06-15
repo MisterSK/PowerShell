@@ -4,7 +4,7 @@
         "NoExit": false,
         "MinSeconds": 200,
         "MaxSeconds": 28000,
-        "Cols": 80,
+        "Cols": 100,
         "Lines": 10,
         "BgColor": "0A",
         "AutoCloseSeconds": 120,

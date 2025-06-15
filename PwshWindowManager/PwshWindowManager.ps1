@@ -146,7 +146,7 @@ $defaultConfig = @{
         'NoExit'     = $false
         'MinSeconds' = 12
         'MaxSeconds' = 499000
-        'Cols'       = 80
+        'Cols'       = 100
         'Lines'      = 10
         'BgColor'    = "0A"
         'AutoCloseSeconds' = 30
@@ -368,84 +368,16 @@ function Start-OrchestratorWindow {
     
     Write-Log "Preparing to launch window $id with $seconds second countdown" -Level "DEBUG"
     
-    # Create a script that uses PowerShell's console manipulation
+    # Create a very simple script using original cmd-based approach
     $scriptContent = @"
-# Set console properties using PowerShell methods
-try {
-    # Set window title first
-    `$host.UI.RawUI.WindowTitle = "Orchestrator Window $id"
-    
-    # Set window and buffer size
-    try {
-        # Get current window size
-        `$currentWindow = `$host.UI.RawUI.WindowSize
-        `$currentBuffer = `$host.UI.RawUI.BufferSize
-        
-        # Set new window size
-        `$newWindowSize = `$currentWindow
-        `$newWindowSize.Width = $($config.WindowSettings.Cols)
-        `$newWindowSize.Height = $($config.WindowSettings.Lines)
-        
-        # Set buffer size (must be at least as large as window)
-        `$newBufferSize = `$currentBuffer
-        if (`$newBufferSize.Width -lt `$newWindowSize.Width) {
-            `$newBufferSize.Width = `$newWindowSize.Width
-        }
-        if (`$newBufferSize.Height -lt `$newWindowSize.Height) {
-            `$newBufferSize.Height = `$newWindowSize.Height + 100  # Add extra buffer for scrolling
-        }
-        
-        # Apply buffer size first, then window size
-        `$host.UI.RawUI.BufferSize = `$newBufferSize
-        `$host.UI.RawUI.WindowSize = `$newWindowSize
-        
-        Write-Host "Window resized to $($config.WindowSettings.Cols)x$($config.WindowSettings.Lines)" -ForegroundColor Green
-    } catch {
-        Write-Warning "Could not resize window using PowerShell: `$_"
-        # Fallback to cmd mode command
-        cmd /c mode con: cols=$($config.WindowSettings.Cols) lines=$($config.WindowSettings.Lines)
-    }
-    
-    # Set colors
-    `$colorMap = @{
-        "0A" = "Black","DarkGreen"    # Green on black
-        "0C" = "Black","DarkRed"      # Red on black
-        "0E" = "Black","Yellow"       # Yellow on black
-        "0F" = "Black","White"        # White on black
-        "17" = "DarkBlue","Gray"      # White on blue
-        "2F" = "DarkGreen","White"    # White on green
-        "4F" = "DarkRed","White"      # White on red
-        "5F" = "DarkMagenta","White"  # White on purple
-        "6F" = "Yellow","White"       # White on yellow
-        "70" = "Gray","Black"         # Black on gray
-    }
-    
-    if (`$colorMap.ContainsKey("$($config.WindowSettings.BgColor)")) {
-        `$colors = `$colorMap["$($config.WindowSettings.BgColor)"]
-        `$host.UI.RawUI.BackgroundColor = `$colors[0]
-        `$host.UI.RawUI.ForegroundColor = `$colors[1]
-        Clear-Host  # Apply colors
-    } else {
-        # Fallback to cmd color command
-        cmd /c color $($config.WindowSettings.BgColor)
-    }
-    
-    # Font settings note
-    Write-Host '========================================' -ForegroundColor Green
-    Write-Host 'Starting Orchestrator Window $id' -ForegroundColor Green
-    Write-Host "Font settings: $($config.WindowSettings.FontName) $($config.WindowSettings.FontSize)pt" -ForegroundColor Cyan
-    Write-Host "Note: Font changes require manual console properties adjustment" -ForegroundColor Yellow
-    Write-Host '========================================' -ForegroundColor Green
-    
-} catch {
-    Write-Warning "Failed to set console properties: `$_"
-    Write-Host "Using basic configuration..." -ForegroundColor Yellow
-    
-    # Basic fallback
-    cmd /c color $($config.WindowSettings.BgColor)
-    cmd /c mode con: cols=$($config.WindowSettings.Cols) lines=$($config.WindowSettings.Lines)
-    cmd /c title "Orchestrator Window $id"
-}
+# Basic window setup using cmd commands (works in ConstrainedLanguage mode)
+cmd /c color $($config.WindowSettings.BgColor)
+cmd /c mode con: cols=$($config.WindowSettings.Cols) lines=$($config.WindowSettings.Lines)
+cmd /c title "Orchestrator Window $id"
+
+Write-Host '========================================' -ForegroundColor Green
+Write-Host 'Starting Orchestrator Window $id' -ForegroundColor Green
+Write-Host '========================================' -ForegroundColor Green
 
 # Change to working directory
 Write-Host 'Changing to orchestrator directory...' -ForegroundColor Cyan
@@ -530,56 +462,22 @@ if ('$($config.WindowSettings.NoExit)' -eq 'True') {
         # Write the script content using basic Out-File
         $scriptContent | Out-File -FilePath $tempScript -Encoding UTF8 -Force
         
-        # Build arguments for font settings using shortcut modification
-        # Create a custom shortcut with font settings
-        $shortcutPath = "$env:TEMP\OrchestratorWindow_$id.lnk"
+        # Build simple arguments
+        $arguments = @(
+            "-ExecutionPolicy", "Bypass"
+            "-File", $tempScript
+        )
         
-        # Try to create shortcut with font settings (this may work in some environments)
-        try {
-            $WshShell = New-Object -ComObject WScript.Shell -ErrorAction Stop
-            $Shortcut = $WshShell.CreateShortcut($shortcutPath)
-            $Shortcut.TargetPath = "powershell.exe"
-            
-            if ($config.WindowSettings.NoExit) {
-                $Shortcut.Arguments = "-NoExit -ExecutionPolicy Bypass -File `"$tempScript`""
-            } else {
-                $Shortcut.Arguments = "-ExecutionPolicy Bypass -File `"$tempScript`""
-            }
-            
-            $Shortcut.WorkingDirectory = $orchestratorDir
-            $Shortcut.WindowStyle = 1
-            $Shortcut.Save()
-            
-            # Clean up COM object
-            [System.Runtime.Interopservices.Marshal]::ReleaseComObject($WshShell) | Out-Null
-            
-            # Start using the shortcut
-            Start-Process $shortcutPath
-            Write-Log "Launched window $id via shortcut - $seconds second countdown" -Level "INFO"
-            
-            # Schedule cleanup of shortcut
-            Start-Sleep -Milliseconds 2000
-            Remove-Item $shortcutPath -Force -ErrorAction SilentlyContinue
-            
-        } catch {
-            Write-Log "Could not create shortcut, using direct launch: $_" -Level "DEBUG"
-            
-            # Fallback to direct launch
-            $arguments = @(
-                "-ExecutionPolicy", "Bypass"
-                "-File", $tempScript
-            )
-            
-            if ($config.WindowSettings.NoExit) {
-                $arguments = @("-NoExit") + $arguments
-            }
-            
-            Start-Process powershell.exe -ArgumentList $arguments
-            Write-Log "Launched window $id directly - $seconds second countdown" -Level "INFO"
+        if ($config.WindowSettings.NoExit) {
+            $arguments = @("-NoExit") + $arguments
         }
-        
-        Write-Log "Window configuration - Size: $($config.WindowSettings.Cols)x$($config.WindowSettings.Lines), Font: $($config.WindowSettings.FontName) $($config.WindowSettings.FontSize)pt" -Level "DEBUG"
+
+        Write-Log "Creating temporary script: $tempScript" -Level "DEBUG"
         Write-Log "Auto-close timeout: $($config.WindowSettings.AutoCloseSeconds) seconds" -Level "DEBUG"
+        
+        # Start process without -PassThru to avoid property access restrictions
+        Start-Process powershell.exe -ArgumentList $arguments
+        Write-Log "Launched window $id - $seconds second countdown" -Level "INFO"
         
         Start-Sleep -Milliseconds 1000
         
