@@ -1,0 +1,1 @@
+Write-Host; Write-Host "    [Re]initializing Terraform with 'terraform init'. Please wait ...    " -ForegroundColor Black -BackgroundColor Yellow; Write-Host; .\terraform.exe init; Write-Host; Write-Host "    Running 'terraform plan'. Please wait ...    " -ForegroundColor Black -BackgroundColor Yellow; Write-Host; .\terraform.exe plan

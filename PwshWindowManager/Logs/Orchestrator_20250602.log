@@ -1,0 +1,860 @@
+﻿[2025-06-02 07:42:24] [INFO] Configuration loaded from C:\Users\SanyaKhasenye(Sensit\WorkingDir\PowerShell\PwshWindowManager\PwshWindowManager.json
+[2025-06-02 07:42:24] [DEBUG] Base path: C:\Users\SanyaKhasenye(Sensit\WorkingDir\PowerShell
+[2025-06-02 07:42:24] [DEBUG] Countdown script: C:\Users\SanyaKhasenye(Sensit\WorkingDir\PowerShell\CountDownTimers\Start-Countdown.ps1
+[2025-06-02 07:42:24] [DEBUG] Orchestrator directory: C:\Users\SanyaKhasenye(Sensit\WorkingDir\PowerShell\ActivityGenerator.v3
+[2025-06-02 07:42:24] [DEBUG] Orchestrator script: C:\Users\SanyaKhasenye(Sensit\WorkingDir\PowerShell\ActivityGenerator.v3\Start-ActivityOrchestrator_v0.1.ps1
+[2025-06-02 07:42:24] [INFO] === PATH VERIFICATION ===
+[2025-06-02 07:42:24] [INFO] SUCCESS: Countdown script found at: C:\Users\SanyaKhasenye(Sensit\WorkingDir\PowerShell\CountDownTimers\Start-Countdown.ps1
+[2025-06-02 07:42:24] [INFO] SUCCESS: Orchestrator script found at: C:\Users\SanyaKhasenye(Sensit\WorkingDir\PowerShell\ActivityGenerator.v3\Start-ActivityOrchestrator_v0.1.ps1
+[2025-06-02 07:42:24] [INFO] SUCCESS: Orchestrator directory found at: C:\Users\SanyaKhasenye(Sensit\WorkingDir\PowerShell\ActivityGenerator.v3
+[2025-06-02 07:42:24] [INFO] SUCCESS: Orchestrator config found at: C:\Users\SanyaKhasenye(Sensit\WorkingDir\PowerShell\ActivityGenerator.v3\ActivityGeneratorConfig.json
+[2025-06-02 07:42:24] [INFO] === PATH VERIFICATION COMPLETE ===
+[2025-06-02 07:42:24] [INFO] Script started with PID 11664
+[2025-06-02 07:42:24] [DEBUG] Current working directory: C:\Users\SanyaKhasenye(Sensit\WorkingDir\PowerShell\PwshWindowManager
+[2025-06-02 07:42:24] [DEBUG] PowerShell version: 5.1.19041.5848
+[2025-06-02 07:42:24] [INFO] Launching 3 initial windows
+[2025-06-02 07:42:24] [DEBUG] Generated 8317 seconds for window 1
+[2025-06-02 07:42:24] [DEBUG] Preparing to launch window 1 with 8317 second countdown
+[2025-06-02 07:42:24] [DEBUG] Creating temporary script: C:\Users\SANYAK~1\AppData\Local\Temp\OrchestratorWindow_1.ps1
+[2025-06-02 07:42:24] [DEBUG] Auto-close timeout: 120 seconds
+[2025-06-02 07:42:24] [INFO] Launched window 1 - 8317 second countdown
+[2025-06-02 07:42:25] [DEBUG] Generated 3295 seconds for window 2
+[2025-06-02 07:42:25] [DEBUG] Preparing to launch window 2 with 3295 second countdown
+[2025-06-02 07:42:25] [DEBUG] Creating temporary script: C:\Users\SANYAK~1\AppData\Local\Temp\OrchestratorWindow_2.ps1
+[2025-06-02 07:42:25] [DEBUG] Auto-close timeout: 120 seconds
+[2025-06-02 07:42:25] [INFO] Launched window 2 - 3295 second countdown
+[2025-06-02 07:42:26] [DEBUG] Generated 4531 seconds for window 3
+[2025-06-02 07:42:26] [DEBUG] Preparing to launch window 3 with 4531 second countdown
+[2025-06-02 07:42:26] [DEBUG] Creating temporary script: C:\Users\SANYAK~1\AppData\Local\Temp\OrchestratorWindow_3.ps1
+[2025-06-02 07:42:26] [DEBUG] Auto-close timeout: 120 seconds
+[2025-06-02 07:42:26] [INFO] Launched window 3 - 4531 second countdown
+[2025-06-02 07:42:27] [INFO] Starting monitoring process...
+[2025-06-02 07:42:27] [INFO] Monitor settings - Min: 4, Max: 8, Check interval: 540s
+[2025-06-02 07:42:27] [INFO] Will add 3 windows when count drops below minimum
+[2025-06-02 07:42:27] [DEBUG] === MONITOR CHECK CYCLE ===
+[2025-06-02 07:42:27] [DEBUG] Found 10 relevant PowerShell processes (excluding main orchestrator PID 11664)
+[2025-06-02 07:42:27] [DEBUG] Total PowerShell processes: 11
+[2025-06-02 07:42:27] [INFO] Monitor Status: Running=10, Required=4, Max=8
+[2025-06-02 07:42:27] [DEBUG] Window count OK: 10 >= 4 (minimum)
+[2025-06-02 07:42:27] [DEBUG] Next monitor check at: 07:51:27
+[2025-06-02 07:42:27] [DEBUG] === MONITOR CHECK COMPLETE ===
+[2025-06-02 07:51:27] [DEBUG] === MONITOR CHECK CYCLE ===
+[2025-06-02 07:51:27] [DEBUG] Found 10 relevant PowerShell processes (excluding main orchestrator PID 11664)
+[2025-06-02 07:51:28] [DEBUG] Total PowerShell processes: 11
+[2025-06-02 07:51:28] [INFO] Monitor Status: Running=10, Required=4, Max=8
+[2025-06-02 07:51:28] [DEBUG] Window count OK: 10 >= 4 (minimum)
+[2025-06-02 07:51:28] [DEBUG] Next monitor check at: 08:00:28
+[2025-06-02 07:51:28] [DEBUG] === MONITOR CHECK COMPLETE ===
+[2025-06-02 07:55:30] [INFO] Script execution ended
+[2025-06-02 07:55:34] [INFO] Configuration loaded from C:\Users\SanyaKhasenye(Sensit\WorkingDir\PowerShell\PwshWindowManager\PwshWindowManager.json
+[2025-06-02 07:55:34] [DEBUG] Base path: C:\Users\SanyaKhasenye(Sensit\WorkingDir\PowerShell
+[2025-06-02 07:55:34] [DEBUG] Countdown script: C:\Users\SanyaKhasenye(Sensit\WorkingDir\PowerShell\CountDownTimers\Start-Countdown.ps1
+[2025-06-02 07:55:34] [DEBUG] Orchestrator directory: C:\Users\SanyaKhasenye(Sensit\WorkingDir\PowerShell\ActivityGenerator.v3
+[2025-06-02 07:55:34] [DEBUG] Orchestrator script: C:\Users\SanyaKhasenye(Sensit\WorkingDir\PowerShell\ActivityGenerator.v3\Start-ActivityOrchestrator_v0.1.ps1
+[2025-06-02 07:55:34] [INFO] === PATH VERIFICATION ===
+[2025-06-02 07:55:34] [INFO] SUCCESS: Countdown script found at: C:\Users\SanyaKhasenye(Sensit\WorkingDir\PowerShell\CountDownTimers\Start-Countdown.ps1
+[2025-06-02 07:55:34] [INFO] SUCCESS: Orchestrator script found at: C:\Users\SanyaKhasenye(Sensit\WorkingDir\PowerShell\ActivityGenerator.v3\Start-ActivityOrchestrator_v0.1.ps1
+[2025-06-02 07:55:34] [INFO] SUCCESS: Orchestrator directory found at: C:\Users\SanyaKhasenye(Sensit\WorkingDir\PowerShell\ActivityGenerator.v3
+[2025-06-02 07:55:34] [INFO] SUCCESS: Orchestrator config found at: C:\Users\SanyaKhasenye(Sensit\WorkingDir\PowerShell\ActivityGenerator.v3\ActivityGeneratorConfig.json
+[2025-06-02 07:55:34] [INFO] === PATH VERIFICATION COMPLETE ===
+[2025-06-02 07:55:34] [INFO] Script started with PID 20656
+[2025-06-02 07:55:34] [DEBUG] Current working directory: C:\Users\SanyaKhasenye(Sensit\WorkingDir\PowerShell\PwshWindowManager
+[2025-06-02 07:55:34] [DEBUG] PowerShell version: 5.1.19041.5848
+[2025-06-02 07:55:34] [INFO] Launching 4 initial windows
+[2025-06-02 07:55:34] [DEBUG] Generated 9855 seconds for window 1
+[2025-06-02 07:55:34] [DEBUG] Preparing to launch window 1 with 9855 second countdown
+[2025-06-02 07:55:34] [DEBUG] Creating temporary script: C:\Users\SANYAK~1\AppData\Local\Temp\OrchestratorWindow_1.ps1
+[2025-06-02 07:55:34] [DEBUG] Auto-close timeout: 120 seconds
+[2025-06-02 07:55:34] [INFO] Launched window 1 - 9855 second countdown
+[2025-06-02 07:55:35] [DEBUG] Generated 6920 seconds for window 2
+[2025-06-02 07:55:35] [DEBUG] Preparing to launch window 2 with 6920 second countdown
+[2025-06-02 07:55:35] [DEBUG] Creating temporary script: C:\Users\SANYAK~1\AppData\Local\Temp\OrchestratorWindow_2.ps1
+[2025-06-02 07:55:35] [DEBUG] Auto-close timeout: 120 seconds
+[2025-06-02 07:55:35] [INFO] Launched window 2 - 6920 second countdown
+[2025-06-02 07:55:36] [DEBUG] Generated 1614 seconds for window 3
+[2025-06-02 07:55:36] [DEBUG] Preparing to launch window 3 with 1614 second countdown
+[2025-06-02 07:55:36] [DEBUG] Creating temporary script: C:\Users\SANYAK~1\AppData\Local\Temp\OrchestratorWindow_3.ps1
+[2025-06-02 07:55:36] [DEBUG] Auto-close timeout: 120 seconds
+[2025-06-02 07:55:36] [INFO] Launched window 3 - 1614 second countdown
+[2025-06-02 07:55:37] [DEBUG] Generated 9240 seconds for window 4
+[2025-06-02 07:55:37] [DEBUG] Preparing to launch window 4 with 9240 second countdown
+[2025-06-02 07:55:37] [DEBUG] Creating temporary script: C:\Users\SANYAK~1\AppData\Local\Temp\OrchestratorWindow_4.ps1
+[2025-06-02 07:55:37] [DEBUG] Auto-close timeout: 120 seconds
+[2025-06-02 07:55:37] [INFO] Launched window 4 - 9240 second countdown
+[2025-06-02 07:55:38] [INFO] Starting monitoring process...
+[2025-06-02 07:55:38] [INFO] Monitor settings - Min: 4, Max: 8, Check interval: 540s
+[2025-06-02 07:55:38] [INFO] Will add 3 windows when count drops below minimum
+[2025-06-02 07:55:38] [DEBUG] === MONITOR CHECK CYCLE ===
+[2025-06-02 07:55:38] [DEBUG] Found 11 relevant PowerShell processes (excluding main orchestrator PID 20656)
+[2025-06-02 07:55:38] [INFO] Monitor Status: Running=11, Required=4, Max=8
+[2025-06-02 07:55:38] [DEBUG] Window count OK: 11 >= 4 (minimum)
+[2025-06-02 07:55:38] [DEBUG] Next monitor check at: 08:04:38
+[2025-06-02 07:55:38] [DEBUG] === MONITOR CHECK COMPLETE ===
+[2025-06-02 07:56:10] [INFO] Configuration loaded from C:\Users\SanyaKhasenye(Sensit\WorkingDir\PowerShell\PwshWindowManager\PwshWindowManager.json
+[2025-06-02 07:56:10] [DEBUG] Base path: C:\Users\SanyaKhasenye(Sensit\WorkingDir\PowerShell
+[2025-06-02 07:56:10] [DEBUG] Countdown script: C:\Users\SanyaKhasenye(Sensit\WorkingDir\PowerShell\CountDownTimers\Start-Countdown.ps1
+[2025-06-02 07:56:10] [DEBUG] Orchestrator directory: C:\Users\SanyaKhasenye(Sensit\WorkingDir\PowerShell\ActivityGenerator.v3
+[2025-06-02 07:56:10] [DEBUG] Orchestrator script: C:\Users\SanyaKhasenye(Sensit\WorkingDir\PowerShell\ActivityGenerator.v3\Start-ActivityOrchestrator_v0.1.ps1
+[2025-06-02 07:56:10] [INFO] === PATH VERIFICATION ===
+[2025-06-02 07:56:10] [INFO] SUCCESS: Countdown script found at: C:\Users\SanyaKhasenye(Sensit\WorkingDir\PowerShell\CountDownTimers\Start-Countdown.ps1
+[2025-06-02 07:56:10] [INFO] SUCCESS: Orchestrator script found at: C:\Users\SanyaKhasenye(Sensit\WorkingDir\PowerShell\ActivityGenerator.v3\Start-ActivityOrchestrator_v0.1.ps1
+[2025-06-02 07:56:10] [INFO] SUCCESS: Orchestrator directory found at: C:\Users\SanyaKhasenye(Sensit\WorkingDir\PowerShell\ActivityGenerator.v3
+[2025-06-02 07:56:10] [INFO] SUCCESS: Orchestrator config found at: C:\Users\SanyaKhasenye(Sensit\WorkingDir\PowerShell\ActivityGenerator.v3\ActivityGeneratorConfig.json
+[2025-06-02 07:56:10] [INFO] === PATH VERIFICATION COMPLETE ===
+[2025-06-02 07:56:10] [INFO] Script started with PID 19592
+[2025-06-02 07:56:10] [DEBUG] Current working directory: C:\Users\SanyaKhasenye(Sensit\WorkingDir\PowerShell\PwshWindowManager
+[2025-06-02 07:56:10] [DEBUG] PowerShell version: 5.1.19041.5848
+[2025-06-02 07:56:10] [INFO] Launching 4 initial windows
+[2025-06-02 07:56:10] [DEBUG] Generated 8752 seconds for window 1
+[2025-06-02 07:56:10] [DEBUG] Preparing to launch window 1 with 8752 second countdown
+[2025-06-02 07:56:10] [DEBUG] Creating temporary script: C:\Users\SANYAK~1\AppData\Local\Temp\OrchestratorWindow_1.ps1
+[2025-06-02 07:56:10] [DEBUG] Auto-close timeout: 120 seconds
+[2025-06-02 07:56:10] [INFO] Launched window 1 - 8752 second countdown
+[2025-06-02 07:56:11] [DEBUG] Generated 2312 seconds for window 2
+[2025-06-02 07:56:11] [DEBUG] Preparing to launch window 2 with 2312 second countdown
+[2025-06-02 07:56:11] [DEBUG] Creating temporary script: C:\Users\SANYAK~1\AppData\Local\Temp\OrchestratorWindow_2.ps1
+[2025-06-02 07:56:11] [DEBUG] Auto-close timeout: 120 seconds
+[2025-06-02 07:56:11] [INFO] Launched window 2 - 2312 second countdown
+[2025-06-02 07:56:12] [DEBUG] Generated 4274 seconds for window 3
+[2025-06-02 07:56:12] [DEBUG] Preparing to launch window 3 with 4274 second countdown
+[2025-06-02 07:56:12] [DEBUG] Creating temporary script: C:\Users\SANYAK~1\AppData\Local\Temp\OrchestratorWindow_3.ps1
+[2025-06-02 07:56:12] [DEBUG] Auto-close timeout: 120 seconds
+[2025-06-02 07:56:12] [INFO] Launched window 3 - 4274 second countdown
+[2025-06-02 07:56:13] [DEBUG] Generated 7926 seconds for window 4
+[2025-06-02 07:56:13] [DEBUG] Preparing to launch window 4 with 7926 second countdown
+[2025-06-02 07:56:13] [DEBUG] Creating temporary script: C:\Users\SANYAK~1\AppData\Local\Temp\OrchestratorWindow_4.ps1
+[2025-06-02 07:56:13] [DEBUG] Auto-close timeout: 120 seconds
+[2025-06-02 07:56:13] [INFO] Launched window 4 - 7926 second countdown
+[2025-06-02 07:56:14] [INFO] Starting monitoring process...
+[2025-06-02 07:56:14] [INFO] Monitor settings - Min: 4, Max: 8, Check interval: 540s
+[2025-06-02 07:56:14] [INFO] Will add 3 windows when count drops below minimum
+[2025-06-02 07:56:14] [DEBUG] === MONITOR CHECK CYCLE ===
+[2025-06-02 07:56:14] [DEBUG] Found 16 relevant PowerShell processes (excluding main orchestrator PID 19592)
+[2025-06-02 07:56:14] [INFO] Monitor Status: Running=16, Required=4, Max=8
+[2025-06-02 07:56:14] [DEBUG] Window count OK: 16 >= 4 (minimum)
+[2025-06-02 07:56:14] [DEBUG] Next monitor check at: 08:05:14
+[2025-06-02 07:56:14] [DEBUG] === MONITOR CHECK COMPLETE ===
+[2025-06-02 08:04:38] [DEBUG] === MONITOR CHECK CYCLE ===
+[2025-06-02 08:04:39] [DEBUG] Found 16 relevant PowerShell processes (excluding main orchestrator PID 20656)
+[2025-06-02 08:04:39] [INFO] Monitor Status: Running=16, Required=4, Max=8
+[2025-06-02 08:04:39] [DEBUG] Window count OK: 16 >= 4 (minimum)
+[2025-06-02 08:04:39] [DEBUG] Next monitor check at: 08:13:39
+[2025-06-02 08:04:39] [DEBUG] === MONITOR CHECK COMPLETE ===
+[2025-06-02 08:05:14] [DEBUG] === MONITOR CHECK CYCLE ===
+[2025-06-02 08:05:14] [DEBUG] Found 16 relevant PowerShell processes (excluding main orchestrator PID 19592)
+[2025-06-02 08:05:14] [INFO] Monitor Status: Running=16, Required=4, Max=8
+[2025-06-02 08:05:14] [DEBUG] Window count OK: 16 >= 4 (minimum)
+[2025-06-02 08:05:14] [DEBUG] Next monitor check at: 08:14:14
+[2025-06-02 08:05:14] [DEBUG] === MONITOR CHECK COMPLETE ===
+[2025-06-02 08:13:39] [DEBUG] === MONITOR CHECK CYCLE ===
+[2025-06-02 08:13:39] [DEBUG] Found 16 relevant PowerShell processes (excluding main orchestrator PID 20656)
+[2025-06-02 08:13:39] [INFO] Monitor Status: Running=16, Required=4, Max=8
+[2025-06-02 08:13:39] [DEBUG] Window count OK: 16 >= 4 (minimum)
+[2025-06-02 08:13:39] [DEBUG] Next monitor check at: 08:22:39
+[2025-06-02 08:13:39] [DEBUG] === MONITOR CHECK COMPLETE ===
+[2025-06-02 08:14:14] [DEBUG] === MONITOR CHECK CYCLE ===
+[2025-06-02 08:14:14] [DEBUG] Found 16 relevant PowerShell processes (excluding main orchestrator PID 19592)
+[2025-06-02 08:14:14] [INFO] Monitor Status: Running=16, Required=4, Max=8
+[2025-06-02 08:14:14] [DEBUG] Window count OK: 16 >= 4 (minimum)
+[2025-06-02 08:14:14] [DEBUG] Next monitor check at: 08:23:14
+[2025-06-02 08:14:14] [DEBUG] === MONITOR CHECK COMPLETE ===
+[2025-06-02 08:22:39] [DEBUG] === MONITOR CHECK CYCLE ===
+[2025-06-02 08:22:39] [DEBUG] Found 16 relevant PowerShell processes (excluding main orchestrator PID 20656)
+[2025-06-02 08:22:39] [INFO] Monitor Status: Running=16, Required=4, Max=8
+[2025-06-02 08:22:39] [DEBUG] Window count OK: 16 >= 4 (minimum)
+[2025-06-02 08:22:39] [DEBUG] Next monitor check at: 08:31:39
+[2025-06-02 08:22:39] [DEBUG] === MONITOR CHECK COMPLETE ===
+[2025-06-02 08:23:14] [DEBUG] === MONITOR CHECK CYCLE ===
+[2025-06-02 08:23:14] [DEBUG] Found 16 relevant PowerShell processes (excluding main orchestrator PID 19592)
+[2025-06-02 08:23:14] [INFO] Monitor Status: Running=16, Required=4, Max=8
+[2025-06-02 08:23:14] [DEBUG] Window count OK: 16 >= 4 (minimum)
+[2025-06-02 08:23:14] [DEBUG] Next monitor check at: 08:32:14
+[2025-06-02 08:23:14] [DEBUG] === MONITOR CHECK COMPLETE ===
+[2025-06-02 08:31:39] [DEBUG] === MONITOR CHECK CYCLE ===
+[2025-06-02 08:31:39] [DEBUG] Found 17 relevant PowerShell processes (excluding main orchestrator PID 20656)
+[2025-06-02 08:31:39] [INFO] Monitor Status: Running=17, Required=4, Max=8
+[2025-06-02 08:31:39] [DEBUG] Window count OK: 17 >= 4 (minimum)
+[2025-06-02 08:31:39] [DEBUG] Next monitor check at: 08:40:39
+[2025-06-02 08:31:39] [DEBUG] === MONITOR CHECK COMPLETE ===
+[2025-06-02 08:32:15] [DEBUG] === MONITOR CHECK CYCLE ===
+[2025-06-02 08:32:15] [DEBUG] Found 17 relevant PowerShell processes (excluding main orchestrator PID 19592)
+[2025-06-02 08:32:15] [INFO] Monitor Status: Running=17, Required=4, Max=8
+[2025-06-02 08:32:15] [DEBUG] Window count OK: 17 >= 4 (minimum)
+[2025-06-02 08:32:15] [DEBUG] Next monitor check at: 08:41:15
+[2025-06-02 08:32:15] [DEBUG] === MONITOR CHECK COMPLETE ===
+[2025-06-02 08:40:39] [DEBUG] === MONITOR CHECK CYCLE ===
+[2025-06-02 08:40:39] [DEBUG] Found 18 relevant PowerShell processes (excluding main orchestrator PID 20656)
+[2025-06-02 08:40:39] [INFO] Monitor Status: Running=18, Required=4, Max=8
+[2025-06-02 08:40:39] [DEBUG] Window count OK: 18 >= 4 (minimum)
+[2025-06-02 08:40:39] [DEBUG] Next monitor check at: 08:49:39
+[2025-06-02 08:40:39] [DEBUG] === MONITOR CHECK COMPLETE ===
+[2025-06-02 08:41:15] [DEBUG] === MONITOR CHECK CYCLE ===
+[2025-06-02 08:41:15] [DEBUG] Found 18 relevant PowerShell processes (excluding main orchestrator PID 19592)
+[2025-06-02 08:41:15] [INFO] Monitor Status: Running=18, Required=4, Max=8
+[2025-06-02 08:41:15] [DEBUG] Window count OK: 18 >= 4 (minimum)
+[2025-06-02 08:41:15] [DEBUG] Next monitor check at: 08:50:15
+[2025-06-02 08:41:15] [DEBUG] === MONITOR CHECK COMPLETE ===
+[2025-06-02 08:49:39] [DEBUG] === MONITOR CHECK CYCLE ===
+[2025-06-02 08:49:39] [DEBUG] Found 18 relevant PowerShell processes (excluding main orchestrator PID 20656)
+[2025-06-02 08:49:39] [INFO] Monitor Status: Running=18, Required=4, Max=8
+[2025-06-02 08:49:39] [DEBUG] Window count OK: 18 >= 4 (minimum)
+[2025-06-02 08:49:39] [DEBUG] Next monitor check at: 08:58:39
+[2025-06-02 08:49:39] [DEBUG] === MONITOR CHECK COMPLETE ===
+[2025-06-02 08:50:15] [DEBUG] === MONITOR CHECK CYCLE ===
+[2025-06-02 08:50:15] [DEBUG] Found 18 relevant PowerShell processes (excluding main orchestrator PID 19592)
+[2025-06-02 08:50:15] [INFO] Monitor Status: Running=18, Required=4, Max=8
+[2025-06-02 08:50:15] [DEBUG] Window count OK: 18 >= 4 (minimum)
+[2025-06-02 08:50:15] [DEBUG] Next monitor check at: 08:59:15
+[2025-06-02 08:50:15] [DEBUG] === MONITOR CHECK COMPLETE ===
+[2025-06-02 08:58:39] [DEBUG] === MONITOR CHECK CYCLE ===
+[2025-06-02 08:58:39] [DEBUG] Found 20 relevant PowerShell processes (excluding main orchestrator PID 20656)
+[2025-06-02 08:58:39] [INFO] Monitor Status: Running=20, Required=4, Max=8
+[2025-06-02 08:58:39] [DEBUG] Window count OK: 20 >= 4 (minimum)
+[2025-06-02 08:58:39] [DEBUG] Next monitor check at: 09:07:39
+[2025-06-02 08:58:39] [DEBUG] === MONITOR CHECK COMPLETE ===
+[2025-06-02 08:59:15] [DEBUG] === MONITOR CHECK CYCLE ===
+[2025-06-02 08:59:15] [DEBUG] Found 20 relevant PowerShell processes (excluding main orchestrator PID 19592)
+[2025-06-02 08:59:15] [INFO] Monitor Status: Running=20, Required=4, Max=8
+[2025-06-02 08:59:15] [DEBUG] Window count OK: 20 >= 4 (minimum)
+[2025-06-02 08:59:15] [DEBUG] Next monitor check at: 09:08:15
+[2025-06-02 08:59:15] [DEBUG] === MONITOR CHECK COMPLETE ===
+[2025-06-02 09:07:39] [DEBUG] === MONITOR CHECK CYCLE ===
+[2025-06-02 09:07:39] [DEBUG] Found 20 relevant PowerShell processes (excluding main orchestrator PID 20656)
+[2025-06-02 09:07:39] [INFO] Monitor Status: Running=20, Required=4, Max=8
+[2025-06-02 09:07:39] [DEBUG] Window count OK: 20 >= 4 (minimum)
+[2025-06-02 09:07:39] [DEBUG] Next monitor check at: 09:16:39
+[2025-06-02 09:07:39] [DEBUG] === MONITOR CHECK COMPLETE ===
+[2025-06-02 09:08:15] [DEBUG] === MONITOR CHECK CYCLE ===
+[2025-06-02 09:08:15] [DEBUG] Found 20 relevant PowerShell processes (excluding main orchestrator PID 19592)
+[2025-06-02 09:08:15] [INFO] Monitor Status: Running=20, Required=4, Max=8
+[2025-06-02 09:08:15] [DEBUG] Window count OK: 20 >= 4 (minimum)
+[2025-06-02 09:08:15] [DEBUG] Next monitor check at: 09:17:15
+[2025-06-02 09:08:15] [DEBUG] === MONITOR CHECK COMPLETE ===
+[2025-06-02 09:16:39] [DEBUG] === MONITOR CHECK CYCLE ===
+[2025-06-02 09:16:39] [DEBUG] Found 21 relevant PowerShell processes (excluding main orchestrator PID 20656)
+[2025-06-02 09:16:39] [INFO] Monitor Status: Running=21, Required=4, Max=8
+[2025-06-02 09:16:39] [DEBUG] Window count OK: 21 >= 4 (minimum)
+[2025-06-02 09:16:39] [DEBUG] Next monitor check at: 09:25:39
+[2025-06-02 09:16:39] [DEBUG] === MONITOR CHECK COMPLETE ===
+[2025-06-02 09:17:15] [DEBUG] === MONITOR CHECK CYCLE ===
+[2025-06-02 09:17:15] [DEBUG] Found 21 relevant PowerShell processes (excluding main orchestrator PID 19592)
+[2025-06-02 09:17:15] [INFO] Monitor Status: Running=21, Required=4, Max=8
+[2025-06-02 09:17:15] [DEBUG] Window count OK: 21 >= 4 (minimum)
+[2025-06-02 09:17:15] [DEBUG] Next monitor check at: 09:26:15
+[2025-06-02 09:17:15] [DEBUG] === MONITOR CHECK COMPLETE ===
+[2025-06-02 09:25:39] [DEBUG] === MONITOR CHECK CYCLE ===
+[2025-06-02 09:25:39] [DEBUG] Found 21 relevant PowerShell processes (excluding main orchestrator PID 20656)
+[2025-06-02 09:25:39] [INFO] Monitor Status: Running=21, Required=4, Max=8
+[2025-06-02 09:25:39] [DEBUG] Window count OK: 21 >= 4 (minimum)
+[2025-06-02 09:25:39] [DEBUG] Next monitor check at: 09:34:39
+[2025-06-02 09:25:39] [DEBUG] === MONITOR CHECK COMPLETE ===
+[2025-06-02 09:26:15] [DEBUG] === MONITOR CHECK CYCLE ===
+[2025-06-02 09:26:15] [DEBUG] Found 21 relevant PowerShell processes (excluding main orchestrator PID 19592)
+[2025-06-02 09:26:15] [INFO] Monitor Status: Running=21, Required=4, Max=8
+[2025-06-02 09:26:15] [DEBUG] Window count OK: 21 >= 4 (minimum)
+[2025-06-02 09:26:15] [DEBUG] Next monitor check at: 09:35:15
+[2025-06-02 09:26:15] [DEBUG] === MONITOR CHECK COMPLETE ===
+[2025-06-02 09:34:39] [DEBUG] === MONITOR CHECK CYCLE ===
+[2025-06-02 09:34:40] [DEBUG] Found 22 relevant PowerShell processes (excluding main orchestrator PID 20656)
+[2025-06-02 09:34:40] [INFO] Monitor Status: Running=22, Required=4, Max=8
+[2025-06-02 09:34:40] [DEBUG] Window count OK: 22 >= 4 (minimum)
+[2025-06-02 09:34:40] [DEBUG] Next monitor check at: 09:43:40
+[2025-06-02 09:34:40] [DEBUG] === MONITOR CHECK COMPLETE ===
+[2025-06-02 09:35:15] [DEBUG] === MONITOR CHECK CYCLE ===
+[2025-06-02 09:35:15] [DEBUG] Found 22 relevant PowerShell processes (excluding main orchestrator PID 19592)
+[2025-06-02 09:35:15] [INFO] Monitor Status: Running=22, Required=4, Max=8
+[2025-06-02 09:35:15] [DEBUG] Window count OK: 22 >= 4 (minimum)
+[2025-06-02 09:35:15] [DEBUG] Next monitor check at: 09:44:15
+[2025-06-02 09:35:15] [DEBUG] === MONITOR CHECK COMPLETE ===
+[2025-06-02 09:43:40] [DEBUG] === MONITOR CHECK CYCLE ===
+[2025-06-02 09:43:40] [DEBUG] Found 22 relevant PowerShell processes (excluding main orchestrator PID 20656)
+[2025-06-02 09:43:40] [INFO] Monitor Status: Running=22, Required=4, Max=8
+[2025-06-02 09:43:40] [DEBUG] Window count OK: 22 >= 4 (minimum)
+[2025-06-02 09:43:40] [DEBUG] Next monitor check at: 09:52:40
+[2025-06-02 09:43:40] [DEBUG] === MONITOR CHECK COMPLETE ===
+[2025-06-02 09:44:15] [DEBUG] === MONITOR CHECK CYCLE ===
+[2025-06-02 09:44:15] [DEBUG] Found 22 relevant PowerShell processes (excluding main orchestrator PID 19592)
+[2025-06-02 09:44:15] [INFO] Monitor Status: Running=22, Required=4, Max=8
+[2025-06-02 09:44:15] [DEBUG] Window count OK: 22 >= 4 (minimum)
+[2025-06-02 09:44:15] [DEBUG] Next monitor check at: 09:53:15
+[2025-06-02 09:44:15] [DEBUG] === MONITOR CHECK COMPLETE ===
+[2025-06-02 09:52:40] [DEBUG] === MONITOR CHECK CYCLE ===
+[2025-06-02 09:52:40] [DEBUG] Found 23 relevant PowerShell processes (excluding main orchestrator PID 20656)
+[2025-06-02 09:52:40] [INFO] Monitor Status: Running=23, Required=4, Max=8
+[2025-06-02 09:52:40] [DEBUG] Window count OK: 23 >= 4 (minimum)
+[2025-06-02 09:52:40] [DEBUG] Next monitor check at: 10:01:40
+[2025-06-02 09:52:40] [DEBUG] === MONITOR CHECK COMPLETE ===
+[2025-06-02 09:53:15] [DEBUG] === MONITOR CHECK CYCLE ===
+[2025-06-02 09:53:16] [DEBUG] Found 23 relevant PowerShell processes (excluding main orchestrator PID 19592)
+[2025-06-02 09:53:16] [INFO] Monitor Status: Running=23, Required=4, Max=8
+[2025-06-02 09:53:16] [DEBUG] Window count OK: 23 >= 4 (minimum)
+[2025-06-02 09:53:16] [DEBUG] Next monitor check at: 10:02:16
+[2025-06-02 09:53:16] [DEBUG] === MONITOR CHECK COMPLETE ===
+[2025-06-02 10:01:40] [DEBUG] === MONITOR CHECK CYCLE ===
+[2025-06-02 10:01:40] [DEBUG] Found 23 relevant PowerShell processes (excluding main orchestrator PID 20656)
+[2025-06-02 10:01:40] [INFO] Monitor Status: Running=23, Required=4, Max=8
+[2025-06-02 10:01:40] [DEBUG] Window count OK: 23 >= 4 (minimum)
+[2025-06-02 10:01:40] [DEBUG] Next monitor check at: 10:10:40
+[2025-06-02 10:01:40] [DEBUG] === MONITOR CHECK COMPLETE ===
+[2025-06-02 10:02:16] [DEBUG] === MONITOR CHECK CYCLE ===
+[2025-06-02 10:02:16] [DEBUG] Found 23 relevant PowerShell processes (excluding main orchestrator PID 19592)
+[2025-06-02 10:02:16] [INFO] Monitor Status: Running=23, Required=4, Max=8
+[2025-06-02 10:02:16] [DEBUG] Window count OK: 23 >= 4 (minimum)
+[2025-06-02 10:02:16] [DEBUG] Next monitor check at: 10:11:16
+[2025-06-02 10:02:16] [DEBUG] === MONITOR CHECK COMPLETE ===
+[2025-06-02 10:10:40] [DEBUG] === MONITOR CHECK CYCLE ===
+[2025-06-02 10:10:40] [DEBUG] Found 25 relevant PowerShell processes (excluding main orchestrator PID 20656)
+[2025-06-02 10:10:40] [INFO] Monitor Status: Running=25, Required=4, Max=8
+[2025-06-02 10:10:40] [DEBUG] Window count OK: 25 >= 4 (minimum)
+[2025-06-02 10:10:40] [DEBUG] Next monitor check at: 10:19:40
+[2025-06-02 10:10:40] [DEBUG] === MONITOR CHECK COMPLETE ===
+[2025-06-02 10:11:16] [DEBUG] === MONITOR CHECK CYCLE ===
+[2025-06-02 10:11:16] [DEBUG] Found 25 relevant PowerShell processes (excluding main orchestrator PID 19592)
+[2025-06-02 10:11:16] [INFO] Monitor Status: Running=25, Required=4, Max=8
+[2025-06-02 10:11:16] [DEBUG] Window count OK: 25 >= 4 (minimum)
+[2025-06-02 10:11:16] [DEBUG] Next monitor check at: 10:20:16
+[2025-06-02 10:11:16] [DEBUG] === MONITOR CHECK COMPLETE ===
+[2025-06-02 10:19:40] [DEBUG] === MONITOR CHECK CYCLE ===
+[2025-06-02 10:19:40] [DEBUG] Found 25 relevant PowerShell processes (excluding main orchestrator PID 20656)
+[2025-06-02 10:19:40] [INFO] Monitor Status: Running=25, Required=4, Max=8
+[2025-06-02 10:19:40] [DEBUG] Window count OK: 25 >= 4 (minimum)
+[2025-06-02 10:19:40] [DEBUG] Next monitor check at: 10:28:40
+[2025-06-02 10:19:40] [DEBUG] === MONITOR CHECK COMPLETE ===
+[2025-06-02 10:20:16] [DEBUG] === MONITOR CHECK CYCLE ===
+[2025-06-02 10:20:16] [DEBUG] Found 25 relevant PowerShell processes (excluding main orchestrator PID 19592)
+[2025-06-02 10:20:16] [INFO] Monitor Status: Running=25, Required=4, Max=8
+[2025-06-02 10:20:16] [DEBUG] Window count OK: 25 >= 4 (minimum)
+[2025-06-02 10:20:16] [DEBUG] Next monitor check at: 10:29:16
+[2025-06-02 10:20:16] [DEBUG] === MONITOR CHECK COMPLETE ===
+[2025-06-02 10:28:40] [DEBUG] === MONITOR CHECK CYCLE ===
+[2025-06-02 10:28:40] [DEBUG] Found 27 relevant PowerShell processes (excluding main orchestrator PID 20656)
+[2025-06-02 10:28:40] [INFO] Monitor Status: Running=27, Required=4, Max=8
+[2025-06-02 10:28:40] [DEBUG] Window count OK: 27 >= 4 (minimum)
+[2025-06-02 10:28:40] [DEBUG] Next monitor check at: 10:37:40
+[2025-06-02 10:28:40] [DEBUG] === MONITOR CHECK COMPLETE ===
+[2025-06-02 10:29:16] [DEBUG] === MONITOR CHECK CYCLE ===
+[2025-06-02 10:29:16] [DEBUG] Found 28 relevant PowerShell processes (excluding main orchestrator PID 19592)
+[2025-06-02 10:29:16] [INFO] Monitor Status: Running=28, Required=4, Max=8
+[2025-06-02 10:29:16] [DEBUG] Window count OK: 28 >= 4 (minimum)
+[2025-06-02 10:29:16] [DEBUG] Next monitor check at: 10:38:16
+[2025-06-02 10:29:16] [DEBUG] === MONITOR CHECK COMPLETE ===
+[2025-06-02 10:37:40] [DEBUG] === MONITOR CHECK CYCLE ===
+[2025-06-02 10:37:40] [DEBUG] Found 29 relevant PowerShell processes (excluding main orchestrator PID 20656)
+[2025-06-02 10:37:40] [INFO] Monitor Status: Running=29, Required=4, Max=8
+[2025-06-02 10:37:40] [DEBUG] Window count OK: 29 >= 4 (minimum)
+[2025-06-02 10:37:40] [DEBUG] Next monitor check at: 10:46:40
+[2025-06-02 10:37:40] [DEBUG] === MONITOR CHECK COMPLETE ===
+[2025-06-02 10:38:16] [DEBUG] === MONITOR CHECK CYCLE ===
+[2025-06-02 10:38:16] [DEBUG] Found 29 relevant PowerShell processes (excluding main orchestrator PID 19592)
+[2025-06-02 10:38:16] [INFO] Monitor Status: Running=29, Required=4, Max=8
+[2025-06-02 10:38:16] [DEBUG] Window count OK: 29 >= 4 (minimum)
+[2025-06-02 10:38:16] [DEBUG] Next monitor check at: 10:47:16
+[2025-06-02 10:38:16] [DEBUG] === MONITOR CHECK COMPLETE ===
+[2025-06-02 10:46:40] [DEBUG] === MONITOR CHECK CYCLE ===
+[2025-06-02 10:46:40] [DEBUG] Found 30 relevant PowerShell processes (excluding main orchestrator PID 20656)
+[2025-06-02 10:46:40] [INFO] Monitor Status: Running=30, Required=4, Max=8
+[2025-06-02 10:46:40] [DEBUG] Window count OK: 30 >= 4 (minimum)
+[2025-06-02 10:46:40] [DEBUG] Next monitor check at: 10:55:40
+[2025-06-02 10:46:40] [DEBUG] === MONITOR CHECK COMPLETE ===
+[2025-06-02 10:47:16] [DEBUG] === MONITOR CHECK CYCLE ===
+[2025-06-02 10:47:16] [DEBUG] Found 30 relevant PowerShell processes (excluding main orchestrator PID 19592)
+[2025-06-02 10:47:16] [INFO] Monitor Status: Running=30, Required=4, Max=8
+[2025-06-02 10:47:16] [DEBUG] Window count OK: 30 >= 4 (minimum)
+[2025-06-02 10:47:16] [DEBUG] Next monitor check at: 10:56:16
+[2025-06-02 10:47:16] [DEBUG] === MONITOR CHECK COMPLETE ===
+[2025-06-02 10:55:40] [DEBUG] === MONITOR CHECK CYCLE ===
+[2025-06-02 10:55:40] [DEBUG] Found 30 relevant PowerShell processes (excluding main orchestrator PID 20656)
+[2025-06-02 10:55:40] [INFO] Monitor Status: Running=30, Required=4, Max=8
+[2025-06-02 10:55:40] [DEBUG] Window count OK: 30 >= 4 (minimum)
+[2025-06-02 10:55:40] [DEBUG] Next monitor check at: 11:04:40
+[2025-06-02 10:55:40] [DEBUG] === MONITOR CHECK COMPLETE ===
+[2025-06-02 10:56:16] [DEBUG] === MONITOR CHECK CYCLE ===
+[2025-06-02 10:56:16] [DEBUG] Found 30 relevant PowerShell processes (excluding main orchestrator PID 19592)
+[2025-06-02 10:56:16] [INFO] Monitor Status: Running=30, Required=4, Max=8
+[2025-06-02 10:56:16] [DEBUG] Window count OK: 30 >= 4 (minimum)
+[2025-06-02 10:56:16] [DEBUG] Next monitor check at: 11:05:16
+[2025-06-02 10:56:16] [DEBUG] === MONITOR CHECK COMPLETE ===
+[2025-06-02 11:04:40] [DEBUG] === MONITOR CHECK CYCLE ===
+[2025-06-02 11:04:40] [DEBUG] Found 32 relevant PowerShell processes (excluding main orchestrator PID 20656)
+[2025-06-02 11:04:40] [INFO] Monitor Status: Running=32, Required=4, Max=8
+[2025-06-02 11:04:40] [DEBUG] Window count OK: 32 >= 4 (minimum)
+[2025-06-02 11:04:40] [DEBUG] Next monitor check at: 11:13:40
+[2025-06-02 11:04:40] [DEBUG] === MONITOR CHECK COMPLETE ===
+[2025-06-02 11:05:16] [DEBUG] === MONITOR CHECK CYCLE ===
+[2025-06-02 11:05:16] [DEBUG] Found 32 relevant PowerShell processes (excluding main orchestrator PID 19592)
+[2025-06-02 11:05:16] [INFO] Monitor Status: Running=32, Required=4, Max=8
+[2025-06-02 11:05:16] [DEBUG] Window count OK: 32 >= 4 (minimum)
+[2025-06-02 11:05:16] [DEBUG] Next monitor check at: 11:14:16
+[2025-06-02 11:05:16] [DEBUG] === MONITOR CHECK COMPLETE ===
+[2025-06-02 11:13:40] [DEBUG] === MONITOR CHECK CYCLE ===
+[2025-06-02 11:13:41] [DEBUG] Found 32 relevant PowerShell processes (excluding main orchestrator PID 20656)
+[2025-06-02 11:13:41] [INFO] Monitor Status: Running=32, Required=4, Max=8
+[2025-06-02 11:13:41] [DEBUG] Window count OK: 32 >= 4 (minimum)
+[2025-06-02 11:13:41] [DEBUG] Next monitor check at: 11:22:41
+[2025-06-02 11:13:41] [DEBUG] === MONITOR CHECK COMPLETE ===
+[2025-06-02 11:14:16] [DEBUG] === MONITOR CHECK CYCLE ===
+[2025-06-02 11:14:16] [DEBUG] Found 32 relevant PowerShell processes (excluding main orchestrator PID 19592)
+[2025-06-02 11:14:16] [INFO] Monitor Status: Running=32, Required=4, Max=8
+[2025-06-02 11:14:16] [DEBUG] Window count OK: 32 >= 4 (minimum)
+[2025-06-02 11:14:16] [DEBUG] Next monitor check at: 11:23:16
+[2025-06-02 11:14:16] [DEBUG] === MONITOR CHECK COMPLETE ===
+[2025-06-02 11:22:41] [DEBUG] === MONITOR CHECK CYCLE ===
+[2025-06-02 11:22:41] [DEBUG] Found 32 relevant PowerShell processes (excluding main orchestrator PID 20656)
+[2025-06-02 11:22:41] [INFO] Monitor Status: Running=32, Required=4, Max=8
+[2025-06-02 11:22:41] [DEBUG] Window count OK: 32 >= 4 (minimum)
+[2025-06-02 11:22:41] [DEBUG] Next monitor check at: 11:31:41
+[2025-06-02 11:22:41] [DEBUG] === MONITOR CHECK COMPLETE ===
+[2025-06-02 11:23:16] [DEBUG] === MONITOR CHECK CYCLE ===
+[2025-06-02 11:23:16] [DEBUG] Found 32 relevant PowerShell processes (excluding main orchestrator PID 19592)
+[2025-06-02 11:23:16] [INFO] Monitor Status: Running=32, Required=4, Max=8
+[2025-06-02 11:23:16] [DEBUG] Window count OK: 32 >= 4 (minimum)
+[2025-06-02 11:23:16] [DEBUG] Next monitor check at: 11:32:16
+[2025-06-02 11:23:16] [DEBUG] === MONITOR CHECK COMPLETE ===
+[2025-06-02 11:31:41] [DEBUG] === MONITOR CHECK CYCLE ===
+[2025-06-02 11:31:41] [DEBUG] Found 32 relevant PowerShell processes (excluding main orchestrator PID 20656)
+[2025-06-02 11:31:41] [INFO] Monitor Status: Running=32, Required=4, Max=8
+[2025-06-02 11:31:41] [DEBUG] Window count OK: 32 >= 4 (minimum)
+[2025-06-02 11:31:41] [DEBUG] Next monitor check at: 11:40:41
+[2025-06-02 11:31:41] [DEBUG] === MONITOR CHECK COMPLETE ===
+[2025-06-02 11:32:16] [DEBUG] === MONITOR CHECK CYCLE ===
+[2025-06-02 11:32:17] [DEBUG] Found 32 relevant PowerShell processes (excluding main orchestrator PID 19592)
+[2025-06-02 11:32:17] [INFO] Monitor Status: Running=32, Required=4, Max=8
+[2025-06-02 11:32:17] [DEBUG] Window count OK: 32 >= 4 (minimum)
+[2025-06-02 11:32:17] [DEBUG] Next monitor check at: 11:41:17
+[2025-06-02 11:32:17] [DEBUG] === MONITOR CHECK COMPLETE ===
+[2025-06-02 11:40:41] [DEBUG] === MONITOR CHECK CYCLE ===
+[2025-06-02 11:40:41] [DEBUG] Found 32 relevant PowerShell processes (excluding main orchestrator PID 20656)
+[2025-06-02 11:40:41] [INFO] Monitor Status: Running=32, Required=4, Max=8
+[2025-06-02 11:40:41] [DEBUG] Window count OK: 32 >= 4 (minimum)
+[2025-06-02 11:40:41] [DEBUG] Next monitor check at: 11:49:41
+[2025-06-02 11:40:41] [DEBUG] === MONITOR CHECK COMPLETE ===
+[2025-06-02 11:41:17] [DEBUG] === MONITOR CHECK CYCLE ===
+[2025-06-02 11:41:17] [DEBUG] Found 32 relevant PowerShell processes (excluding main orchestrator PID 19592)
+[2025-06-02 11:41:17] [INFO] Monitor Status: Running=32, Required=4, Max=8
+[2025-06-02 11:41:17] [DEBUG] Window count OK: 32 >= 4 (minimum)
+[2025-06-02 11:41:17] [DEBUG] Next monitor check at: 11:50:17
+[2025-06-02 11:41:17] [DEBUG] === MONITOR CHECK COMPLETE ===
+[2025-06-02 11:49:41] [DEBUG] === MONITOR CHECK CYCLE ===
+[2025-06-02 11:49:41] [DEBUG] Found 32 relevant PowerShell processes (excluding main orchestrator PID 20656)
+[2025-06-02 11:49:41] [INFO] Monitor Status: Running=32, Required=4, Max=8
+[2025-06-02 11:49:41] [DEBUG] Window count OK: 32 >= 4 (minimum)
+[2025-06-02 11:49:41] [DEBUG] Next monitor check at: 11:58:41
+[2025-06-02 11:49:41] [DEBUG] === MONITOR CHECK COMPLETE ===
+[2025-06-02 11:50:17] [DEBUG] === MONITOR CHECK CYCLE ===
+[2025-06-02 11:50:17] [DEBUG] Found 32 relevant PowerShell processes (excluding main orchestrator PID 19592)
+[2025-06-02 11:50:17] [INFO] Monitor Status: Running=32, Required=4, Max=8
+[2025-06-02 11:50:17] [DEBUG] Window count OK: 32 >= 4 (minimum)
+[2025-06-02 11:50:17] [DEBUG] Next monitor check at: 11:59:17
+[2025-06-02 11:50:17] [DEBUG] === MONITOR CHECK COMPLETE ===
+[2025-06-02 11:58:41] [DEBUG] === MONITOR CHECK CYCLE ===
+[2025-06-02 11:58:41] [DEBUG] Found 32 relevant PowerShell processes (excluding main orchestrator PID 20656)
+[2025-06-02 11:58:41] [INFO] Monitor Status: Running=32, Required=4, Max=8
+[2025-06-02 11:58:41] [DEBUG] Window count OK: 32 >= 4 (minimum)
+[2025-06-02 11:58:41] [DEBUG] Next monitor check at: 12:07:41
+[2025-06-02 11:58:41] [DEBUG] === MONITOR CHECK COMPLETE ===
+[2025-06-02 11:59:17] [DEBUG] === MONITOR CHECK CYCLE ===
+[2025-06-02 11:59:17] [DEBUG] Found 32 relevant PowerShell processes (excluding main orchestrator PID 19592)
+[2025-06-02 11:59:17] [INFO] Monitor Status: Running=32, Required=4, Max=8
+[2025-06-02 11:59:17] [DEBUG] Window count OK: 32 >= 4 (minimum)
+[2025-06-02 11:59:17] [DEBUG] Next monitor check at: 12:08:17
+[2025-06-02 11:59:17] [DEBUG] === MONITOR CHECK COMPLETE ===
+[2025-06-02 12:07:41] [DEBUG] === MONITOR CHECK CYCLE ===
+[2025-06-02 12:07:41] [DEBUG] Found 32 relevant PowerShell processes (excluding main orchestrator PID 20656)
+[2025-06-02 12:07:41] [INFO] Monitor Status: Running=32, Required=4, Max=8
+[2025-06-02 12:07:41] [DEBUG] Window count OK: 32 >= 4 (minimum)
+[2025-06-02 12:07:41] [DEBUG] Next monitor check at: 12:16:41
+[2025-06-02 12:07:41] [DEBUG] === MONITOR CHECK COMPLETE ===
+[2025-06-02 12:08:17] [DEBUG] === MONITOR CHECK CYCLE ===
+[2025-06-02 12:08:17] [DEBUG] Found 32 relevant PowerShell processes (excluding main orchestrator PID 19592)
+[2025-06-02 12:08:17] [INFO] Monitor Status: Running=32, Required=4, Max=8
+[2025-06-02 12:08:17] [DEBUG] Window count OK: 32 >= 4 (minimum)
+[2025-06-02 12:08:17] [DEBUG] Next monitor check at: 12:17:17
+[2025-06-02 12:08:17] [DEBUG] === MONITOR CHECK COMPLETE ===
+[2025-06-02 12:16:41] [DEBUG] === MONITOR CHECK CYCLE ===
+[2025-06-02 12:16:41] [DEBUG] Found 32 relevant PowerShell processes (excluding main orchestrator PID 20656)
+[2025-06-02 12:16:41] [INFO] Monitor Status: Running=32, Required=4, Max=8
+[2025-06-02 12:16:41] [DEBUG] Window count OK: 32 >= 4 (minimum)
+[2025-06-02 12:16:41] [DEBUG] Next monitor check at: 12:25:41
+[2025-06-02 12:16:41] [DEBUG] === MONITOR CHECK COMPLETE ===
+[2025-06-02 12:17:17] [DEBUG] === MONITOR CHECK CYCLE ===
+[2025-06-02 12:17:17] [DEBUG] Found 32 relevant PowerShell processes (excluding main orchestrator PID 19592)
+[2025-06-02 12:17:17] [INFO] Monitor Status: Running=32, Required=4, Max=8
+[2025-06-02 12:17:17] [DEBUG] Window count OK: 32 >= 4 (minimum)
+[2025-06-02 12:17:17] [DEBUG] Next monitor check at: 12:26:17
+[2025-06-02 12:17:17] [DEBUG] === MONITOR CHECK COMPLETE ===
+[2025-06-02 12:25:41] [DEBUG] === MONITOR CHECK CYCLE ===
+[2025-06-02 12:25:41] [DEBUG] Found 32 relevant PowerShell processes (excluding main orchestrator PID 20656)
+[2025-06-02 12:25:41] [INFO] Monitor Status: Running=32, Required=4, Max=8
+[2025-06-02 12:25:41] [DEBUG] Window count OK: 32 >= 4 (minimum)
+[2025-06-02 12:25:41] [DEBUG] Next monitor check at: 12:34:41
+[2025-06-02 12:25:41] [DEBUG] === MONITOR CHECK COMPLETE ===
+[2025-06-02 12:26:17] [DEBUG] === MONITOR CHECK CYCLE ===
+[2025-06-02 12:26:17] [DEBUG] Found 32 relevant PowerShell processes (excluding main orchestrator PID 19592)
+[2025-06-02 12:26:17] [INFO] Monitor Status: Running=32, Required=4, Max=8
+[2025-06-02 12:26:17] [DEBUG] Window count OK: 32 >= 4 (minimum)
+[2025-06-02 12:26:17] [DEBUG] Next monitor check at: 12:35:17
+[2025-06-02 12:26:17] [DEBUG] === MONITOR CHECK COMPLETE ===
+[2025-06-02 12:34:41] [DEBUG] === MONITOR CHECK CYCLE ===
+[2025-06-02 12:34:41] [DEBUG] Found 32 relevant PowerShell processes (excluding main orchestrator PID 20656)
+[2025-06-02 12:34:41] [INFO] Monitor Status: Running=32, Required=4, Max=8
+[2025-06-02 12:34:41] [DEBUG] Window count OK: 32 >= 4 (minimum)
+[2025-06-02 12:34:41] [DEBUG] Next monitor check at: 12:43:41
+[2025-06-02 12:34:41] [DEBUG] === MONITOR CHECK COMPLETE ===
+[2025-06-02 12:35:17] [DEBUG] === MONITOR CHECK CYCLE ===
+[2025-06-02 12:35:17] [DEBUG] Found 32 relevant PowerShell processes (excluding main orchestrator PID 19592)
+[2025-06-02 12:35:17] [INFO] Monitor Status: Running=32, Required=4, Max=8
+[2025-06-02 12:35:17] [DEBUG] Window count OK: 32 >= 4 (minimum)
+[2025-06-02 12:35:17] [DEBUG] Next monitor check at: 12:44:17
+[2025-06-02 12:35:17] [DEBUG] === MONITOR CHECK COMPLETE ===
+[2025-06-02 12:43:41] [DEBUG] === MONITOR CHECK CYCLE ===
+[2025-06-02 12:43:41] [DEBUG] Found 32 relevant PowerShell processes (excluding main orchestrator PID 20656)
+[2025-06-02 12:43:41] [INFO] Monitor Status: Running=32, Required=4, Max=8
+[2025-06-02 12:43:41] [DEBUG] Window count OK: 32 >= 4 (minimum)
+[2025-06-02 12:43:41] [DEBUG] Next monitor check at: 12:52:41
+[2025-06-02 12:43:41] [DEBUG] === MONITOR CHECK COMPLETE ===
+[2025-06-02 12:44:17] [DEBUG] === MONITOR CHECK CYCLE ===
+[2025-06-02 12:44:17] [DEBUG] Found 32 relevant PowerShell processes (excluding main orchestrator PID 19592)
+[2025-06-02 12:44:17] [INFO] Monitor Status: Running=32, Required=4, Max=8
+[2025-06-02 12:44:17] [DEBUG] Window count OK: 32 >= 4 (minimum)
+[2025-06-02 12:44:17] [DEBUG] Next monitor check at: 12:53:17
+[2025-06-02 12:44:17] [DEBUG] === MONITOR CHECK COMPLETE ===
+[2025-06-02 12:52:41] [DEBUG] === MONITOR CHECK CYCLE ===
+[2025-06-02 12:52:41] [DEBUG] Found 32 relevant PowerShell processes (excluding main orchestrator PID 20656)
+[2025-06-02 12:52:41] [INFO] Monitor Status: Running=32, Required=4, Max=8
+[2025-06-02 12:52:41] [DEBUG] Window count OK: 32 >= 4 (minimum)
+[2025-06-02 12:52:41] [DEBUG] Next monitor check at: 13:01:41
+[2025-06-02 12:52:41] [DEBUG] === MONITOR CHECK COMPLETE ===
+[2025-06-02 12:53:17] [DEBUG] === MONITOR CHECK CYCLE ===
+[2025-06-02 12:53:17] [DEBUG] Found 32 relevant PowerShell processes (excluding main orchestrator PID 19592)
+[2025-06-02 12:53:17] [INFO] Monitor Status: Running=32, Required=4, Max=8
+[2025-06-02 12:53:17] [DEBUG] Window count OK: 32 >= 4 (minimum)
+[2025-06-02 12:53:17] [DEBUG] Next monitor check at: 13:02:17
+[2025-06-02 12:53:17] [DEBUG] === MONITOR CHECK COMPLETE ===
+[2025-06-02 13:01:41] [DEBUG] === MONITOR CHECK CYCLE ===
+[2025-06-02 13:01:41] [DEBUG] Found 32 relevant PowerShell processes (excluding main orchestrator PID 20656)
+[2025-06-02 13:01:41] [INFO] Monitor Status: Running=32, Required=4, Max=8
+[2025-06-02 13:01:41] [DEBUG] Window count OK: 32 >= 4 (minimum)
+[2025-06-02 13:01:41] [DEBUG] Next monitor check at: 13:10:41
+[2025-06-02 13:01:41] [DEBUG] === MONITOR CHECK COMPLETE ===
+[2025-06-02 13:02:18] [DEBUG] === MONITOR CHECK CYCLE ===
+[2025-06-02 13:02:18] [DEBUG] Found 32 relevant PowerShell processes (excluding main orchestrator PID 19592)
+[2025-06-02 13:02:18] [INFO] Monitor Status: Running=32, Required=4, Max=8
+[2025-06-02 13:02:18] [DEBUG] Window count OK: 32 >= 4 (minimum)
+[2025-06-02 13:02:18] [DEBUG] Next monitor check at: 13:11:18
+[2025-06-02 13:02:18] [DEBUG] === MONITOR CHECK COMPLETE ===
+[2025-06-02 13:10:41] [DEBUG] === MONITOR CHECK CYCLE ===
+[2025-06-02 13:10:41] [DEBUG] Found 32 relevant PowerShell processes (excluding main orchestrator PID 20656)
+[2025-06-02 13:10:41] [INFO] Monitor Status: Running=32, Required=4, Max=8
+[2025-06-02 13:10:41] [DEBUG] Window count OK: 32 >= 4 (minimum)
+[2025-06-02 13:10:41] [DEBUG] Next monitor check at: 13:19:41
+[2025-06-02 13:10:41] [DEBUG] === MONITOR CHECK COMPLETE ===
+[2025-06-02 13:11:18] [DEBUG] === MONITOR CHECK CYCLE ===
+[2025-06-02 13:11:18] [DEBUG] Found 32 relevant PowerShell processes (excluding main orchestrator PID 19592)
+[2025-06-02 13:11:18] [INFO] Monitor Status: Running=32, Required=4, Max=8
+[2025-06-02 13:11:18] [DEBUG] Window count OK: 32 >= 4 (minimum)
+[2025-06-02 13:11:18] [DEBUG] Next monitor check at: 13:20:18
+[2025-06-02 13:11:18] [DEBUG] === MONITOR CHECK COMPLETE ===
+[2025-06-02 13:19:42] [DEBUG] === MONITOR CHECK CYCLE ===
+[2025-06-02 13:19:42] [DEBUG] Found 32 relevant PowerShell processes (excluding main orchestrator PID 20656)
+[2025-06-02 13:19:42] [INFO] Monitor Status: Running=32, Required=4, Max=8
+[2025-06-02 13:19:42] [DEBUG] Window count OK: 32 >= 4 (minimum)
+[2025-06-02 13:19:42] [DEBUG] Next monitor check at: 13:28:42
+[2025-06-02 13:19:42] [DEBUG] === MONITOR CHECK COMPLETE ===
+[2025-06-02 13:20:18] [DEBUG] === MONITOR CHECK CYCLE ===
+[2025-06-02 13:20:18] [DEBUG] Found 32 relevant PowerShell processes (excluding main orchestrator PID 19592)
+[2025-06-02 13:20:18] [INFO] Monitor Status: Running=32, Required=4, Max=8
+[2025-06-02 13:20:18] [DEBUG] Window count OK: 32 >= 4 (minimum)
+[2025-06-02 13:20:18] [DEBUG] Next monitor check at: 13:29:18
+[2025-06-02 13:20:18] [DEBUG] === MONITOR CHECK COMPLETE ===
+[2025-06-02 13:28:42] [DEBUG] === MONITOR CHECK CYCLE ===
+[2025-06-02 13:28:42] [DEBUG] Found 32 relevant PowerShell processes (excluding main orchestrator PID 20656)
+[2025-06-02 13:28:42] [INFO] Monitor Status: Running=32, Required=4, Max=8
+[2025-06-02 13:28:42] [DEBUG] Window count OK: 32 >= 4 (minimum)
+[2025-06-02 13:28:42] [DEBUG] Next monitor check at: 13:37:42
+[2025-06-02 13:28:42] [DEBUG] === MONITOR CHECK COMPLETE ===
+[2025-06-02 13:29:18] [DEBUG] === MONITOR CHECK CYCLE ===
+[2025-06-02 13:29:18] [DEBUG] Found 32 relevant PowerShell processes (excluding main orchestrator PID 19592)
+[2025-06-02 13:29:18] [INFO] Monitor Status: Running=32, Required=4, Max=8
+[2025-06-02 13:29:18] [DEBUG] Window count OK: 32 >= 4 (minimum)
+[2025-06-02 13:29:18] [DEBUG] Next monitor check at: 13:38:18
+[2025-06-02 13:29:18] [DEBUG] === MONITOR CHECK COMPLETE ===
+[2025-06-02 13:37:42] [DEBUG] === MONITOR CHECK CYCLE ===
+[2025-06-02 13:37:42] [DEBUG] Found 32 relevant PowerShell processes (excluding main orchestrator PID 20656)
+[2025-06-02 13:37:42] [INFO] Monitor Status: Running=32, Required=4, Max=8
+[2025-06-02 13:37:42] [DEBUG] Window count OK: 32 >= 4 (minimum)
+[2025-06-02 13:37:42] [DEBUG] Next monitor check at: 13:46:42
+[2025-06-02 13:37:42] [DEBUG] === MONITOR CHECK COMPLETE ===
+[2025-06-02 13:38:18] [DEBUG] === MONITOR CHECK CYCLE ===
+[2025-06-02 13:38:18] [DEBUG] Found 32 relevant PowerShell processes (excluding main orchestrator PID 19592)
+[2025-06-02 13:38:18] [INFO] Monitor Status: Running=32, Required=4, Max=8
+[2025-06-02 13:38:18] [DEBUG] Window count OK: 32 >= 4 (minimum)
+[2025-06-02 13:38:18] [DEBUG] Next monitor check at: 13:47:18
+[2025-06-02 13:38:18] [DEBUG] === MONITOR CHECK COMPLETE ===
+[2025-06-02 13:46:42] [DEBUG] === MONITOR CHECK CYCLE ===
+[2025-06-02 13:46:42] [DEBUG] Found 32 relevant PowerShell processes (excluding main orchestrator PID 20656)
+[2025-06-02 13:46:42] [INFO] Monitor Status: Running=32, Required=4, Max=8
+[2025-06-02 13:46:42] [DEBUG] Window count OK: 32 >= 4 (minimum)
+[2025-06-02 13:46:42] [DEBUG] Next monitor check at: 13:55:42
+[2025-06-02 13:46:42] [DEBUG] === MONITOR CHECK COMPLETE ===
+[2025-06-02 13:47:18] [DEBUG] === MONITOR CHECK CYCLE ===
+[2025-06-02 13:47:18] [DEBUG] Found 32 relevant PowerShell processes (excluding main orchestrator PID 19592)
+[2025-06-02 13:47:18] [INFO] Monitor Status: Running=32, Required=4, Max=8
+[2025-06-02 13:47:18] [DEBUG] Window count OK: 32 >= 4 (minimum)
+[2025-06-02 13:47:18] [DEBUG] Next monitor check at: 13:56:18
+[2025-06-02 13:47:18] [DEBUG] === MONITOR CHECK COMPLETE ===
+[2025-06-02 13:55:42] [DEBUG] === MONITOR CHECK CYCLE ===
+[2025-06-02 13:55:42] [DEBUG] Found 32 relevant PowerShell processes (excluding main orchestrator PID 20656)
+[2025-06-02 13:55:42] [INFO] Monitor Status: Running=32, Required=4, Max=8
+[2025-06-02 13:55:42] [DEBUG] Window count OK: 32 >= 4 (minimum)
+[2025-06-02 13:55:42] [DEBUG] Next monitor check at: 14:04:42
+[2025-06-02 13:55:42] [DEBUG] === MONITOR CHECK COMPLETE ===
+[2025-06-02 13:56:18] [DEBUG] === MONITOR CHECK CYCLE ===
+[2025-06-02 13:56:18] [DEBUG] Found 32 relevant PowerShell processes (excluding main orchestrator PID 19592)
+[2025-06-02 13:56:18] [INFO] Monitor Status: Running=32, Required=4, Max=8
+[2025-06-02 13:56:18] [DEBUG] Window count OK: 32 >= 4 (minimum)
+[2025-06-02 13:56:18] [DEBUG] Next monitor check at: 14:05:18
+[2025-06-02 13:56:18] [DEBUG] === MONITOR CHECK COMPLETE ===
+[2025-06-02 14:04:42] [DEBUG] === MONITOR CHECK CYCLE ===
+[2025-06-02 14:04:42] [DEBUG] Found 32 relevant PowerShell processes (excluding main orchestrator PID 20656)
+[2025-06-02 14:04:42] [INFO] Monitor Status: Running=32, Required=4, Max=8
+[2025-06-02 14:04:42] [DEBUG] Window count OK: 32 >= 4 (minimum)
+[2025-06-02 14:04:42] [DEBUG] Next monitor check at: 14:13:42
+[2025-06-02 14:04:42] [DEBUG] === MONITOR CHECK COMPLETE ===
+[2025-06-02 14:05:18] [DEBUG] === MONITOR CHECK CYCLE ===
+[2025-06-02 14:05:18] [DEBUG] Found 32 relevant PowerShell processes (excluding main orchestrator PID 19592)
+[2025-06-02 14:05:18] [INFO] Monitor Status: Running=32, Required=4, Max=8
+[2025-06-02 14:05:18] [DEBUG] Window count OK: 32 >= 4 (minimum)
+[2025-06-02 14:05:18] [DEBUG] Next monitor check at: 14:14:18
+[2025-06-02 14:05:18] [DEBUG] === MONITOR CHECK COMPLETE ===
+[2025-06-02 14:13:42] [DEBUG] === MONITOR CHECK CYCLE ===
+[2025-06-02 14:13:42] [DEBUG] Found 32 relevant PowerShell processes (excluding main orchestrator PID 20656)
+[2025-06-02 14:13:42] [INFO] Monitor Status: Running=32, Required=4, Max=8
+[2025-06-02 14:13:42] [DEBUG] Window count OK: 32 >= 4 (minimum)
+[2025-06-02 14:13:42] [DEBUG] Next monitor check at: 14:22:42
+[2025-06-02 14:13:42] [DEBUG] === MONITOR CHECK COMPLETE ===
+[2025-06-02 14:14:18] [DEBUG] === MONITOR CHECK CYCLE ===
+[2025-06-02 14:14:18] [DEBUG] Found 32 relevant PowerShell processes (excluding main orchestrator PID 19592)
+[2025-06-02 14:14:18] [INFO] Monitor Status: Running=32, Required=4, Max=8
+[2025-06-02 14:14:18] [DEBUG] Window count OK: 32 >= 4 (minimum)
+[2025-06-02 14:14:18] [DEBUG] Next monitor check at: 14:23:18
+[2025-06-02 14:14:18] [DEBUG] === MONITOR CHECK COMPLETE ===
+[2025-06-02 14:22:42] [DEBUG] === MONITOR CHECK CYCLE ===
+[2025-06-02 14:22:42] [DEBUG] Found 32 relevant PowerShell processes (excluding main orchestrator PID 20656)
+[2025-06-02 14:22:42] [INFO] Monitor Status: Running=32, Required=4, Max=8
+[2025-06-02 14:22:42] [DEBUG] Window count OK: 32 >= 4 (minimum)
+[2025-06-02 14:22:42] [DEBUG] Next monitor check at: 14:31:42
+[2025-06-02 14:22:42] [DEBUG] === MONITOR CHECK COMPLETE ===
+[2025-06-02 14:23:18] [DEBUG] === MONITOR CHECK CYCLE ===
+[2025-06-02 14:23:18] [DEBUG] Found 32 relevant PowerShell processes (excluding main orchestrator PID 19592)
+[2025-06-02 14:23:18] [INFO] Monitor Status: Running=32, Required=4, Max=8
+[2025-06-02 14:23:18] [DEBUG] Window count OK: 32 >= 4 (minimum)
+[2025-06-02 14:23:18] [DEBUG] Next monitor check at: 14:32:18
+[2025-06-02 14:23:18] [DEBUG] === MONITOR CHECK COMPLETE ===
+[2025-06-02 14:31:42] [DEBUG] === MONITOR CHECK CYCLE ===
+[2025-06-02 14:31:42] [DEBUG] Found 26 relevant PowerShell processes (excluding main orchestrator PID 20656)
+[2025-06-02 14:31:42] [INFO] Monitor Status: Running=26, Required=4, Max=8
+[2025-06-02 14:31:42] [DEBUG] Window count OK: 26 >= 4 (minimum)
+[2025-06-02 14:31:42] [DEBUG] Next monitor check at: 14:40:42
+[2025-06-02 14:31:42] [DEBUG] === MONITOR CHECK COMPLETE ===
+[2025-06-02 14:32:18] [DEBUG] === MONITOR CHECK CYCLE ===
+[2025-06-02 14:32:18] [DEBUG] Found 26 relevant PowerShell processes (excluding main orchestrator PID 19592)
+[2025-06-02 14:32:18] [INFO] Monitor Status: Running=26, Required=4, Max=8
+[2025-06-02 14:32:18] [DEBUG] Window count OK: 26 >= 4 (minimum)
+[2025-06-02 14:32:18] [DEBUG] Next monitor check at: 14:41:18
+[2025-06-02 14:32:18] [DEBUG] === MONITOR CHECK COMPLETE ===
+[2025-06-02 14:40:42] [DEBUG] === MONITOR CHECK CYCLE ===
+[2025-06-02 14:40:42] [DEBUG] Found 26 relevant PowerShell processes (excluding main orchestrator PID 20656)
+[2025-06-02 14:40:42] [INFO] Monitor Status: Running=26, Required=4, Max=8
+[2025-06-02 14:40:42] [DEBUG] Window count OK: 26 >= 4 (minimum)
+[2025-06-02 14:40:42] [DEBUG] Next monitor check at: 14:49:42
+[2025-06-02 14:40:42] [DEBUG] === MONITOR CHECK COMPLETE ===
+[2025-06-02 14:41:18] [DEBUG] === MONITOR CHECK CYCLE ===
+[2025-06-02 14:41:18] [DEBUG] Found 26 relevant PowerShell processes (excluding main orchestrator PID 19592)
+[2025-06-02 14:41:18] [INFO] Monitor Status: Running=26, Required=4, Max=8
+[2025-06-02 14:41:18] [DEBUG] Window count OK: 26 >= 4 (minimum)
+[2025-06-02 14:41:18] [DEBUG] Next monitor check at: 14:50:18
+[2025-06-02 14:41:18] [DEBUG] === MONITOR CHECK COMPLETE ===
+[2025-06-02 14:49:42] [DEBUG] === MONITOR CHECK CYCLE ===
+[2025-06-02 14:49:42] [DEBUG] Found 26 relevant PowerShell processes (excluding main orchestrator PID 20656)
+[2025-06-02 14:49:42] [INFO] Monitor Status: Running=26, Required=4, Max=8
+[2025-06-02 14:49:42] [DEBUG] Window count OK: 26 >= 4 (minimum)
+[2025-06-02 14:49:42] [DEBUG] Next monitor check at: 14:58:42
+[2025-06-02 14:49:42] [DEBUG] === MONITOR CHECK COMPLETE ===
+[2025-06-02 14:50:18] [DEBUG] === MONITOR CHECK CYCLE ===
+[2025-06-02 14:50:18] [DEBUG] Found 26 relevant PowerShell processes (excluding main orchestrator PID 19592)
+[2025-06-02 14:50:18] [INFO] Monitor Status: Running=26, Required=4, Max=8
+[2025-06-02 14:50:18] [DEBUG] Window count OK: 26 >= 4 (minimum)
+[2025-06-02 14:50:18] [DEBUG] Next monitor check at: 14:59:18
+[2025-06-02 14:50:18] [DEBUG] === MONITOR CHECK COMPLETE ===
+[2025-06-02 14:58:42] [DEBUG] === MONITOR CHECK CYCLE ===
+[2025-06-02 14:58:42] [DEBUG] Found 24 relevant PowerShell processes (excluding main orchestrator PID 20656)
+[2025-06-02 14:58:42] [INFO] Monitor Status: Running=24, Required=4, Max=8
+[2025-06-02 14:58:42] [DEBUG] Window count OK: 24 >= 4 (minimum)
+[2025-06-02 14:58:42] [DEBUG] Next monitor check at: 15:07:42
+[2025-06-02 14:58:42] [DEBUG] === MONITOR CHECK COMPLETE ===
+[2025-06-02 14:59:18] [DEBUG] === MONITOR CHECK CYCLE ===
+[2025-06-02 14:59:18] [DEBUG] Found 24 relevant PowerShell processes (excluding main orchestrator PID 19592)
+[2025-06-02 14:59:18] [INFO] Monitor Status: Running=24, Required=4, Max=8
+[2025-06-02 14:59:18] [DEBUG] Window count OK: 24 >= 4 (minimum)
+[2025-06-02 14:59:18] [DEBUG] Next monitor check at: 15:08:18
+[2025-06-02 14:59:18] [DEBUG] === MONITOR CHECK COMPLETE ===
+[2025-06-02 15:07:42] [DEBUG] === MONITOR CHECK CYCLE ===
+[2025-06-02 15:07:42] [DEBUG] Found 23 relevant PowerShell processes (excluding main orchestrator PID 20656)
+[2025-06-02 15:07:42] [INFO] Monitor Status: Running=23, Required=4, Max=8
+[2025-06-02 15:07:42] [DEBUG] Window count OK: 23 >= 4 (minimum)
+[2025-06-02 15:07:42] [DEBUG] Next monitor check at: 15:16:42
+[2025-06-02 15:07:42] [DEBUG] === MONITOR CHECK COMPLETE ===
+[2025-06-02 15:08:18] [DEBUG] === MONITOR CHECK CYCLE ===
+[2025-06-02 15:08:18] [DEBUG] Found 23 relevant PowerShell processes (excluding main orchestrator PID 19592)
+[2025-06-02 15:08:18] [INFO] Monitor Status: Running=23, Required=4, Max=8
+[2025-06-02 15:08:18] [DEBUG] Window count OK: 23 >= 4 (minimum)
+[2025-06-02 15:08:18] [DEBUG] Next monitor check at: 15:17:18
+[2025-06-02 15:08:18] [DEBUG] === MONITOR CHECK COMPLETE ===
+[2025-06-02 15:16:42] [DEBUG] === MONITOR CHECK CYCLE ===
+[2025-06-02 15:16:42] [DEBUG] Found 23 relevant PowerShell processes (excluding main orchestrator PID 20656)
+[2025-06-02 15:16:42] [INFO] Monitor Status: Running=23, Required=4, Max=8
+[2025-06-02 15:16:42] [DEBUG] Window count OK: 23 >= 4 (minimum)
+[2025-06-02 15:16:42] [DEBUG] Next monitor check at: 15:25:42
+[2025-06-02 15:16:42] [DEBUG] === MONITOR CHECK COMPLETE ===
+[2025-06-02 15:17:18] [DEBUG] === MONITOR CHECK CYCLE ===
+[2025-06-02 15:17:18] [DEBUG] Found 23 relevant PowerShell processes (excluding main orchestrator PID 19592)
+[2025-06-02 15:17:18] [INFO] Monitor Status: Running=23, Required=4, Max=8
+[2025-06-02 15:17:18] [DEBUG] Window count OK: 23 >= 4 (minimum)
+[2025-06-02 15:17:18] [DEBUG] Next monitor check at: 15:26:18
+[2025-06-02 15:17:18] [DEBUG] === MONITOR CHECK COMPLETE ===
+[2025-06-02 15:25:42] [DEBUG] === MONITOR CHECK CYCLE ===
+[2025-06-02 15:25:42] [DEBUG] Found 23 relevant PowerShell processes (excluding main orchestrator PID 20656)
+[2025-06-02 15:25:42] [INFO] Monitor Status: Running=23, Required=4, Max=8
+[2025-06-02 15:25:42] [DEBUG] Window count OK: 23 >= 4 (minimum)
+[2025-06-02 15:25:42] [DEBUG] Next monitor check at: 15:34:42
+[2025-06-02 15:25:42] [DEBUG] === MONITOR CHECK COMPLETE ===
+[2025-06-02 15:26:18] [DEBUG] === MONITOR CHECK CYCLE ===
+[2025-06-02 15:26:18] [DEBUG] Found 23 relevant PowerShell processes (excluding main orchestrator PID 19592)
+[2025-06-02 15:26:18] [INFO] Monitor Status: Running=23, Required=4, Max=8
+[2025-06-02 15:26:18] [DEBUG] Window count OK: 23 >= 4 (minimum)
+[2025-06-02 15:26:18] [DEBUG] Next monitor check at: 15:35:18
+[2025-06-02 15:26:18] [DEBUG] === MONITOR CHECK COMPLETE ===
+[2025-06-02 15:34:42] [DEBUG] === MONITOR CHECK CYCLE ===
+[2025-06-02 15:34:42] [DEBUG] Found 20 relevant PowerShell processes (excluding main orchestrator PID 20656)
+[2025-06-02 15:34:42] [INFO] Monitor Status: Running=20, Required=4, Max=8
+[2025-06-02 15:34:42] [DEBUG] Window count OK: 20 >= 4 (minimum)
+[2025-06-02 15:34:42] [DEBUG] Next monitor check at: 15:43:42
+[2025-06-02 15:34:42] [DEBUG] === MONITOR CHECK COMPLETE ===
+[2025-06-02 15:35:18] [DEBUG] === MONITOR CHECK CYCLE ===
+[2025-06-02 15:35:18] [DEBUG] Found 20 relevant PowerShell processes (excluding main orchestrator PID 19592)
+[2025-06-02 15:35:18] [INFO] Monitor Status: Running=20, Required=4, Max=8
+[2025-06-02 15:35:18] [DEBUG] Window count OK: 20 >= 4 (minimum)
+[2025-06-02 15:35:18] [DEBUG] Next monitor check at: 15:44:18
+[2025-06-02 15:35:18] [DEBUG] === MONITOR CHECK COMPLETE ===
+[2025-06-02 15:43:42] [DEBUG] === MONITOR CHECK CYCLE ===
+[2025-06-02 15:43:42] [DEBUG] Found 20 relevant PowerShell processes (excluding main orchestrator PID 20656)
+[2025-06-02 15:43:42] [INFO] Monitor Status: Running=20, Required=4, Max=8
+[2025-06-02 15:43:42] [DEBUG] Window count OK: 20 >= 4 (minimum)
+[2025-06-02 15:43:42] [DEBUG] Next monitor check at: 15:52:42
+[2025-06-02 15:43:42] [DEBUG] === MONITOR CHECK COMPLETE ===
+[2025-06-02 15:44:18] [DEBUG] === MONITOR CHECK CYCLE ===
+[2025-06-02 15:44:18] [DEBUG] Found 20 relevant PowerShell processes (excluding main orchestrator PID 19592)
+[2025-06-02 15:44:18] [INFO] Monitor Status: Running=20, Required=4, Max=8
+[2025-06-02 15:44:18] [DEBUG] Window count OK: 20 >= 4 (minimum)
+[2025-06-02 15:44:18] [DEBUG] Next monitor check at: 15:53:18
+[2025-06-02 15:44:18] [DEBUG] === MONITOR CHECK COMPLETE ===
+[2025-06-02 15:52:42] [DEBUG] === MONITOR CHECK CYCLE ===
+[2025-06-02 15:52:42] [DEBUG] Found 17 relevant PowerShell processes (excluding main orchestrator PID 20656)
+[2025-06-02 15:52:42] [INFO] Monitor Status: Running=17, Required=4, Max=8
+[2025-06-02 15:52:42] [DEBUG] Window count OK: 17 >= 4 (minimum)
+[2025-06-02 15:52:42] [DEBUG] Next monitor check at: 16:01:42
+[2025-06-02 15:52:42] [DEBUG] === MONITOR CHECK COMPLETE ===
+[2025-06-02 15:53:18] [DEBUG] === MONITOR CHECK CYCLE ===
+[2025-06-02 15:53:19] [DEBUG] Found 17 relevant PowerShell processes (excluding main orchestrator PID 19592)
+[2025-06-02 15:53:19] [INFO] Monitor Status: Running=17, Required=4, Max=8
+[2025-06-02 15:53:19] [DEBUG] Window count OK: 17 >= 4 (minimum)
+[2025-06-02 15:53:19] [DEBUG] Next monitor check at: 16:02:19
+[2025-06-02 15:53:19] [DEBUG] === MONITOR CHECK COMPLETE ===
+[2025-06-02 15:56:02] [INFO] Script execution ended
+[2025-06-02 15:56:06] [INFO] Configuration loaded from C:\Users\SanyaKhasenye(Sensit\WorkingDir\PowerShell\PwshWindowManager\PwshWindowManager.json
+[2025-06-02 15:56:06] [DEBUG] Base path: C:\Users\SanyaKhasenye(Sensit\WorkingDir\PowerShell
+[2025-06-02 15:56:06] [DEBUG] Countdown script: C:\Users\SanyaKhasenye(Sensit\WorkingDir\PowerShell\CountDownTimers\Start-Countdown.ps1
+[2025-06-02 15:56:06] [DEBUG] Orchestrator directory: C:\Users\SanyaKhasenye(Sensit\WorkingDir\PowerShell\ActivityGenerator.v3
+[2025-06-02 15:56:06] [DEBUG] Orchestrator script: C:\Users\SanyaKhasenye(Sensit\WorkingDir\PowerShell\ActivityGenerator.v3\Start-ActivityOrchestrator_v0.1.ps1
+[2025-06-02 15:56:06] [INFO] === PATH VERIFICATION ===
+[2025-06-02 15:56:06] [INFO] SUCCESS: Countdown script found at: C:\Users\SanyaKhasenye(Sensit\WorkingDir\PowerShell\CountDownTimers\Start-Countdown.ps1
+[2025-06-02 15:56:06] [INFO] SUCCESS: Orchestrator script found at: C:\Users\SanyaKhasenye(Sensit\WorkingDir\PowerShell\ActivityGenerator.v3\Start-ActivityOrchestrator_v0.1.ps1
+[2025-06-02 15:56:06] [INFO] SUCCESS: Orchestrator directory found at: C:\Users\SanyaKhasenye(Sensit\WorkingDir\PowerShell\ActivityGenerator.v3
+[2025-06-02 15:56:06] [INFO] SUCCESS: Orchestrator config found at: C:\Users\SanyaKhasenye(Sensit\WorkingDir\PowerShell\ActivityGenerator.v3\ActivityGeneratorConfig.json
+[2025-06-02 15:56:06] [INFO] === PATH VERIFICATION COMPLETE ===
+[2025-06-02 15:56:06] [INFO] Script started with PID 20788
+[2025-06-02 15:56:06] [DEBUG] Current working directory: C:\Users\SanyaKhasenye(Sensit\WorkingDir\PowerShell\PwshWindowManager
+[2025-06-02 15:56:06] [DEBUG] PowerShell version: 5.1.19041.5848
+[2025-06-02 15:56:06] [INFO] Launching 4 initial windows
+[2025-06-02 15:56:06] [DEBUG] Generated 785 seconds for window 1
+[2025-06-02 15:56:06] [DEBUG] Preparing to launch window 1 with 785 second countdown
+[2025-06-02 15:56:06] [DEBUG] Creating temporary script: C:\Users\SANYAK~1\AppData\Local\Temp\OrchestratorWindow_1.ps1
+[2025-06-02 15:56:06] [DEBUG] Auto-close timeout: 120 seconds
+[2025-06-02 15:56:06] [INFO] Launched window 1 - 785 second countdown
+[2025-06-02 15:56:07] [DEBUG] Generated 3889 seconds for window 2
+[2025-06-02 15:56:07] [DEBUG] Preparing to launch window 2 with 3889 second countdown
+[2025-06-02 15:56:07] [DEBUG] Creating temporary script: C:\Users\SANYAK~1\AppData\Local\Temp\OrchestratorWindow_2.ps1
+[2025-06-02 15:56:07] [DEBUG] Auto-close timeout: 120 seconds
+[2025-06-02 15:56:07] [INFO] Launched window 2 - 3889 second countdown
+[2025-06-02 15:56:08] [DEBUG] Generated 3762 seconds for window 3
+[2025-06-02 15:56:08] [DEBUG] Preparing to launch window 3 with 3762 second countdown
+[2025-06-02 15:56:08] [DEBUG] Creating temporary script: C:\Users\SANYAK~1\AppData\Local\Temp\OrchestratorWindow_3.ps1
+[2025-06-02 15:56:08] [DEBUG] Auto-close timeout: 120 seconds
+[2025-06-02 15:56:08] [INFO] Launched window 3 - 3762 second countdown
+[2025-06-02 15:56:09] [DEBUG] Generated 3408 seconds for window 4
+[2025-06-02 15:56:09] [DEBUG] Preparing to launch window 4 with 3408 second countdown
+[2025-06-02 15:56:09] [DEBUG] Creating temporary script: C:\Users\SANYAK~1\AppData\Local\Temp\OrchestratorWindow_4.ps1
+[2025-06-02 15:56:09] [DEBUG] Auto-close timeout: 120 seconds
+[2025-06-02 15:56:09] [INFO] Launched window 4 - 3408 second countdown
+[2025-06-02 15:56:10] [INFO] Starting monitoring process...
+[2025-06-02 15:56:10] [INFO] Monitor settings - Min: 4, Max: 8, Check interval: 540s
+[2025-06-02 15:56:10] [INFO] Will add 3 windows when count drops below minimum
+[2025-06-02 15:56:10] [DEBUG] === MONITOR CHECK CYCLE ===
+[2025-06-02 15:56:10] [DEBUG] Found  running PowerShell terminal windows
+[2025-06-02 15:56:10] [ERROR] Fatal error: Cannot convert the "System.Object[]" value of type "System.Object[]" to type "System.Int32".
+[2025-06-02 15:56:10] [ERROR] Stack trace: at <ScriptBlock>, C:\Users\SanyaKhasenye(Sensit\WorkingDir\PowerShell\PwshWindowManager\PwshWindowManager.ps1: line 345
+[2025-06-02 15:56:10] [INFO] Script execution ended
+[2025-06-02 15:56:12] [INFO] Script execution ended
+[2025-06-02 21:56:18] [INFO] Configuration loaded from C:\Users\SanyaKhasenye(Sensit\WorkingDir\PowerShell\PwshWindowManager\PwshWindowManager.json
+[2025-06-02 21:56:18] [DEBUG] Base path: C:\Users\SanyaKhasenye(Sensit\WorkingDir\PowerShell
+[2025-06-02 21:56:18] [DEBUG] Countdown script: C:\Users\SanyaKhasenye(Sensit\WorkingDir\PowerShell\CountDownTimers\Start-Countdown.ps1
+[2025-06-02 21:56:18] [DEBUG] Orchestrator directory: C:\Users\SanyaKhasenye(Sensit\WorkingDir\PowerShell\ActivityGenerator.v3
+[2025-06-02 21:56:18] [DEBUG] Orchestrator script: C:\Users\SanyaKhasenye(Sensit\WorkingDir\PowerShell\ActivityGenerator.v3\Start-ActivityOrchestrator_v0.1.ps1
+[2025-06-02 21:56:18] [INFO] === PATH VERIFICATION ===
+[2025-06-02 21:56:18] [INFO] SUCCESS: Countdown script found at: C:\Users\SanyaKhasenye(Sensit\WorkingDir\PowerShell\CountDownTimers\Start-Countdown.ps1
+[2025-06-02 21:56:18] [INFO] SUCCESS: Orchestrator script found at: C:\Users\SanyaKhasenye(Sensit\WorkingDir\PowerShell\ActivityGenerator.v3\Start-ActivityOrchestrator_v0.1.ps1
+[2025-06-02 21:56:18] [INFO] SUCCESS: Orchestrator directory found at: C:\Users\SanyaKhasenye(Sensit\WorkingDir\PowerShell\ActivityGenerator.v3
+[2025-06-02 21:56:18] [INFO] SUCCESS: Orchestrator config found at: C:\Users\SanyaKhasenye(Sensit\WorkingDir\PowerShell\ActivityGenerator.v3\ActivityGeneratorConfig.json
+[2025-06-02 21:56:18] [INFO] === PATH VERIFICATION COMPLETE ===
+[2025-06-02 21:56:18] [INFO] Script started with PID 9144
+[2025-06-02 21:56:18] [DEBUG] Current working directory: C:\Users\SanyaKhasenye(Sensit\WorkingDir\PowerShell\PwshWindowManager
+[2025-06-02 21:56:18] [DEBUG] PowerShell version: 5.1.19041.5848
+[2025-06-02 21:56:18] [INFO] Launching 4 initial windows
+[2025-06-02 21:56:18] [DEBUG] Generated 3093 seconds for window 1
+[2025-06-02 21:56:18] [DEBUG] Preparing to launch window 1 with 3093 second countdown
+[2025-06-02 21:56:18] [DEBUG] Creating temporary script: C:\Users\SANYAK~1\AppData\Local\Temp\OrchestratorWindow_1.ps1
+[2025-06-02 21:56:18] [DEBUG] Auto-close timeout: 120 seconds
+[2025-06-02 21:56:19] [INFO] Launched window 1 - 3093 second countdown
+[2025-06-02 21:56:20] [DEBUG] Generated 7005 seconds for window 2
+[2025-06-02 21:56:20] [DEBUG] Preparing to launch window 2 with 7005 second countdown
+[2025-06-02 21:56:20] [DEBUG] Creating temporary script: C:\Users\SANYAK~1\AppData\Local\Temp\OrchestratorWindow_2.ps1
+[2025-06-02 21:56:20] [DEBUG] Auto-close timeout: 120 seconds
+[2025-06-02 21:56:20] [INFO] Launched window 2 - 7005 second countdown
+[2025-06-02 21:56:21] [DEBUG] Generated 6131 seconds for window 3
+[2025-06-02 21:56:21] [DEBUG] Preparing to launch window 3 with 6131 second countdown
+[2025-06-02 21:56:21] [DEBUG] Creating temporary script: C:\Users\SANYAK~1\AppData\Local\Temp\OrchestratorWindow_3.ps1
+[2025-06-02 21:56:21] [DEBUG] Auto-close timeout: 120 seconds
+[2025-06-02 21:56:21] [INFO] Launched window 3 - 6131 second countdown
+[2025-06-02 21:56:22] [DEBUG] Generated 1105 seconds for window 4
+[2025-06-02 21:56:22] [DEBUG] Preparing to launch window 4 with 1105 second countdown
+[2025-06-02 21:56:22] [DEBUG] Creating temporary script: C:\Users\SANYAK~1\AppData\Local\Temp\OrchestratorWindow_4.ps1
+[2025-06-02 21:56:22] [DEBUG] Auto-close timeout: 120 seconds
+[2025-06-02 21:56:22] [INFO] Launched window 4 - 1105 second countdown
+[2025-06-02 21:56:23] [INFO] Starting monitoring process...
+[2025-06-02 21:56:23] [INFO] Monitor settings - Min: 4, Max: 8, Check interval: 540s
+[2025-06-02 21:56:23] [INFO] Will add 3 windows when count drops below minimum
+[2025-06-02 21:56:23] [DEBUG] === MONITOR CHECK CYCLE ===
+[2025-06-02 21:56:23] [DEBUG] Found  running PowerShell terminal windows
+[2025-06-02 21:56:23] [ERROR] Fatal error: Cannot convert the "System.Object[]" value of type "System.Object[]" to type "System.Int32".
+[2025-06-02 21:56:23] [ERROR] Stack trace: at <ScriptBlock>, C:\Users\SanyaKhasenye(Sensit\WorkingDir\PowerShell\PwshWindowManager\PwshWindowManager.ps1: line 345
+[2025-06-02 21:56:23] [INFO] Script execution ended

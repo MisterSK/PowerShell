@@ -1,0 +1,40 @@
+{
+  "workingDirectory": "C:\\Users\\SanyaKhasenye(Sensit\\WorkingDir\\PowerShell\\ActivityGenerator.v3",
+  "scripts": {
+    "startup": ".\\ActivityGeneratorStartUp.ps1",
+    "orchestrator": ".\\ActivityOrchestrator.ps1"
+  },
+  "logging": {
+    "logPath": ".\\Logs\\ActivityGenerator.log",
+    "logRetentionDays": 30
+  },
+  "iterations": {
+    "default": 2,
+    "waitTimes": [
+      {
+        "minWait": 150,
+        "maxWait": 6200
+      },
+      {
+        "minWait": 250,
+        "maxWait": 7000
+      },
+      {
+        "minWait": 30,
+        "maxWait": 8400
+      },
+      {
+        "minWait": 20,
+        "maxWait":9500
+      },
+      {
+        "minWait": 10,
+        "maxWait": 18500
+      }
+    ]
+  },
+  "execution": {
+    "maxRetries": 3,
+    "retryDelaySeconds": 5
+  }
+}

@@ -1,0 +1,14 @@
+{
+    "AdminCredsPath": ".\\AdminCreds.xml",
+    "DefaultWindowCount": 4,
+    "WindowDefaults": {
+        "DefaultWidth": 115,
+        "DefaultHeight": 11,
+        "DefaultX": 2345,
+        "DefaultY": 360,
+        "Spacing": 10
+    },
+    "Commands": [
+        "$random_start = (Get-Random -Maximum 1400 -Minimum 65) ;powershell.exe -ExecutionPolicy Bypass -File C:\\Users\\S-Khasenye.DFID\\WorkingDir\\PowerShell\\CountDownTimers\\Start-CountDown.ps1 -Seconds $random_start  -Message 'Waiting to launch Activity Detection'; Set-Location C:\\Users\\S-Khasenye.DFID\\WorkingDir\\PowerShell\\ActivityGenerator.v2\\; powershell.exe -ExecutionPolicy Bypass -File .\\ActivityOrchestrator.ps1; $random_start = (Get-Random -Maximum 500 -Minimum 50); Clear-Host; powershell.exe -ExecutionPolicy Bypass -File C:\\Users\\S-Khasenye.DFID\\WorkingDir\\PowerShell\\CountDownTimers\\Start-CountDown.ps1 -Seconds $random_start  -Message 'Waiting to launch Activity Detection'; Set-Location C:\\Users\\S-Khasenye.DFID\\WorkingDir\\PowerShell\\ActivityGenerator.v2\\; powershell.exe -ExecutionPolicy Bypass -File .\\ActivityOrchestrator.ps1"
+    ]
+}

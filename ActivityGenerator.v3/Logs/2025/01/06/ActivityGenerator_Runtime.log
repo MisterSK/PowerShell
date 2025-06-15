@@ -1,0 +1,627 @@
+[2025-01-06 13:07:29] [INFO] Starting Activity Generator Orchestrator (Instance ID: serendipity-2025-Jan-06-1307)
+[2025-01-06 13:07:29] [INFO] Total planned iterations: 3
+[2025-01-06 13:07:29] [INFO] Starting iteration 1
+[2025-01-06 13:07:29] [INFO] Using wait times - Min: 14, Max: 2000
+[2025-01-06 13:07:29] [INFO] Generated wait time: 1114 ms
+[2025-01-06 13:07:44] [INFO] Starting Activity Generator Orchestrator (Instance ID: stellar-2025-Jan-06-1307)
+[2025-01-06 13:07:44] [INFO] Total planned iterations: 6
+[2025-01-06 13:07:44] [INFO] Starting iteration 1
+[2025-01-06 13:07:44] [INFO] Using wait times - Min: 14, Max: 2000
+[2025-01-06 13:07:44] [INFO] Generated wait time: 843 ms
+[2025-01-06 13:08:01] [INFO] Starting Activity Generator Orchestrator (Instance ID: kayak-2025-Jan-06-1308)
+[2025-01-06 13:08:01] [INFO] Total planned iterations: 6
+[2025-01-06 13:08:01] [INFO] Starting iteration 1
+[2025-01-06 13:08:01] [INFO] Using wait times - Min: 14, Max: 2000
+[2025-01-06 13:08:01] [INFO] Generated wait time: 951 ms
+[2025-01-06 13:08:24] [INFO] Starting Activity Generator Orchestrator (Instance ID: cascade-2025-Jan-06-1308)
+[2025-01-06 13:08:24] [INFO] Total planned iterations: 6
+[2025-01-06 13:08:24] [INFO] Starting iteration 1
+[2025-01-06 13:08:24] [INFO] Using wait times - Min: 14, Max: 2000
+[2025-01-06 13:08:24] [INFO] Generated wait time: 1914 ms
+[2025-01-06 13:08:45] [INFO] Starting Activity Generator Orchestrator (Instance ID: unadeptly-2025-Jan-06-1308)
+[2025-01-06 13:08:45] [INFO] Total planned iterations: 6
+[2025-01-06 13:08:45] [INFO] Starting iteration 1
+[2025-01-06 13:08:45] [INFO] Using wait times - Min: 14, Max: 2000
+[2025-01-06 13:08:45] [INFO] Generated wait time: 1074 ms
+[2025-01-06 13:08:50] [INFO] Starting Activity Generator Orchestrator (Instance ID: metatag-2025-Jan-06-1308)
+[2025-01-06 13:08:50] [INFO] Total planned iterations: 6
+[2025-01-06 13:08:50] [INFO] Starting iteration 1
+[2025-01-06 13:08:50] [INFO] Using wait times - Min: 14, Max: 2000
+[2025-01-06 13:08:50] [INFO] Generated wait time: 1400 ms
+[2025-01-06 18:26:59] [SUCCESS] Iteration 1 completed successfully (Duration: 19115.04 seconds)
+[2025-01-06 18:26:59] [INFO] Iteration Statistics:
+  Iteration: 1
+  MaxWait: 2000
+  MinWait: 14
+  Duration: 19115.04 seconds
+  GeneratedWait: 1914
+  EndTime: 2025-01-06 18:26:59
+  StartTime: 2025-01-06 13:08:24
+[2025-01-06 18:26:59] [INFO] Starting iteration 2
+[2025-01-06 18:26:59] [INFO] Using wait times - Min: 370, Max: 13000
+[2025-01-06 18:26:59] [INFO] Generated wait time: 12321 ms
+[2025-01-06 18:32:37] [SUCCESS] Iteration 1 completed successfully (Duration: 19432.52 seconds)
+[2025-01-06 18:32:37] [INFO] Iteration Statistics:
+  Iteration: 1
+  MaxWait: 2000
+  MinWait: 14
+  Duration: 19432.52 seconds
+  GeneratedWait: 1074
+  EndTime: 2025-01-06 18:32:37
+  StartTime: 2025-01-06 13:08:45
+[2025-01-06 18:32:37] [INFO] Starting iteration 2
+[2025-01-06 18:32:37] [INFO] Using wait times - Min: 370, Max: 13000
+[2025-01-06 18:32:37] [INFO] Generated wait time: 3714 ms
+[2025-01-06 18:51:22] [SUCCESS] Iteration 1 completed successfully (Duration: 20618.13 seconds)
+[2025-01-06 18:51:22] [INFO] Iteration Statistics:
+  Iteration: 1
+  MaxWait: 2000
+  MinWait: 14
+  Duration: 20618.13 seconds
+  GeneratedWait: 843
+  EndTime: 2025-01-06 18:51:22
+  StartTime: 2025-01-06 13:07:44
+[2025-01-06 18:51:22] [INFO] Starting iteration 2
+[2025-01-06 18:51:22] [INFO] Using wait times - Min: 370, Max: 13000
+[2025-01-06 18:51:22] [INFO] Generated wait time: 7064 ms
+[2025-01-06 19:03:46] [SUCCESS] Iteration 1 completed successfully (Duration: 21344.75 seconds)
+[2025-01-06 19:03:46] [INFO] Iteration Statistics:
+  Iteration: 1
+  MaxWait: 2000
+  MinWait: 14
+  Duration: 21344.75 seconds
+  GeneratedWait: 951
+  EndTime: 2025-01-06 19:03:46
+  StartTime: 2025-01-06 13:08:01
+[2025-01-06 19:03:46] [INFO] Starting iteration 2
+[2025-01-06 19:03:46] [INFO] Using wait times - Min: 370, Max: 13000
+[2025-01-06 19:03:46] [INFO] Generated wait time: 5334 ms
+[2025-01-06 19:03:58] [SUCCESS] Iteration 1 completed successfully (Duration: 21388.49 seconds)
+[2025-01-06 19:03:58] [INFO] Iteration Statistics:
+  Iteration: 1
+  MaxWait: 2000
+  MinWait: 14
+  Duration: 21388.49 seconds
+  GeneratedWait: 1114
+  EndTime: 2025-01-06 19:03:58
+  StartTime: 2025-01-06 13:07:29
+[2025-01-06 19:03:58] [INFO] Starting iteration 2
+[2025-01-06 19:03:58] [INFO] Using wait times - Min: 370, Max: 13000
+[2025-01-06 19:03:58] [INFO] Generated wait time: 12628 ms
+[2025-01-06 20:41:16] [INFO] Starting Activity Generator Orchestrator (Instance ID: gnatty-2025-Jan-06-2041)
+[2025-01-06 20:41:16] [INFO] Total planned iterations: 6
+[2025-01-06 20:41:16] [INFO] Starting iteration 1
+[2025-01-06 20:41:16] [INFO] Using wait times - Min: 14, Max: 2000
+[2025-01-06 20:41:16] [INFO] Generated wait time: 35 ms
+[2025-01-06 20:41:25] [INFO] Starting Activity Generator Orchestrator (Instance ID: kayak-2025-Jan-06-2041)
+[2025-01-06 20:41:25] [INFO] Total planned iterations: 6
+[2025-01-06 20:41:25] [INFO] Starting iteration 1
+[2025-01-06 20:41:25] [INFO] Using wait times - Min: 14, Max: 2000
+[2025-01-06 20:41:25] [INFO] Generated wait time: 1451 ms
+[2025-01-06 20:41:39] [INFO] Starting Activity Generator Orchestrator (Instance ID: wardrobed-2025-Jan-06-2041)
+[2025-01-06 20:41:39] [INFO] Total planned iterations: 6
+[2025-01-06 20:41:39] [INFO] Starting iteration 1
+[2025-01-06 20:41:39] [INFO] Using wait times - Min: 14, Max: 2000
+[2025-01-06 20:41:39] [INFO] Generated wait time: 41 ms
+[2025-01-06 20:46:42] [SUCCESS] Iteration 1 completed successfully (Duration: 27472.16 seconds)
+[2025-01-06 20:46:42] [INFO] Iteration Statistics:
+  Iteration: 1
+  MaxWait: 2000
+  MinWait: 14
+  Duration: 27472.16 seconds
+  GeneratedWait: 1400
+  EndTime: 2025-01-06 20:46:42
+  StartTime: 2025-01-06 13:08:50
+[2025-01-06 20:46:42] [INFO] Starting iteration 2
+[2025-01-06 20:46:42] [INFO] Using wait times - Min: 370, Max: 13000
+[2025-01-06 20:46:42] [INFO] Generated wait time: 6891 ms
+[2025-01-07 00:36:50] [SUCCESS] Iteration 2 completed successfully (Duration: 20728.12 seconds)
+[2025-01-07 00:36:50] [INFO] Iteration Statistics:
+  Iteration: 2
+  MaxWait: 13000
+  MinWait: 370
+  Duration: 20728.12 seconds
+  GeneratedWait: 7064
+  EndTime: 2025-01-07 00:36:50
+  StartTime: 2025-01-06 18:51:22
+[2025-01-07 00:36:50] [INFO] Starting iteration 3
+[2025-01-07 00:36:50] [INFO] Using wait times - Min: 170, Max: 1500
+[2025-01-07 00:36:50] [INFO] Generated wait time: 628 ms
+[2025-01-07 00:42:44] [SUCCESS] Iteration 2 completed successfully (Duration: 20325.89 seconds)
+[2025-01-07 00:42:44] [INFO] Iteration Statistics:
+  Iteration: 2
+  MaxWait: 13000
+  MinWait: 370
+  Duration: 20325.89 seconds
+  GeneratedWait: 12628
+  EndTime: 2025-01-07 00:42:44
+  StartTime: 2025-01-06 19:03:58
+[2025-01-07 00:42:44] [INFO] Starting iteration 3
+[2025-01-07 00:42:44] [INFO] Using wait times - Min: 170, Max: 1500
+[2025-01-07 00:42:44] [INFO] Generated wait time: 373 ms
+[2025-01-07 01:12:03] [SUCCESS] Iteration 2 completed successfully (Duration: 22096.83 seconds)
+[2025-01-07 01:12:03] [INFO] Iteration Statistics:
+  Iteration: 2
+  MaxWait: 13000
+  MinWait: 370
+  Duration: 22096.83 seconds
+  GeneratedWait: 5334
+  EndTime: 2025-01-07 01:12:03
+  StartTime: 2025-01-06 19:03:46
+[2025-01-07 01:12:03] [INFO] Starting iteration 3
+[2025-01-07 01:12:03] [INFO] Using wait times - Min: 170, Max: 1500
+[2025-01-07 01:12:03] [INFO] Generated wait time: 864 ms
+[2025-01-07 02:22:12] [SUCCESS] Iteration 1 completed successfully (Duration: 20433.36 seconds)
+[2025-01-07 02:22:12] [INFO] Iteration Statistics:
+  Iteration: 1
+  MaxWait: 2000
+  MinWait: 14
+  Duration: 20433.36 seconds
+  GeneratedWait: 41
+  EndTime: 2025-01-07 02:22:12
+  StartTime: 2025-01-06 20:41:39
+[2025-01-07 02:22:12] [INFO] Starting iteration 2
+[2025-01-07 02:22:12] [INFO] Using wait times - Min: 370, Max: 13000
+[2025-01-07 02:22:12] [INFO] Generated wait time: 2676 ms
+[2025-01-07 02:27:17] [SUCCESS] Iteration 1 completed successfully (Duration: 20760.66 seconds)
+[2025-01-07 02:27:17] [INFO] Iteration Statistics:
+  Iteration: 1
+  MaxWait: 2000
+  MinWait: 14
+  Duration: 20760.66 seconds
+  GeneratedWait: 35
+  EndTime: 2025-01-07 02:27:17
+  StartTime: 2025-01-06 20:41:16
+[2025-01-07 02:27:17] [INFO] Starting iteration 2
+[2025-01-07 02:27:17] [INFO] Using wait times - Min: 370, Max: 13000
+[2025-01-07 02:27:17] [INFO] Generated wait time: 10104 ms
+[2025-01-07 02:33:45] [SUCCESS] Iteration 1 completed successfully (Duration: 21140.18 seconds)
+[2025-01-07 02:33:45] [INFO] Iteration Statistics:
+  Iteration: 1
+  MaxWait: 2000
+  MinWait: 14
+  Duration: 21140.18 seconds
+  GeneratedWait: 1451
+  EndTime: 2025-01-07 02:33:45
+  StartTime: 2025-01-06 20:41:25
+[2025-01-07 02:33:45] [INFO] Starting iteration 2
+[2025-01-07 02:33:45] [INFO] Using wait times - Min: 370, Max: 13000
+[2025-01-07 02:33:45] [INFO] Generated wait time: 5310 ms
+[2025-01-07 03:04:43] [SUCCESS] Iteration 2 completed successfully (Duration: 31064.17 seconds)
+[2025-01-07 03:04:43] [INFO] Iteration Statistics:
+  Iteration: 2
+  MaxWait: 13000
+  MinWait: 370
+  Duration: 31064.17 seconds
+  GeneratedWait: 12321
+  EndTime: 2025-01-07 03:04:43
+  StartTime: 2025-01-06 18:26:59
+[2025-01-07 03:04:43] [INFO] Starting iteration 3
+[2025-01-07 03:04:43] [INFO] Using wait times - Min: 170, Max: 1500
+[2025-01-07 03:04:43] [INFO] Generated wait time: 1425 ms
+[2025-01-07 03:25:06] [SUCCESS] Iteration 2 completed successfully (Duration: 31948.29 seconds)
+[2025-01-07 03:25:06] [INFO] Iteration Statistics:
+  Iteration: 2
+  MaxWait: 13000
+  MinWait: 370
+  Duration: 31948.29 seconds
+  GeneratedWait: 3714
+  EndTime: 2025-01-07 03:25:06
+  StartTime: 2025-01-06 18:32:37
+[2025-01-07 03:25:06] [INFO] Starting iteration 3
+[2025-01-07 03:25:06] [INFO] Using wait times - Min: 170, Max: 1500
+[2025-01-07 03:25:06] [INFO] Generated wait time: 452 ms
+[2025-01-07 03:30:38] [SUCCESS] Iteration 2 completed successfully (Duration: 24235.53 seconds)
+[2025-01-07 03:30:38] [INFO] Iteration Statistics:
+  Iteration: 2
+  MaxWait: 13000
+  MinWait: 370
+  Duration: 24235.53 seconds
+  GeneratedWait: 6891
+  EndTime: 2025-01-07 03:30:38
+  StartTime: 2025-01-06 20:46:42
+[2025-01-07 03:30:38] [INFO] Starting iteration 3
+[2025-01-07 03:30:38] [INFO] Using wait times - Min: 170, Max: 1500
+[2025-01-07 03:30:38] [INFO] Generated wait time: 516 ms
+[2025-01-07 06:15:40] [SUCCESS] Iteration 3 completed successfully (Duration: 20329.88 seconds)
+[2025-01-07 06:15:40] [INFO] Iteration Statistics:
+  Iteration: 3
+  MaxWait: 1500
+  MinWait: 170
+  Duration: 20329.88 seconds
+  GeneratedWait: 628
+  EndTime: 2025-01-07 06:15:40
+  StartTime: 2025-01-07 00:36:50
+[2025-01-07 06:15:40] [INFO] Starting iteration 4
+[2025-01-07 06:15:40] [INFO] Using wait times - Min: 1470, Max: 30000
+[2025-01-07 06:15:40] [INFO] Generated wait time: 21231 ms
+[2025-01-07 06:19:17] [SUCCESS] Iteration 3 completed successfully (Duration: 20192.93 seconds)
+[2025-01-07 06:19:17] [INFO] Iteration Statistics:
+  Iteration: 3
+  MaxWait: 1500
+  MinWait: 170
+  Duration: 20192.93 seconds
+  GeneratedWait: 373
+  EndTime: 2025-01-07 06:19:17
+  StartTime: 2025-01-07 00:42:44
+[2025-01-07 06:19:17] [SUCCESS] All iterations completed successfully
+[2025-01-07 06:19:17] [SUCCESS] Final Summary:
+  Start Time: 2025-01-06 13:07:29
+  End Time: 2025-01-07 06:19:17
+  Instance ID: serendipity-2025-Jan-06-1307
+  Total Iterations: 3
+  Total Duration: 1031.79 minutes
+  Average Duration: 343.93 minutes per iteration
+[2025-01-07 06:33:02] [SUCCESS] Iteration 3 completed successfully (Duration: 19258.92 seconds)
+[2025-01-07 06:33:02] [INFO] Iteration Statistics:
+  Iteration: 3
+  MaxWait: 1500
+  MinWait: 170
+  Duration: 19258.92 seconds
+  GeneratedWait: 864
+  EndTime: 2025-01-07 06:33:02
+  StartTime: 2025-01-07 01:12:03
+[2025-01-07 06:33:02] [INFO] Starting iteration 4
+[2025-01-07 06:33:02] [INFO] Using wait times - Min: 1470, Max: 30000
+[2025-01-07 06:33:02] [INFO] Generated wait time: 17160 ms
+[2025-01-07 08:55:58] [SUCCESS] Iteration 3 completed successfully (Duration: 21074.52 seconds)
+[2025-01-07 08:55:58] [INFO] Iteration Statistics:
+  Iteration: 3
+  MaxWait: 1500
+  MinWait: 170
+  Duration: 21074.52 seconds
+  GeneratedWait: 1425
+  EndTime: 2025-01-07 08:55:58
+  StartTime: 2025-01-07 03:04:43
+[2025-01-07 08:55:58] [INFO] Starting iteration 4
+[2025-01-07 08:55:58] [INFO] Using wait times - Min: 1470, Max: 30000
+[2025-01-07 08:55:58] [INFO] Generated wait time: 8830 ms
+[2025-01-07 09:12:08] [SUCCESS] Iteration 3 completed successfully (Duration: 20822.38 seconds)
+[2025-01-07 09:12:08] [INFO] Iteration Statistics:
+  Iteration: 3
+  MaxWait: 1500
+  MinWait: 170
+  Duration: 20822.38 seconds
+  GeneratedWait: 452
+  EndTime: 2025-01-07 09:12:08
+  StartTime: 2025-01-07 03:25:06
+[2025-01-07 09:12:08] [INFO] Starting iteration 4
+[2025-01-07 09:12:08] [INFO] Using wait times - Min: 1470, Max: 30000
+[2025-01-07 09:12:08] [INFO] Generated wait time: 21715 ms
+[2025-01-07 09:15:39] [SUCCESS] Iteration 3 completed successfully (Duration: 20701.26 seconds)
+[2025-01-07 09:15:39] [INFO] Iteration Statistics:
+  Iteration: 3
+  MaxWait: 1500
+  MinWait: 170
+  Duration: 20701.26 seconds
+  GeneratedWait: 516
+  EndTime: 2025-01-07 09:15:39
+  StartTime: 2025-01-07 03:30:38
+[2025-01-07 09:15:39] [INFO] Starting iteration 4
+[2025-01-07 09:15:39] [INFO] Using wait times - Min: 1470, Max: 30000
+[2025-01-07 09:15:39] [INFO] Generated wait time: 17467 ms
+[2025-01-07 09:29:21] [SUCCESS] Iteration 2 completed successfully (Duration: 25323.77 seconds)
+[2025-01-07 09:29:21] [INFO] Iteration Statistics:
+  Iteration: 2
+  MaxWait: 13000
+  MinWait: 370
+  Duration: 25323.77 seconds
+  GeneratedWait: 10104
+  EndTime: 2025-01-07 09:29:21
+  StartTime: 2025-01-07 02:27:17
+[2025-01-07 09:29:21] [INFO] Starting iteration 3
+[2025-01-07 09:29:21] [INFO] Using wait times - Min: 170, Max: 1500
+[2025-01-07 09:29:21] [INFO] Generated wait time: 1432 ms
+[2025-01-07 09:39:34] [SUCCESS] Iteration 2 completed successfully (Duration: 25549.54 seconds)
+[2025-01-07 09:39:34] [INFO] Iteration Statistics:
+  Iteration: 2
+  MaxWait: 13000
+  MinWait: 370
+  Duration: 25549.54 seconds
+  GeneratedWait: 5310
+  EndTime: 2025-01-07 09:39:34
+  StartTime: 2025-01-07 02:33:45
+[2025-01-07 09:39:34] [INFO] Starting iteration 3
+[2025-01-07 09:39:34] [INFO] Using wait times - Min: 170, Max: 1500
+[2025-01-07 09:39:34] [INFO] Generated wait time: 1395 ms
+[2025-01-07 10:50:20] [SUCCESS] Iteration 2 completed successfully (Duration: 30487.70 seconds)
+[2025-01-07 10:50:20] [INFO] Iteration Statistics:
+  Iteration: 2
+  MaxWait: 13000
+  MinWait: 370
+  Duration: 30487.70 seconds
+  GeneratedWait: 2676
+  EndTime: 2025-01-07 10:50:20
+  StartTime: 2025-01-07 02:22:12
+[2025-01-07 10:50:20] [INFO] Starting iteration 3
+[2025-01-07 10:50:20] [INFO] Using wait times - Min: 170, Max: 1500
+[2025-01-07 10:50:20] [INFO] Generated wait time: 1393 ms
+[2025-01-07 15:09:10] [SUCCESS] Iteration 3 completed successfully (Duration: 20389.10 seconds)
+[2025-01-07 15:09:10] [INFO] Iteration Statistics:
+  Iteration: 3
+  MaxWait: 1500
+  MinWait: 170
+  Duration: 20389.10 seconds
+  GeneratedWait: 1432
+  EndTime: 2025-01-07 15:09:10
+  StartTime: 2025-01-07 09:29:21
+[2025-01-07 15:09:10] [INFO] Starting iteration 4
+[2025-01-07 15:09:10] [INFO] Using wait times - Min: 1470, Max: 30000
+[2025-01-07 15:09:10] [INFO] Generated wait time: 26862 ms
+[2025-01-07 15:34:50] [SUCCESS] Iteration 3 completed successfully (Duration: 21316.01 seconds)
+[2025-01-07 15:34:50] [INFO] Iteration Statistics:
+  Iteration: 3
+  MaxWait: 1500
+  MinWait: 170
+  Duration: 21316.01 seconds
+  GeneratedWait: 1395
+  EndTime: 2025-01-07 15:34:50
+  StartTime: 2025-01-07 09:39:34
+[2025-01-07 15:34:50] [INFO] Starting iteration 4
+[2025-01-07 15:34:50] [INFO] Using wait times - Min: 1470, Max: 30000
+[2025-01-07 15:34:50] [INFO] Generated wait time: 8447 ms
+[2025-01-07 16:21:44] [SUCCESS] Iteration 4 completed successfully (Duration: 36363.62 seconds)
+[2025-01-07 16:21:44] [INFO] Iteration Statistics:
+  Iteration: 4
+  MaxWait: 30000
+  MinWait: 1470
+  Duration: 36363.62 seconds
+  GeneratedWait: 21231
+  EndTime: 2025-01-07 16:21:43
+  StartTime: 2025-01-07 06:15:40
+[2025-01-07 16:21:44] [INFO] Starting iteration 5
+[2025-01-07 16:21:44] [INFO] Using wait times - Min: 370, Max: 13000
+[2025-01-07 16:21:44] [INFO] Generated wait time: 5916 ms
+[2025-01-07 16:26:31] [SUCCESS] Iteration 4 completed successfully (Duration: 35609.40 seconds)
+[2025-01-07 16:26:31] [INFO] Iteration Statistics:
+  Iteration: 4
+  MaxWait: 30000
+  MinWait: 1470
+  Duration: 35609.40 seconds
+  GeneratedWait: 17160
+  EndTime: 2025-01-07 16:26:31
+  StartTime: 2025-01-07 06:33:02
+[2025-01-07 16:26:31] [INFO] Starting iteration 5
+[2025-01-07 16:26:31] [INFO] Using wait times - Min: 370, Max: 13000
+[2025-01-07 16:26:31] [INFO] Generated wait time: 7329 ms
+[2025-01-07 16:34:40] [SUCCESS] Iteration 3 completed successfully (Duration: 20660.45 seconds)
+[2025-01-07 16:34:40] [INFO] Iteration Statistics:
+  Iteration: 3
+  MaxWait: 1500
+  MinWait: 170
+  Duration: 20660.45 seconds
+  GeneratedWait: 1393
+  EndTime: 2025-01-07 16:34:40
+  StartTime: 2025-01-07 10:50:20
+[2025-01-07 16:34:40] [INFO] Starting iteration 4
+[2025-01-07 16:34:40] [INFO] Using wait times - Min: 1470, Max: 30000
+[2025-01-07 16:34:40] [INFO] Generated wait time: 4394 ms
+[2025-01-07 18:34:19] [SUCCESS] Iteration 4 completed successfully (Duration: 33731.09 seconds)
+[2025-01-07 18:34:19] [INFO] Iteration Statistics:
+  Iteration: 4
+  MaxWait: 30000
+  MinWait: 1470
+  Duration: 33731.09 seconds
+  GeneratedWait: 21715
+  EndTime: 2025-01-07 18:34:19
+  StartTime: 2025-01-07 09:12:08
+[2025-01-07 18:34:19] [INFO] Starting iteration 5
+[2025-01-07 18:34:19] [INFO] Using wait times - Min: 370, Max: 13000
+[2025-01-07 18:34:19] [INFO] Generated wait time: 11858 ms
+[2025-01-07 19:45:58] [SUCCESS] Iteration 4 completed successfully (Duration: 39000.33 seconds)
+[2025-01-07 19:45:58] [INFO] Iteration Statistics:
+  Iteration: 4
+  MaxWait: 30000
+  MinWait: 1470
+  Duration: 39000.33 seconds
+  GeneratedWait: 8830
+  EndTime: 2025-01-07 19:45:58
+  StartTime: 2025-01-07 08:55:58
+[2025-01-07 19:45:58] [INFO] Starting iteration 5
+[2025-01-07 19:45:58] [INFO] Using wait times - Min: 370, Max: 13000
+[2025-01-07 19:45:58] [INFO] Generated wait time: 12344 ms
+[2025-01-07 20:44:50] [SUCCESS] Iteration 4 completed successfully (Duration: 41351.03 seconds)
+[2025-01-07 20:44:50] [INFO] Iteration Statistics:
+  Iteration: 4
+  MaxWait: 30000
+  MinWait: 1470
+  Duration: 41351.03 seconds
+  GeneratedWait: 17467
+  EndTime: 2025-01-07 20:44:50
+  StartTime: 2025-01-07 09:15:39
+[2025-01-07 20:44:50] [INFO] Starting iteration 5
+[2025-01-07 20:44:50] [INFO] Using wait times - Min: 370, Max: 13000
+[2025-01-07 20:44:50] [INFO] Generated wait time: 3582 ms
+[2025-01-07 21:41:17] [SUCCESS] Iteration 4 completed successfully (Duration: 23526.79 seconds)
+[2025-01-07 21:41:17] [INFO] Iteration Statistics:
+  Iteration: 4
+  MaxWait: 30000
+  MinWait: 1470
+  Duration: 23526.79 seconds
+  GeneratedWait: 26862
+  EndTime: 2025-01-07 21:41:17
+  StartTime: 2025-01-07 15:09:10
+[2025-01-07 21:41:17] [INFO] Starting iteration 5
+[2025-01-07 21:41:17] [INFO] Using wait times - Min: 370, Max: 13000
+[2025-01-07 21:41:17] [INFO] Generated wait time: 3858 ms
+[2025-01-07 22:58:06] [SUCCESS] Iteration 5 completed successfully (Duration: 23782.61 seconds)
+[2025-01-07 22:58:06] [INFO] Iteration Statistics:
+  Iteration: 5
+  MaxWait: 13000
+  MinWait: 370
+  Duration: 23782.61 seconds
+  GeneratedWait: 5916
+  EndTime: 2025-01-07 22:58:06
+  StartTime: 2025-01-07 16:21:44
+[2025-01-07 22:58:06] [INFO] Starting iteration 6
+[2025-01-07 22:58:06] [INFO] Using wait times - Min: 170, Max: 1500
+[2025-01-07 22:58:06] [INFO] Generated wait time: 610 ms
+[2025-01-08 01:02:53] [SUCCESS] Iteration 5 completed successfully (Duration: 30981.83 seconds)
+[2025-01-08 01:02:53] [INFO] Iteration Statistics:
+  Iteration: 5
+  MaxWait: 13000
+  MinWait: 370
+  Duration: 30981.83 seconds
+  GeneratedWait: 7329
+  EndTime: 2025-01-08 01:02:53
+  StartTime: 2025-01-07 16:26:31
+[2025-01-08 01:02:53] [INFO] Starting iteration 6
+[2025-01-08 01:02:53] [INFO] Using wait times - Min: 170, Max: 1500
+[2025-01-08 01:02:53] [INFO] Generated wait time: 1099 ms
+[2025-01-08 03:03:38] [SUCCESS] Iteration 5 completed successfully (Duration: 30558.66 seconds)
+[2025-01-08 03:03:38] [INFO] Iteration Statistics:
+  Iteration: 5
+  MaxWait: 13000
+  MinWait: 370
+  Duration: 30558.66 seconds
+  GeneratedWait: 11858
+  EndTime: 2025-01-08 03:03:38
+  StartTime: 2025-01-07 18:34:19
+[2025-01-08 03:03:38] [INFO] Starting iteration 6
+[2025-01-08 03:03:38] [INFO] Using wait times - Min: 170, Max: 1500
+[2025-01-08 03:03:38] [INFO] Generated wait time: 1011 ms
+[2025-01-08 03:10:52] [SUCCESS] Iteration 5 completed successfully (Duration: 19774.61 seconds)
+[2025-01-08 03:10:52] [INFO] Iteration Statistics:
+  Iteration: 5
+  MaxWait: 13000
+  MinWait: 370
+  Duration: 19774.61 seconds
+  GeneratedWait: 3858
+  EndTime: 2025-01-08 03:10:52
+  StartTime: 2025-01-07 21:41:17
+[2025-01-08 03:10:52] [INFO] Starting iteration 6
+[2025-01-08 03:10:52] [INFO] Using wait times - Min: 170, Max: 1500
+[2025-01-08 03:10:52] [INFO] Generated wait time: 704 ms
+[2025-01-08 03:27:12] [SUCCESS] Iteration 5 completed successfully (Duration: 27673.95 seconds)
+[2025-01-08 03:27:12] [INFO] Iteration Statistics:
+  Iteration: 5
+  MaxWait: 13000
+  MinWait: 370
+  Duration: 27673.95 seconds
+  GeneratedWait: 12344
+  EndTime: 2025-01-08 03:27:12
+  StartTime: 2025-01-07 19:45:58
+[2025-01-08 03:27:12] [INFO] Starting iteration 6
+[2025-01-08 03:27:12] [INFO] Using wait times - Min: 170, Max: 1500
+[2025-01-08 03:27:12] [INFO] Generated wait time: 964 ms
+[2025-01-08 05:10:36] [SUCCESS] Iteration 4 completed successfully (Duration: 48945.99 seconds)
+[2025-01-08 05:10:37] [INFO] Iteration Statistics:
+  Iteration: 4
+  MaxWait: 30000
+  MinWait: 1470
+  Duration: 48945.99 seconds
+  GeneratedWait: 8447
+  EndTime: 2025-01-08 05:10:36
+  StartTime: 2025-01-07 15:34:50
+[2025-01-08 05:10:37] [INFO] Starting iteration 5
+[2025-01-08 05:10:37] [INFO] Using wait times - Min: 370, Max: 13000
+[2025-01-08 05:10:37] [INFO] Generated wait time: 2524 ms
+[2025-01-08 05:27:28] [SUCCESS] Iteration 5 completed successfully (Duration: 31357.19 seconds)
+[2025-01-08 05:27:28] [INFO] Iteration Statistics:
+  Iteration: 5
+  MaxWait: 13000
+  MinWait: 370
+  Duration: 31357.19 seconds
+  GeneratedWait: 3582
+  EndTime: 2025-01-08 05:27:28
+  StartTime: 2025-01-07 20:44:50
+[2025-01-08 05:27:28] [INFO] Starting iteration 6
+[2025-01-08 05:27:28] [INFO] Using wait times - Min: 170, Max: 1500
+[2025-01-08 05:27:28] [INFO] Generated wait time: 1196 ms
+[2025-01-08 08:51:02] [SUCCESS] Iteration 6 completed successfully (Duration: 20410.74 seconds)
+[2025-01-08 08:51:02] [INFO] Iteration Statistics:
+  Iteration: 6
+  MaxWait: 1500
+  MinWait: 170
+  Duration: 20410.74 seconds
+  GeneratedWait: 704
+  EndTime: 2025-01-08 08:51:02
+  StartTime: 2025-01-08 03:10:52
+[2025-01-08 08:51:02] [SUCCESS] All iterations completed successfully
+[2025-01-08 08:51:02] [SUCCESS] Final Summary:
+  Start Time: 2025-01-06 20:41:16
+  End Time: 2025-01-08 08:51:02
+  Instance ID: gnatty-2025-Jan-06-2041
+  Total Iterations: 6
+  Total Duration: 2169.77 minutes
+  Average Duration: 361.63 minutes per iteration
+[2025-01-08 08:57:36] [SUCCESS] Iteration 6 completed successfully (Duration: 21237.93 seconds)
+[2025-01-08 08:57:36] [INFO] Iteration Statistics:
+  Iteration: 6
+  MaxWait: 1500
+  MinWait: 170
+  Duration: 21237.93 seconds
+  GeneratedWait: 1011
+  EndTime: 2025-01-08 08:57:36
+  StartTime: 2025-01-08 03:03:38
+[2025-01-08 08:57:36] [SUCCESS] All iterations completed successfully
+[2025-01-08 08:57:36] [SUCCESS] Final Summary:
+  Start Time: 2025-01-06 13:08:45
+  End Time: 2025-01-08 08:57:36
+  Instance ID: unadeptly-2025-Jan-06-1308
+  Total Iterations: 6
+  Total Duration: 2628.86 minutes
+  Average Duration: 438.14 minutes per iteration
+[2025-01-08 09:12:04] [SUCCESS] Iteration 6 completed successfully (Duration: 20691.74 seconds)
+[2025-01-08 09:12:04] [INFO] Iteration Statistics:
+  Iteration: 6
+  MaxWait: 1500
+  MinWait: 170
+  Duration: 20691.74 seconds
+  GeneratedWait: 964
+  EndTime: 2025-01-08 09:12:04
+  StartTime: 2025-01-08 03:27:12
+[2025-01-08 09:12:04] [SUCCESS] All iterations completed successfully
+[2025-01-08 09:12:04] [SUCCESS] Final Summary:
+  Start Time: 2025-01-06 13:08:24
+  End Time: 2025-01-08 09:12:04
+  Instance ID: cascade-2025-Jan-06-1308
+  Total Iterations: 6
+  Total Duration: 2643.67 minutes
+  Average Duration: 440.61 minutes per iteration
+[2025-01-08 11:17:28] [SUCCESS] Iteration 6 completed successfully (Duration: 21000.53 seconds)
+[2025-01-08 11:17:28] [INFO] Iteration Statistics:
+  Iteration: 6
+  MaxWait: 1500
+  MinWait: 170
+  Duration: 21000.53 seconds
+  GeneratedWait: 1196
+  EndTime: 2025-01-08 11:17:28
+  StartTime: 2025-01-08 05:27:28
+[2025-01-08 11:17:28] [SUCCESS] All iterations completed successfully
+[2025-01-08 11:17:28] [SUCCESS] Final Summary:
+  Start Time: 2025-01-06 13:08:50
+  End Time: 2025-01-08 11:17:28
+  Instance ID: metatag-2025-Jan-06-1308
+  Total Iterations: 6
+  Total Duration: 2768.63 minutes
+  Average Duration: 461.44 minutes per iteration
+[2025-01-08 12:18:10] [SUCCESS] Iteration 5 completed successfully (Duration: 25653.38 seconds)
+[2025-01-08 12:18:10] [INFO] Iteration Statistics:
+  Iteration: 5
+  MaxWait: 13000
+  MinWait: 370
+  Duration: 25653.38 seconds
+  GeneratedWait: 2524
+  EndTime: 2025-01-08 12:18:10
+  StartTime: 2025-01-08 05:10:37
+[2025-01-08 12:18:10] [INFO] Starting iteration 6
+[2025-01-08 12:18:10] [INFO] Using wait times - Min: 170, Max: 1500
+[2025-01-08 12:18:10] [INFO] Generated wait time: 1066 ms
+[2025-01-08 18:06:34] [SUCCESS] Iteration 6 completed successfully (Duration: 20904.03 seconds)
+[2025-01-08 18:06:34] [INFO] Iteration Statistics:
+  Iteration: 6
+  MaxWait: 1500
+  MinWait: 170
+  Duration: 20904.03 seconds
+  GeneratedWait: 1066
+  EndTime: 2025-01-08 18:06:34
+  StartTime: 2025-01-08 12:18:10
+[2025-01-08 18:06:34] [SUCCESS] All iterations completed successfully
+[2025-01-08 18:06:34] [SUCCESS] Final Summary:
+  Start Time: 2025-01-06 20:41:25
+  End Time: 2025-01-08 18:06:34
+  Instance ID: kayak-2025-Jan-06-2041
+  Total Iterations: 6
+  Total Duration: 2725.16 minutes
+  Average Duration: 454.19 minutes per iteration

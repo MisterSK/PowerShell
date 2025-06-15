@@ -1,0 +1,23 @@
+{
+    "AdminCredsPath": ".\\AdminCreds.xml",
+    "DefaultWindowCount": 4,
+    "WindowDefaults": {
+        "DefaultWidth": 115,
+        "DefaultHeight": 11,
+        "DefaultX": 2345,
+        "DefaultY": 360,
+        "Spacing": 10
+    },
+    "Commands": [
+        "$random_start = (Get-Random -Maximum 1040 -Minimum 15) ;powershell.exe -ExecutionPolicy Bypass -File C:\\Users\\S-Khasenye.DFID\\WorkingDir\\PowerShell\\CountDownTimers\\Start-CountDown.ps1 -Seconds $random_start  -Message 'Waiting to launch Mouse Activity Detection'; cd  C:\\Users\\S-Khasenye.DFID\\WorkingDir\\PowerShell\\ActivityGenerator.v2; .\\MouseNotepadAppWindowAutoMover.ps1",
+        "$random_start = (Get-Random -Maximum 1400 -Minimum 65) ;powershell.exe -ExecutionPolicy Bypass -File C:\\Users\\S-Khasenye.DFID\\WorkingDir\\PowerShell\\CountDownTimers\\Start-CountDown.ps1 -Seconds $random_start  -Message 'Waiting to launch Activity Detection'; Set-Location C:\\Users\\S-Khasenye.DFID\\WorkingDir\\PowerShell\\ActivityGenerator.v2\\; powershell.exe -ExecutionPolicy Bypass -File .\\ActivityOrchestrator.ps1; $random_start = (Get-Random -Maximum 500 -Minimum 50); Clear-Host; powershell.exe -ExecutionPolicy Bypass -File C:\\Users\\S-Khasenye.DFID\\WorkingDir\\PowerShell\\CountDownTimers\\Start-CountDown.ps1 -Seconds $random_start  -Message 'Waiting to launch Activity Detection'; Set-Location C:\\Users\\S-Khasenye.DFID\\WorkingDir\\PowerShell\\ActivityGenerator.v2\\; powershell.exe -ExecutionPolicy Bypass -File .\\ActivityOrchestrator.ps1",
+        "Get-Process | Sort-Object CPU -Descending | Select-Object -First 5",
+        "Get-Service | Where-Object {$_.Status -eq 'Running'}",
+        "Get-NetAdapter | Format-Table Name, Status, LinkSpeed",
+        "Get-EventLog -LogName System -Newest 5",
+        "Get-PSDrive | Where-Object {$_.Free -gt 0} | Select-Object Name, Used, Free",
+        "Get-WmiObject Win32_LogicalDisk | Select-Object DeviceID, Size, FreeSpace",
+        "Get-ChildItem -Path C:\\ -File | Sort-Object Length -Descending | Select-Object -First 3",
+        "Get-NetTCPConnection | Where-Object State -eq 'Established' | Select-Object -First 3"
+    ]
+}

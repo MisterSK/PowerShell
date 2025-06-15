@@ -1,0 +1,39 @@
+{
+    "apiEndpoints":  [
+                         {
+                             "name":  "Wordnik",
+                             "url":  "https://api.wordnik.com/v4/words.json/randomWord",
+                             "method":  "GET",
+                             "headers":  {
+                                             "api_key":  "YOUR_API_KEY"
+                                         },
+                             "responseFormat":  "json",
+                             "wordPath":  "word",
+                             "failureCount":  10
+                         },
+                         {
+                             "name":  "Random Word API",
+                             "url":  "https://random-word-api.herokuapp.com/word",
+                             "method":  "GET",
+                             "responseFormat":  "json",
+                             "wordPath":  "[0]",
+                             "failureCount":  10
+                         },
+                         {
+                             "name":  "RapidAPI Words",
+                             "url":  "https://random-words5.p.rapidapi.com/getMultipleRandom",
+                             "method":  "GET",
+                             "headers":  {
+                                             "X-RapidAPI-Key":  "YOUR_API_KEY"
+                                         },
+                             "params":  {
+                                            "count":  "1"
+                                        },
+                             "responseFormat":  "json",
+                             "wordPath":  "[0]",
+                             "failureCount":  10
+                         }
+                     ],
+    "maxFailures":  10,
+    "lastUpdated":  "2025-01-03T00:00:00Z"
+}
