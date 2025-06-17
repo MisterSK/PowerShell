@@ -675,3 +675,196 @@ If you see errors like "The Minimum value cannot be greater than or equal to the
   - Enhanced estimated end time calculations
 - **Enhanced Version**: Added iteration tracking and estimated end times
 - **Original Version**: Basic quote typing and deletion functionality
+
+# ActivityGenerator.ps1 - README
+
+## Overview
+
+ActivityGenerator.ps1 is a PowerShell script that simulates user activity by automatically typing and deleting quotes in Notepad at random intervals. This script is designed to work in PowerShell Constrained Language Mode environments and avoids using .NET methods that might be restricted.
+
+## Features
+
+- **Automated Activity Simulation**: Types and deletes quotes in Notepad automatically
+- **Multiple Operation Modes**: Supports continuous mode, iteration-based mode, and time-windowed execution
+- **Constrained Language Mode Compatible**: Uses PowerShell cmdlets instead of .NET methods
+- **Configurable Timing**: Random intervals between actions based on seed values
+- **Integration Support**: Works with orchestrator scripts for complex automation scenarios
+- **Progress Tracking**: Shows countdown timers and iteration progress
+
+## Prerequisites
+
+1. **Windows PowerShell 5.1 or later**
+2. **Required Scripts**:
+   - `ActivityGeneratorProcessController.ps1` - Configuration management
+   - `GetZappQuotes.ps1` - Quote provider
+   - `Start-Countdown.ps1` - Countdown timer display
+3. **Notepad** - Windows Notepad application
+4. **Execution Policy**: Script execution must be enabled
+
+## Parameters
+
+| Parameter | Type | Required | Default | Description |
+|-----------|------|----------|---------|-------------|
+| `loggedinuserfull` | String | Yes | - | Full name of the logged-in user |
+| `loggedinuser` | String | Yes | - | Username of the logged-in user |
+| `IterationNumber` | Int | No | 1 | Current iteration number |
+| `StartTime` | DateTime/String | No | Current time | Start time for the activity window |
+| `TerminateWindow` | Int | No | 0 | Time window in seconds before termination |
+| `TotalIterations` | Int | No | 0 | Total number of iterations to run |
+| `MinWait` | Int | No | 0 | Minimum wait time (currently unused) |
+| `MaxWait` | Int | No | 0 | Maximum wait time (currently unused) |
+
+## Usage Examples
+
+### Basic Usage (Continuous Mode)
+```powershell
+.\ActivityGenerator.ps1 -loggedinuserfull "John Doe" -loggedinuser "jdoe"
+```
+
+### Single Iteration with Time Window
+```powershell
+.\ActivityGenerator.ps1 -loggedinuserfull "John Doe" -loggedinuser "jdoe" -TerminateWindow 300
+```
+
+### Multiple Iterations
+```powershell
+.\ActivityGenerator.ps1 -loggedinuserfull "John Doe" -loggedinuser "jdoe" -IterationNumber 1 -TotalIterations 10 -TerminateWindow 60
+```
+
+### With Custom Start Time
+```powershell
+.\ActivityGenerator.ps1 -loggedinuserfull "John Doe" -loggedinuser "jdoe" -StartTime "2025-06-16 14:30:00" -TerminateWindow 300
+```
+
+## Operation Modes
+
+### 1. Continuous Mode (Default)
+- Runs indefinitely until manually stopped
+- No iteration limit or time window
+- Displays iteration as "Iteration X/∞"
+
+### 2. Time-Windowed Mode
+- Runs for a specified duration (`TerminateWindow` seconds)
+- Automatically stops when time expires
+- Shows remaining time periodically
+
+### 3. Multi-Iteration Mode
+- Runs for a specific number of iterations
+- Each iteration can have its own time window
+- Typically called by orchestrator scripts
+
+## Configuration
+
+The script reads configuration from `ActivityGeneratorProcessController.ps1`:
+- `RANDOMIZER_SEED_MAX`: Maximum random seed value (Config item 4)
+- `RANDOMIZER_SEED_MIN`: Minimum random seed value (Config item 5)
+
+These values control the random wait times between actions.
+
+## How It Works
+
+1. **Initialization**:
+   - Validates parameters and converts string timestamps
+   - Loads configuration and quote sources
+   - Creates Windows Shell COM object for SendKeys
+   - Starts Notepad if not already running
+
+2. **Main Loop**:
+   - Generates random wait time based on seed values
+   - Activates Notepad window
+   - Clears existing text (Ctrl+A, Backspace)
+   - Displays countdown timer with iteration info
+   - Types a random quote from the quote list
+   - Waits random duration
+   - Deletes the quote
+   - Repeats until termination condition met
+
+3. **Termination**:
+   - Continuous mode: Runs until manually stopped (Ctrl+C)
+   - Time window: Stops when elapsed time exceeds window
+   - Never closes Notepad (leaves it open)
+
+## File Structure
+
+```
+C:\Users\[username]\WorkingDir\PowerShell\
+├── ActivityGenerator.ps1
+├── ActivityGeneratorProcessController.ps1
+├── GetZappQuotes.ps1
+└── CountDownTimers\
+    └── Start-Countdown.ps1
+```
+
+## Constrained Language Mode Compatibility
+
+This script is specifically designed to work in PowerShell Constrained Language Mode:
+
+- **Uses `Get-Date` instead of `[DateTime]::ParseExact()`**
+- **Uses `Get-Date -Format` instead of `.ToString()` method**
+- **Avoids `[System.Text.Encoding]` and `[Convert]` classes**
+- **Uses PowerShell string concatenation instead of `[Environment]::NewLine`**
+
+## Troubleshooting
+
+### Error: "MethodInvocationNotSupportedInConstrainedLanguage"
+This version of the script should not produce this error. If it does, check:
+1. Verify you're using the fixed version of the script
+2. Check for any custom modifications that might use .NET methods
+3. Ensure all dependent scripts are also compatible
+
+### Notepad Window Not Found
+- Ensure Notepad is running (script will start it automatically)
+- Check if multiple Notepad instances are open
+- Verify the window title is "Untitled - Notepad"
+
+### Countdown Timer Not Showing
+- Verify the path to `Start-Countdown.ps1` is correct
+- Check that the logged-in username parameter is accurate
+- Ensure the countdown script exists at the specified location
+
+### Script Stops Unexpectedly
+- Check if terminate window was reached
+- Look for any error messages in the console
+- Verify all dependent scripts are present
+
+## Security Considerations
+
+- Script requires ability to create COM objects (wscript.shell)
+- SendKeys functionality requires appropriate permissions
+- Execution policy must allow script execution
+- May be blocked by certain security software
+
+## Integration with Orchestrators
+
+This script is designed to work with:
+- `ActivityOrchestrator.ps1` - Basic orchestration
+- `Start-ActivityOrchestrator_v0.1.ps1` - Advanced orchestration with multiple iterations
+
+The orchestrators handle:
+- Starting multiple iterations
+- Managing timing windows
+- Passing appropriate parameters
+- Collecting results
+
+## Known Limitations
+
+1. Only works with English Windows (hardcoded "Untitled - Notepad" window title)
+2. Requires Notepad to maintain focus for SendKeys to work properly
+3. Random intervals are based on seed values from configuration
+4. MinWait and MaxWait parameters are defined but not currently used
+
+## Version History
+
+- **Current Version**: Constrained Language Mode Compatible
+  - Replaced all .NET method calls with PowerShell cmdlets
+  - Fixed DateTime parsing and formatting
+  - Improved error handling
+  - Enhanced status reporting
+
+## Support
+
+For issues or questions:
+1. Check this README first
+2. Verify all prerequisites are met
+3. Review error messages for specific issues
+4. Check PowerShell execution policy and language mode

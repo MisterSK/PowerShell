@@ -5,6 +5,7 @@ Standalone Window Monitor for PowerShell Orchestrator Windows - ENHANCED VERSION
 Monitors PowerShell orchestrator windows and launches replacements when needed.
 Can be run independently of the main PwshWindowManager script.
 Supports all monitoring modes: Continuous, UntilDateTime, ForDuration, UntilDayOfWeek.
+Now includes full window configuration support including fonts, colors, and sizing.
 
 .PARAMETER ConfigPath
 Path to the PwshWindowManager.json configuration file
@@ -43,6 +44,13 @@ Monitor until next Monday at 9 AM:
 Monitor until specific date/time:
     "Mode": "UntilDateTime",
     "UntilDateTime": "2025-06-10 17:30:00"
+
+.WINDOW CONFIGURATION
+The script now fully supports all window configuration options:
+- Window size (Cols, Lines)
+- Background color (BgColor)
+- Font settings (FontName, FontSize, FontWeight)
+- Auto-close behavior (AutoCloseSeconds, NoExit)
 #>
 
 param(
@@ -158,24 +166,27 @@ Write-Log "Logging to: $global:currentLogFile" -Level "INFO"
 #endregion
 
 #region Configuration Loading
-# Default configuration with monitoring modes
+# Default configuration with all window settings
 $defaultConfig = @{
     'WindowSettings' = @{
         'Count'      = 4
         'NoExit'     = $false
         'MinSeconds' = 12
         'MaxSeconds' = 499000
-        'Cols'       = 80
-        'Lines'      = 10
+        'Cols'       = 100
+        'Lines'      = 14
         'BgColor'    = "0A"
-        'AutoCloseSeconds' = 120
+        'AutoCloseSeconds' = 30
+        'FontSize'   = 6                    # Font size in points
+        'FontName'   = "Consolas"            # Font name (Consolas, Lucida Console, Courier New, etc.)
+        'FontWeight' = 400                   # Font weight (400=normal, 700=bold)
     }
     'MonitorSettings' = @{
         'Enable'        = $true
         'CheckInterval' = 60
-        'MinWindows'    = 3
+        'MinWindows'    = 1
         'AddIfBelow'    = 2
-        'MaxTotal'      = 6
+        'MaxTotal'      = 10
         'Mode'          = 'Continuous'  # Options: Continuous, UntilDateTime, ForDuration, UntilDayOfWeek
         'UntilDateTime' = ''            # Format: "2025-06-05 18:00:00"
         'ForDurationMinutes' = 120      # Monitor for X minutes then exit
@@ -188,6 +199,18 @@ $defaultConfig = @{
 try {
     if (Test-Path $ConfigPath) {
         $config = Get-Content $ConfigPath | ConvertFrom-Json -ErrorAction Stop
+        
+        # Add font settings if not present in existing config
+        if (-not $config.WindowSettings.PSObject.Properties.Name -contains 'FontSize') {
+            $config.WindowSettings | Add-Member -NotePropertyName 'FontSize' -NotePropertyValue 6
+        }
+        if (-not $config.WindowSettings.PSObject.Properties.Name -contains 'FontName') {
+            $config.WindowSettings | Add-Member -NotePropertyName 'FontName' -NotePropertyValue "Consolas"
+        }
+        if (-not $config.WindowSettings.PSObject.Properties.Name -contains 'FontWeight') {
+            $config.WindowSettings | Add-Member -NotePropertyName 'FontWeight' -NotePropertyValue 400
+        }
+        
         Write-Log "Configuration loaded from $ConfigPath" -Level "INFO"
     } else {
         Write-Log "Configuration file not found at: $ConfigPath" -Level "ERROR"
@@ -198,6 +221,13 @@ try {
     Write-Log "Error loading config: $_. Using defaults." -Level "ERROR"
     $config = $defaultConfig
 }
+
+# Log window configuration
+Write-Log "Window Configuration:" -Level "INFO"
+Write-Log "  - Size: $($config.WindowSettings.Cols) x $($config.WindowSettings.Lines)" -Level "INFO"
+Write-Log "  - Color: $($config.WindowSettings.BgColor)" -Level "INFO"
+Write-Log "  - Font: $($config.WindowSettings.FontName) $($config.WindowSettings.FontSize)pt (weight: $($config.WindowSettings.FontWeight))" -Level "INFO"
+Write-Log "  - Auto-close: $($config.WindowSettings.AutoCloseSeconds)s (NoExit: $($config.WindowSettings.NoExit))" -Level "INFO"
 
 # Check if monitoring should run
 if (-not $config.MonitorSettings.Enable -and -not $Force) {
@@ -245,6 +275,15 @@ if (-not (Test-Path $orchestratorDir)) {
     $pathErrors++
 } else {
     Write-Log "SUCCESS: Orchestrator directory found" -Level "INFO"
+}
+
+# Check for orchestrator config file
+$orchestratorConfig = "$orchestratorDir\ActivityGeneratorConfig.json"
+if (-not (Test-Path $orchestratorConfig)) {
+    Write-Log "WARNING: Orchestrator config file not found at: $orchestratorConfig" -Level "WARN"
+    Write-Log "The orchestrator script may fail without this configuration file" -Level "WARN"
+} else {
+    Write-Log "SUCCESS: Orchestrator config found" -Level "INFO"
 }
 
 if ($pathErrors -gt 0) {
@@ -407,14 +446,48 @@ function Get-RunningPowerShellCount {
     }
 }
 
-# Window launching function (same as main script)
+# Window launching function with full configuration support
 function Start-OrchestratorWindow {
     param($id, $seconds)
     
     Write-Log "Preparing to launch window $id with $seconds second countdown" -Level "DEBUG"
     
-    # Create a very simple script using original cmd-based approach
+    # Font configuration script block
+    $fontConfigScript = @"
+# Set console font properties (requires Windows 10/11)
+try {
+    `$fontName = '$($config.WindowSettings.FontName)'
+    `$fontSize = $($config.WindowSettings.FontSize)
+    `$fontWeight = $($config.WindowSettings.FontWeight)
+    
+    # Create a temporary registry key for this console window
+    `$random = Get-Random
+    `$regPath = "HKCU:\Console\OrchestratorWindow`$random"
+    
+    if (-not (Test-Path `$regPath)) {
+        New-Item -Path `$regPath -Force | Out-Null
+    }
+    
+    # Set font properties
+    Set-ItemProperty -Path `$regPath -Name 'FaceName' -Value `$fontName -Type String
+    Set-ItemProperty -Path `$regPath -Name 'FontSize' -Value ([int](`$fontSize * 65536)) -Type DWord
+    Set-ItemProperty -Path `$regPath -Name 'FontWeight' -Value `$fontWeight -Type DWord
+    Set-ItemProperty -Path `$regPath -Name 'FontFamily' -Value 54 -Type DWord
+    
+    # Clean up old registry entries (optional)
+    Get-ChildItem 'HKCU:\Console' | Where-Object { `$_.PSChildName -like 'OrchestratorWindow*' -and `$_.PSChildName -ne "OrchestratorWindow`$random" } | Remove-Item -Force -ErrorAction SilentlyContinue
+    
+    Write-Host "Font configuration applied: `$fontName `$fontSize pt (weight: `$fontWeight)" -ForegroundColor Gray
+} catch {
+    Write-Warning "Could not apply font settings: `$_"
+}
+"@
+    
+    # Create the main script content with all window configurations
     $scriptContent = @"
+# Apply font configuration first
+$fontConfigScript
+
 # Basic window setup using cmd commands (works in ConstrainedLanguage mode)
 cmd /c color $($config.WindowSettings.BgColor)
 cmd /c mode con: cols=$($config.WindowSettings.Cols) lines=$($config.WindowSettings.Lines)
@@ -423,6 +496,12 @@ cmd /c title "Orchestrator Window $id"
 Write-Host '========================================' -ForegroundColor Green
 Write-Host 'Starting Orchestrator Window $id' -ForegroundColor Green
 Write-Host '========================================' -ForegroundColor Green
+Write-Host ''
+Write-Host "Window Configuration:" -ForegroundColor Cyan
+Write-Host "  Size: $($config.WindowSettings.Cols) x $($config.WindowSettings.Lines)" -ForegroundColor Gray
+Write-Host "  Color: $($config.WindowSettings.BgColor)" -ForegroundColor Gray
+Write-Host "  Font: $($config.WindowSettings.FontName) $($config.WindowSettings.FontSize)pt" -ForegroundColor Gray
+Write-Host ''
 
 # Change to working directory
 Write-Host 'Changing to orchestrator directory...' -ForegroundColor Cyan
@@ -518,6 +597,8 @@ if ('$($config.WindowSettings.NoExit)' -eq 'True') {
         }
 
         Write-Log "Creating temporary script: $tempScript" -Level "DEBUG"
+        Write-Log "Window settings - Size: $($config.WindowSettings.Cols)x$($config.WindowSettings.Lines), Color: $($config.WindowSettings.BgColor)" -Level "DEBUG"
+        Write-Log "Font settings - Name: $($config.WindowSettings.FontName), Size: $($config.WindowSettings.FontSize), Weight: $($config.WindowSettings.FontWeight)" -Level "DEBUG"
         Write-Log "Auto-close timeout: $($config.WindowSettings.AutoCloseSeconds) seconds" -Level "DEBUG"
         
         # Start process without -PassThru to avoid property access restrictions

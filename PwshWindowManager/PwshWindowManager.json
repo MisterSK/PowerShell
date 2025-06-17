@@ -5,7 +5,7 @@
         "MinSeconds": 200,
         "MaxSeconds": 28000,
         "Cols": 100,
-        "Lines": 10,
+        "Lines": 14,
         "BgColor": "0A",
         "AutoCloseSeconds": 120,
         "FontSize": 6,
